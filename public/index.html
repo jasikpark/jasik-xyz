@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang=en>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="mobile-web-app-capable" content="yes" />
+  <meta charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caleb Jasik</title>
 </head>
 <body>
   <h1>Caleb Jasik</h1>
-  <div class="h-card">
-    <p>
-      Hi, my name is <span class="p-name">Caleb Jasik</span> and I am a human on the Internet.
-    </p>
-
-    <p>
-      You can find me on other websites below:
-    </p>
-
-    <ul>
-      <li><p>Twitter: <a class="u-url" href="https://twitter.com/jasikpark" rel="me">@jasikpark</a></p></li>
-      <li><p>Keybase: <a class="u-url" href="https://keybase.io/jasikpark">@jasikpark</a></p></li>
-      <li><p>Medium: <a class="u-url" href="https://medium.com/@jasikpark">@jasikpark</a></p></li>
-    </ul>
-  </div>
+  <div class="container">
+    <div class="site">
+        <div class="header">
+            <h1 class="title"><a href="/">Caleb Jasik</a></h1>
+            <a class="extra" href="/">home</a>
+        </div>
+        <div id="home">
+            <h1>links</h1>
+                <ul class="posts">
+                    <li><span>Twitter</span> &raquo; <a href="https://twitter.com/jasikpark">@jasikpark</a></li>
+                    <li><span>Medium</span> &raquo; <a href="https://medium.com/@jasikpark">@jasikpark</a></li>
+                    <li><span>Keybase</span> &raquo; <a href="https://keybase.io/jasikpark">@jasikpark</a></li>
+                </ul>
+        </div>
+        <div class="footer">
+            <div class="contact">
+                <div class="std-highlight">
+                    <pre>
+                        <code class="rust language-rust" data-lang="rust">
+<span class="k">let </span><span class="nv">caleb_jasik <span class="p">= </span><span class="k">User </span><span class="p">{</span>
+    <span class="ss">email: </span><span class="nb">String</span><span class="k">::from</span><span class="p">(</span><span class="s">"calebjasik" </span><span class="p">+ </span><span class="s">"@" </span><span class="p">+ </span><span class="ss">"jasik.xyz"</span><span class="p">),</span>
+    <span class="ss">github: </span><span class="nb">String</span><span class="k">::from</span><span class="p">(</span><span class="s"><a href="https://github.com/jasikpark">"github.com/jasikpark"</a></span><span class="p">),</span>
+    <span class="ss">twitter: </span><span class="nb">String</span><span class="k">::from</span><span class="p">(</span><span class="s"><a href="https://twitter.com/jasikpark">"twitter.com/jasikpark"</a></span><span class="p">)</span>
+                    </pre>
+                        </code>
+                </div>
+                <p>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
