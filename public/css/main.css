@@ -8,10 +8,7 @@
 @font-face {
     font-family: 'Latin Modern Roman';
     src: url('lmroman10-regular.otf');
-    src: url('lmroman10-regular.otf?#iefix') format('opentype'),
-         url('lmroman10-regular.woff') format('woff'),
-         url('lmroman10-regular.ttf') format('truetype'),
-         url('lmroman10-regular.svg#latin_modern_roman10_regular') format('svg');
+    src: url('lmroman10-regular.woff') format('woff'),
     font-weight: normal;
     font-style: normal;
 
