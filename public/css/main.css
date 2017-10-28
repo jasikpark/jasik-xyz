@@ -87,7 +87,8 @@ ul.posts span {
 .site .header h1.title {
   display: inline-block;
   margin-bottom: 2em;
-  font-family: "Bitter", "Droid Sans Mono", sans-serif;
+  font-family: "Droid Sans Mono", sans-serif;
+  font-size: 169%;
 }
 
 .site .header h1.title a {
@@ -101,7 +102,8 @@ ul.posts span {
 .site .header a.extra {
   color: #aaa;
   margin-left: 1em;
-  font-family: "Bitter", "Droid Sans Mono", sans-serif;
+  font-family: "Droid Sans Mono", sans-serif;
+  font-size: 169%;
 }
 
 .site .header a.extra:hover {
