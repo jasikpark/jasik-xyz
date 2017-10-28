@@ -13,7 +13,10 @@
     font-style: normal;
 
 }
-
+@font-face {
+    font-family: 'Bitter';
+    src: url('Bitter-Regular.tff') format('tff');
+}
 
 
 /* Global Reset */
@@ -84,7 +87,7 @@ ul.posts span {
 .site .header h1.title {
   display: inline-block;
   margin-bottom: 2em;
-  font-family: "Droid Sans Mono", sans-serif;
+  font-family: "Latin Modern Roman", "Droid Sans Mono", sans-serif;
 }
 
 .site .header h1.title a {
@@ -98,7 +101,7 @@ ul.posts span {
 .site .header a.extra {
   color: #aaa;
   margin-left: 1em;
-  font-family: "Droid Sans Mono", sans-serif;
+  font-family: "Latin Modern Roman", "Droid Sans Mono", sans-serif;
 }
 
 .site .header a.extra:hover {
