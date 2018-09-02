@@ -4,8 +4,6 @@ tags = []
 title = "PHYS 221 First Class Notes - 08/27/2018"
 
 +++
-We get a cheatsheet for each exam and one for the final
-
 ## Characteristics of periodic motion
 
 Amplitude is maximum magnitude of displacement from equilibrium
@@ -14,7 +12,7 @@ Period, `T`, is the time for one cycle
 
 Frequency, \`F\` is the number of cycles per unit of time = \`F = 1/T\`
 
-Angular Frequency, 
+Angular Frequency,
 
 Test Your Understanding of Section 4.1 in the book
 
@@ -24,7 +22,7 @@ When the restoring force is directly proportional to the displacement from equil
 
 Simple harmonic motion can be considered a projection of uniform circular motion.
 
-Characteristics of SHM
+## Characteristics of SHM
 
 For a body that is vibrating via an ideal spring: \`F_x = -kx = ma_x = x\\omega^2\`
 
