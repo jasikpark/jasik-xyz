@@ -13,6 +13,9 @@ fields:
   type: datetime
   hidden: false
   default: ''
+- type: tag_list
+  name: tags
+  label: Tags
 pages:
 - content/posts/phys-221-first-class-notes-08-27-2018.md
 - content/posts/starbucks-at-zachry.md
