@@ -42,8 +42,8 @@ The max \\(K\\) will be when \\(sin^2(\omega t + \phi)\\) is at a maximum, so it
 ## Energy and Momentum in SHM
 📸 of a mass on a spring describing the equilibrium position, amplitude, k-ratio, and velocity.
 
-\\(Total energy = E_1 = \frac{1}{2}kA_1^2 = \frac{1}{2}Mv_1^2\\)
-\\(v_1 = \sqrt{\frac{k}{M}A_1}\\)
+\\[Total energy = E_1 = \frac{1}{2}kA_1^2 = \frac{1}{2}Mv_1^2\\]
+\\[v_1 = \sqrt{\frac{k}{M}A_1}\\]
 
 If we drop putty with a mass of \\(m\\), momentum is conserved.
 
@@ -74,5 +74,7 @@ Get a screenshot of page 441 of the book.
 \\(\phi = \arctan(-\frac{v_{0x}}{\omega x_0})\\)
 
 \\(\tan(\phi) = -\frac{v_{0x}}{\omega x_0}\\)
+
 \\(v_{0x} = -\omega A\sin(\phi)\\)
+
 \\(x_0 = A\cos(\phi)\\)
