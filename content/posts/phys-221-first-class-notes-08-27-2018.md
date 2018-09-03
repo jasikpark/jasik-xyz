@@ -16,7 +16,7 @@ When the restoring force is directly proportional to the displacement from equil
 
 Simple harmonic motion can be considered a projection of uniform circular motion.
 
-Characteristics of SHM For a body that is vibrating via an ideal spring: \\(F_x = -kx = m _= x\\omega^_2\\)
+Characteristics of SHM For a body that is vibrating via an ideal spring: \\(F_x = -kx = m _= x\\omega^2\\)
 
 If you increase the mass of an object in SMH, the frequency will decrease.
 
