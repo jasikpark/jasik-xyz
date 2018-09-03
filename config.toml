@@ -1,6 +1,6 @@
 baseURL = "https://caleb-jasik-blog.netlify.com"
 languageCode = "en-us"
-title = "Caleb Jasik"
+title = "Bowl of TARDIS"
 theme = "ananke"
 
 MetaDataFormat = "yaml"
