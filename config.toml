@@ -2,3 +2,29 @@ baseURL = "https://caleb-jasik-blog.netlify.com"
 languageCode = "en-us"
 title = "Caleb Jasik"
 theme = "ananke"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+# set this if it screws things up to not have set. Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = ""
+  description = "my little attempt at a blog"
+  facebook = ""
+  twitter = "https://twitter.com/calebjasik"
+  instagram = "https://instagram.com/calebjasik"
+  youtube = "https://youtube.com/calebjasik"
+  github = "https://github.com/jasikpark"
+  linkedin = "https://linkedin.com/calebjasik"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/static/uploads/see_the_trees.jpg"
+  recent_posts_number = 2
