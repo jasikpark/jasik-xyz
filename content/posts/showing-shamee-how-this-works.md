@@ -11,7 +11,5 @@ featured_image: random_brains.jpg
 I write random code here and I can also write cpp:
 
 {{< highlight cpp >}}
-```
 cout << "helloworld";
-```
 {{< / highlight >}}
