@@ -24,7 +24,7 @@ If you increase the mass of an object in SMH, the frequency will decrease.
 
 Displacement as a function of time in SHM
 
-\\(x = Acos(\\omega t)
+\\(x = Acos(\\omega t)\\)
 
 \\(T = 2\\pi\\sqrt{\\frac{m}{k}}\\)
 
