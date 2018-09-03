@@ -5,7 +5,7 @@ draft: false
 tags:
 - instagram
 - 20secondsofcourage
-featured_image: /uploads/flower_on_black_background_COVER.jpg
+featured_image: /uploads/flower_on_black_background_cover.jpg
 ---
 
 {{< instagram BmvyRlcgX9U >}}
