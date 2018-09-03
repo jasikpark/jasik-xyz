@@ -23,7 +23,7 @@ enableRobotsTXT = true
   instagram = "https://instagram.com/calebjasik"
   youtube = "https://youtube.com/calebjasik"
   github = "https://github.com/jasikpark"
-  linkedin = "https://linkedin.com/in/calebjasik"
+  # linkedin = "https://linkedin.com/in/calebjasik"
   # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
   background_color_class = "bg-black"
   featured_image = "/static/uploads/see_the_trees.jpg"
