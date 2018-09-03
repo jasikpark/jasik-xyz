@@ -5,7 +5,7 @@ tags:
 - tamu
 - phys221
 - classes
-draft: true
+draft: false
 
 ---
 ## Total mechanical energy is conserved in SHM:
