@@ -17,3 +17,9 @@ int main() {
   cout << "hello world";
 }
 {{< / highlight >}}
+
+## Here's a Github Gist version of that:
+
+{{< gist jasikpark c02a45da361406e23aa4cf00aa77efc9 >}}
+
+I definitely like the Github Gist version more than the website's.
