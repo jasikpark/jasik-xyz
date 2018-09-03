@@ -1,5 +1,6 @@
 +++
 date = "2018-09-02T01:56:07+00:00"
+tags = ["tamu"]
 title = "Starbucks at Zachry"
 
 +++
