@@ -5,7 +5,7 @@ draft: false
 tags:
 - tamu
 - learning
-featured_image: random_brains.jpg
+featured_image: /uploads/random_brains.jpg
 ---
 
 I write random code here and I can also write cpp:
