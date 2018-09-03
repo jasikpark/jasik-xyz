@@ -65,7 +65,7 @@ If we have a weight on a vertically suspended spring, the net force is:
 \\(F_{net} = k(\delta l -x) -mg = k\delta l -kx -mg = -kx\\)
 
 ## Angular SHM
-A coil spring exerts a restoring torque \\(\uptau_z = I\alpha = -\kappa\theta\) where \(\kappa\\)  is called the torsion.
+A coil spring exerts a restoring torque \\(\tau_z = I\alpha = -\kappa\theta\) where \(\kappa\\)  is called the torsion.
 
 Get a screenshot of page 441 of the book.
 
