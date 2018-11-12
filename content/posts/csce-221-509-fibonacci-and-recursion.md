@@ -8,10 +8,10 @@ Natural numbers apparently don’t necessarily involve the number zero
 
 ```
 Definition of Natural Numbers
-	Base case: \\(n=0\\)
-		\\(n=0\\) is a natural number
-	Succesive case: \\(n_{i+1} = n_i + 1\\)
-		if \\(n_i\\) is a natural number, then \\(n_i + 1\\) is a natural number.
+	Base case: n=0
+		n=0 is a natural number
+	Successive case: n_{i+1} = n_i + 1
+		if n_i is a natural number, then n_i + 1 is a natural number.
 ```
 
 ### Fibonacci sequence
