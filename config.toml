@@ -1,12 +1,13 @@
 baseURL = "https://caleb-jasik-blog.netlify.com"
 languageCode = "en-us"
 title = "Bowl of TARDIS"
-theme = "rusty"
+theme = "ananke"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 # set this if it screws things up to not have set. Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+# Paginate = 7
 googleAnalytics = ""
 enableRobotsTXT = true
 
