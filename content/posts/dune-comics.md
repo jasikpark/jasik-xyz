@@ -13,3 +13,7 @@ from [Steak Smoothie](https://steaksmoothie.com)
 [![](/uploads/dune-meme.jpg)](https://questionablecontent.net/view.php?comic=59)
 
 from [Questionable Content](https://questionablecontent.net)
+
+[Edit 11/11/2018 Another One!]
+
+[![](/upload/dune-comic-2.jpg)](https://questionablecontent.net/view.php?comic=351)
