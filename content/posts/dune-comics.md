@@ -16,8 +16,8 @@ from [Questionable Content](https://questionablecontent.net)
 
 [Edit 11/11/2018::11:50pm Another One!]
 
-[![](/upload/dune-comic-2.png)](https://questionablecontent.net/view.php?comic=351)
+[![](/uploads/dune-comic-2.png)](https://questionablecontent.net/view.php?comic=351)
 
 [Edit 11/12/2018::12:35am The Test of the Mom Jabaar]
 
-[![](/upload/the-test-of-the-mom-jabaar.png)](https://questionablecontent.net/view.php?comic=461)
+[![](/uploads/the-test-of-the-mom-jabaar.png)](https://questionablecontent.net/view.php?comic=461)
