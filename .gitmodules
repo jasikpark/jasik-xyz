@@ -7,3 +7,9 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/rusty"]
+	path = themes/rusty
+	url = https://github.com/cecyc/hugo-theme-rusty.git
+[submodule "themes/charaka"]
+	path = themes/charaka
+	url = https://github.com/natarajmb/charaka-hugo-theme.git
