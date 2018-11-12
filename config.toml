@@ -51,3 +51,7 @@ pygmentsCodeFences = true
 [[params.social]]
   url = "https://youtube.com/calebjasik"
   fa_icon = "fab fa-youtube"
+
+[[params.social]]
+  url = "https://keybase.io/jasikpark"
+  fa_icon = "fab fa-keybase"
