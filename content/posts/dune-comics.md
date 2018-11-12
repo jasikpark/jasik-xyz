@@ -10,6 +10,6 @@ Here's some Dune comics I like...
 
 from [Steak Smoothie](https://steaksmoothie.com)
 
-![](/uploads/dune-meme.jpg)
+[![](/uploads/dune-meme.jpg)](https://questionablecontent.net/view.php?comic=59)
 
 from [Questionable Content](https://questionablecontent.net)
