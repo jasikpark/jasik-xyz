@@ -1,0 +1,15 @@
+---
+title: "Dune Comics"
+date: 2018-11-11T19:57:36-06:00
+draft: false
+---
+
+Here's some Dune comics I like...
+
+[![](/uploads/donkey_summons_sand_worm.jpg)](http://www.steaksmoothie.com/?comic=dunkey)
+
+from [Steak Smoothie](https://steaksmoothie.com)
+
+![](/uploads/dune-meme.jpg)
+
+from [Questionable Content](https://questionablecontent.net)

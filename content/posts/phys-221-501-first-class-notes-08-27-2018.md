@@ -1,9 +1,9 @@
-+++
-date = "2018-09-02T23:52:36+00:00"
-tags = ["#tamu", "#classes", "phys221"]
-title = "PHYS 221 First Class Notes"
+---
+title : "PHYS 221.501 | First Class Notes"
+date : "2018-09-02T23:52:36+00:00"
+tags : ["#tamu", "#classes", "phys221"]
+---
 
-+++
 ## Characteristics of periodic motion
 
 Amplitude is maximum magnitude of displacement from equilibrium Period, \\(T\\), is the time for one cycle Frequency, \\(F\\) is the number of cycles per unit of time = \\(F = \\frac{1}{T}\\) Angular Frequency,
