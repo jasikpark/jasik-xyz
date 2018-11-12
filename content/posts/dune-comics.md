@@ -14,6 +14,6 @@ from [Steak Smoothie](https://steaksmoothie.com)
 
 from [Questionable Content](https://questionablecontent.net)
 
-[Edit 11/11/2018 Another One!]
+[Edit 11/11/2018::11:50pm Another One!]
 
 [![](/upload/dune-comic-2.jpg)](https://questionablecontent.net/view.php?comic=351)
