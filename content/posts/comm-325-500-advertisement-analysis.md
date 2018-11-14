@@ -8,6 +8,8 @@ Here's an analysis of the Google commercial [_Android: And Skip_](https://youtu.
 
 ![Thumbnail for _Android: And Skip_](/uploads/android-and-skip-thumbnail.jpg)
 
+[ ] I need to make sure that I grab my textbook from home
+
 Purpose: The purpose of this assignment is to apply the knowledge you have learned over the semester by picking an advertisement and analyzing what persuasive strategies were used. By understanding and being able to identify the persuasive strategies used in advertisements you will be able to better discern what the companies or organizations are trying to do, what they failed to do, and whether this was done effectively. It will also help you decide whether you would be interested in working in the communications field and use your knowledge learned from this class to create advertisements, marketing materials, fundraising campaigns, etc.
 
 Assignment:
