@@ -1,5 +1,5 @@
 ---
-title: "COMM 325.500 Advertisement Analysis"
+title: "COMM 325.500 | Advertisement Analysis"
 date: 2018-11-13T14:59:33-06:00
 draft: false
 ---
