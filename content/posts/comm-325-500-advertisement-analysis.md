@@ -4,23 +4,23 @@ date: 2018-11-13T14:59:33-06:00
 draft: false
 ---
 
-This is an analysis of the Google commercial [_Android: And Skip_][1] for COMM 325.500 Persuasion, taught by [Dr. Jennifer A. Lueck](), applying the persuasion analysis techniques we have learned in class to a real-world persuasive message. 
+This is an analysis of the Google commercial [_Android: And Skip_][1] for COMM 325.500 Persuasion, taught by [Dr. Jennifer A. Lueck](https://comm.tamu.edu/jennifer-lueck/), applying the persuasion analysis techniques we have learned in class to a real-world persuasive message. 
 
 [![Thumbnail for Android: And Skip][image-1]][3]
 
-The commercial [_Android: And Skip_][4] is a two-sided argument that uses a variety of methods to make weak arguments for skipping the commercial, and then refutes those arguments by simply being curiously inventive and constantly changing the methods used to make the weak argument, encouraging the audience to continue to watch. 
+The commercial [_Android: And Skip_][4] is a two-sided argument that uses a variety of methods to make weak arguments for skipping the commercial, and then refutes those arguments by simply being curiously inventive and constantly changing the methods used to make the weak argument, encouraging the audience to continue to watch.
 
 In the end, I believe that this is a peripheral persuasion attempt to encourage users to be more likely to watch interesting or surprising Youtube commercials past the *Skip* point. Logically following subconsciously that if this commercial was interesting enough to watch for seven minutes, why not any other commercial that is entertaining?
 
 ## Elaboration Likelihood model
 
-The commercial connects to the audience by acknowledging that most people skip through Youtube commercials and evoking a higher elaboration through this. They opt for the peripheral route, and use animated Android mascot characters to goad you into clicking the *Skip* button. 
+The commercial connects to the audience by acknowledging that most people skip through Youtube commercials and evoking a higher elaboration through this. They opt for the peripheral route, and use animated Android mascot characters to goad you into clicking the *Skip* button.
 
 A high elaboration is invoked via two methods. The encouragement to an action, to click the skip button, that completes the goal of watching their video. Also, the use of the anthropomorphization of Youtube in the form of animated Android mascots - I believe that the goal of the commercial is to encourage users to find Youtube more understanding of the inconveniences that the commercials add, and to show sympathy, to create a better image of Youtube as something other than a giant advertisement farm. There is also an intrigue as to what the rest of the ad will be that means that you might watch the rest of the commercial just to see what happens.
 
 ## Gain/Loss Framing
 
-There does not seem to be gain/loss framing in the commercial. 
+There does not seem to be gain/loss framing in the commercial.
 
 ## Extended Parallel Process Model (FPPM)
 
@@ -28,7 +28,7 @@ There isn’t honestly a fear or guilt aspect to the commercial that I can see.
 
 ## Two-sided Messaging
 
-There’s a two sided message where you are encouraged to skip the ad and never find out how it ends, but then you are encouraged to watch through to the end by the interesting antics of the animated characters. This then encourages watching the rest of future commercials rather than pressing the button and skipping them. 
+There’s a two sided message where you are encouraged to skip the ad and never find out how it ends, but then you are encouraged to watch through to the end by the interesting antics of the animated characters. This then encourages watching the rest of future commercials rather than pressing the button and skipping them.
 
 There’s a robot delivered to the set halfway through the commercial that flies through a list of signs describing things to do other than watching the commercial. For example, signs suggesting calling your mom or taking up knitting or making tamales or obtaining nirvana or climbing Mt. Kilimanjaro. This is all a weak argument in against the audience’s goal of watching their Youtube video that they selected, though some hopefully would be inspired to make tamales on the peak of Mt. Kilimanjaro.
 
@@ -46,7 +46,7 @@ There’s an appeal to social norms where they encourage the audience to skip th
 
 ## Source Credibility Factors
 
-The credibility of the source, i.e. the Android characters in this case, is cemented by the goodwill of the characters wanting the audience to be able to watch their video as soon as possible. Additionally the credibility is increased by the fact that this commercial was released by Youtube, the entity in control of advertisements, and also by the characters chosen in the commercial, a banjo-playing band member, a short cowboy, and a grey-haired lady, entirely possibly to be seen as a grandma role. These characters all seem trustworthy by how normal and everyday they are. 
+The credibility of the source, i.e. the Android characters in this case, is cemented by the goodwill of the characters wanting the audience to be able to watch their video as soon as possible. Additionally the credibility is increased by the fact that this commercial was released by Youtube, the entity in control of advertisements, and also by the characters chosen in the commercial, a banjo-playing band member, a short cowboy, and a grey-haired lady, entirely possibly to be seen as a grandma role. These characters all seem trustworthy by how normal and everyday they are.
 
 ## Distraction Hypothesis
 
@@ -56,7 +56,7 @@ The entire commercial is a distraction with lots of different characters and eve
 
 There’s an emotional appeal to the cute and empathetic Android mascots. Additionally there’s an emotional appeal to help the Android characters complete their job of persuading the audience to skip the ad so that their boss isn’t mad at them.
 
----- 
+----
 
 ## Instructions
 
