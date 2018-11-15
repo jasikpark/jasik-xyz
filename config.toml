@@ -1,0 +1,57 @@
+baseurl = "https://caleb-jasik-blog.netlify.com"
+languageCode = "en"
+title = "Bowl of TARDIS"
+theme = "charaka"
+copyright = "&copy; <a href=\"https://github.com/jasikpark\">Caleb Jasik</a> 2018"
+disqusShortname = ""
+googleAnalytics = ""
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+# set this if it screws things up to not have set. Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+# Paginate = 7
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+
+[author]
+  name = "Caleb Jasik"
+  homepage = "https://caleb-jasik-blog.netlify.com"
+
+[params.highlight]
+  style = "zenburn"
+
+pygmentsCodeFences = true
+
+#[[params.share]]
+#  enabled = "true"
+
+#[[params.social]]
+#  url = "about.html"
+#  fa_icon = "fas fa-info"
+
+[[params.social]]
+  url = "https://github.com/jasikpark"
+  fa_icon = "fab fa-github"
+
+#[[params.social]]
+#  url = "https://www.linkedin.com/in/natarajmb/"
+#  fa_icon = "fab fa-linkedin-in"
+
+[[params.social]]
+  url = "https://twitter.com/calebjasik"
+  fa_icon = "fab fa-twitter"
+
+[[params.social]]
+  url = "https://youtube.com/calebjasik"
+  fa_icon = "fab fa-youtube"
+
+[[params.social]]
+  url = "https://keybase.io/jasikpark"
+  fa_icon = "fab fa-keybase"

@@ -1,0 +1,15 @@
+[submodule "themes/tale"]
+	path = themes/tale
+	url = https://github.com/EmielH/tale-hugo.git
+[submodule "themes/steam"]
+	path = themes/steam
+	url = git@github.com:digitalcraftsman/hugo-steam-theme.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/rusty"]
+	path = themes/rusty
+	url = https://github.com/cecyc/hugo-theme-rusty.git
+[submodule "themes/charaka"]
+	path = themes/charaka
+	url = https://github.com/jasikpark/charaka-hugo-theme.git
