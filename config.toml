@@ -1,4 +1,4 @@
-baseurl = "https://caleb-jasik-blog.netlify.com"
+baseurl = "https://blog.jasik.xyz"
 languageCode = "en"
 title = "Bowl of TARDIS"
 theme = "charaka"
@@ -22,7 +22,7 @@ enableRobotsTXT = true
 
 [author]
   name = "Caleb Jasik"
-  homepage = "https://caleb-jasik-blog.netlify.com"
+  homepage = "https://blog.jasik.xyz"
 
 [params.highlight]
   style = "zenburn"
