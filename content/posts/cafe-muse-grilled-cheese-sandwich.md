@@ -8,7 +8,7 @@ This has been a staple at my house growing up for forever. I initially thought i
 
 ![](/uploads/cafe-muse-grilled-cheese.jpg)
 
-Recipe courtesy of *Greg Reyner* at *Cafe Muse*, From the show *Oprah’s Sandwich Showdown*
+Recipe courtesy of *Greg Reyner* at *Café Muse*, From the show *Oprah’s Sandwich Showdown*
 
 [http://www.cafemuseroyaloak.com/grilled-cheese/](http://www.cafemuseroyaloak.com/grilled-cheese/)
 
@@ -28,6 +28,6 @@ Ingredients
 
 Butter bread on one side with melted butter. Place in pan, butter side down, over medium-low heat. Place mozzarella on one half of the bread and fontina and havarti on the other. Cook until golden on bottom and cheese begins to melt. Place tomato on mozzarella side and honey on fontina/havarti side. Place under broiler for a few minutes to heat up tomato. Sprinkle basil and assemble sandwich.
 
-[Cafe Muse’s Grilled Cheese Sandwich](https://medium.com/caleb-jasiks-recipe-book/cafe-muses-grilled-cheese-sandwich-3a48692d4d95?source=userActivityShare-35f7f8f56ab-1528242570)
+[Café Muse’s Grilled Cheese Sandwich](https://medium.com/caleb-jasiks-recipe-book/cafe-muses-grilled-cheese-sandwich-3a48692d4d95?source=userActivityShare-35f7f8f56ab-1528242570)
 
 #recipes
