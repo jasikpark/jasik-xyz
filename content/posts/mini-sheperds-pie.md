@@ -4,8 +4,6 @@ date: 2019-03-20T16:22:25-05:00
 draft: false
 ---
 
-# mini shepard's pie
-
 ![](1f6ad65febeb4c0d8d276cc0bcae368d.jpeg)
 
 > this is James Laffrey’s recipe that I’ve written down for deliciousness
