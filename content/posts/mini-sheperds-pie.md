@@ -4,7 +4,7 @@ date: 2019-03-20T16:22:25-05:00
 draft: false
 ---
 
-![](content/got-any-more-pies.jpg)
+![](/uploads/got-any-more-pies.jpg)
 
 > this is James Laffrey’s recipe that I’ve written down for deliciousness
 
