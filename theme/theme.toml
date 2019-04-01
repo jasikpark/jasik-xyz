@@ -1,8 +1,0 @@
-name = "modified-danluu"
-description = "Very simple blog theme"
-license = "Apache"
-
-[author]
-    name = "calebjasik (orginially danluu)"
-    homepage = "https://blog.jasik.xyz"
-
