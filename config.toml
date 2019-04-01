@@ -1,7 +1,7 @@
 baseurl = "https://blog.jasik.xyz"
 languageCode = "en"
 title = "Bowl of TARDIS"
-theme = "charaka"
+
 copyright = "&copy; <a href=\"https://github.com/jasikpark\">Caleb Jasik</a> 2018"
 disqusShortname = ""
 googleAnalytics = ""
