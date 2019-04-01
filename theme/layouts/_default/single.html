@@ -1,0 +1,9 @@
+{{ partial "header.html" . }}
+<strong>{{ .Title }}</strong>
+<hr/>
+{{ .Content }}
+<div class="navi-parent"> 
+{{with .Prev}}<a href="{{.Permalink}}">← {{.Title}}</a>{{end}}
+{{with .Next}}<a href="{{.Permalink}}">{{.Title}} →</a>{{end}}
+</div>
+{{ partial "footer.html" . }}
