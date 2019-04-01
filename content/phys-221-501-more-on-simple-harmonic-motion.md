@@ -1,13 +1,10 @@
----
-title: PHYS 221.501 | More on Simple Harmonic Motion
-date: 2018-09-03 03:16:48 +0000
-tags:
-- tamu
-- phys221
-- classes
-draft: false
-
----
++++
+date = "2018-09-03 03:16:48 +0000"
+draft = false
+tags = ["tamu", "phys221", "classes"]
+title = "PHYS 221.501 | More on Simple Harmonic Motion"
+type = "post"
++++
 ## Total mechanical energy is conserved in SHM:
 \\(E = \frac{1}{2}mv_x^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2 = constant\\)
 

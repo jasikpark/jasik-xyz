@@ -1,8 +1,9 @@
----
-title: "Mini Sheperd's Pie"
-date: 2019-03-20T16:22:25-05:00
-draft: false
----
++++
+date = "2019-03-20T16:22:25-05:00"
+draft = false
+title = "Mini Sheperd's Pie"
+type = "post"
++++
 
 ![](/uploads/got-any-more-pies.jpg)
 

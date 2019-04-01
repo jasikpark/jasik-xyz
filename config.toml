@@ -6,7 +6,7 @@ copyright = "&copy; <a href=\"https://github.com/jasikpark\">Caleb Jasik</a> 201
 disqusShortname = ""
 googleAnalytics = ""
 
-MetaDataFormat = "yaml"
+MetaDataFormat = "toml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 # set this if it screws things up to not have set. Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number

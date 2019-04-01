@@ -1,8 +1,9 @@
----
-title: "COMM 325.500 | Advertisement Analysis"
-date: 2018-11-13T14:59:33-06:00
-draft: false
----
++++
+date = "2018-11-13T14:59:33-06:00"
+draft = false
+title = "COMM 325.500 | Advertisement Analysis"
+type = "post"
++++
 
 This is an analysis of the Google commercial [_Android: And Skip_][1] for COMM 325.500 Persuasion, taught by [Dr. Jennifer A. Lueck](https://comm.tamu.edu/jennifer-lueck/), applying the persuasion analysis techniques we have learned in class to a real-world persuasive message.
 

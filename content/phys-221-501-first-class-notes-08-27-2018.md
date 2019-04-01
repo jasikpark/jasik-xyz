@@ -1,8 +1,9 @@
----
-title : "PHYS 221.501 | First Class Notes"
-date : "2018-09-02T23:52:36+00:00"
-tags : ["#tamu", "#classes", "phys221"]
----
++++
+date = "2018-09-02T23:52:36+00:00"
+tags = ["#tamu", "#classes", "phys221"]
+title = "PHYS 221.501 | First Class Notes"
+type = "post"
++++
 
 ## Characteristics of periodic motion
 

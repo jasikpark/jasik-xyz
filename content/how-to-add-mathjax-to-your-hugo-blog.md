@@ -1,13 +1,11 @@
----
-title: "How to Add MathJax to Your Hugo Blog"
-date: 2018-09-03T11:27:43-05:00
-draft: true
-tags:
-- math
-- javascript
-- github
-featured_image: /uploads/mathjax_logo.svg
----
++++
+date = "2018-09-03T11:27:43-05:00"
+draft = true
+featured_image = "/uploads/mathjax_logo.svg"
+tags = ["math", "javascript", "github"]
+title = "How to Add MathJax to Your Hugo Blog"
+type = "post"
++++
 
 At first when trying to set up my blog with math support, I consulted the [Hugo Documentation](https://gohugo.io/content-management/formats/#enable-mathjax) to find out what it said about it. It just said to add the MathJax script to a partial template that would be included in every page that needed MathJax, such as the footer partial template.
 

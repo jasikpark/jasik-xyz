@@ -1,8 +1,9 @@
----
-title: "Dune Comics"
-date: 2018-11-11T19:57:36-06:00
-draft: false
----
++++
+date = "2018-11-11T19:57:36-06:00"
+draft = false
+title = "Dune Comics"
+type = "post"
++++
 
 Here's some Dune comics I like...
 

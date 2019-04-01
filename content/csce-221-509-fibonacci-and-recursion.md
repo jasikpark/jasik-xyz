@@ -1,8 +1,9 @@
----
-title: "CSCE 221.509 | Fibonacci and Recursion"
-date: 2018-11-11T19:36:54-06:00
-draft: false
----
++++
+date = "2018-11-11T19:36:54-06:00"
+draft = false
+title = "CSCE 221.509 | Fibonacci and Recursion"
+type = "post"
++++
 
 Natural numbers apparently don’t necessarily involve the number zero
 

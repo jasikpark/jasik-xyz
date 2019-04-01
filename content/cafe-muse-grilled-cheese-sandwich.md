@@ -1,8 +1,9 @@
----
-title: "Cafe Muse | Grilled Cheese Sandwich"
-date: 2018-11-11T19:47:37-06:00
-draft: false
----
++++
+date = "2018-11-11T19:47:37-06:00"
+draft = false
+title = "Cafe Muse | Grilled Cheese Sandwich"
+type = "post"
++++
 
 This has been a staple at my house growing up for forever. I initially thought it was kinda strange putting honey on a grilled cheese sandwich, but it adds a ton of flavor. This is definitely one of my favorite sandwiches.
 
