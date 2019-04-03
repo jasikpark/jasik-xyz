@@ -12,3 +12,5 @@ I realized that I find military time useful but it's too disorienting for me to 
 I found this: [Clocker *Menubar World Clock*](https://itunes.apple.com/us/app/clocker-menubar-world-clock/id1056643111?mt=12) which allows you to make a world clock with multiple settings and you can set whether the clocks are military time or normal time and it's great.
 
 Yes, yes. I could just do math. But I don't want to.
+
+<img src="/uploads/clocker-world-clock-screenshot.png" alt="screenshot of Clocker world clock app">
