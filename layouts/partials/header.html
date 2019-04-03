@@ -5,7 +5,9 @@
  <title>{{ .Title }}</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+ 
  img { max-width: 100%; height: auto; }
+ img:not([alt]) { outline: 5px solid red; }
  pre { max-width: 100%; height: auto; white-space: pre-wrap }
  .navi-parent {
    display: flex;
