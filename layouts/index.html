@@ -2,12 +2,9 @@
 <html lang="en">
 <head>
 <style>
-.pd{text-align:center;padding-bottom:0.9em;}
-.parent div{display:flex}
-@media screen and (max-width: 600px){
-.pd{display:none;}
-.parent div{padding-bottom:1em;}}
-
+.pd {width:4em;flex-shrink:0;padding-bottom:.9em}
+.par div {display:flex}
+       
 img{max-width:100%;height:auto;}
 pre{max-width:100%;height:auto;white-space:pre-wrap}
 .navi-parent{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic;}
@@ -23,7 +20,7 @@ pre{max-width:100%;height:auto;white-space:pre-wrap}
 <meta name="google-site-verification" content="" />
 {{ partial "header.html" . }}
 <body>
-<div class="parent">
+<div class="par">
 {{ range (where .Pages "Type" "post")}}
 <div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Title }}</a></div>
 {{ end }}
