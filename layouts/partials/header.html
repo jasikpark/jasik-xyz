@@ -23,5 +23,8 @@
 </style>
 <!--<meta name="description" content="{{ .Description }}">-->
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 </head>
 <body>
