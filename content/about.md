@@ -8,6 +8,8 @@ Title = "About jasik.xyz"
 
 # Hi, I'm Caleb Jasik!
 
+If you're looking for my contact info you can email me [here](mailto:calebjasik@jasik.xyz)
+
 You can find me on:
 
 - [Keybase](https://keybase.io) at [@jasikpark](https://keybase.io/jasikpark)
