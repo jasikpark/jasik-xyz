@@ -12,13 +12,11 @@ type = "post"
 ## ingredients
 - muffin tins
 - glass with mouth wider than muffin tin cups
-
 - 6 lbs of ground meat (a mix of beef and lamb)
 - 3 lbs of frozen carrots and peas
 - 1 hunk of garlic
 - salt, pepper, thyme
 - 1 beef stock or aus jus
-
 - pre-made pie crust
 - instant potatoes
 
@@ -28,13 +26,10 @@ type = "post"
 2. add your onions and cook until they are translucent. 
 3. add pepper and salt and thyme. and a whole chunk of garlic. 
 4. add frozen peas and carrots to the mix. 
-
-> If you want to make the meat filling the night before, stop here and refrigerate it.
-
+5. *If you want to make the meat filling the night before, stop here and refrigerate it.*
 5. if you refrigerated the meat filling, heat it up and be sure to heat up all of the fat embedded in it. If there isn’t enough, just add some butter.
 6. add flour to the meat filling and coat everything thoroughly.
 7. then add any beef stock you have. Gatsby used aus jus. Use whatever you want though.
-
 8. now take a glass that has a larger mouth than your muffin tins and use it to cut out pie crusts.
 9. brush these with butter and then flour to prevent them from sticking as you set them on a plate to the side.
 10. poke the bottom of each crust with a fork to prevent bubbles.
