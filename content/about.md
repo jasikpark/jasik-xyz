@@ -2,7 +2,7 @@
 Categories = []
 Description = ""
 Tags = []
-Title = "About blog.jasik.xyz"
+Title = "About jasik.xyz"
 
 +++
 
