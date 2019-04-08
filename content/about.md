@@ -14,6 +14,8 @@ You can find me on:
 - [Twitter](https://twitter.com) at [@calebjasik](htttps://twitter.com/calebjasik)
 - [Github](https://github.com) at [@jasikpark](https://github.com/jasikpark)
 
+My resume is at [resume.pdf](https://jasik.xyz/resume.pdf).
+
 {{< highlight rust >}}
 struct User {
     name: &'static str,
