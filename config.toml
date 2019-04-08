@@ -1,0 +1,27 @@
+baseurl = "https://blog.jasik.xyz"
+languageCode = "en"
+title = "Bowl of TARDIS"
+
+copyright = "&copy; <a href=\"https://github.com/jasikpark\">Caleb Jasik</a> 2018"
+
+MetaDataFormat = "toml"
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+
+[author]
+  name = "Caleb Jasik"
+  homepage = "https://jasik.xyz"
+
+[params.highlight]
+  style = "github"
+  pygmentsUseClassic = true
+  pygmentsOptions = "noclasses"

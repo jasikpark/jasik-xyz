@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jasikpark
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jasik.xyz
+  * I am jasikpark (https://keybase.io/jasikpark) on keybase.
+  * I have a public key ASCYq3MrKACuL8WmiVJALHNwobv2oBdZ55SVU9XD7ttA3Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206de278740e3c4d867c8212ca5c60cb9b17011bbe0694ab0af4ff9c5271cc74200a",
+      "host": "keybase.io",
+      "kid": "012098ab732b2800ae2fc5a68952402c7370a1bbf6a01759e7949553d5c3eedb40dc0a",
+      "uid": "1ac498e7a0c1b5c169bacb98f35eaf19",
+      "username": "jasikpark"
+    },
+    "merkle_root": {
+      "ctime": 1508452742,
+      "hash": "f99cdb2da8d7873e415601575346deaf7346338bce95dcec338d03a936221e79afe18ed6142cca8b7823c8a794ac274baf1daf074a07d016c48faae14caf2a1c",
+      "hash_meta": "53f016371b0bd43b043ff2ff67b46998c66dc8653f69dcc4d8296d37d2f7064f",
+      "seqno": 1605427
+    },
+    "service": {
+      "hostname": "jasik.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1508452757,
+  "expire_in": 504576000,
+  "prev": "6b282c89543d22388f6953fb2da1bfc53c7053b987beb7be53a40af246f7ab4d",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgmKtzKygAri/FpolSQCxzcKG79qAXWeeUlVPVw+7bQNwKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNmRlMjc4NzQwZTNjNGQ4NjdjODIxMmNhNWM2MGNiOWIxNzAxMWJiZTA2OTRhYjBhZjRmZjljNTI3MWNjNzQyMDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOThhYjczMmIyODAwYWUyZmM1YTY4OTUyNDAyYzczNzBhMWJiZjZhMDE3NTllNzk0OTU1M2Q1YzNlZWRiNDBkYzBhIiwidWlkIjoiMWFjNDk4ZTdhMGMxYjVjMTY5YmFjYjk4ZjM1ZWFmMTkiLCJ1c2VybmFtZSI6Imphc2lrcGFyayJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwODQ1Mjc0MiwiaGFzaCI6ImY5OWNkYjJkYThkNzg3M2U0MTU2MDE1NzUzNDZkZWFmNzM0NjMzOGJjZTk1ZGNlYzMzOGQwM2E5MzYyMjFlNzlhZmUxOGVkNjE0MmNjYThiNzgyM2M4YTc5NGFjMjc0YmFmMWRhZjA3NGEwN2QwMTZjNDhmYWFlMTRjYWYyYTFjIiwiaGFzaF9tZXRhIjoiNTNmMDE2MzcxYjBiZDQzYjA0M2ZmMmZmNjdiNDY5OThjNjZkYzg2NTNmNjlkY2M0ZDgyOTZkMzdkMmY3MDY0ZiIsInNlcW5vIjoxNjA1NDI3fSwic2VydmljZSI6eyJob3N0bmFtZSI6Imphc2lrLnh5eiIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjMzIn0sImN0aW1lIjoxNTA4NDUyNzU3LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjZiMjgyYzg5NTQzZDIyMzg4ZjY5NTNmYjJkYTFiZmM1M2M3MDUzYjk4N2JlYjdiZTUzYTQwYWYyNDZmN2FiNGQiLCJzZXFubyI6MTksInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAaw8J9828JEL4MphIs/YkuVow89vblcdbVar8/bVwJgj55OkNDofsL6tMopUi5n+1jkrjvCGlaIETSAwsIvm/CahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFkwixhbdPmWGaxcXFhjzxrvHWM5gMPgmcH4F+UtLZNLo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jasikpark
+
+==================================================================
