@@ -15,7 +15,7 @@ HUGO_VERSION = "0.51"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/ --baseurl $DEPLOY_PRIME_URL"
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.51"
