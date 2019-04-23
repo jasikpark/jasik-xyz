@@ -16,6 +16,7 @@ You can find me on:
 - [Twitter](https://twitter.com) at [@calebjasik](htttps://twitter.com/calebjasik)
 - [Mastodon](https://joinmastodon.org) at [@calebjasik](https://mastodon.social/@calebjasik)
 - [Github](https://github.com) at [@jasikpark](https://github.com/jasikpark)
+- [Telegram](https://telegram.com) at [@calebjasik](https://t.me/calebjasik)
 
 My resume is at [resume.pdf](https://jasik.xyz/resume.pdf).
 
