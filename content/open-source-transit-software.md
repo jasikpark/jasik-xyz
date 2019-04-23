@@ -25,6 +25,7 @@ Title = "Open Source Transit Software"
 
 - [General Transit Feed Specification](https://gtfs.org/best-practices/)
 - [TransitWiki](https://www.transitwiki.org/TransitWiki/index.php/Main_Page)
+- [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
 
 ## Blog Posts / Websites
 
