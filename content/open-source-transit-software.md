@@ -1,7 +1,7 @@
 +++
 Description = ""
 Tags = ["transit","transportation"]
-Categories = []
+Categories = ["Resources"]
 Type = "post"
 Date = "2019-04-23T17:49:37-05:00"
 Title = "Open Source Transit Software"
