@@ -1,5 +1,4 @@
 <footer>
-
 <div class="navi-parent">
   <a rel="me" href="{{ .Site.BaseURL }}/">Archive</a>
   <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
@@ -10,10 +9,10 @@
   <!-- for now this doesn't work <a href="{{ .Site.BaseURL }}/atom.xml" rel="alternate" type="application/rss+xml">RSS</a> -->
 </div>		
 <div class="navi-parent">
-    {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-      <a rel="me" href="{{ .Permalink }}">{{ .Title }}</a>
-    {{- end -}}
-  </div>
+  {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    <a rel="me" href="{{ .Permalink }}">{{ .Title }}</a>
+  {{- end -}}
+</div>
 </footer>
 </body>
 
