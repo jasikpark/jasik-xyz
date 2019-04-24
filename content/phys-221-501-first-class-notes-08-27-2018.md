@@ -11,7 +11,7 @@ Amplitude is maximum magnitude of displacement from equilibrium Period, \\(T\\),
 
 Test Your Understanding of Section 4.1 in the book
 
-## Simple harmonic motion:
+## Simple harmonic motion
 
 When the restoring force is directly proportional to the displacement from equilibrium, the resulting motion is called simple harmonic motion, i.e., \\(F_x = -kx\\).
 
