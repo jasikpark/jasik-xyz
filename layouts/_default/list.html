@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
   <div class="par">
     {{ range .Pages }}
-      <div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+      <div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Page.Title }}</a></div>
     {{ end }}
   </div>
 {{ partial "footer.html" . }}

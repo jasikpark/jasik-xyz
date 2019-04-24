@@ -1,13 +1,17 @@
 <footer>
 <div class="navi-parent">
-  <a href="{{ .Site.BaseURL }}/">Archive</a>
-  <a rel="me" href="https://www.patreon.com/calebjasik">Patreon</a>
+  <a rel="me" href="{{ .Site.BaseURL }}/">Archive</a>
+  <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
   <a rel="me" href="{{ .Site.BaseURL }}/about/">About</a>
   <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
   <a rel="me" href="https://mastodon.social/@calebjasik">Mastodon</a>
-  <a href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml"/>RSS</a>
-  <!-- for now this doesn't work <a href="{{ .Site.BaseURL }}/atom.xml" rel="alternate" type="application/rss+xml">RSS</a> -->
+  <a rel="me" href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml"/>RSS</a>
 </div>		
+<div class="navi-parent">
+  {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
+  {{- end -}}
+</div>
 </footer>
 </body>
 

@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<style>
-.pd {width:4em;flex-shrink:0;padding-bottom:.9em}
-.par div {display:flex}
-       
-img{max-width:100%;height:auto;}
-pre{max-width:100%;height:auto;white-space:pre-wrap}
-.navi-parent{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic;}
-</style>
-
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css'>
-<meta charset="utf-8">
-<title>{{ .Title }}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{{ .Description }}">
-<link href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-<meta name="google-site-verification" content="" />
 {{ partial "header.html" . }}
-<body>
 <div class="par">
 {{ range (where .Pages "Type" "post")}}
-<div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+<div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Page.Title }}</a></div>
 {{ end }}
 </div>
-<br>
 {{ partial "footer.html" . }}

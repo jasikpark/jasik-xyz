@@ -5,7 +5,6 @@
  <title>{{ .Title }}</title>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
- 
  img { max-width: 100%; height: auto; }
  img:not([alt]) { outline: 5px solid red; }
  pre { max-width: 100%; height: auto; white-space: pre-wrap }
@@ -13,16 +12,23 @@
  .navi-parent {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-between;
    padding-bottom: .5em;
    font-style: italic;
  }
- .navi-parent href {
-   flex-grow: 1;
- }
 
+.navi-parent a {
+  padding-right: .9em;
+}
+
+@media all and (min-width: 480px) { 
+  .navi-parent a {
+    padding-right: .0em;
+  } 
+}
 .pd {width:4em;flex-shrink:0;padding-bottom:.9em}
-.par div {display:flex}
+.par div {display:flex;padding-bottom:.9em;}
 </style>
 <!--<meta name="description" content="{{ .Description }}">-->
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
