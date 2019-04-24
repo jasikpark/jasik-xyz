@@ -8,6 +8,10 @@
 img{max-width:100%;height:auto;}
 pre{max-width:100%;height:auto;white-space:pre-wrap}
 .navi-parent{display:flex;flex-direction:row;justify-content:space-between;padding-bottom:.5em;font-style:italic;}
+.navi-parent a {
+    padding-left: .4em;
+    padding-right: .4em;
+}
 </style>
 
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -18,7 +22,6 @@ pre{max-width:100%;height:auto;white-space:pre-wrap}
 <meta name="description" content="{{ .Description }}">
 <link href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 <meta name="google-site-verification" content="" />
-{{ partial "header.html" . }}
 <body>
 <div class="par">
 {{ range (where .Pages "Type" "post")}}
