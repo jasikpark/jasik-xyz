@@ -1,7 +1,10 @@
 {{ partial "header.html" . }}
 <div class="par">
-{{ range (where .Pages "Type" "post")}}
-<div><div class="pd">{{ .Date.Format "01/06" }}</div><a href="{{ .Permalink }}">{{ .Page.Title }}</a></div>
+{{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
+    <div><div style="display:flex;justify-content:center" class="pd"><h2>{{ .Key }}</h2></div></div>
+    {{ range (where .Pages "Type" "post")}}
+        <div><div class="pd">{{ .Date.Format "01/02" }}</div><a href="{{ .Permalink }}">{{ .Page.Title }}</a></div>
+    {{ end }}
 {{ end }}
 </div>
 {{ partial "footer.html" . }}
