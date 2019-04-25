@@ -3,7 +3,7 @@
 <hr/>
 {{ .Content }}
 <div class="navi-parent">
-    This page was last modified <a href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}">{{ .Lastmod.Format "January 2, 2006" }}</a>
+    <div>This page was last modified <a href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}">{{ .Lastmod.Format "January 2, 2006" }}</a></div>
 </div>
 <div class="navi-parent"> 
 {{with .PrevPage}}<a href="{{.Permalink}}">← {{.Title}}</a>{{end}}
