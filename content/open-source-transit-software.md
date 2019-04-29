@@ -34,3 +34,4 @@ Title = "Open Source Transit Software"
 - [Legacy AVL system? It’s okay, join the club. | Kurt Raschke](https://kurtraschke.com/2015/01/legacy-avl-export/)
 - [GTFS Best Practices now available! – Sean Barbeau – Medium](https://medium.com/@sjbarbeau/gtfs-best-practices-now-available-88ac67194233)
 - [What’s new in GTFS-realtime v2.0](https://medium.com/@sjbarbeau/whats-new-in-gtfs-realtime-v2-0-cd45e6a861e9)
+-  [Living the Transit Lifestyle: Did civic hackers save the MTA $600,000 in one day? Not quite, but we are glad they tried.](https://marylandtransitadministration.blogspot.com/2015/02/did-civic-hackers-save-mta-600000-in.html)
