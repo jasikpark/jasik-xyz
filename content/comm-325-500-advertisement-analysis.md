@@ -128,17 +128,26 @@ fundraising campaigns, etc.
 
 Assignment:
 
-- Pick a print or video advertisement (any domain: health, politics, advertising, etc.)
+- Pick a print or video advertisement (any domain: health, politics,
+  advertising, etc.)
 - Analyze the advertisement for:
-  _ theoretical model(s)/concept(s) that are used (1-3)
-  _ i.e. Elaboration Likelihood Model (ELM), Gain/Loss Framing, Extended Parallel Process Model (EPPM)
-  _ additional persuasive strategies (2-4)
-  _ i.e. two-sided messaging, celebrity endorsement, appeal to social norms, source credibility factors, evidence, emotional appeal, etc.
-- Create a word document (1-2 double-spaced pages + ad) and include the following:
-  _ Name of advertisement
-  _ Type of advertisement print or video. For the video: include url for video. For print: include an image of the print ad at the end of the analysis.
-  _ Theoretical model(s)/concept(s): identify the theoretical models in bold font, analyze theoretical concepts and thoroughly describe how they are used and not used in the advertisement, and whether the theory was used effectively in this ad.
-  _ Additional persuasive strategies: identify the theoretical model and or concepts and thoroughly describe how they are used in the advertisement
+  - theoretical model(s)/concept(s) that are used (1-3)
+  - i.e. Elaboration Likelihood Model (ELM), Gain/Loss Framing, Extended
+    Parallel Process Model (EPPM)
+  - additional persuasive strategies (2-4)
+  - i.e. two-sided messaging, celebrity endorsement, appeal to social norms,
+    source credibility factors, evidence, emotional appeal, etc.
+- Create a word document (1-2 double-spaced pages + ad) and include the
+  following:
+  - Name of advertisement
+  - Type of advertisement print or video. For the video: include url for video.
+    For print: include an image of the print ad at the end of the analysis.
+  - Theoretical model(s)/concept(s): identify the theoretical models in bold
+    font, analyze theoretical concepts and thoroughly describe how they are used
+    and not used in the advertisement, and whether the theory was used
+    effectively in this ad.
+  - Additional persuasive strategies: identify the theoretical model and or
+    concepts and thoroughly describe how they are used in the advertisement
 
 Reminder: This assignment is due at 11:10 a.m. on 11/15 on e-Campus. Have fun with this!
 
