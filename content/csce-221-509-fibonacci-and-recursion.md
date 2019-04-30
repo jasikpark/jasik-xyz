@@ -7,7 +7,7 @@ type = "post"
 
 Natural numbers apparently don’t necessarily involve the number zero
 
-```
+```pseudocode
 Definition of Natural Numbers
 	Base case: n=0
 		n=0 is a natural number
@@ -15,10 +15,11 @@ Definition of Natural Numbers
 		if n_i is a natural number, then n_i + 1 is a natural number.
 ```
 
-### Fibonacci sequence
+## Fibonacci sequence
+
 There was the rabbit Fibonacci sequence analogy
 
-```
+```pseudocode
 F(0) = 1
 F(1) = 1
 F(2) = F(1) + F(0)
@@ -41,6 +42,7 @@ Algorithm Fib(n)
 `Fib(5) = (Fib(4) + Fib(3)) = ((Fib(3) + Fib(2)) + (Fib(2) + Fib(1)))``
 
 Do the analysis to speed it up.
+
 ```
 T(n)
 T(0) = 1
@@ -49,6 +51,7 @@ T(n-1) + T(n-2)
 So T(n) = T(n-1) + T(n-2) + 1
 T(n) = 2F(n) - 1
 ```
+
 Note: `T(n-2) < T(n-1), for n >= 3`
 
 `T(n) < T(n-1) + T(n-1) +1`
@@ -70,7 +73,7 @@ Note: `T(n-2) < 2T(n-3) + 1`
 Side note: how to solve
 `S(k) = (2^{k-1} + … + 2^2 + 2 + 1)`
 `2S(k) = (2^k + ... + 2^3 + 2^2 + 2)`
-`2S(k) - S(k) = 2^k + 2^{k-1} - 2^{k-1} + … + 2^2 - 2^2 + 2  - 2 + 1`
+`2S(k) - S(k) = 2^k + 2^{k-1} - 2^{k-1} + … + 2^2 - 2^2 + 2 - 2 + 1`
 So `S(k) = 2^k + 1`
 
 Therefore
@@ -80,7 +83,8 @@ Therefore
 `T(n) < 2^{n-1} + 2^{n-1} - 1`
 `T(n) < 2^n - 1`
 
-### Fibonacci 2
+## Fibonacci 2
+
 1. Start with `F(0)` and `F(1)`
 2. Always keep the last two value, `F(i-1)` and `F(i-2)`
 3. Compute until `F(i=n)`
@@ -91,7 +95,7 @@ This is called dynamic programming, when we save data that is frequently used.
 
 How can we do better?
 
-### Closed form of F(n)
+## Closed form of F(n)
 
 `F(n) = \frac{(golden ratio)^n - (golden ratio conjugate)^n}{\sqrt{5}}`
 

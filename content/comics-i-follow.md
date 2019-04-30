@@ -7,7 +7,7 @@ type = "post"
 
 I'm literally just using this page as a bookmark.
 
-* [Questionable Content](https://questionablecontent.net)
-* [XKCD](https://xkcd.com)
-* [Slack Wyrm](http://www.joshuawright.net/)
-* [Swords](https://swordscomic.com/swords/)
+- [Questionable Content](https://questionablecontent.net)
+- [XKCD](https://xkcd.com)
+- [Slack Wyrm](http://www.joshuawright.net/)
+- [Swords](https://swordscomic.com/swords/)
