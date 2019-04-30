@@ -110,5 +110,3 @@ Which would be O(n) and worse than the dynamic programming version
 `a^n = a^{n/2} * a^{n/2} * a` if n is odd
 
 - Solve the power function analysis
-
-`

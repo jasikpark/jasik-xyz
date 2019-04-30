@@ -5,4 +5,5 @@ title = "CSCE 222.509 | Cultural Assignment"
 type = "post"
 +++
 
-Hello World idk who I was supposed to be researching but here's the blog post about them.
+Hello World idk who I was supposed to be researching but here's the blog post
+about them.
