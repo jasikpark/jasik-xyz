@@ -5,14 +5,16 @@
 /*****************************************************************************/
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono);
+
 @font-face {
     font-family: 'Latin Modern Roman';
     src: url('lmroman10-regular.otf');
-    src: url('lmroman10-regular.woff') format('woff'),
+    src: url('lmroman10-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'Bitter';
     src: url('Bitter-Regular.tff') format('tff');

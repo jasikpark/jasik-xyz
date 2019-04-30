@@ -6,6 +6,7 @@ title = "Starbucks at Zachry"
 type = "post"
 +++
 
-Here's a pic of me hanging out at the Starbucks at the new Texas A&M University Zachry Engineering Building Starbucks.
+Here's a pic of me hanging out at the Starbucks at the new Texas A&M University
+Zachry Engineering Building Starbucks.
 
 ![](/uploads/IMG_1941.JPG)

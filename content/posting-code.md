@@ -8,7 +8,9 @@ title = "Posting Code"
 type = "post"
 +++
 
-Here's a little "Hello World" code snippet to show how C++ highlighting works on the website. I wonder if adding Github gists is a better idea, but idk. It's fine.
+Here's a little "Hello World" code snippet to show how C++ highlighting works on
+the website. I wonder if adding Github gists is a better idea, but idk. It's
+fine.
 
 {{< highlight cpp >}}
 #include <iostream>

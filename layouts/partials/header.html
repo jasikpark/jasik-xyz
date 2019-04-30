@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="utf-8">
- <title>{{ .Title }}</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
- img { max-width: 100%; height: auto; }
- img:not([alt]) { outline: 5px solid red; }
- pre { max-width: 100%; height: auto; white-space: pre-wrap }
- li {padding-bottom:0.9em;}
- .navi-parent {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding-bottom: .5em;
-   font-style: italic;
- }
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      img:not([alt]) {
+        outline: 5px solid red;
+      }
+      pre {
+        max-width: 100%;
+        height: auto;
+        white-space: pre-wrap;
+      }
+      li {
+        padding-bottom: 0.9em;
+      }
+      .navi-parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-style: italic;
+      }
 
-.navi-parent a {
-  padding-right: .9em;
-}
+      .navi-parent a {
+        padding-right: 0.9em;
+      }
 
-.pd {width:4em;flex-shrink:0;padding-bottom:1.8em;}
-.par div {display:flex}
+      .pd {
+        width: 4em;
+        flex-shrink: 0;
+        padding-bottom: 1.8em;
+      }
+      .par div {
+        display: flex;
+      }
 
-@media all and (min-width: 480px) { 
-  .navi-parent a {
-    padding-right: .0em;
-  } 
-  .pd { 
-    padding-bottom: .9em;
-  }
-}
-</style>
-<!--<meta name="description" content="{{ .Description }}">-->
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css'>
-{{ range .AlternativeOutputFormats -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-{{ end -}}
-</head>
-<body>
+      @media all and (min-width: 480px) {
+        .navi-parent a {
+          padding-right: 0em;
+        }
+        .pd {
+          padding-bottom: 0.9em;
+        }
+      }
+    </style>
+    <!--<meta name="description" content="{{ .Description }}">-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.css"
+    />
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `
+    <link rel="%s" type="%s" href="%s" title="%s" />
+    ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+  </head>
+  <body></body>
+</html>
