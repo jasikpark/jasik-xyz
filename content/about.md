@@ -20,6 +20,8 @@ You can find me on:
 
 My resume is at [resume.pdf](https://jasik.xyz/resume.pdf).
 
+![portrait of caleb with a large jasmine plant on a fence behind him](/uploads/caleb-easter-profile.jpg)
+
 {{< highlight rust >}}
 struct User {
     name: &'static str,
@@ -31,3 +33,4 @@ let caleb_jasik = User {
     email: concat!("calebjasik", "at", "jasik.xyz"),
 };
 {{< / highlight >}}
+
