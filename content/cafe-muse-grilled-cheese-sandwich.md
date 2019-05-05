@@ -39,5 +39,3 @@ broiler for a few minutes to heat up tomato. Sprinkle basil and assemble
 sandwich.
 
 [Café Muse’s Grilled Cheese Sandwich](https://medium.com/caleb-jasiks-recipe-book/cafe-muses-grilled-cheese-sandwich-3a48692d4d95?source=userActivityShare-35f7f8f56ab-1528242570)
-
-#recipes
