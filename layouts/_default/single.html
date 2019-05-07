@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
+<article>
 <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
 <hr />
-<div>{{ .Content }}</div>
+{{ .Content }}
 <div class="navi-parent">
   <div>
     This page was last modified
@@ -11,6 +12,7 @@
     >
   </div>
 </div>
+</article>
 <div class="navi-parent">
   {{ with.PrevPage }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}
   {{ with.NextPage }}<a href="{{.Permalink}}">{{.Title}} →</a>{{ end }}
