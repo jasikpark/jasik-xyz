@@ -5,4 +5,4 @@ title = "Coco Mlem"
 type = "post"
 +++
 
-{{< img src="coco_mlem.jpg" alt="blurry photo of black dog with reindeer antlers on her head, licking her own nose" >}}
+{{< img src="coco-mlem.jpg" alt="blurry photo of black dog with reindeer antlers on her head, licking her own nose" >}}
