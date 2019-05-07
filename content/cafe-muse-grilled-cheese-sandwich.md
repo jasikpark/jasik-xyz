@@ -10,7 +10,7 @@ This has been a staple at my house growing up for forever. I initially thought
 it was kinda strange putting honey on a grilled cheese sandwich, but it adds a
 ton of flavor. This is definitely one of my favorite sandwiches.
 
-![](/uploads/cafe-muse-grilled-cheese.jpg)
+![grilled cheese sandwich on plate with tomato and basil](/uploads/cafe-muse-grilled-cheese.jpg)
 
 Recipe courtesy of _Greg Reyner_ at _Café Muse_, From the show _Oprah’s Sandwich
 Showdown_
@@ -39,5 +39,3 @@ broiler for a few minutes to heat up tomato. Sprinkle basil and assemble
 sandwich.
 
 [Café Muse’s Grilled Cheese Sandwich](https://medium.com/caleb-jasiks-recipe-book/cafe-muses-grilled-cheese-sandwich-3a48692d4d95?source=userActivityShare-35f7f8f56ab-1528242570)
-
-#recipes
