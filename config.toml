@@ -27,3 +27,6 @@ enableGitInfo = true
   style = "github"
   pygmentsUseClassic = true
   pygmentsOptions = "noclasses"
+
+[imaging]
+  quality = 100
