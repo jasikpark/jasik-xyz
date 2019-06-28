@@ -12,11 +12,11 @@ If you're looking for my contact info you can email me [here](mailto:calebjasik@
 
 You can find me on:
 
-- [Keybase](https://keybase.io) at [@jasikpark](https://keybase.io/jasikpark)
-- [Twitter](https://twitter.com) at [@calebjasik](htttps://twitter.com/calebjasik)
-- [Mastodon](https://joinmastodon.org) at [@calebjasik](https://mastodon.social/@calebjasik)
-- [Github](https://github.com) at [@jasikpark](https://github.com/jasikpark)
-- [Telegram](https://telegram.com) at [@calebjasik](https://t.me/calebjasik)
+- [Keybase](https://keybase.io) at <a href="https://keybase.io/jasikpark" rel="me">@jasikpark</a>
+- [Twitter](https://twitter.com) at <a href="https://twitter.com/calebjasik" rel="me">@calebjasik</a>
+- [Mastodon](https://joinmastodon.org) at <a href="https://mastodon.social/@calebjasik" rel="me">@calebjasik</a>
+- [Github](https://github.com) at <a href="https://github.com/jasikpark" rel="me">@jasikpark</a>
+- [Telegram](https://telegram.com) at <a href="https://t.me/calebjasik" rel="me">@calebjasik</a>
 
 My resume is at [resume.pdf](https://jasik.xyz/resume.pdf).
 
