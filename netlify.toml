@@ -19,6 +19,7 @@ command = "hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.55.3"
+PERCY_BRANCH = "$BRANCH"
 
 [context.branch-deploy]
 command = "hugo"
