@@ -18,4 +18,4 @@ I updated each build command in `netlify.toml` with
 command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 ```
 
-This set the correct environmental variables for percy and sent them to the service via `percy snapshot public/`
+This set the correct environmental variables for percy and sent them to the service via `percy snapshot public/`.
