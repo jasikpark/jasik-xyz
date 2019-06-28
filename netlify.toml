@@ -1,6 +1,6 @@
 [build]
 publish = "public/"
-command = "hugo --minify"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --minify && percy snapshot public/"
 
 [context.production.environment]
 HUGO_VERSION = "0.55.3"
@@ -8,7 +8,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo --enableGitInfo"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.split1.environment]
 HUGO_VERSION = "0.55.3"
@@ -21,7 +21,7 @@ command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_I
 HUGO_VERSION = "0.55.3"
 
 [context.branch-deploy]
-command = "hugo"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.55.3"
