@@ -14,7 +14,7 @@ type = "post"
 
 - muffin tins
 - glass with mouth wider than muffin tin cups
-- 6 lbs of ground meat (a mix of beef and lamb)
+- 6 lbs of ground beef
 - 3 lbs of frozen carrots and peas
 - 1 hunk of garlic
 - salt, pepper, thyme
