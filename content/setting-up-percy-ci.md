@@ -8,3 +8,5 @@ Title = "Setting Up Percy CI"
 +++
 
 I finally fixed my [Percy CI](https://percy.io) configuration so that it has the pull request and branch contexts so that it can choose the correct base build to compare screenshots from.
+
+Apparently I also needed to include a webhook to [percy](https://percy.io) on my master builds and branch preview builds so that it could be aware of those as well.
