@@ -15,12 +15,10 @@ HUGO_VERSION = "0.55.3"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
+command = "PERCY_BRANCH=\"$BRANCH\";PERCY_PULL_REQUEST=\"PULL_REQUEST\";hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.55.3"
-PERCY_BRANCH = "BRANCH"
-PERCY_PULL_REQUEST = "PULL_REQUEST"
 
 [context.branch-deploy]
 command = "hugo"
