@@ -5,7 +5,7 @@
   <a rel="me" href="{{ .Site.BaseURL }}/about/">About</a>
   <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
   <a rel="me" href="https://mastodon.social/@calebjasik">Mastodon</a>
-  <a rel="me" href="{{ .Site.BaseURL }}/index.xml" rel="alternate" type="application/rss+xml"/>RSS</a>
+  <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml"/>RSS</a>
 </div>		
 <div class="navi-parent">
   {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
