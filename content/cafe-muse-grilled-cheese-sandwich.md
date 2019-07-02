@@ -32,11 +32,11 @@ Ingredients
 - 2 slices bread (organic multigrain bread works best)
 - Sauté pan large enough for 2 slices of bread
 
-Butter bread on one side with melted butter. Place in pan, butter side down,
-over medium-low heat. Place mozzarella on one half of the bread and fontina and
-havarti on the other. Cook until golden on bottom and cheese begins to melt.
-Place tomato on mozzarella side and honey on fontina/havarti side. Place under
-broiler for a few minutes to heat up tomato. Sprinkle basil and assemble
-sandwich.
+Set oven to broil. Butter bread on one side with melted butter. Place in pan,
+butter side down, over medium-low heat. Place mozzarella on one half of the
+bread and fontina and havarti on the other. Cook until golden on bottom and
+cheese begins to melt. Place tomato on mozzarella side and honey on
+fontina/havarti side. Place under broiler for a few minutes to heat up tomato.
+Sprinkle basil and assemble sandwich.
 
 [Café Muse’s Grilled Cheese Sandwich](https://medium.com/caleb-jasiks-recipe-book/cafe-muses-grilled-cheese-sandwich-3a48692d4d95?source=userActivityShare-35f7f8f56ab-1528242570)
