@@ -4,7 +4,7 @@ Tags = ["hugo", "resources"]
 Categories = ["Resources"]
 Type = "post"
 Date = "2019-04-23T19:07:05-05:00"
-Title = "jasik.xyz Resources"
+Title = "Resources used creating jasik.xyz"
 +++
 
 This page will track info that I've picked up over time about [Hugo](https://gohugo.io)
