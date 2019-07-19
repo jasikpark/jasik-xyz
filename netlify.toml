@@ -21,7 +21,7 @@ command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_I
 HUGO_VERSION = "0.55.3"
 
 [context.branch-deploy]
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -b $DEPLOY_PRIME_URL && percy snapshot public/"
+command = "hugo -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.55.3"
