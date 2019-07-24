@@ -6,7 +6,10 @@
 <div class="navi-parent">
   <div>
     This page was created
-    {{ .Date.Format "January 2, 2006" }}
+    <a
+      href="https://nationaltoday.com/{{ .Date.Format "January-2-" }}holidays/"
+      >{{ .Date.Format "January 2, 2006" }}</a
+    >
   </div>
   <div>
     This page was last modified
