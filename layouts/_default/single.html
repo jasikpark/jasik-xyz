@@ -5,6 +5,13 @@
 {{ .Content }}
 <div class="navi-parent">
   <div>
+    This page was created
+    <a
+      href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}"
+      >{{ .Date.Format "January 2, 2006" }}</a
+    >
+  </div>
+  <div>
     This page was last modified
     <a
       href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}"
