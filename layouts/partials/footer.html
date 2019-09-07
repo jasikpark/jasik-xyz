@@ -7,6 +7,7 @@
   <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml">RSS</a>
 </div>		
 <div class="navi-parent">
+    <a rel="me" href="{{ .Site.BaseURL }}/photos">Photos</a>
   {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
   {{- end -}}
