@@ -20,7 +20,7 @@ You can find me at:
     <a href="https://mastodon.social/@calebjasik" rel="me">mastodon/calebjasik</a>
     <a href="https://github.com/jasikpark" rel="me">github/jasikpark</a>
     <a href="https://t.me/calebjasik" rel="me">telegram/calebjasik</a>
-    <a href="https://ko-fi.com/calebjasik" rel="me">ko-fi/calebjasik</a>
+    <a href="https://ko-fi.com/calebjasik" rel="me"><span style="white-space:nowrap;">ko-fi/calebjasik</span></a>
 </div>
 
 {{< highlight rust >}}
