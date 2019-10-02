@@ -63,27 +63,18 @@
   </head>
   <body>
   <div class="par">
-    {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
-    <div>
-      <div style="display:flex;justify-content:left;padding-bottom:0.0em" class="pd">
-        <h2>{{ .Key }}</h2>
-      </div>
-    </div>
     {{ range (where .Pages "Type" "post")}}
-    <div>
-      <div class="pd">{{ .Date.Format "01/02" }}</div>
-      <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
-    </div>
-    <div>
-        <img
+    <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
+       <a href="{{ .Permalink }}"> 
+         <img
       {{ with .Resources }}
         {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg}" }}
           src='{{ .Permalink }}'  
         {{ end }}
       {{ end }}
     alt="{{ .Params.imagealt }}"/>
+        </a>
     </div>
-    {{ end }}
     {{ end }}
   </div>
 {{ partial "footer.html" . }}
