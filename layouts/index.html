@@ -62,6 +62,7 @@
     {{ end -}}
   </head>
   <body>
+  <h1 style="padding-bottom:0.0em">{{ .Site.Title }}</h1>
   <div class="par">
     {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
     <div>
