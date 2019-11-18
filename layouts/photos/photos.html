@@ -70,7 +70,7 @@
        <a href="{{ .Permalink }}"> 
          <img
       {{ with .Resources }}
-        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg}" }}
+        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
           src='{{ .Permalink }}'  
         {{ end }}
       {{ end }}
