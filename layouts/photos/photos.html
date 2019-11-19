@@ -62,13 +62,15 @@
     {{ end -}}
   </head>
   <body>
+  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+  <hr/>
   <div class="par">
     {{ range (where .Pages "Type" "post")}}
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
        <a href="{{ .Permalink }}"> 
          <img
       {{ with .Resources }}
-        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg}" }}
+        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
           src='{{ .Permalink }}'  
         {{ end }}
       {{ end }}
