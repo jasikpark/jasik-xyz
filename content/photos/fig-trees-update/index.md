@@ -3,7 +3,8 @@ Description = ""
 Tags = []
 Categories = []
 Type = "post"
-Date = "2019-10-02T21:12:32-05:00"
+Date = "2019-12-08T15:09:32-05:00"
+
 Title = "Fig Trees Update!"
 ImgAlt = "pics of fig trees at parent's house November th, 2019"
 +++
