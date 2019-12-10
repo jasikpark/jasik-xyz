@@ -1,30 +1,33 @@
 {{ partial "header.html" . }}
 <article>
-<a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
-<hr />
-{{ .Content }}
-<div class="navi-parent">
-  <div>
-    This page was created
-    <a
-      href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}"
-      >{{ .Date.Format "January 2, 2006" }}</a
-    >
-  </div>
-  <div>
-    This page was last modified
-    {{ if $.GitInfo }}
-    <a
-      href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}"
-      >{{ .Lastmod.Format "January 2, 2006" }}</a
-    >
+  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+  <hr />
+  {{ .Content }}
+
+  <div class="navi-parent">
+    {{ if .Date }}
+    <div>
+      This page was created
+      <a href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}">
+        {{ .Date.Format "January 2, 2006" }}
+      </a>
+    </div>
     {{ end }}
+    <div>
+      This page was last modified
+      {{ if $.GitInfo }}
+      <a
+        href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}">{{ .Lastmod.Format "January 2, 2006" }}</a>
+      {{ end }}
+    </div>
   </div>
-</div>
-<div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
+
+  <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
 </article>
+{{ if .Date }}
 <div class="navi-parent">
-  {{ with.PrevPage }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}
-  {{ with.NextPage }}<a href="{{.Permalink}}">{{.Title}} →</a>{{ end }}
+  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
+  <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
 </div>
+{{ end }}
 {{ partial "footer.html" . }}
