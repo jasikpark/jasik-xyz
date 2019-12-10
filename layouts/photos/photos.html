@@ -74,8 +74,7 @@
   <hr />
   <div class="par">
     {{ range (where .Pages "Type" "post")}}
-    <div class="pd" style="width:100%;justify-content:start;padding-bottom:3.6em;flex-direction:column">
-      <a href="{{.Permalink }}"><strong>{{ .Title }}</strong></a>
+    <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em;">
       <a href="{{ .Permalink }}">
         {{ with .Resources }}
         {{ range ( .Match "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" ) }}
