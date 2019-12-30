@@ -1,6 +1,6 @@
 [build]
 publish = "public/"
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo && percy snapshot public/"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --minify && percy snapshot public/"
 
 [build.environment]
 HUGO_ENV = "production"
@@ -8,10 +8,10 @@ HUGO_VERSION = "0.62.0"
 RUBY_VERSION = "2.6.2"
 
 [context.split1]
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -b $DEPLOY_PRIME_URL && percy snapshot public/"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --minify -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview]
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --minify --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.branch-deploy]
 command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
