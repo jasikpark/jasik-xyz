@@ -10,4 +10,4 @@ ImgAlt = "Starbucks at Zachry"
 Here's a pic of me hanging out at the Starbucks at the new Texas A&M University
 Zachry Engineering Building Starbucks.
 
-{{<img src="/uploads/IMG_1941.JPG" alt="Starbucks at Zachry">}}
+{{<img src="zachry-at-starbucks.JPG" alt="Starbucks at Zachry">}}
