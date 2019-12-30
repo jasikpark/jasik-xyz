@@ -26,8 +26,8 @@
 </article>
 {{ if .Date }}
 <div class="navi-parent">
-  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
+  <div>{{ with.Prev }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
+  <div>{{ with.Next }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
 </div>
 {{ end }}
 {{ partial "footer.html" . }}
