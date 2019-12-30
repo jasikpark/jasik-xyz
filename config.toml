@@ -22,6 +22,7 @@ enableGitInfo = true
 [author]
   name = "Caleb Jasik"
   homepage = "https://jasik.xyz"
+  email = "calebjasik@jasik.xyz"
 
 [params.highlight]
   style = "github"
