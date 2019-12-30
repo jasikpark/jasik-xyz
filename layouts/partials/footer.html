@@ -9,7 +9,7 @@
 <div class="navi-parent">
     <a rel="me" href="{{ .Site.BaseURL }}/photos">Photos</a>
   {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
+    <a rel="me" href="{{ .Permalink }}">{{ .Title }}</a>
   {{- end -}}
 </div>
 </footer>
