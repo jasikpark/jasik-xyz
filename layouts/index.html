@@ -73,7 +73,7 @@
     {{ range (where .Pages "Type" "post") }}
     <div>
       <div class="pd">{{ .Date.Format "01/02" }}</div>
-      <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </div>
     {{ end }}
     {{ end }}
