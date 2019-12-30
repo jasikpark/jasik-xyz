@@ -7,7 +7,7 @@ type = "post"
 
 Here's some Dune comics I like...
 
-[![](/uploads/donkey_summons_sand_worm.jpg)](http://www.steaksmoothie.com/?comic=dunkey)
+[![](/uploads/donkey_summons_sand_worm.jpg)](https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/?comic=dunkey)
 
 from [Steak Smoothie](https://steaksmoothie.com)
 
