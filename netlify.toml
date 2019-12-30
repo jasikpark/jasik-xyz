@@ -16,6 +16,7 @@ HUGO_ENV = "production"
 command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview.environment]
+HUGO_VERSION = "0.62.0"
 
 [context.branch-deploy]
 command = "hugo -b $DEPLOY_PRIME_URL"
