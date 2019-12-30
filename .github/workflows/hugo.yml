@@ -12,4 +12,4 @@ jobs:
     - name: Build the site in the gohugoio/hugo container
       run: |
         docker run \
-        -v ${{ github.workspace }} gohugoio/hugo:latest /bin/bash -c "chmod 777 /hugo && hugo --buildFuture"
+        -v ${{ github.workspace }} gohugoio/hugo:latest --buildFuture
