@@ -7,6 +7,6 @@ type = "post"
 +++
 
 Here's a pic of me hanging out at the Starbucks at the new Texas A&M University
-Zachry Engineering Building Starbucks.
+Zachry Engineering Building Starbucks. :P
 
 ![](/uploads/IMG_1941.JPG)
