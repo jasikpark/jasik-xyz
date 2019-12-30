@@ -1,0 +1,15 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the site in the gohugoio/hugo container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}: gohugoio/hugo:latest /bin/bash -c "chmod 777 /hugo && hugo --buildFuture"
