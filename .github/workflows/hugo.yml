@@ -12,4 +12,4 @@ jobs:
     - name: Build the site in the gohugoio/hugo container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/ gohugoio/hugo:latest --buildFuture --config config.toml
+        -v ${{ github.workspace }}:/jasik-xyz -w jasik-xyz gohugoio/hugo:latest --buildFuture --config config.toml
