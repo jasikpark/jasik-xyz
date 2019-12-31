@@ -10,7 +10,7 @@
   <div>
     <div class="pd">{{ .Date.Format "01/02" }}</div>
     {{ if .Draft }}
-    <p style="color:red">Draft</p>
+    <div style="color:red;white-space:pre">Draft </div>
     {{ end }}
     <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
   </div>

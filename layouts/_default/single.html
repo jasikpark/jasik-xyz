@@ -1,10 +1,10 @@
 {{ partial "header.html" . }}
 <article>
-  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
-  <hr />
   {{ if .Draft }}
   <strong style="color:red">Draft</strong>
   {{ end }}
+  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+  <hr />
   {{ .Content }}
 
   <div class="navi-parent">
