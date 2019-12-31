@@ -6,7 +6,6 @@ jobs:
   build:
     strategy:
       matrix:
-        version: [0.61.0, 0.62.0]
         image: [busybox, alpine]
 
     runs-on: ubuntu-latest
@@ -17,5 +16,4 @@ jobs:
     - name: hugo
       uses: klakegg/actions-hugo@1.0.0
       with:
-        version: ${{ matrix.version }}
         image: ${{ matrix.image }}
