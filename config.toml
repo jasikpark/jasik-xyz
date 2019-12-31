@@ -10,8 +10,6 @@ SectionPagesMenu = "main"
 
 enableRobotsTXT = true
 
-enableGitInfo = true
-
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
