@@ -32,23 +32,23 @@
   {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
   srcset='
   {{ if ge $src.Width "500" }}
-    {{ with $tiny.Permalink }}{{.}} 500w{{ end }}
+    {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
   {{ end }}
   {{ if ge $src.Width "800" }}
-    {{ with $small.Permalink }}, {{.}} 800w{{ end }}
+    {{ with $small.RelPermalink }}, {{.}} 800w{{ end }}
   {{ end }}
   {{ if ge $src.Width "1200" }}
-    {{ with $medium.Permalink }}, {{.}} 1200w{{ end }}
+    {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
   {{ end }}
   {{ if ge $src.Width "1500" }}
-    {{ with $large.Permalink }}, {{.}} 1500w {{ end }}
+    {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
   {{ end }}
   {{ if ge $src.Width "2500" }}
-    {{ with $giant.Permalink }}, {{.}} 2500w {{ end }}
+    {{ with $giant.RelPermalink }}, {{.}} 2500w {{ end }}
   {{ end}}'
   {{ if .Get (print $medium) }}
-    src="{{ $medium.Permalink }}" 
+    src="{{ $medium.RelPermalink }}" 
   {{ else }}
-    src="{{ $src.Permalink }}" 
+    src="{{ $src.RelPermalink }}" 
   {{ end }}
   {{ with .Get "alt" }}alt='{{.}}'{{ end }}/>
