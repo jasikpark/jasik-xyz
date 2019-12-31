@@ -29,3 +29,6 @@ enableRobotsTXT = true
 
 [imaging]
   quality = 75
+
+[markup.goldmark.renderer]
+  unsafe = true
