@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        image: [busybox, alpine]
+        image: [alpine-ext, latest-ext]
 
     runs-on: ubuntu-latest
 
