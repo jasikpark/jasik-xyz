@@ -1,0 +1,23 @@
+name: Hugo
+
+on:
+  schedule:
+    # runs daily at 3am
+    - cron: '0 3 * * *'
+  push:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        image: [busybox, alpine]
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: hugo
+      uses: klakegg/actions-hugo@1.0.0
+      with:
+        image: ${{ matrix.image }}
