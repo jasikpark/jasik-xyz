@@ -10,7 +10,7 @@ jobs:
   build:
     strategy:
       matrix:
-        image: [alpine-ext, latest-ext]
+        image: [ext-alpine, latest-ext]
 
     runs-on: ubuntu-latest
 
