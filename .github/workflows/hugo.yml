@@ -1,6 +1,9 @@
 name: Hugo
 
-on: [push]
+on:
+  schedule:
+    - cron: '@daily'
+  push:
 
 jobs:
   build:
