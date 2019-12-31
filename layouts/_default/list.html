@@ -9,6 +9,9 @@
   {{ range.Pages }}
   <div>
     <div class="pd">{{ .Date.Format "01/02" }}</div>
+    {{ if .Draft }}
+    <p style="color:red">Draft</p>
+    {{ end }}
     <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
   </div>
   {{ end }}

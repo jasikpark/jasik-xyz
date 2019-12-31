@@ -2,6 +2,9 @@
 <article>
   <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
   <hr />
+  {{ if .Draft }}
+  <strong style="color:red">Draft</strong>
+  {{ end }}
   {{ .Content }}
 
   <div class="navi-parent">
