@@ -29,8 +29,8 @@
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 <img 
-  {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 1200px, 100vw"{{ end }}
-  srcset='
+  {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="100vw"{{ end }}
+  srcset="
   {{ if ge $src.Width "500" }}
     {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
   {{ end }}
@@ -45,7 +45,7 @@
   {{ end }}
   {{ if ge $src.Width "2500" }}
     {{ with $giant.RelPermalink }}, {{.}} 2500w {{ end }}
-  {{ end}}'
+  {{ end}}"
   {{ if .Get (print $medium) }}
     src="{{ $medium.RelPermalink }}" 
   {{ else }}
