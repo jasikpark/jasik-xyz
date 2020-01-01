@@ -3,7 +3,7 @@ name: Hugo
 on:
   schedule:
     # runs daily at 3am
-    - cron: '0 3 * * *'
+    - cron: '0 */4 * * *'
   push:
 
 jobs:
