@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
   <body style="padding:0;">
-  <div style="padding: 0 10px">
+  <div id="hello">
   <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
   <hr/>
   </div>
@@ -19,5 +19,15 @@
     </div>
     {{ end }}
   </div>
-<style>footer { padding: 0 10px; }</style>
+<style>
+  footer { padding: 0 10px; }
+  #hello {
+    padding: 0;
+  }
+  @media all and (max-width: 800px) {
+    #hello {
+      padding: 0 10px;
+    }
+  }
+</style>
 {{ partial "footer.html" . }}
