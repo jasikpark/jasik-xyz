@@ -2,7 +2,7 @@ baseurl = "https://jasik.xyz"
 languageCode = "en"
 title = "Bowl of TARDIS"
 
-copyright = "&copy; Caleb Jasik 2019"
+copyright = "&copy; Caleb Jasik 2019-2020"
 
 MetaDataFormat = "toml"
 DefaultContentLanguage = "en"
