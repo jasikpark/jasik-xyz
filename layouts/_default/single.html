@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-<article>
   {{ if .Draft }}
   <strong style="color:red">Draft</strong>
   {{ end }}
@@ -26,7 +25,6 @@
   </div>
 
   <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
-</article>
 {{ if .Date }}
 <div class="navi-parent">
   <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
