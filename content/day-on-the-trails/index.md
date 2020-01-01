@@ -9,3 +9,5 @@ Draft = "true"
 +++
 
 We went and visited some parks while visiting our cousins!
+
+{{< img src="IMG_4053" alt="cool people enjoying nature" title="cool people enjoying nature" >}}
