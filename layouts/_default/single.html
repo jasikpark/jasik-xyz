@@ -1,5 +1,4 @@
 {{ partial "header.html" . }}
-<body>
 <article>
   {{ if .Draft }}
   <strong style="color:red">Draft</strong>
@@ -34,5 +33,4 @@
   <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
 </div>
 {{ end }}
-</body>
 {{ partial "footer.html" . }}
