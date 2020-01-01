@@ -10,7 +10,11 @@ Draft = "true"
 
 So something that I discovered a little bit ago was that I didn't think about removing EXIF data from images, and so I manually used the `view info` dialogue in Windows to remove the private data from the photos. 
 
-In making [A Day on the Trails]({{< ref "/day-on-the-trails/index.md" >}})
+In making [A Day on the Trails]({{< ref "/day-on-the-trails/index.md" >}}), I wanted to make sure that I wasn't including any of that info, so I looked for a more UNIX approach and found [`exiftool`](https://exiftool.org/). 
+
+To install on macOS: `brew install exiftool` :P
+
+It's found a lot more data than I expected:
 
 ```
 calebjasik@Calebs-MacBook-Pro day-on-the-trails % exiftool ips-044B4F7A-A39D-457B-8611-6EC795937010.mp4 
@@ -82,3 +86,15 @@ Megapixels                      : 0.922
 Avg Bitrate                     : 5.26 Mbps
 Rotation                        : 0
 ```
+
+The really nice part is that you can then drill down into the details you want by using `grep`.
+
+```
+calebjasik@Calebs-MacBook-Pro jasik-xyz % exiftool content/day-on-the-trails/IMG_4040.jpeg | grep -i exposure
+Exposure Time                   : 1/275
+Exposure Program                : Program AE
+Exposure Compensation           : 0
+Exposure Mode                   : Auto
+```
+
+The `-i` asks `grep` to be insensitive to case, so that 'Exposure' and 'exposure' and 'ExPoSuRe' will all match!
