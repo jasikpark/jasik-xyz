@@ -34,3 +34,13 @@ enableGitInfo = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+  [privacy]
+  [privacy.instagram]
+    simple = true
+  [privacy.twitter]
+    simple = true
+  [privacy.vimeo]
+    simple = true
+  [privacy.youtube]
+    privacyEnhanced = true
