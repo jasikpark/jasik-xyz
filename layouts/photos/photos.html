@@ -9,6 +9,7 @@
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
        <a href="{{ .Permalink }}"> 
          <img
+         style="width:100vw"
       {{ with .Resources }}
         {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
           src='{{ .Permalink }}'  
