@@ -31,7 +31,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
       <description>{{ .Params.ImgAlt }}</description>
       <content:encoded>
         {{- .Content | html }}
-        <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
+        &lt;div&gt;Send me an email at &lt;a href="mailto:calebjasik@jasik.xyz"&gt;calebjasik@jasik.xyz&lt;/a&gt; if you want to.&lt;/div&gt;
       </content:encoded>
     </item>
     {{ end }}
