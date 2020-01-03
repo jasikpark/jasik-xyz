@@ -39,7 +39,7 @@ Algorithm Fib(n)
 	return F(n-1) + Fib(n-2)
 ```
 
-`Fib(5) = (Fib(4) + Fib(3)) = ((Fib(3) + Fib(2)) + (Fib(2) + Fib(1)))``
+`Fib(5) = (Fib(4) + Fib(3)) = ((Fib(3) + Fib(2)) + (Fib(2) + Fib(1)))`
 
 Do the analysis to speed it up.
 

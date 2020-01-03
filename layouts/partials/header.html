@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ partial "dark-css.html" . }}
     <style>
-      img {
-        max-width: 100%;
-        height: auto;
-      }
       img:not([alt]) {
         outline: 5px solid red;
       }
@@ -25,13 +22,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
+        padding: 0.5em 0;
         font-style: italic;
       }
 
-      .navi-parent a {
+      .navi-parent > * {
         padding-right: 0.9em;
+        padding-bottom: 0.9em;
       }
 
       .pd {
@@ -44,8 +41,9 @@
       }
 
       @media all and (min-width: 480px) {
-        .navi-parent a {
+        .navi-parent > * {
           padding-right: 0em;
+          padding-bottom: 0em;
         }
         .pd {
           padding-bottom: 0.9em;
@@ -54,12 +52,9 @@
     </style>
     <!--<meta name="description" content="{{ .Description }}">-->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-    {{ partial "dark-css.html" . }}
     {{ range .AlternativeOutputFormats -}}
     {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />
     ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
   </head>
-  <body></body>
-</html>

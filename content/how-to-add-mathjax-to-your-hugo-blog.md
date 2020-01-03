@@ -1,6 +1,5 @@
 +++
 date = "2018-09-03T11:27:43-05:00"
-draft = true
 featured_image = "/uploads/mathjax_logo.svg"
 tags = ["math", "javascript", "github"]
 title = "How to Add MathJax to Your Hugo Blog"

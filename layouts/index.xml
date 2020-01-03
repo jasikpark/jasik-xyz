@@ -18,7 +18,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
     {{ with .OutputFormats.Get "RSS" }}
         {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end }}
-    {{ range .RegularPages }}
+    {{ range (where .Pages "Type" "post") }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
@@ -29,7 +29,10 @@ xmlns:atom="http://www.w3.org/2005/Atom"
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
-      <content:encoded>{{- .Content | html }}</content:encoded>
+      <content:encoded>
+        {{- .Content | html }}
+        &lt;div&gt;Send me an email at &lt;a href="mailto:calebjasik@jasik.xyz"&gt;calebjasik@jasik.xyz&lt;/a&gt; if you want to.&lt;/div&gt;
+      </content:encoded>
     </item>
     {{ end }}
   </channel>

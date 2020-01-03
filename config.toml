@@ -2,13 +2,15 @@ baseurl = "https://jasik.xyz"
 languageCode = "en"
 title = "Bowl of TARDIS"
 
-copyright = "&copy; Caleb Jasik 2019"
+copyright = "&copy; Caleb Jasik 2018-2020"
 
 MetaDataFormat = "toml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 
 enableRobotsTXT = true
+
+enableGitInfo = true
 
 [sitemap]
   changefreq = "monthly"
@@ -32,3 +34,13 @@ enableRobotsTXT = true
 
 [markup.goldmark.renderer]
   unsafe = true
+
+  [privacy]
+  [privacy.instagram]
+    simple = true
+  [privacy.twitter]
+    simple = true
+  [privacy.vimeo]
+    simple = true
+  [privacy.youtube]
+    privacyEnhanced = true
