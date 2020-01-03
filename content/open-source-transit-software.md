@@ -7,6 +7,8 @@ Date = "2019-04-23T17:49:37-05:00"
 Title = "Open Source Transit Software"
 +++
 
+Here's a list of open source transit software that I have found in my search for information on building a GTFS feed for the TAMU Spirit Bus system. (or the Brazos Transit District bus system.)
+
 - [GitHub - waagsociety/citysdk-ld: CitySDK Linked Data API](https://github.com/waagsociety/citysdk-ld)
 - [GitHub - OpenTransport/gtfs-csv2rdf: Mapping script which transforms GTFS CSV into GTFS RDF (turtle, jsonld or ntriples)](https://github.com/OpenTransport/gtfs-csv2rdf)
 - [Open311](http://www.open311.org/)
