@@ -11,7 +11,7 @@ RUBY_VERSION = "2.6.2"
 command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -D --minify -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.deploy-preview]
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -D --minify --buildFuture -b $DEPLOY_PRIME_URL && percy snapshot public/"
+command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo -D --minify -b $DEPLOY_PRIME_URL && percy snapshot public/"
 
 [context.branch-deploy]
 command = "hugo -D --buildFuture -b $DEPLOY_PRIME_URL"
