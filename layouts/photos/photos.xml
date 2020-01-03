@@ -28,7 +28,17 @@ xmlns:atom="http://www.w3.org/2005/Atom"
       {{ end }}
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
-      <description>{{- .Content | html }}</description>
+      <description>
+        &lt;img
+         style=&quot;width:100vw&quot;
+      {{ with .Resources }}
+        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
+          src='{{ .Permalink }}'  
+        {{ end }}
+      {{ end }}
+    {{ with .Params.ImgAlt }}alt=&quot;{{ . }}&quot;{{ end }}
+    {{ with .Params.ImgTitle }}title=&quot;{{ . }}&quot;{{ end }}/&gt;
+      </description>
     </item>
     {{ end }}
   </channel>
