@@ -15,7 +15,8 @@
           src='{{ .Permalink }}'  
         {{ end }}
       {{ end }}
-    alt="{{ .Params.ImgAlt }}"/>
+    {{ with .Params.ImgAlt }}alt="{{ . }}"{{ end }}
+    {{ with .Params.ImgTitle }}title="{{ . }}"{{ end }}/>
         </a>
     </div>
     {{ end }}
