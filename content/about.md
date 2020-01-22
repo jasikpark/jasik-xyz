@@ -6,7 +6,7 @@ Title = "About"
 
 +++
 
-# Hi, I'm Caleb Jasik!
+## Hi, I'm Caleb Jasik!
 
 If you're looking for my contact info you can email me [here](mailto:calebjasik@jasik.xyz)
 
