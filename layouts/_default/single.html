@@ -2,12 +2,14 @@
 
 <body>
   <div role="banner">
+    <h1 style="font-size:initial;">
     {{ if .Draft }}
-    <h1 style="color:red;font-size:initial">Draft</h1>
+    <span style="color:red;">Draft</span>
     {{ end }}
     <a href="{{ .Permalink }}">
-      <h1 style="font-size:initial;">{{ .Title }}</h1>
+      <span>{{ .Title }}</span>
     </a>
+    </h1>
   </div>
   <hr />
   <div role="main">
