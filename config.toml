@@ -24,10 +24,8 @@ enableGitInfo = true
   homepage = "https://jasik.xyz"
   email = "calebjasik@jasik.xyz"
 
-[params.highlight]
-  style = "github"
-  pygmentsUseClassic = true
-  pygmentsOptions = "noclasses"
+[markup.highlight]
+  style = "dracula"
 
 [imaging]
   quality = 75
