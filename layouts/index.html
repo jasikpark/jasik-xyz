@@ -1,7 +1,9 @@
 {{ partial "header.html" . }}
   <body>
+  <div role="banner">
   <h1 style="padding-bottom:0.0em">{{ .Site.Title }}</h1>
-  <div class="par">
+  </div>
+  <div role="main" class="par">
     {{ range (where (.Site.RegularPages.GroupByDate "2006") ".Key" "!=" "0001") }}
     <div>
       <div style="display:flex;justify-content:left;padding-bottom:0.0em" class="pd">

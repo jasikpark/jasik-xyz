@@ -1,36 +1,45 @@
 {{ partial "header.html" . }}
-<body>
-  {{ if .Draft }}
-  <strong style="color:red;">Draft</strong>
-  {{ end }}
-  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
-  <hr />
-  {{ .Content }}
 
-  <div class="navi-parent">
-    {{ if .Date }}
-    <div>
-      This page was created
-      <a href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}">
-        {{ .Date.Format "January 2, 2006" }}
-      </a>
-    </div>
+<body>
+  <div role="banner">
+    {{ if .Draft }}
+    <h1 style="color:red;font-size:initial">Draft</h1>
     {{ end }}
-    <div>
-      This page was last modified
-      {{ if $.GitInfo }}
-      <a
-        href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}">{{ .Lastmod.Format "January 2, 2006" }}</a>
+    <a href="{{ .Permalink }}">
+      <h1 style="font-size:initial;">{{ .Title }}</h1>
+    </a>
+  </div>
+  <hr />
+  <div role="main">
+    {{ .Content }}
+  </div>
+  <div role="contentinfo" title="date-info-and-contact-info">
+    <div class="navi-parent">
+      {{ if .Date }}
+      <div>
+        This page was created
+        <a href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </a>
+      </div>
       {{ end }}
+      <div>
+        This page was last modified
+        {{ if $.GitInfo }}
+        <a
+          href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}">{{ .Lastmod.Format "January 2, 2006" }}</a>
+        {{ end }}
+      </div>
+    </div>
+    <div style="font-style:normal;" class="navi-parent">
+      <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
     </div>
   </div>
-<div style="font-style:normal;" class="navi-parent">
-  <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
-</div>
-{{ if .Date }}
-<div class="navi-parent">
-  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
-</div>
-{{ end }}
-{{ partial "footer.html" . }}
+  {{ if .Date }}
+  <div role="navigation" title="post-navigation" class="navi-parent">
+    <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
+    <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
+  </div>
+  {{ end }}
+
+  {{ partial "footer.html" . }}

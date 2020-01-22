@@ -2,7 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    {{ else }}
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ end }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{ partial "dark-css.html" . }}
     <style>

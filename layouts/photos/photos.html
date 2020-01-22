@@ -1,13 +1,13 @@
 {{ partial "header.html" . }}
   <body style="padding:0;">
-  <div id="hello">
-  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
+  <div role="banner" id="hello">
+  <a href="{{ .Permalink }}"><h1 style="font-size:initial">{{ .Title }}</h1></a>
   <hr/>
   </div>
-  <div style="padding: 40px 0 0 0;" class="par">
+  <div role="main" style="padding: 40px 0 0 0;" class="par">
     {{ range (where .Pages "Type" "post")}}
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
-       <a href="{{ .Permalink }}"> 
+       <a href="{{ .Permalink }}" title="{{ .Title }}"> 
          <img
          style="width:100vw"
       {{ with .Resources }}
