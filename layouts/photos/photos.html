@@ -1,35 +1,36 @@
 {{ partial "header.html" . }}
-  <body style="padding:0;">
-  <div id="hello">
-  <a href="{{ .Permalink }}"><strong>{{ .Title }}</strong></a>
-  <hr/>
-  </div>
-  <div style="padding: 40px 0 0 0;" class="par">
+
+<body style="padding:0;">
+  <header id="hello">
+    <a href="{{ .Permalink }}">
+      <h1 style="font-size:initial">{{ .Title }}</h1>
+    </a>
+    <hr />
+  </header>
+  <main style="padding: 40px 0 0 0;" class="par">
     {{ range (where .Pages "Type" "post")}}
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
-       <a href="{{ .Permalink }}"> 
-         <img
-         style="width:100vw"
-      {{ with .Resources }}
-        {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
-          src='{{ .Permalink }}'  
-        {{ end }}
-      {{ end }}
-    {{ with .Params.ImgAlt }}alt="{{ . }}"{{ end }}
-    {{ with .Params.ImgTitle }}title="{{ . }}"{{ end }}/>
-        </a>
+      <a href="{{ .Permalink }}" title="{{ .Title }}">
+        <img style="width:100vw" {{ with .Resources }}
+          {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }} src='{{ .Permalink }}' {{ end }} {{ end }}
+          {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }} {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
+      </a>
     </div>
     {{ end }}
-  </div>
-<style>
-  footer { padding: 0 10px; }
-  #hello {
-    padding: 0;
-  }
-  @media all and (max-width: 800px) {
-    #hello {
+  </main>
+  <style>
+    footer {
       padding: 0 10px;
     }
-  }
-</style>
-{{ partial "footer.html" . }}
+
+    #hello {
+      padding: 0;
+    }
+
+    @media all and (max-width: 800px) {
+      #hello {
+        padding: 0 10px;
+      }
+    }
+  </style>
+  {{ partial "footer.html" . }}

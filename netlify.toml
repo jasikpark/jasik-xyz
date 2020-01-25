@@ -4,7 +4,7 @@ command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_I
 
 [build.environment]
 HUGO_ENV = "production"
-HUGO_VERSION = "0.62.2"
+HUGO_VERSION = "0.63.1"
 RUBY_VERSION = "2.6.2"
 
 [context.split1]

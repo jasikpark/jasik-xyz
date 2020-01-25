@@ -4,6 +4,7 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2019-12-31T20:30:40-06:00"
+PublishDate = "2020-01-15T20:13:21-06:00"
 Title = "Discovering exiftool"
 +++
 

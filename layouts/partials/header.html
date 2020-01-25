@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    {{ else }}
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ end }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{ partial "dark-css.html" . }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/syntax.css">
+    
     <style>
       img:not([alt]) {
         outline: 5px solid red;
@@ -47,6 +53,15 @@
         }
         .pd {
           padding-bottom: 0.9em;
+        }
+      }
+      .draft-label {
+        color: #ff6347;
+      }
+
+      @media (prefers-color-scheme: light) {
+        .draft-label{
+          color: #e31c3d;
         }
       }
     </style>
