@@ -2,13 +2,18 @@
 
 <body style="padding:0;">
   <header id="hello">
-    <a href="{{ .Permalink }}">
-      <h1 style="font-size:initial">{{ .Title }}</h1>
-    </a>
-    <hr />
+    <h1 style="font-size:initial;">
+      <a href="{{ .Site.BaseURL }}">
+        <span>←</span>
+      </a>
+      <a href="{{ .Permalink }}">
+        <span>{{ .Title }}</span>
+      </a>
+    </h1>
   </header>
+  <hr />
   <main style="padding: 40px 0 0 0;" class="par">
-    {{ range (where .Pages "Type" "post")}}
+    {{ range .RegularPages }}
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
       <a href="{{ .Permalink }}" title="{{ .Title }}">
         <img style="width:100vw" {{ with .Resources }}

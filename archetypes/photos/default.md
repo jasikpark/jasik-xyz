@@ -2,7 +2,7 @@
 Description = ""
 Tags = []
 Categories = []
-Type = "post"
+Type = "photo"
 Date = "{{ .Date }}"
 Title = ""
 ImgAlt =""
