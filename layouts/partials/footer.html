@@ -2,12 +2,12 @@
 <div title="primary-navigation" class="navi-parent">
   <a rel="me" href="{{ .Site.BaseURL }}">Archive</a>
   <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
-  <a rel="me" href="{{ .Site.BaseURL }}about/">About</a>
+  <a rel="me" href="{{ .Site.BaseURL }}/about/">About</a>
   <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
-  <a rel="me alternate" href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml">RSS</a>
+  <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml">RSS</a>
 </div>		
 <div title="category-navigation" class="navi-parent">
-    <a rel="me" href="{{ .Site.BaseURL }}photos">Photos</a>
+    <a rel="me" href="{{ .Site.BaseURL }}/photos">Photos</a>
   {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
     <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
   {{- end -}}
