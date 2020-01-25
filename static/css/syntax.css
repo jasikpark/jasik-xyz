@@ -70,7 +70,7 @@
 
 
 @media (prefers-color-scheme: light) {
-  .chroma { background-color: #fdf6e3; color: #586e75; }
+.chroma { background-color: #fdf6e3; color: #586e75; }
 .chroma .c { color: #627272; }
 .chroma .err { color: #586e75; }
 .chroma .g { color: #586e75; }
