@@ -1,4 +1,4 @@
-.chroma { background-color: #002b36; color: #93a1a1; }
+.chroma code { border-radius: 6px; background-color: #002b36; color: #93a1a1; }
 .chroma .c { color: #759299; }
 .chroma .err { color: #93a1a1; }
 .chroma .g { color: #93a1a1; }
@@ -70,7 +70,7 @@
 
 
 @media (prefers-color-scheme: light) {
-.chroma { background-color: #fdf6e3; color: #586e75; }
+.chroma code { background-color: #fdf6e3; color: #586e75; }
 .chroma .c { color: #627272; }
 .chroma .err { color: #586e75; }
 .chroma .g { color: #586e75; }
