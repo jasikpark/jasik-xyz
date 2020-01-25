@@ -2,8 +2,8 @@
 
 <body>
   <header>
-    <a href="{{ .Site.BaseURL }}">
-      <h1 style="padding-bottom:0.0em">{{ .Site.Title }}</h1>
+    <a href="{{ .Permalink }}">
+      <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
     </a>
   </header>
   <main>
@@ -14,7 +14,7 @@
           <h2>{{ .Key }}</h2>
         </div>
       </div>
-      {{ range (where .Pages "Type" "post") }}
+      {{ range .Pages }}
       <div>
         <div class="pd">{{ .Date.Format "01/02" }}</div>
         {{ if .Draft }}
@@ -22,8 +22,8 @@
         {{ end }}
         <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
       </div>
+      {{ end }}
+      {{ end }}
+    </div>
   </main>
-  {{ end }}
-  {{ end }}
-  </div role="directory">
   {{ partial "footer.html" . }}

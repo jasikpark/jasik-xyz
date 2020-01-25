@@ -3,19 +3,19 @@
 <body>
   <header>
     <h1 style="font-size:initial;">
-    {{ if .Draft }}
-    <span class="draft-label">Draft</span>
-    {{ end }}
-    <a href="{{ .Permalink }}">
-      <span style="color: var(--text-bright)">{{ .Title }}</span>
-    </a>
+      {{ if .Draft }}
+      <span class="draft-label">Draft</span>
+      {{ end }}
+      <a href="{{ .Permalink }}">
+        <span style="color: var(--text-bright)">{{ .Title }}</span>
+      </a>
     </h1>
   </header>
   <hr />
-  <div role="main">
+  <main>
     {{ .Content }}
-  </div>
-  <div role="contentinfo" title="date-info-and-contact-info">
+  </main>
+  <footer title="date-info-and-contact-info">
     <div class="navi-parent">
       {{ if .Date }}
       <div>
@@ -36,12 +36,12 @@
     <div style="font-style:normal;" class="navi-parent">
       <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
     </div>
-  </div>
+  </footer>
   {{ if .Date }}
-  <div role="navigation" title="post-navigation" class="navi-parent">
+  <nav title="post-navigation" class="navi-parent">
     <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
     <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
-  </div>
+  </nav>
   {{ end }}
 
   {{ partial "footer.html" . }}
