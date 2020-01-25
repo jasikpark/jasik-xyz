@@ -1,24 +1,29 @@
 {{ partial "header.html" . }}
-  <body>
-  <div role="banner">
-  <h1 style="padding-bottom:0.0em">{{ .Site.Title }}</h1>
-  </div>
-  <div role="main" class="par">
-    {{ range (where (.Site.RegularPages.GroupByDate "2006") ".Key" "!=" "0001") }}
-    <div>
-      <div style="display:flex;justify-content:left;padding-bottom:0.0em" class="pd">
-        <h2>{{ .Key }}</h2>
+
+<body>
+  <header>
+    <a href="{{ .Site.BaseURL }}">
+      <h1 style="padding-bottom:0.0em">{{ .Site.Title }}</h1>
+    </a>
+  </header>
+  <main>
+    <div role="directory" class="par">
+      {{ range (where (.Site.RegularPages.GroupByDate "2006") ".Key" "!=" "0001") }}
+      <div>
+        <div style="display:flex;justify-content:left;padding-bottom:0.0em" class="pd">
+          <h2>{{ .Key }}</h2>
+        </div>
       </div>
-    </div>
-    {{ range (where .Pages "Type" "post") }}
-    <div>
-      <div class="pd">{{ .Date.Format "01/02" }}</div>
-      {{ if .Draft }}
-      <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
-      {{ end }}
-      <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
-    </div>
-    {{ end }}
-    {{ end }}
-  </div>
-{{ partial "footer.html" . }}
+      {{ range (where .Pages "Type" "post") }}
+      <div>
+        <div class="pd">{{ .Date.Format "01/02" }}</div>
+        {{ if .Draft }}
+        <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
+        {{ end }}
+        <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+      </div>
+  </main>
+  {{ end }}
+  {{ end }}
+  </div role="directory">
+  {{ partial "footer.html" . }}

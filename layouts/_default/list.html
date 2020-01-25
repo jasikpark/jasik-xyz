@@ -1,23 +1,28 @@
 {{ partial "header.html" . }}
-<div role="banner">
-  <a href="{{ .Permalink }}"><h1>{{ .Title }}</h1></a>
-</div>
-<div role="main" class="par">
-  {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
-  <div>
-    <div style="display:flex;justify-content:left;padding-bottom: 0em;" class="pd">
-      <h2>{{ .Key }}</h2>
+<header>
+  <a href="{{ .Permalink }}">
+    <h1>{{ .Title }}</h1>
+  </a>
+</header>
+<main>
+  <div role="directory" class="par">
+    {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
+    <div>
+      <div style="display:flex;justify-content:left;padding-bottom: 0em;" class="pd">
+        <h2>{{ .Key }}</h2>
+      </div>
     </div>
-  </div>
-  {{ range.Pages }}
-  <div>
-    <div class="pd">{{ .Date.Format "01/02" }}</div>
-    {{ if .Draft }}
-    <div class="draft-label" style="padding: 0 0.2em 0 0;">Draft</div>
+    {{ range.Pages }}
+    <div>
+      <div class="pd">{{ .Date.Format "01/02" }}</div>
+      {{ if .Draft }}
+      <div class="draft-label" style="padding: 0 0.2em 0 0;">Draft</div>
+      {{ end }}
+      <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+    </div>
     {{ end }}
-    <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+    {{ end }}
   </div>
-  {{ end }}
-  {{ end }}
-</div>
+</main>
+</div role="directory">
 {{ partial "footer.html" . }}
