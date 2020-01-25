@@ -12,6 +12,8 @@ enableRobotsTXT = true
 
 enableGitInfo = true
 
+pygmentsUseClasses = true
+
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
