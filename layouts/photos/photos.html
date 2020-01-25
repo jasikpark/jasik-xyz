@@ -5,8 +5,8 @@
     <a href="{{ .Permalink }}">
       <h1 style="font-size: initial;">{{ .Title }}</h1>
     </a>
+    <hr />
   </header>
-  <hr />
   <main style="padding: 40px 0 0 0;" class="par">
     {{ range .RegularPages }}
     <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
@@ -19,7 +19,7 @@
     {{ end }}
   </main>
   <style>
-    footer {
+    nav, footer {
       padding: 0 10px;
     }
 
