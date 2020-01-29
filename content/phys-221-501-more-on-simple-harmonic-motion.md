@@ -4,6 +4,7 @@ draft = false
 tags = ["tamu", "phys221", "classes"]
 title = "PHYS 221.501 | More on Simple Harmonic Motion"
 type = "post"
+isMath = "true"
 +++
 
 ## Total mechanical energy is conserved in SHM
