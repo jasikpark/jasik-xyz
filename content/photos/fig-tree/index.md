@@ -2,7 +2,7 @@
 Description = ""
 Tags = []
 Categories = []
-Type = "post"
+Type = "photo"
 Date = "2019-10-02T21:12:32-05:00"
 Title = "Fig Tree!"
 ImgAlt = "pic of fig tree at parent's house"
