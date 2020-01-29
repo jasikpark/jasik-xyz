@@ -34,3 +34,5 @@ let caleb_jasik = User {
     email: concat!("calebjasik", "at", "jasik.xyz"),
 };
 ```
+
+This site is maintained at [https://github.com/jasikpark/jasik-xyz/](https://github.com/jasikpark/jasik-xyz/)
