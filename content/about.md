@@ -12,8 +12,6 @@ If you're looking for my contact info you can email me [here](mailto:calebjasik@
 
 My resume is at [jasik-xyz/resume](/resume)
 
-This site is maintained at [https://github.com/jasikpark/jasik-xyz/](https://github.com/jasikpark/jasik-xyz/)
-
 You can find me at:
 
 <div class="navi-parent" style="width:40%">
@@ -36,3 +34,5 @@ let caleb_jasik = User {
     email: concat!("calebjasik", "at", "jasik.xyz"),
 };
 ```
+
+This site is maintained at [https://github.com/jasikpark/jasik-xyz/](https://github.com/jasikpark/jasik-xyz/)
