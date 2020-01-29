@@ -18,8 +18,12 @@ Asin(\frac{2\pi}{3}) = \\) oh well….
 
 ## Energy diagrams for SHM
 
-Graph these with respect to constant system energy: \\(PE = \frac{1}{2}kA^2
-cos^2(\omega t + \phi)\\) \\(KE = \frac{1}{2}kA^2 sin^2(\omega t + \phi)\\)
+Graph these with respect to constant system energy: 
+
+\\(PE = \frac{1}{2}kA^2
+cos^2(\omega t + \phi)\\) 
+
+\\(KE = \frac{1}{2}kA^2 sin^2(\omega t + \phi)\\)
 
 If you graph the potential energy \\(U\\) and the total energy \\(E\\), \\(E\\)
 will be at a constant height, and \\(U\\) will be in the shape of a parabola.
@@ -48,7 +52,7 @@ same as the max \\(U\\).
 📸 of a mass on a spring describing the equilibrium position, amplitude,
 k-ratio, and velocity.
 
-\\(Total energy = E_1 = \frac{1}{2}kA_1^2 = \frac{1}{2}Mv_1^2\\) \\(v_1 =
+\\(Total\ energy = E_1 = \frac{1}{2}kA_1^2 = \frac{1}{2}Mv_1^2\\) \\(v_1 =
 \sqrt{\frac{k}{M}A_1}\\)
 
 If we drop putty with a mass of \\(m\\), momentum is conserved.
@@ -65,7 +69,7 @@ If we drop putty with a mass of \\(m\\), momentum is conserved.
 If a body oscillates from a spring, the restoring force has magnitude \(kx\).
 Therefore the vertical motion is SHM.
 
-\\(F = k\delta l\\) \\(k\delta l = mg\\)
+\\(F = k\delta l = mg\\)
 
 If we have a weight on a vertically suspended spring, the net force is:
 
@@ -73,12 +77,12 @@ If we have a weight on a vertically suspended spring, the net force is:
 
 ## Angular SHM
 
-A coil spring exerts a restoring torque \\(\tau_z = I\alpha = -\kappa\theta\)
-where \(\kappa\\) is called the torsion.
+A coil spring exerts a restoring torque \\(\tau_z = I\alpha = -\kappa\theta\\)
+where \\(\kappa\\) is called the torsion.
 
 Get a screenshot of page 441 of the book.
 
-**Remember: T describes the time to go from +A to +A, not +A to -A.**
+**Remember: $T$ describes the time to go from $+A$ to $+A$, not $+A$ to $-A$.**
 
 \\(\phi = \arctan(-\frac{v\_{0x}}{\omega x_0})\\)
 
