@@ -9,7 +9,7 @@
     {{ end }}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{ if .Page.Params.isMath }}
-    {{ partial "mathjax.html" . }}
+    {{ partial "katex.html" . }}
     {{ end }}
     {{ partial "dark-css.html" . }}
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/syntax.css">
