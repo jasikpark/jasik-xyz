@@ -4,8 +4,11 @@ command = "hugo"
 
 [build.environment]
 HUGO_ENV = "production"
-HUGO_VERSION = "0.63.1"
+HUGO_VERSION = "0.64.0"
 RUBY_VERSION = "2.6.2"
 
 [context.branch-deploy]
 command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview]
+command = "hugo -b $DEPLOY_PRIME_URL"
