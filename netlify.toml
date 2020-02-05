@@ -11,4 +11,4 @@ RUBY_VERSION = "2.6.2"
 command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview]
-command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
+command = "hugo -b $DEPLOY_PRIME_URL"
