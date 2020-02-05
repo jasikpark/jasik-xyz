@@ -4,8 +4,7 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2016-11-09"
-Title = "Striving Towards the Singularity"
-Draft = "true"
+Title = "Striving Towards the Singularity (medium.com/@jasikpark)"
 +++
 
 *Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
