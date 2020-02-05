@@ -49,13 +49,7 @@ The acceleration is \\(\\frac{d^2x}{dt^2} = a_x = -A\\omega^2 cos(\\omega t +
 The phase angle, \\(\\phi\\) refers to where in the period that you begin the
 curve.
 
-Total mechanical energy is conserved:
+Total mechanical energy is conserved: \\\( E = \\frac{1}{2}mv_x^2 + \\frac{1}{2}kx^2 = \{\\frac{1}{2}kA^2 = constant\} \\\)
 
-$$
-\\begin{align*}
-E & = \\frac{1}{2}mv_x^2 + \\frac{1}{2}kx^2 \\\\
-& = \\frac{1}{2}kA^2 = constant \\\\
-\\end{align*}
-$$
 
 
