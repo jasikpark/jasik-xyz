@@ -82,7 +82,7 @@ where \\(\kappa\\) is called the torsion.
 
 Get a screenshot of page 441 of the book.
 
-**Remember: $T$ describes the time to go from $+A$ to $+A$, not $+A$ to $-A$.**
+**Remember: \\(T\\) describes the time to go from \\(+A\\) to \\(+A\\), not \\(+A\\) to \\(-A\\).**
 
 \\(\phi = \arctan(-\frac{v\_{0x}}{\omega x_0})\\)
 
