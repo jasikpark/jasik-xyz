@@ -4,8 +4,7 @@ Tags = ["Neural Networks", "Deep Learning", "Deep Neural Networks"]
 Categories = []
 Type = "post"
 Date = "2016-07-28"
-Title = "MetaNeural Network"
-Draft = "true"
+Title = "MetaNeural Network (medium.com/@jasikpark)"
 +++
 
 *Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*

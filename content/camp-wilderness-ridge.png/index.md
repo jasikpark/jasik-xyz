@@ -4,8 +4,7 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2018-01-05"
-Title = "Camp Wilderness Ridge"
-Draft = "true"
+Title = "Camp Wilderness Ridge (medium.com/@jasikpark)"
 +++
 
 *Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*

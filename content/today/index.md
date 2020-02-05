@@ -4,7 +4,7 @@ Tags = ["Writing"]
 Categories = []
 Type = "post"
 Date = "2016-09-01"
-Title = "Today."
+Title = "Today. (medium.com/@jasikpark)"
 +++
 
 *Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
