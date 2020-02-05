@@ -12,7 +12,7 @@
     {{ partial "katex.html" . }}
     {{ end }}
     {{ partial "dark-css.html" . }}
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/syntax.css">
+    {{ partial "syntax-css.html" . }}
     
     <style>
       img:not([alt]) {
