@@ -1,6 +1,6 @@
 [build]
 publish = "public/"
-command = "export PERCY_BRANCH=\"$BRANCH\";export PERCY_PULL_REQUEST=\"$REVIEW_ID\";hugo --minify && percy snapshot public/"
+command = "hugo"
 
 [build.environment]
 HUGO_ENV = "production"
