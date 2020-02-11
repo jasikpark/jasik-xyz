@@ -3,14 +3,14 @@
 <body>
   <header>
     <h1 style="font-size:initial;">
+      <a href="#footer">
+        <span>↓</span>
+      </a>
       {{ if .Draft }}
       <span class="draft-label">Draft</span>
       {{ end }}
       <a href="{{ .Permalink }}">
         <span>{{ .Title }}</span>
-      </a>
-      <a href="#footer">
-        <span>↓</span>
       </a>
     </h1>
   </header>
