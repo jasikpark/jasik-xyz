@@ -17,8 +17,7 @@ To install on macOS: `brew install exiftool` :P
 It's found a lot more data than I expected:
 
 ```
-calebjasik@Calebs-MacBook-Pro day-on-the-trails % exiftool ips-044B4F7A-A39D-45
-7B-8611-6EC795937010.mp4
+day-on-the-trails % exiftool ips-044B4F7A-A39D-457B-8611-6EC795937010.mp4
 ExifTool Version Number         : 11.70
 File Name                       : ips-044B4F7A-A39D-457B-8611-6EC795937010.mp4
 Directory                       : .
@@ -91,8 +90,7 @@ Rotation                        : 0
 The really nice part is that you can then drill down into the details you want by using `grep`.
 
 ```
-calebjasik@Calebs-MacBook-Pro jasik-xyz % exiftool content/day-on-the-trails/IM
-G_4040.jpeg | grep -i exposure
+day-on-the-trails % exiftool content/day-on-the-trails/IMG_4040.jpeg | grep -i exposure
 Exposure Time                   : 1/275
 Exposure Program                : Program AE
 Exposure Compensation           : 0
