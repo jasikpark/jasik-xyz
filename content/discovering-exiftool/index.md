@@ -8,16 +8,17 @@ PublishDate = "2020-01-15T20:13:21-06:00"
 Title = "Discovering exiftool"
 +++
 
-So something that I discovered a little bit ago was that I didn't think about removing EXIF data from images, and so I manually used the `view info` dialogue in Windows to remove the private data from the photos. 
+So something that I discovered a little bit ago was that I didn't think about removing EXIF data from images, and so I manually used the `view info` dialogue in Windows to remove the private data from the photos.
 
-In making [A Day on the Trails]({{< ref "/day-on-the-trails/index.md" >}}), I wanted to make sure that I wasn't including any of that info, so I looked for a more UNIX approach and found [`exiftool`](https://exiftool.org/). 
+In making [A Day on the Trails]({{< ref "/day-on-the-trails/index.md" >}}), I wanted to make sure that I wasn't including any of that info, so I looked for a more UNIX approach and found [`exiftool`](https://exiftool.org/).
 
 To install on macOS: `brew install exiftool` :P
 
 It's found a lot more data than I expected:
 
 ```
-calebjasik@Calebs-MacBook-Pro day-on-the-trails % exiftool ips-044B4F7A-A39D-457B-8611-6EC795937010.mp4 
+calebjasik@Calebs-MacBook-Pro day-on-the-trails % exiftool ips-044B4F7A-A39D-45
+7B-8611-6EC795937010.mp4
 ExifTool Version Number         : 11.70
 File Name                       : ips-044B4F7A-A39D-457B-8611-6EC795937010.mp4
 Directory                       : .
@@ -90,7 +91,8 @@ Rotation                        : 0
 The really nice part is that you can then drill down into the details you want by using `grep`.
 
 ```
-calebjasik@Calebs-MacBook-Pro jasik-xyz % exiftool content/day-on-the-trails/IMG_4040.jpeg | grep -i exposure
+calebjasik@Calebs-MacBook-Pro jasik-xyz % exiftool content/day-on-the-trails/IM
+G_4040.jpeg | grep -i exposure
 Exposure Time                   : 1/275
 Exposure Program                : Program AE
 Exposure Compensation           : 0
