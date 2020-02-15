@@ -1,80 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    {{ if .IsHome }}
-    <title>{{ .Site.Title }}</title>
-    {{ else }}
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    {{ end }}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {{ if .Page.Params.isMath }}
-    {{ partial "katex.html" . }}
-    {{ end }}
-    {{ partial "dark-css.html" . }}
-    {{ partial "syntax-css.html" . }}
-    
-    <style>
-      img:not([alt]) {
-        outline: 5px solid red;
-      }
-      li {
-        padding-bottom: 0.9em;
-      }
-      .navi-parent {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0.5em 0;
-        font-style: italic;
-      }
 
-      .navi-parent > * {
-        padding-right: 0.9em;
-        padding-bottom: 0.9em;
+<head>
+  <meta charset="utf-8" />
+  {{ if .IsHome }}
+  <title>{{ .Site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} | {{ .Site.Title }}</title>
+  {{ end }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{ if .Page.Params.isMath }}
+  {{ partial "katex.html" . }}
+  {{ end }}
+  {{ partial "dark-css.html" . }}
+  {{ partial "syntax-css.html" . }}
+
+  <style>
+    img:not([alt]) {
+      outline: 5px solid red;
+    }
+
+    li {
+      padding-bottom: 0.9em;
+    }
+
+    .navi-parent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0.5em 0;
+      font-style: italic;
+    }
+
+    .navi-parent>* {
+      padding-right: 0.9em;
+      padding-bottom: 0.9em;
+    }
+
+    .pd {
+      width: 4em;
+      flex-shrink: 0;
+      padding-bottom: 1.8em;
+    }
+
+    .par div {
+      display: flex;
+    }
+
+    @media all and (min-width: 480px) {
+      .navi-parent>* {
+        padding-right: 0em;
+        padding-bottom: 0em;
       }
 
       .pd {
-        width: 4em;
-        flex-shrink: 0;
-        padding-bottom: 1.8em;
-      }
-      .par div {
-        display: flex;
+        padding-bottom: 0.9em;
       }
 
-      @media all and (min-width: 480px) {
-        .navi-parent > * {
-          padding-right: 0em;
-          padding-bottom: 0em;
-        }
-        .pd {
-          padding-bottom: 0.9em;
-        }
+      pre {
+        white-space: pre-wrap;
       }
+    }
+
+    .draft-label {
+      color: #ff6347;
+    }
+
+    @media (prefers-color-scheme: light) {
       .draft-label {
-        color: #ff6347;
+        color: #e31c3d;
       }
+    }
 
-      @media (prefers-color-scheme: light) {
-        .draft-label{
-          color: #e31c3d;
-        }
-      }
-      .gist tbody tr {
-        background-color: #ffffff;
-      }
+    .gist tbody tr {
+      background-color: #ffffff;
+    }
 
-      h1 span {
-        color: var(--text-bright);
-      }
-    </style>
-    <!--<meta name="description" content="{{ .Description }}">-->
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
-    {{ range .AlternativeOutputFormats -}}
-    {{ printf `
+    h1 span {
+      color: var(--text-bright);
+    }
+  </style>
+  <!--<meta name="description" content="{{ .Description }}">-->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />
     ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-  </head>
+  {{ end -}}
+</head>
