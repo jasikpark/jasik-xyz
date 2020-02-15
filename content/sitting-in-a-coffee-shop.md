@@ -4,10 +4,10 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2017-11-02"
-Title = "sitting in a coffee shop, trying to decide: to be or not to be? (medium.com/@jasikpark)"
+Title = "sitting in a coffee shop, trying to decide: to be or not to be?"
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 sitting in a coffee shop, trying to decide: to be or not to be?
 

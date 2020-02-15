@@ -4,10 +4,10 @@ Tags = ["Neural Networks", "Deep Learning", "Deep Neural Networks"]
 Categories = []
 Type = "post"
 Date = "2016-07-28"
-Title = "MetaNeural Network (medium.com/@jasikpark)"
+Title = "MetaNeural Network"
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 A deep neural network should be trained to generate neural networks based on the string sequence submitted to it. (Allowing different types) This neural network should learn how to combine neural networks akin to sexual reproduction and learn how to improve a neural network based on the neural network and the supervised learning things. It will learn through reinforcement gradient backpropogation: if it does something right, it backpropogates on that output. Over time, the reward network becomes more discerning and rewards less often for better performance. The neural network will also learn how to optimize networks by reducing lines and edges and consolidating neurons. Also, it should have one input for each character for text input: i.e. a scanning paragraph reading. To generate the neural network, it might have a similar output, with a prediction of each character for each output. hopefully this can generalize to larger inputs and outputs or simply serialized. LTSM!!! That’s what can be used! (Basically we create a ltsm network with a larger input array for text).
 
