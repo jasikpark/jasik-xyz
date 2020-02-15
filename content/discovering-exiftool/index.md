@@ -98,3 +98,11 @@ Exposure Mode                   : Auto
 ```
 
 The `-i` asks `grep` to be insensitive to case, so that 'Exposure' and 'exposure' and 'ExPoSuRe' will all match!
+
+---
+
+_Update: <time>2020.02.15.1440</time>_
+
+To delete all GPS data via `exiftool` run `exiftool -gps:all= a.jpg`.
+
+---
