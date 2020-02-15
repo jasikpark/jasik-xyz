@@ -4,10 +4,10 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2016-11-04"
-Title = "NaNoWriMo 1. (even though it's day 4) (medium.com/@jasikpark)"
+Title = "NaNoWriMo 1. (even though it's day 4)"
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 {{< img alt="sun with a face in the lower corner, styled like an artistic map" src="starbucks-pic.jpeg" >}}
 

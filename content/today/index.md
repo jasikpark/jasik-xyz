@@ -4,10 +4,10 @@ Tags = ["Writing"]
 Categories = []
 Type = "post"
 Date = "2016-09-01"
-Title = "Today. (medium.com/@jasikpark)"
+Title = "Today."
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 {{< img alt="the man named Crazy Horse, sitting, he has long hair, and is wearing traditional dress." src="crazy-horse-profile.jpeg" >}}
 

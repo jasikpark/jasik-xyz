@@ -4,10 +4,10 @@ Tags = []
 Categories = []
 Type = "post"
 Date = "2016-11-09"
-Title = "Striving Towards the Singularity (medium.com/@jasikpark)"
+Title = "Striving Towards the Singularity"
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 For the past year, I have delved into learning all I can know about machine learning and understanding artificial intelligence…
 
