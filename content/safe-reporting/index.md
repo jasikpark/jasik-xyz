@@ -5,7 +5,6 @@ Categories = ["Resources"]
 Type = "post"
 Date = "2020-01-15T18:14:38-06:00"
 Title = "Safe Reporting"
-Draft = "True"
 +++
 
 Reuters has a [good page](https://www.reuters.com/investigates/special-report/tips/) describing multiple secure ways to report a tip to them. Most reputable new sites with their stuff together will have a page like this and will use this software.
