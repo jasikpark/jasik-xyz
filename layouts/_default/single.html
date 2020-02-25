@@ -1,3 +1,7 @@
+{{ define "title" }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ end }}
+
 {{ define "header" }}
 <header>
   <h1 style="font-size:initial;">
@@ -10,15 +14,15 @@
     <a href="{{ .Permalink }}">
       <span>{{ .Title }}</span>
     </a>
-    <time>{{ .PublishDate.Format "January 02, 2006" }}</time>
-  </h1>
 
+  </h1>
   <hr />
 </header>
 {{ end }}
 
 {{ define "main" }}
 <main>
+  {{ block "header" . }}{{ end }}
   {{ .Content }}
 </main>
 

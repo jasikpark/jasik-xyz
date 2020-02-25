@@ -1,15 +1,27 @@
+{{ define "title" }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ end }}
+
 {{ define "header" }}
 <header id="hello">
-  <a href="{{ .Permalink }}">
-    <h1 style="font-size: initial;">{{ .Title }}</h1>
-  </a>
+  <h1 style="font-size:initial;">
+    <a href="#footer">
+      <span>↓</span>
+    </a>
+    <a href="{{ .Permalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+  </h1>
+
   <hr />
 </header>
 {{ end }}
+
 {{ define "main" }}
-<main style="padding: 40px 0 0 0;" class="par">
+<main class="par">
+  {{ block "header" . }}{{ end }}
   {{ range .RegularPages }}
-  <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
+  <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em;padding-top:40px">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
       <img style="width:100vw" {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
         src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
@@ -19,6 +31,10 @@
   {{ end }}
 </main>
 <style>
+  body {
+    padding: 0;
+  }
+
   nav,
   footer {
     padding: 0 10px;

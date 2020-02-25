@@ -3,11 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    {{ if .IsHome }}
-    <title>{{ .Site.Title }}</title>
-    {{ else }}
-    <title>{{ .Title }} | {{ .Site.Title }}</title>
-    {{ end }}
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{ if .Page.Params.isMath }}
     {{ partial "katex.html" . }}
@@ -91,15 +87,15 @@
 </head>
 
 <body>
-    {{ block "header" . }}
-    <header>
-        <a href="{{ .Permalink }}">
-            <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
-        </a>
-    </header>
-    {{ end }}
     {{ block "main" . }}
     <main>
+        {{ block "header" . }}
+        <header>
+            <a href="{{ .Permalink }}">
+                <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
+            </a>
+        </header>
+        {{ end }}
         <div role="directory" class="par">
             {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
             <div>
@@ -107,7 +103,7 @@
                     <h2>{{ .Key }}</h2>
                 </div>
             </div>
-            {{ range .RegularPages }}
+            {{ range .Pages }}
             <div>
                 <div class="pd">{{ .Date.Format "01/02" }}</div>
                 {{ if .Draft }}
@@ -120,22 +116,16 @@
         </div>
     </main>
     {{ end }}
-    <nav id="footer">
-        <div title="primary-navigation" class="navi-parent">
-            <a href="#">Back to top</a>
-            <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
-            <a rel="me" href="{{ "/about/" | absURL }}">About</a>
-            <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
-            <a rel="me alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml">RSS</a>
-        </div>
-        <div title="category-navigation" class="navi-parent">
-            <a rel="me" href="{{ "/" | absURL }}">Archive</a>
-            <a rel="me" href="{{ "/photos" | absURL }}">Photos</a>
-            {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-            <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
-            {{- end -}}
-        </div>
-    </nav>
+    <footer class="navi-parent" id="footer">
+        <a href="#">Back to top</a>
+        <a rel="me" href="{{ "/" | absURL }}">Archive</a>
+        <a rel="me" href="{{ "/photos" | absURL }}">Photos</a>
+        {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+        <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
+        {{- end -}}
+        <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
+        <a rel="me alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml">RSS</a>
+    </footer>
 </body>
 
 </html>
