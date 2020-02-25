@@ -1,9 +1,12 @@
-{{ partial "header.html" . }}
+{{ define "header" }}
 <header>
   <h1 style="font-size:initial;">404</h1>
   <hr />
 </header>
+{{ end }}
+{{ define "main" }}
 <main>
+  {{ block "header" . }}{{ end }}
   <p>Oops!! Here&#x2019s my <a href="{{ "/" | relURL }}">homepage</a> and if you think something is weird you can open
     an issue on my <a href="https://github.com/jasikpark/jasik-xyz/issues/new">github repo</a> or email me at <a
       href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a></p>
@@ -12,4 +15,4 @@
   </div>
 </main>
 <br />
-{{ partial "footer.html" . }}
+{{ end }}

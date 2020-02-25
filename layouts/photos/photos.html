@@ -1,36 +1,53 @@
-{{ partial "header.html" . }}
+{{ define "title" }}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ end }}
 
-<body style="padding:0;">
-  <header id="hello">
-    <a href="{{ .Permalink }}">
-      <h1 style="font-size: initial;">{{ .Title }}</h1>
+{{ define "header" }}
+<header id="hello">
+  <h1 style="font-size:initial;">
+    <a href="#footer">
+      <span>↓</span>
     </a>
-    <hr />
-  </header>
-  <main style="padding: 40px 0 0 0;" class="par">
-    {{ range .RegularPages }}
-    <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em">
-      <a href="{{ .Permalink }}" title="{{ .Title }}">
-        <img style="width:100vw" {{ with .Resources }}
-          {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }} src='{{ .Permalink }}' {{ end }} {{ end }}
-          {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }} {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
-      </a>
-    </div>
-    {{ end }}
-  </main>
-  <style>
-    nav, footer {
+    <a href="{{ .Permalink }}">
+      <span>{{ .Title }}</span>
+    </a>
+  </h1>
+
+  <hr />
+</header>
+{{ end }}
+
+{{ define "main" }}
+<main class="par">
+  {{ block "header" . }}{{ end }}
+  {{ range .RegularPages }}
+  <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em;padding-top:40px">
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
+      <img style="width:100vw" {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
+        src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
+        {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
+    </a>
+  </div>
+  {{ end }}
+</main>
+<style>
+  body {
+    padding: 0;
+  }
+
+  nav,
+  footer {
+    padding: 0 10px;
+  }
+
+  #hello {
+    padding: 0;
+  }
+
+  @media all and (max-width: 800px) {
+    #hello {
       padding: 0 10px;
     }
-
-    #hello {
-      padding: 0;
-    }
-
-    @media all and (max-width: 800px) {
-      #hello {
-        padding: 0 10px;
-      }
-    }
-  </style>
-  {{ partial "footer.html" . }}
+  }
+</style>
+{{ end }}
