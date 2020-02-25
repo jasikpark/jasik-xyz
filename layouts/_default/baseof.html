@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    {{ if .IsHome }}
+    <title>{{ .Site.Title }}</title>
+    {{ else }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ end }}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ if .Page.Params.isMath }}
+    {{ partial "katex.html" . }}
+    {{ end }}
+    {{ partial "dark-css.html" . }}
+    {{ partial "syntax-css.html" . }}
+
+    <style>
+        img:not([alt]) {
+            outline: 5px solid red;
+        }
+
+        li {
+            padding-bottom: 0.9em;
+        }
+
+        .navi-parent {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0.5em 0;
+            font-style: italic;
+        }
+
+        .navi-parent>* {
+            padding-right: 0.9em;
+            padding-bottom: 0.9em;
+        }
+
+        .pd {
+            width: 4em;
+            flex-shrink: 0;
+            padding-bottom: 1.8em;
+        }
+
+        .par div {
+            display: flex;
+        }
+
+        @media all and (min-width: 480px) {
+            .navi-parent>* {
+                padding-right: 0em;
+                padding-bottom: 0em;
+            }
+
+            .pd {
+                padding-bottom: 0.9em;
+            }
+
+            pre {
+                white-space: pre-wrap;
+            }
+        }
+
+        .draft-label {
+            color: #ff6347;
+        }
+
+        @media (prefers-color-scheme: light) {
+            .draft-label {
+                color: #e31c3d;
+            }
+        }
+
+        .gist tbody tr {
+            background-color: #ffffff;
+        }
+
+        h1 span {
+            color: var(--text-bright);
+        }
+    </style>
+    <!--<meta name="description" content="{{ .Description }}">-->
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    {{ range .AlternativeOutputFormats -}}
+    {{ printf `
+    <link rel="%s" type="%s" href="%s" title="%s" />
+    ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+</head>
+
+<body>
+    {{ block "header" . }}
+    <header>
+        <a href="{{ .Permalink }}">
+            <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
+        </a>
+    </header>
+    {{ end }}
+    {{ block "main" . }}
+    <main>
+        <div role="directory" class="par">
+            {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
+            <div>
+                <div style="display:flex;justify-content:left;padding-bottom: 0em;" class="pd">
+                    <h2>{{ .Key }}</h2>
+                </div>
+            </div>
+            {{ range .RegularPages }}
+            <div>
+                <div class="pd">{{ .Date.Format "01/02" }}</div>
+                {{ if .Draft }}
+                <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
+                {{ end }}
+                <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </main>
+    {{ end }}
+    <nav id="footer">
+        <div title="primary-navigation" class="navi-parent">
+            <a href="#">Back to top</a>
+            <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
+            <a rel="me" href="{{ "/about/" | absURL }}">About</a>
+            <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
+            <a rel="me alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml">RSS</a>
+        </div>
+        <div title="category-navigation" class="navi-parent">
+            <a rel="me" href="{{ "/" | absURL }}">Archive</a>
+            <a rel="me" href="{{ "/photos" | absURL }}">Photos</a>
+            {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+            <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
+            {{- end -}}
+        </div>
+    </nav>
+</body>
+
+</html>
