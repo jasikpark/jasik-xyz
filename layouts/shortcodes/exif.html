@@ -1,0 +1,15 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+<section class="exif-container">
+    {{ with $src.Exif }}
+    <p>Date: {{ .Date.Format "January 02, 2006" }}</p>
+    <p>Aperture: {{ .Tags.ApertureValue }}</p>
+    <p>Brightness: {{ math.Round .Tags.BrightnessValue }}</p>
+    <p>Exposure Time: {{ .Tags.ExposureTime }}</p>
+    <p>F Number: {{ .Tags.FNumber }}</p>
+    <p>Focal Length: {{ .Tags.FocalLength }}</p>
+    <p>ISO Speed Ratings: {{ .Tags.ISOSpeedRatings }}</p>
+    <p>Lens Model: {{ .Tags.LensModel }}</p>
+    {{ end }}
+</section>
