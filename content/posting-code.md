@@ -2,7 +2,6 @@
 author = "Caleb Jasik"
 date = "2018-09-03T08:27:44-05:00"
 draft = false
-featured_image = "/uploads/error-code.png"
 tags = ["cpp"]
 title = "Posting Code"
 type = "post"
@@ -17,7 +16,7 @@ fine.
 using namespace std;
 
 int main() {
-  cout << "hello world";
+cout << "hello world";
 }
 {{< / highlight >}}
 

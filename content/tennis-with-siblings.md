@@ -1,7 +1,6 @@
 +++
 date = "2018-09-03T08:47:39-05:00"
 draft = false
-featured_image = "/uploads/noah-playing-tennis.png"
 title = "Tennis With Siblings"
 type = "post"
 +++

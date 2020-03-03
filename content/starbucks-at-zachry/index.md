@@ -1,6 +1,5 @@
 +++
 date = "2018-09-02T01:56:07+00:00"
-featured_image = "/uploads/IMG_1941.JPG"
 tags = ["tamu"]
 title = "Starbucks at Zachry"
 type = "post"
