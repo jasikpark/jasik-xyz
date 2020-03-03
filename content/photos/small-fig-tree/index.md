@@ -11,3 +11,5 @@ ImgTitle = "you can see our mulberry tree in the background :)"
 +++
 
 {{< img src="small-fig-tree-november-27-2019.jpg" >}}
+
+{{< exif src="small-fig-tree-november-27-2019.jpg" >}}
