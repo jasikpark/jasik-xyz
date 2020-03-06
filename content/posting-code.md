@@ -11,14 +11,14 @@ Here's a little "Hello World" code snippet to show how C++ highlighting works on
 the website. I wonder if adding Github gists is a better idea, but idk. It's
 fine.
 
-{{< highlight cpp >}}
+```cpp
 #include <iostream>
 using namespace std;
 
 int main() {
 cout << "hello world";
 }
-{{< / highlight >}}
+```
 
 ## Here's a Github Gist version of that:
 
