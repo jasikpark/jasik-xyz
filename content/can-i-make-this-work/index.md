@@ -8,4 +8,4 @@ type = "post"
 
 Josh and I went to the local Walmart and got some sweet, sweet Milo's sweet tea.
 
-![](caleb_with_sweet_tea.jpg)
+{{< img alt="i'm holding a jug of milo's zero calorie sweet tea in front of my face at walmart" src="caleb_with_sweet_tea.jpg" >}}
