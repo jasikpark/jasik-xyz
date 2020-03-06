@@ -34,6 +34,12 @@
             padding-bottom: 0.9em;
         }
 
+        .exif-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 2em;
+        }
+
         .pd {
             width: 4em;
             flex-shrink: 0;
@@ -75,6 +81,18 @@
 
         h1 span {
             color: var(--text-bright);
+        }
+
+        .wayback {
+            text-decoration: none;
+        }
+
+        .wayback svg {
+            fill: var(--links);
+        }
+
+        .wayback:hover {
+            background: var(--focus);
         }
     </style>
     <!--<meta name="description" content="{{ .Description }}">-->

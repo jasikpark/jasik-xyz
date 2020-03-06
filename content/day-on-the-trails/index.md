@@ -8,7 +8,7 @@ PublishDate = "2020-01-15T20:13:21-06:00"
 Title = "A Day on the Trails"
 +++
 
-We went and visited the [Balcones Canyonlands](https://www.fws.gov/refuge/balcones_canyonlands/) located at [+30° 30' 27.03", -98° 1' 30.19"](https://duckduckgo.com/?q=%2B30%C2%B0+30%27+27.03%22%2C+-98%C2%B0+1%27+30.19%22&t=ffab&ia=web&iaxm=maps&strict_bbox=0&bbox=30.573871674243332%2C-98.07886115080203%2C30.466956326396026%2C-97.90033331877078) while visiting our cousins! This first pic is my brother looking out at the canyon. You can see the Colorado River in the distance, in addition to the reserve entrance.
+We went and visited the [Balcones Canyonlands](https://www.fws.gov/refuge/balcones_canyonlands/){{< wayback href="https://www.fws.gov/refuge/balcones_canyonlands/">}} located at [+30° 30' 27.03", -98° 1' 30.19"](https://duckduckgo.com/?q=%2B30%C2%B0+30%27+27.03%22%2C+-98%C2%B0+1%27+30.19%22&t=ffab&ia=web&iaxm=maps&strict_bbox=0&bbox=30.573871674243332%2C-98.07886115080203%2C30.466956326396026%2C-97.90033331877078){{< wayback href="https://duckduckgo.com/?q=%2B30%C2%B0+30%27+27.03%22%2C+-98%C2%B0+1%27+30.19%22&t=ffab&ia=web&iaxm=maps&strict_bbox=0&bbox=30.573871674243332%2C-98.07886115080203%2C30.466956326396026%2C-97.90033331877078" >}} while visiting our cousins! This first pic is my brother looking out at the canyon. You can see the Colorado River in the distance, in addition to the reserve entrance.
 
 {{< img src="IMG_4053" alt="cool people enjoying nature" title="cool people enjoying nature" >}}
 
