@@ -1,12 +1,12 @@
 +++
 date = "2019-03-20T16:22:25-05:00"
 draft = false
-title = "Mini Sheperd's Pie"
+title = "Mini Shepherd's Pie"
 categories = ["Recipes"]
 type = "post"
 +++
 
-!["y'all got any more of them sherperd's pies"](got-any-more-pies.jpeg)
+!["y'all got any more of them sherpherd's pies"](got-any-more-pies.jpeg)
 
 > this is James Laffrey’s recipe that I’ve written down for deliciousness
 
