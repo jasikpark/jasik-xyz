@@ -20,6 +20,8 @@ pygmentsUseClasses = true
   filename = "sitemap.xml"
 
 [params]
+description = "Bowl of TARDIS is the space for Caleb Jasik on the web. Mostly random blog posts, and occasional pictures"
+
 
 [author]
   name = "Caleb Jasik"
