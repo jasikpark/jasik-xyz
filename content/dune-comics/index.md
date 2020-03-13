@@ -9,7 +9,7 @@ Here's some Dune comics I like...
 
 [![](donkey_summons_sand_worm.jpg)](https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/?comic=dunkey)
 
-from [Steak Smoothie](https://steaksmoothie.com)
+from [Steak Smoothie](https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/)
 
 [![](dune-meme.jpg)](https://questionablecontent.net/view.php?comic=59)
 
