@@ -16,3 +16,4 @@ This will be a running list of things I plan to buy. :P
 - [Bike headlight](https://thewirecutter.com/reviews/best-commuter-bike-lights/) -- It's probably a lot safer to bike around at night with proper lighting.
 - [Laptop Stand](https://thewirecutter.com/reviews/best-laptop-stands/)
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
+- [Tom Bihn's Synik 22](https://www.tombihn.com/collections/backpacks/products/synik-22) -- I like smallish backpacks and Tom Bihn makes the best backpacks. 
