@@ -14,3 +14,4 @@ This will be a running list of things I plan to buy. :P
 - [Lamp that can fit by my couch](https://www.target.com/p/valencia-led-floor-lamp-brass-includes-energy-efficient-light-bulb-project-62-8482/-/A-54550861#)
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
 - [Bike headlight](https://thewirecutter.com/reviews/best-commuter-bike-lights/)
+- [Laptop Stand](https://thewirecutter.com/reviews/best-laptop-stands/)
