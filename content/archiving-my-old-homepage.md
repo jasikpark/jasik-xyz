@@ -12,4 +12,4 @@ over into my [hugo](https://gohugo.io) website. How I ended up doing it was by
 moving `index.html` and `css/{main.css,zenburn.css,syntax.css}` to the `static`
 folder of my hugo website.
 
-It's at [https://jasik.xyz/old-index-html/](https://jasik.xyz/old-index-html/)
+It's at [{{< danger-ref href="/old-index-html" >}}]({{< danger-ref href="/old-index-html" >}})

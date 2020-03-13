@@ -8,7 +8,7 @@ Title = "Resources used creating jasik.xyz"
 +++
 
 This page will track info that I've picked up over time about [Hugo](https://gohugo.io)
-and other technologies while creating [jasik.xyz](https://jasik.xyz).
+and other technologies while creating [jasik.xyz]({{< danger-ref href="/" >}}).
 
 - [Add Tags to Your Hugo Blog Using Taxonomies | Jake Wiesler](https://www.jakewiesler.com/blog/hugo-taxonomies/)
 - [flex-wrap - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
