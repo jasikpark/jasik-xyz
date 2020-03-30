@@ -1,5 +1,5 @@
 {{ define "title" }}
-{{ .Title }} | {{ .Site.Title }}
+{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }} | {{ .Site.Title }}
 {{ end }}
 
 {{ define "header" }}
@@ -12,7 +12,7 @@
     <span class="draft-label">Draft</span>
     {{ end }}
     <a href="{{ .Permalink }}">
-      <span>{{ .Title }}</span>
+      <span>{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</span>
     </a>
 
   </h1>
