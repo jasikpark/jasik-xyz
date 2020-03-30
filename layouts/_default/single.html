@@ -51,8 +51,10 @@
 </footer>
 {{ if .Date }}
 <footer class="navi-parent">
-  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
+  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">←
+      {{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a> {{ end }}{{ end }}</div>
+  <div>{{ with.NextPage }}{{ if .Date }}<a
+      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }} →</a> {{ end }}{{ end }}</div>
 </footer>
 {{ end }}
 
