@@ -15,8 +15,8 @@
     {{ if .Page.Params.isMath }}
     {{ partial "katex.html" . }}
     {{ end }}
-    {{ partial "dark-css.html" . }}
-    {{ partial "syntax-css.html" . }}
+    <link rel="stylesheet" href="{{ "css/dark.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}">
 
     <style>
         img:not([alt]) {
