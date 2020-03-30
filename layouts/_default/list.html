@@ -24,7 +24,7 @@
             {{ if .Draft }}
             <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
             {{ end }}
-            <a href="{{ .Permalink }}">{{ .Page.Title }}</a>
+            <a href="{{ .Permalink }}">{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</a>
         </div>
         {{ end }}
         {{ end }}
