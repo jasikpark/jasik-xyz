@@ -50,7 +50,7 @@
   </address>
 </footer>
 {{ if .Date }}
-<footer class="navi-parent">
+<footer title="pagination" class="navi-parent">
   <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
   <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
 </footer>
