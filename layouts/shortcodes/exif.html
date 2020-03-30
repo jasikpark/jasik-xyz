@@ -1,15 +1,17 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 
-<section class="exif-container">
-    {{ with $src.Exif }}
-    <p>Date: {{ .Date.Format "January 02, 2006" }}</p>
-    <p>Aperture: {{ .Tags.ApertureValue }}</p>
-    <p>Brightness: {{ math.Round .Tags.BrightnessValue }}</p>
-    <p>Exposure Time: {{ .Tags.ExposureTime }}</p>
-    <p>F Number: {{ .Tags.FNumber }}</p>
-    <p>Focal Length: {{ .Tags.FocalLength }}</p>
-    <p>ISO Speed Ratings: {{ .Tags.ISOSpeedRatings }}</p>
-    <p>Lens Model: {{ .Tags.LensModel }}</p>
-    {{ end }}
+{{ with $src.Exif }}
+<section id="exif-data">
+    <ul class="exif-container">
+        {{ with .Date }}<li>Date: {{ .Format "January 02, 2006" }}</li>{{ end }}
+        {{ with .Tags.ApertureValue }}<li>Aperture: {{ (printf "%.2f" .) }}</li>{{ end }}
+        {{ with .Tags.BrightnessValue }}<li>Brightness: {{ (printf "%.2f" .) }}</li>{{ end }}
+        {{ with .Tags.ExposureTime }}<li>Exposure Time: {{ . }}</li>{{ end }}
+        {{ with .Tags.FNumber }}<li>F Number: {{ . }}</li>{{ end }}
+        {{ with .Tags.FocalLength }}<li>Focal Length: {{ . }}</li>{{ end }}
+        {{ with .Tags.ISOSpeedRatings }}<li>ISO Speed Ratings: {{ . }}</li>{{ end }}
+        {{ with .Tags.LensModel }}<li>Lens Model: {{ . }}</li>{{ end }}
+    </ul>
 </section>
+{{ end }}
