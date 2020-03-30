@@ -2,3 +2,5 @@
 ![Hugo](https://github.com/jasikpark/jasik-xyz/workflows/Hugo/badge.svg)
 
 # [jasik-xyz](https://jasik.xyz)
+
+Major UI changes need a Percy review pass to merge into master.
