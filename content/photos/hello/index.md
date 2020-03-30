@@ -8,6 +8,6 @@ Title = "Hello"
 ImgAlt = "picture of a stuffed creature with a cute face"
 +++
 
-{{< img src="hello.jpeg"
-alt="picture of a stuffed creature with a cute face"
->}}
+{{< img src="hello.jpeg" alt="picture of a stuffed creature with a cute face" >}}
+
+{{< exif src="hello.jpeg" >}}

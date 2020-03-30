@@ -9,3 +9,5 @@ ImgAlt = "hedgehog"
 +++
 
 {{< img src="hedgehog.jpg" alt="hedgehog" >}}
+
+{{< exif src="hedgehog.jpg" >}}
