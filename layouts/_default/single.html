@@ -37,13 +37,14 @@
       </a>
     </div>
     {{ end }}
+    {{ if $.GitInfo }}
     <div>
       This page was last modified
-      {{ if $.GitInfo }}
-      <a
-        href="https://github.com/jasikpark/jasik-xyz/commit/{{ .GitInfo.Hash }}"><time>{{ .Lastmod.Format "January 2, 2006" }}</time></a>
-      {{ end }}
+      <time>{{ .Lastmod.Format "January 2, 2006" }}</time>.
+      You can see the revisions <a
+        href="https://github.com/jasikpark/jasik-xyz/commits/master/content/{{ .Path }}">here</a>
     </div>
+    {{ end }}
   </div>
   <address property="email" style="font-style:normal;" class="navi-parent">
     <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
