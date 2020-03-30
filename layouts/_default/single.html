@@ -1,5 +1,5 @@
 {{ define "title" }}
-{{ .Title }} | {{ .Site.Title }}
+{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }} | {{ .Site.Title }}
 {{ end }}
 
 {{ define "header" }}
@@ -12,7 +12,7 @@
     <span class="draft-label">Draft</span>
     {{ end }}
     <a href="{{ .Permalink }}">
-      <span>{{ .Title }}</span>
+      <span>{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</span>
     </a>
 
   </h1>
@@ -51,8 +51,10 @@
 </footer>
 {{ if .Date }}
 <footer class="navi-parent">
-  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">← {{.Title}}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextPage }}{{ if .Date }}<a href="{{.Permalink}}">{{.Title}} →</a> {{ end }}{{ end }}</div>
+  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">←
+      {{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a> {{ end }}{{ end }}</div>
+  <div>{{ with.NextPage }}{{ if .Date }}<a
+      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }} →</a> {{ end }}{{ end }}</div>
 </footer>
 {{ end }}
 
