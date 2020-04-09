@@ -10,6 +10,7 @@
             <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
         </a>
     </header>
+    {{ partial "css-day" }}
     {{ end }}
     <div role="directory" class="par">
         {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
