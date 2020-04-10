@@ -19,6 +19,7 @@ _site
 
 # OS or Editor folders
 *.scssc
+.idea
 .DS_Store
 Thumbs.db
 .cache
