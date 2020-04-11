@@ -1,24 +1,29 @@
-<html>
-  <head>
-    
-    
-{{ if .Site.IsServer }}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <title>{{ with .Title }}{{ . }} ﹒ {{ end }}{{ .Site.Title }}</title>
+  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+  {{ if .Site.IsServer }}
   {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
-    
-  <link rel="stylesheet" href="{{ $style.Permalink }}" data> 
+  <link rel="stylesheet" href="{{ $style.Permalink }}" data>
 
-{{ else }}
+  {{ else }}
 
   {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint }}
-  
-  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}"> 
 
-{{ end }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
-    
-  </head>
-  <body>
+  {{ end }}
+
+  <link rel="icon" href="https://source.unsplash.com/ZdOW9Qd8mQo/150x150" sizes="150x150">
+</head>
+
+<body class="bg-pig-pink-500">
+  <main>
+    {{ block "header" .}}{{ end }}
     {{ block "main" . }}{{ end }}
-  </body>
+  </main>
+</body>
+
 </html>

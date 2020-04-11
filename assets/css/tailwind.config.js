@@ -1,7 +1,59 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        display: ["PublicSans-Black"],
+        body: ["PublicSans-Regular"],
+        accent: ["FS\\ Kitty\\ Solid\\ Trial"],
+      },
+      colors: {
+        "pig-pink": {
+          100: "#FEFBFC",
+          200: "#FEF4F8",
+          300: "#FDEDF4",
+          400: "#FBE0EC",
+          500: "#F9D2E4",
+          600: "#E0BDCD",
+          700: "#957E89",
+          800: "#705F67",
+          900: "#4B3F44",
+        },
+        "tropical-rain-forest": {
+          100: "#E6F1F0",
+          200: "#BFDDD8",
+          300: "#99C8C1",
+          400: "#4D9F93",
+          500: "#007664",
+          600: "#006A5A",
+          700: "#00473C",
+          800: "#00352D",
+          900: "#00231E",
+        },
+        "mint-tulip": {
+          100: "#F9FFFE",
+          200: "#F0FEFC",
+          300: "#E7FEFA",
+          400: "#D4FDF6",
+          500: "#C2FCF2",
+          600: "#AFE3DA",
+          700: "#749791",
+          800: "#57716D",
+          900: "#3A4C49",
+        },
+        patina: {
+          100: "#F0F5F4",
+          200: "#D8E6E4",
+          300: "#C1D7D3",
+          400: "#93B9B3",
+          500: "#649B92",
+          600: "#5A8C83",
+          700: "#3C5D58",
+          800: "#2D4642",
+          900: "#1E2F2C",
+        },
+      },
+    },
   },
   variants: {},
-  plugins: []
-}
+  plugins: [],
+};

@@ -1,4 +1,30 @@
 .bud {
-  color: red;  
+  color: red;
 }
-  
+
+@font-face {
+  font-family: PublicSans-Black;
+  src: url("fonts/PublicSans/PublicSans-Black.woff2") format("woff2"),
+    url("fonts/PublicSans/PublicSans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: PublicSans-Regular;
+  src: url("fonts/PublicSans/PublicSans-Regular.woff2") format("woff2"),
+    url("fonts/PublicSans/PublicSans-Regular.woff") format("woff");
+}
+
+html {
+  font-size: 18px;
+}
+@media (min-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.accent {
+  font-size: 15vw;
+  line-height: 0.9;
+  font-feature-settings: "SHDW" 1000 "OUTL" 100;
+}

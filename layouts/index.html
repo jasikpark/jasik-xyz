@@ -1,6 +1,34 @@
-{{ define "main" }}
-<div class="bud sm:my-1 my-2 p-1">
-  some content here
-</div>  
+{{ define "header" }}
+<h1
+  class="font-display font-black text-center pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-500 text-6xl">
+  <a class="hover:text-tropical-rain-forest-400" href="/">Bowl of TARDIS</a>
+</h1>
+<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
+<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-2xl">
+  Caleb
+  Jasik - <a class="hover:underline hover:text-tropical-rain-forest-600"
+    href="https://twitter.com/calebjasik">twitter</a>
+</h2>
+{{ end }}
 
+{{ define "main" }}
+<p class="font-body p-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700">Thanks for coming to my
+  website!</p>
+
+<figure class="mt-8 sm:p-8 bg-mint-tulip-500">
+  <img alt="" class="sm:p-4 mx-auto" src="https://source.unsplash.com/random/1000x500">
+  <figcaption>
+    <h2 class="font-body p-4 text-xl text-patina-700 text-center mx-auto">Here's a cool picture</h2>
+  </figcaption>
+</figure>
+
+<hr class="border-mint-tulip-500 border-t-8 mx-4 my-16">
+
+<section>
+  <p
+    class="bg-patina-400 border-mint-tulip-800 border-8 rounded-lg accent font-accent p-16 text-center m-8 text-mint-tulip-800">
+    Pobody's
+    Nerfect!
+  </p>
+</section>
 {{ end }}
