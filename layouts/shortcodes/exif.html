@@ -1,6 +1,7 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 
+{{ if $src}}
 {{ with $src.Exif }}
 <section id="exif-data">
     <ul class="exif-container">
@@ -14,4 +15,5 @@
         {{ with .Tags.LensModel }}<li>Lens Model: {{ . }}</li>{{ end }}
     </ul>
 </section>
+{{ end }}
 {{ end }}
