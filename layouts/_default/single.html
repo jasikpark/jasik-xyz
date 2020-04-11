@@ -1,0 +1,17 @@
+{{ define "header" }}
+<h1
+    class="font-display font-black text-center pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-500 text-6xl">
+    <a class="hover:text-tropical-rain-forest-400" href="/">Bowl of TARDIS</a>
+</h1>
+<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
+<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-2xl">
+    Caleb
+    Jasik - <a class="hover:underline hover:text-tropical-rain-forest-600"
+        href="https://twitter.com/calebjasik">twitter</a>
+</h2>
+{{ end }}
+
+{{ define "main" }}
+<h1 class="max-w-screen-sm mx-auto text-tropical-rain-forest-700 text-2xl">{{ .Title }}</h1>
+<section class="max-w-screen-sm mx-auto text-tropical-rain-forest-700">{{ .Content }}</section>
+{{ end }}

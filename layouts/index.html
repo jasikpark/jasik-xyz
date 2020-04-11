@@ -26,9 +26,45 @@
 
 <section>
   <p
-    class="bg-patina-400 border-mint-tulip-800 border-8 rounded-lg accent font-accent p-16 text-center m-8 text-mint-tulip-800">
+    class="bg-patina-300 border-mint-tulip-800 border-8 rounded-lg accent font-display font-black p-16 text-center m-8 text-mint-tulip-800">
     Pobody's
     Nerfect!
   </p>
 </section>
+
+<h2 class="font-display pb-4 pt-8 px-4 text-center mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-4xl">
+  Posts</h2>
+<ol class="list-none">
+  {{ range .RegularPages }}
+  <li class="py-2">
+    {{ if .Title }}
+    <h3 class="font-display pt-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-xl">
+      <a class="hover:text-tropical-rain-forest-600" href="{{ .Permalink }}">{{ .Title }}</h3></a>
+    <p class="pb-4 px-4 max-w-screen-sm mx-auto">
+      <time
+        class="inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body font-thin leading-tight text-patina-300">{{ .PublishDate.Format "January 02, 2006" }}</time>
+    </p>
+    <p class="font-body p-2 mx-auto max-w-screen-sm text-tropical-rain-forest-700">
+      {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+    {{ else }}
+    <h3 class="font-display pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-xl">
+      <a class="hover:text-tropical-rain-forest-600" href="{{ .Permalink }}">{{ .Summary }}</a></h3>
+    <p class="pb-8 px-4 max-w-screen-sm mx-auto">
+      <time
+        class="inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body font-thin leading-tight text-patina-300">{{ .PublishDate.Format "January 02, 2006" }}</time>
+    </p>
+    {{ end }}
+  </li>
+  {{ end }}
+</ol>
+{{ end }}
+
+{{ define "footer" }}
+<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
+<ul class="list-none">
+  <li>
+    <p class="font-body p-2 mx-auto max-w-screen-sm hover:text-tropical-rain-forest-600 text-tropical-rain-forest-700">
+      <a href="#">Back to top</a></p>
+  </li>
+</ul>
 {{ end }}
