@@ -25,6 +25,7 @@
 
 <body class="bg-pig-pink-500">
   <main>
+    {{ if .Site.IsServer }}
     <div class="max-w-xl mx-auto">
       <div class="border border-black inline-block h-12 w-64 bg-pig-pink-500">pig pink</div>
       <div class="text-white border border-black inline-block h-12 w-64 bg-tropical-rain-forest-500">tropical rain
@@ -32,6 +33,7 @@
       <div class="border border-black inline-block h-12 w-64 bg-mint-tulip-500">mint tulip</div>
       <div class="border border-black inline-block h-12 w-64 bg-patina-500">patina</div>
     </div>
+    {{ end }}
     {{ block "header" .}}{{ end }}
     {{ block "main" . }}{{ end }}
   </main>
