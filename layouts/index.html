@@ -1,10 +1,9 @@
 {{ define "header" }}
-<h1
-  class="font-display font-black text-center pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-500 text-6xl">
+<h1 class="font-display font-black text-center pt-8 px-4 mx-auto max-w-xl text-tropical-rain-forest-500 text-6xl">
   <a class="hover:text-tropical-rain-forest-400" href="/">Bowl of TARDIS</a>
 </h1>
-<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
-<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-2xl">
+<hr class="border-mint-tulip-500 border-t-8 max-w-xl py-2 mx-auto">
+<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-xl text-tropical-rain-forest-700 text-2xl">
   Caleb
   Jasik - <a class="hover:underline hover:text-tropical-rain-forest-600"
     href="https://twitter.com/calebjasik">twitter</a>
@@ -12,11 +11,16 @@
 {{ end }}
 
 {{ define "main" }}
-<p class="font-body p-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700">Thanks for coming to my
+<p class="font-body p-4 mx-auto max-w-xl text-tropical-rain-forest-700">Thanks for coming to my
   website!</p>
 
 <figure class="mt-8 sm:p-8 bg-mint-tulip-500">
-  <img alt="" class="sm:p-4 mx-auto" src="https://source.unsplash.com/random/1000x500">
+  {{ range first 1 (shuffle (where .Site.Pages "Type" "photo"))}}
+  <img class="mx-auto max-w-5xl" {{ with .Resources }}
+    {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }} src='{{ .Permalink }}' {{ end }} {{ end }}
+    alt="{{ .Params.ImageAlt }}" />
+  </a>
+  {{ end }}
   <figcaption>
     <h2 class="font-body p-4 text-xl text-patina-700 text-center mx-auto">Here's a cool picture</h2>
   </figcaption>
@@ -27,29 +31,28 @@
 <section>
   <p
     class="bg-patina-300 border-mint-tulip-800 border-8 rounded-lg accent font-display font-black p-16 text-center m-8 text-mint-tulip-800">
-    Pobody's
-    Nerfect!
+    Pobody's Nerfect
   </p>
 </section>
 
-<h2 class="font-display pb-4 pt-8 px-4 text-center mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-4xl">
+<h2 class="font-display pb-4 pt-8 px-4 text-center mx-auto max-w-xl text-tropical-rain-forest-700 text-4xl">
   Posts</h2>
 <ol class="list-none">
   {{ range .RegularPages }}
   <li class="py-2">
     {{ if .Title }}
-    <h3 class="font-display pt-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-xl">
+    <h3 class="font-display pt-4 px-4 mx-auto max-w-xl text-tropical-rain-forest-700 text-xl">
       <a class="hover:text-tropical-rain-forest-600" href="{{ .Permalink }}">{{ .Title }}</h3></a>
-    <p class="pb-4 px-4 max-w-screen-sm mx-auto">
+    <p class="pb-4 px-4 max-w-xl mx-auto">
       <time
         class="inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body font-thin leading-tight text-patina-300">{{ .PublishDate.Format "January 02, 2006" }}</time>
     </p>
-    <p class="font-body p-2 mx-auto max-w-screen-sm text-tropical-rain-forest-700">
+    <p class="font-body p-2 mx-auto max-w-xl text-tropical-rain-forest-700">
       {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
     {{ else }}
-    <h3 class="font-display pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-xl">
+    <h3 class="font-display pt-8 px-4 mx-auto max-w-xl text-tropical-rain-forest-700 text-xl">
       <a class="hover:text-tropical-rain-forest-600" href="{{ .Permalink }}">{{ .Summary }}</a></h3>
-    <p class="pb-8 px-4 max-w-screen-sm mx-auto">
+    <p class="pb-8 px-4 max-w-xl mx-auto">
       <time
         class="inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body font-thin leading-tight text-patina-300">{{ .PublishDate.Format "January 02, 2006" }}</time>
     </p>
@@ -57,14 +60,4 @@
   </li>
   {{ end }}
 </ol>
-{{ end }}
-
-{{ define "footer" }}
-<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
-<ul class="list-none">
-  <li>
-    <p class="font-body p-2 mx-auto max-w-screen-sm hover:text-tropical-rain-forest-600 text-tropical-rain-forest-700">
-      <a href="#">Back to top</a></p>
-  </li>
-</ul>
 {{ end }}

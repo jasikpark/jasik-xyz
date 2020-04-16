@@ -16,16 +16,33 @@
 
   {{ end }}
 
+  {{ if .Params.IsMath }}
+  {{ partialCached "katex" . }}
+  {{ end }}
+
   <link rel="icon" href="https://source.unsplash.com/ZdOW9Qd8mQo/150x150" sizes="150x150">
 </head>
 
 <body class="bg-pig-pink-500">
   <main>
+    <div class="max-w-xl mx-auto">
+      <div class="border border-black inline-block h-12 w-64 bg-pig-pink-500">pig pink</div>
+      <div class="text-white border border-black inline-block h-12 w-64 bg-tropical-rain-forest-500">tropical rain
+        forest</div>
+      <div class="border border-black inline-block h-12 w-64 bg-mint-tulip-500">mint tulip</div>
+      <div class="border border-black inline-block h-12 w-64 bg-patina-500">patina</div>
+    </div>
     {{ block "header" .}}{{ end }}
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
-    {{ block "footer" . }}{{ end }}
+    <ul class="mx-auto max-w-xl pt-4 pb-8 list-none">
+      <li>
+        <a class="leading-tight text-tropical-rain-forest-700 font-body" href="#">Back
+          to
+          top</a>
+      </li>
+    </ul>
   </footer>
 </body>
 

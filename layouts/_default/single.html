@@ -1,10 +1,9 @@
 {{ define "header" }}
-<h1
-    class="font-display font-black text-center pt-8 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-500 text-6xl">
+<h1 class="font-display font-black text-center pt-8 px-4 mx-auto max-w-xl text-tropical-rain-forest-500 text-6xl">
     <a class="hover:text-tropical-rain-forest-400" href="/">Bowl of TARDIS</a>
 </h1>
-<hr class="border-mint-tulip-500 border-t-8 max-w-screen-sm py-2 mx-auto">
-<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-screen-sm text-tropical-rain-forest-700 text-2xl">
+<hr class="border-mint-tulip-500 border-t-8 max-w-xl py-2 mx-auto">
+<h2 class="font-display font-thin text-center pb-4 px-4 mx-auto max-w-xl text-tropical-rain-forest-700 text-2xl">
     Caleb
     Jasik - <a class="hover:underline hover:text-tropical-rain-forest-600"
         href="https://twitter.com/calebjasik">twitter</a>
@@ -12,6 +11,32 @@
 {{ end }}
 
 {{ define "main" }}
-<h1 class="max-w-screen-sm mx-auto text-tropical-rain-forest-700 text-2xl">{{ .Title }}</h1>
-<section class="max-w-screen-sm mx-auto text-tropical-rain-forest-700">{{ .Content }}</section>
+<h1 class="max-w-xl mx-auto leading-tight text-tropical-rain-forest-500 text-2xl">{{ .Title }}</h1>
+{{ with .PublishDate }}
+<p class="max-w-xl mx-auto pb-4">
+    <time
+        class="max-w-xl mx-auto inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body text-sm leading-tight text-patina-300">{{ .Format "January 02, 2006" }}</time>
+</p>
+{{ end }}
+<section class="main-content p-4 mx-auto font-body text-tropical-rain-forest-700">{{ .Content }}</section>
+{{ if .GitInfo }}
+{{ if .PublishDate}}
+{{ if (ne .GitInfo.LastMod .PublishDate) }}
+<p>This page was last modified
+    <time
+        class="max-w-xl mx-auto inline-block bg-mint-tulip-900 px-2 py-1 rounded-full font-body text-sm leading-tight text-patina-300">
+        {{ .GitInfo.LastMod.Format "January 02, 2006" }}</time>.
+    You can access revisions
+    <a href="https://github.com/jasikpark/jasik-xyz/commits/master/content/{{ .Path }}">here</a>.</p>
+{{ end }}
+{{ end }}
+{{ end }}
+
+<div>
+    <p></p>
+</div>
+<div class="max-w-xl mx-auto flex justify-between text-tropical-rain-forest-700 font-body">
+    {{ with .Prev }}<div><a href="{{ .Permalink }}">Previous</a></div>{{ end }}
+    {{ with .Next }}<div><a href="{{ .Permalink }}">Next</a></div>{{ end }}
+</div>
 {{ end }}

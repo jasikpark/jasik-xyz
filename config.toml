@@ -1,2 +1,4 @@
-title = "HugoPipes-tailwindcss"
+title = "Bowl of TARDIS"
 
+[markup.highlight]
+    style = "bw"

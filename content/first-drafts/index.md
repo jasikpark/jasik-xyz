@@ -19,9 +19,9 @@ So I've been considering designing a simple ledge for the living room of my room
 
 1 square grid = 4 inches (mostly)
 
-<figure>
+{{< figure >}}
 {{< img src="initial-draft.jpg" alt="hand-drawn first draft" >}}
-<figcaption>
-<p>Hand-drawn first draft</p>
-</figcaption>
-</figure>
+{{< figcaption >}}
+Hand-drawn first draft
+{{< /figcaption >}}
+{{< /figure >}}
