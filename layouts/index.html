@@ -14,7 +14,7 @@
 <p class="font-body p-4 mx-auto max-w-xl text-tropical-rain-forest-700">Thanks for coming to my
   website!</p>
 
-<figure class="mt-8 sm:p-8 bg-mint-tulip-500">
+<figure class="mx-auto max-w-5xl mt-8 sm:p-8 bg-mint-tulip-500">
   {{ range first 1 (shuffle (where .Site.Pages "Type" "photo"))}}
   <img class="mx-auto max-w-5xl" {{ with .Resources }}
     {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }} src='{{ .Permalink }}' {{ end }} {{ end }}
