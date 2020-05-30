@@ -14,7 +14,7 @@ This will be a running list of things I plan to buy. :P
 - [Bike headlight](https://thewirecutter.com/reviews/best-commuter-bike-lights/) -- It's probably a lot safer to bike around at night with proper lighting.
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
 - [Tom Bihn's Synik 22](https://www.tombihn.com/collections/backpacks/products/synik-22) -- I like smallish backpacks and Tom Bihn makes the best backpacks.
-- [Fork](fork.dev/) -- This is what I'm using to edit my site right now, it's really ergonomic!
+- [Fork](https://fork.dev/) -- This is what I'm using to edit my site right now, it's really ergonomic!
 - [Fancy closet hangers](https://www.amazon.com/dp/B000OSJMSE/)
 - [Magic Puzzles by Max Temkin](https://www.kickstarter.com/projects/maxtemkin/magic-puzzles/)
 - [Fancy GEOX shoes](https://www.geox.com/en-US/man/)

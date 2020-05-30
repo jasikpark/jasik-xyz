@@ -12,10 +12,10 @@
 {{ define "main" }}
 <main>
   {{ block "header" . }}{{ end }}
-  <p>Oops!! Here&#x2019s my <a href="{{ "/" | relURL }}">homepage</a> and if you think something is weird you can open
+  <p>Oops!! Here&#x2019s my <a href="{{ "/" | absURL }}">homepage</a> and if you think something is weird you can open
     an issue on my <a href="https://github.com/jasikpark/jasik-xyz/issues/new">github repo</a> or email me at <a
       href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a></p>
-  <a href="https://unsplash.com/photos/i54owgDjXeY"><img src="/uploads/cool-octopus.jpg"
+  <a href="https://unsplash.com/photos/i54owgDjXeY"><img src="{{ "/uploads/cool-octopus.jpg" | absURL }}"
       alt="octopus on black background" /></a>
   </div>
 </main>
