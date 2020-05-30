@@ -20,6 +20,7 @@ This will be a running list of things I plan to buy. :P
 - [Fancy GEOX shoes](https://www.geox.com/en-US/man/)
 - [Fancy Haw's watering can](https://haws.co.uk/)
 - [Knive's Out style sweater](https://www.blarney.com/irish-shop/mens-supersoft-plaited-cable-crew-neck-sweater/)
+- [41-qt size Container Store storage bins](https://www.containerstore.com/s/clear-weathertight-totes/d?productId=10026213&cid=af%3Agen&ranMID=37353&ranEAID=7m8EnekPF5E&ranSiteID=7m8EnekPF5E-r54gyqZckxZ0kDgQF6hTyQ)
 
 (Done)
 
