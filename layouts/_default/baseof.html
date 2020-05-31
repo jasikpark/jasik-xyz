@@ -47,14 +47,15 @@
     <main>
         {{ block "header" . }}{{ end }}
         <ul class="py-4">{{ range .RegularPages }}
-            <li>
+            <li class="py-1">
                 <div>
                     {{ if .Draft }}
                     <span class="draft-label">Draft</span>
                     {{ end }}
-                    <a href="{{ .Permalink }}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a>
+                    {{ if .Title }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+                    {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
                 </div>
-                <time>{{ .PublishDate.Format "2006.01.02" }}</time>
+                <time><a href="{{ .Permalink }}">{{ .PublishDate.Format "2006.01.02" }}</a></time>
             </li>
             {{ end }}
         </ul>
