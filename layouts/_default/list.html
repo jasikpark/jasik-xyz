@@ -1,34 +1,12 @@
-{{ define "title" }}
-{{ .Title }} | {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
-{{ define "main" }}
-<main>
-    {{ block "header" . }}
-    <header>
+{{ define "header" }}
+<header>
+    <h1>
         <a href="{{ .Permalink }}">
-            <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
+            {{ .Title }}
         </a>
-    </header>
-    {{ partial "css-day" }}
-    {{ end }}
-    <div role="directory" class="par">
-        {{ range (where (.Pages.GroupByDate "2006") ".Key" "!=" "0001") }}
-        <div>
-            <div style="display:flex;justify-content:left;padding-bottom: 0em;" class="pd">
-                <h2>{{ .Key }}</h2>
-            </div>
-        </div>
-        {{ range .Pages }}
-        <div>
-            <div class="pd">{{ .Date.Format "01/02" }}</div>
-            {{ if .Draft }}
-            <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
-            {{ end }}
-            <a href="{{ .Permalink }}">{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</a>
-        </div>
-        {{ end }}
-        {{ end }}
-    </div>
-</main>
+    </h1>
+</header>
+{{ partial "css-day" }}
 {{ end }}
