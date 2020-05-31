@@ -4,9 +4,8 @@
 
 {{ define "header" }}
 <header>
-  <h1 {{ if .Draft }}class="draft-label" {{ end }}><a
-      href="{{ .Permalink }}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a></h1>
-  {{ if .PublishDate }}<time><a href="https://www.daysoftheyear.com/days/{{ .PublishDate.Format "2006/01/02/" }}">
+  <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</h1>
+  {{ if .PublishDate }}<time><a href="{{ .Permalink }}">
       {{ .PublishDate.Format "January 2, 2006" }}</a></time>{{ end }}
 </header>
 {{ partial "css-day" }}
