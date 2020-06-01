@@ -7,18 +7,42 @@ type = "post"
 
 Here's some Dune comics I like...
 
-[![](donkey_summons_sand_worm.jpg)](https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/?comic=dunkey)
-
+{{< figure >}}
+{{< a href="https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/?comic=dunkey" >}}
+{{< img src="donkey_summons_sand_worm.jpg" alt="comic about a donkey summoning a great snake form Dune" >}}
+{{< /a >}}
+{{% figcaption %}}
 from [Steak Smoothie](https://web.archive.org/web/20171126044523/http://www.steaksmoothie.com/)
+{{% /figcaption %}}
+{{< /figure >}}
 
-[![](dune-meme.jpg)](https://questionablecontent.net/view.php?comic=59)
-
+{{< figure >}}
+{{< a href="https://questionablecontent.net/view.php?comic=59" >}}
+{{< img src="dune-meme.jpg" alt="another dune comic" >}}
+{{< /a >}}
+{{% figcaption %}}
 from [Questionable Content](https://questionablecontent.net)
+{{% /figcaption %}}
+{{< /figure >}}
 
 [Edit 11/11/2018::11:50pm Another One!]
 
-[![](dune-comic-2.png)](https://questionablecontent.net/view.php?comic=351)
+{{< figure >}}
+{{< a href="https://questionablecontent.net/view.php?comic=351" >}}
+{{< img src="dune-comic-2.png" alt="another dune comic" >}}
+{{< /a >}}
+{{% figcaption %}}
+from [Questionable Content](https://questionablecontent.net)
+{{% /figcaption %}}
+{{< /figure >}}
 
 [Edit 11/12/2018::12:35am The Test of the Mom Jabaar]
 
-[![](the-test-of-the-mom-jabaar.png)](https://questionablecontent.net/view.php?comic=461)
+{{< figure >}}
+{{< a href="https://questionablecontent.net/view.php?comic=461" >}}
+{{< img src="the-test-of-the-mom-jabaar.png" alt="another dune comic" >}}
+{{< /a >}}
+{{% figcaption %}}
+from [Questionable Content](https://questionablecontent.net)
+{{% /figcaption %}}
+{{< /figure >}}

@@ -46,3 +46,9 @@ description = "Bowl of TARDIS is the space for Caleb Jasik on the web. Mostly ra
     simple = true
   [privacy.youtube]
     privacyEnhanced = true
+
+[services]
+  [services.instagram]
+    disableInlineCSS = true
+  [services.twitter]
+    disableInlineCSS = true

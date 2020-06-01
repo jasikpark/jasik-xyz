@@ -16,98 +16,8 @@
     {{ if .Page.Params.isMath }}
     {{ partial "katex.html" . }}
     {{ end }}
-    <link rel="stylesheet" href="{{ "css/dark.css" | absURL }}">
     <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}">
-
-    <style>
-        img:not([alt]) {
-            outline: 5px solid red;
-        }
-
-        li {
-            padding-bottom: 0.9em;
-        }
-
-        .navi-parent {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 0.5em 0;
-            font-style: italic;
-        }
-
-        .navi-parent>* {
-            padding-right: 0.9em;
-            padding-bottom: 0.9em;
-        }
-
-        .exif-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            padding: 0 2em;
-            list-style: none;
-        }
-
-        .exif-container>* {
-            font-size: 0.9rem;
-        }
-
-        .pd {
-            width: 4em;
-            flex-shrink: 0;
-            padding-bottom: 1.8em;
-        }
-
-        .par div {
-            display: flex;
-        }
-
-        @media all and (min-width: 480px) {
-            .navi-parent>* {
-                padding-right: 0em;
-                padding-bottom: 0em;
-            }
-
-            .pd {
-                padding-bottom: 0.9em;
-            }
-
-            pre {
-                white-space: pre-wrap;
-            }
-        }
-
-        .draft-label {
-            color: #ff6347;
-        }
-
-        @media (prefers-color-scheme: light) {
-            .draft-label {
-                color: #e31c3d;
-            }
-        }
-
-        .gist tbody tr {
-            background-color: #ffffff;
-        }
-
-        h1 span {
-            color: var(--text-bright);
-        }
-
-        .wayback {
-            text-decoration: none;
-        }
-
-        .wayback svg {
-            fill: var(--links);
-        }
-
-        .wayback:hover {
-            background: var(--focus);
-        }
-    </style>
+    <link rel="stylesheet" href="{{ "css/site.css" | absURL }}">
     {{ end }}
     <!--<meta name="description" content="{{ .Description }}">-->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
@@ -119,53 +29,43 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+            <ul>
+                <li><a href="{{ .Site.BaseURL }}/photos">Photos</a></li>
+                {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+                <li><a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a></li>
+                {{- end -}}
+                <li><a href="{{ .Site.BaseURL }}/reading">Reading</a></li>
+                <li><a href="{{ .Site.BaseURL }}/listening">Listening</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{ partial "css-day" }}
     {{ block "main" . }}
     <main>
-        {{ block "header" . }}
-        <header>
-            <a href="{{ .Permalink }}">
-                <h1 style="padding-bottom:0em;">{{ .Title }}</h1>
-            </a>
-        </header>
-        {{ partial "css-day" }}
-        {{ end }}
-        <div role="directory" class="par">
-            {{ range (where (.RegularPages.GroupByDate "2006") ".Key" "!=" "0001") }}
-            <div>
-                <div style="display:flex;justify-content:left;padding-bottom: 0em;" class="pd">
-                    <h2>{{ .Key }}</h2>
+        {{ block "header" . }}{{ end }}
+        <ul class="py-4">{{ range .RegularPages }}
+            <li class="py-1">
+                <div>
+                    {{ if .Draft }}
+                    <span class="draft-label">Draft</span>
+                    {{ end }}
+                    {{ if .Title }}<a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+                    {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
                 </div>
-            </div>
-            {{ range .Pages }}
-            <div>
-                <div class="pd">{{ .Date.Format "01/02" }}</div>
-                {{ if .Draft }}
-                <div class="draft-label" style="padding-right: 0.2em;">Draft</div>
-                {{ end }}
-                <a href="{{ .Permalink }}">{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</a>
-            </div>
+                <time><a href="{{ .Permalink }}">{{ .PublishDate.Format "2006.01.02" }}</a></time>
+            </li>
             {{ end }}
-            {{ end }}
-        </div>
+        </ul>
     </main>
     {{ end }}
-    <footer id="footer">
-        <div class="navi-parent">
-            <a href="#">Back to top</a>
-            <a rel="me" href="https://ko-fi.com/calebjasik">Buy me a coffee</a>
-            <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
-            <a rel="me alternate" href="{{ "/index.xml" | absURL }}" type="application/rss+xml">RSS</a>
-
-        </div>
-        <div title="primary-navigation" class="navi-parent">
-            <a rel="me" href="{{ "/" | absURL }}">Archive</a>
-            <a rel="me" href="{{ "/photos" | absURL }}">Photos</a>
-            {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-            <a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a>
-            {{- end -}}
-
-        </div>
-
+    <footer>
+        <a href="#">Back to top</a>
+        <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
+        <a rel="me" href="mailto:calebjasik@jasik.xyz">Email</a>
+        <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml">RSS</a>
     </footer>
 </body>
 

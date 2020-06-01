@@ -17,4 +17,6 @@ whether the clocks are military time or normal time and it's great.
 
 Yes, yes. I could just do math. But I don't want to.
 
+{{< figure >}}
 {{< img src="clocker-world-clock-screenshot.png" alt="screenshot of Clocker world clock app" >}}
+{{< figure >}}

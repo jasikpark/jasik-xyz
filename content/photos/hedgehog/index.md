@@ -8,6 +8,9 @@ Title = "Madi wanted this."
 ImgAlt = "hedgehog"
 +++
 
+{{< figure >}}
 {{< img src="hedgehog.jpg" alt="hedgehog" >}}
-
+{{< figcaption >}}
 {{< exif src="hedgehog.jpg" >}}
+{{< /figcaption >}}
+{{< /figure >}}

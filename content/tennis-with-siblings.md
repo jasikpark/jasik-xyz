@@ -5,6 +5,7 @@ title = "Tennis With Siblings"
 type = "post"
 +++
 
-Here's a really poorly edited video of my siblings and I playing tennis badly.
-
+{{< figure >}}
 {{< youtube SC122wb9fD8 >}}
+{{% figcaption %}}Here's a really poorly edited video of my siblings and I playing tennis badly.{{% /figcaption %}}
+{{< /figure >}}

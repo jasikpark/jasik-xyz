@@ -9,6 +9,9 @@ Title = "Large Fig Tree Update!"
 ImgAlt = "update of large fig tree from parent's house on November 27th, 2019"
 +++
 
+{{< figure >}}
 {{< img src="large-fig-tree-november-27-2019.jpg" alt="pic of the large fig tree at parent's house November 27th, 2019" >}}
-
+{{< figcaption >}}
 {{< exif src="large-fig-tree-november-27-2019.jpg" >}}
+{{< /figcaption >}}
+{{< /figure >}}

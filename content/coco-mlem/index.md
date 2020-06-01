@@ -6,4 +6,6 @@ type = "post"
 ImgAlt = "blurry photo of black dog with reindeer antlers on her head, licking her own nose"
 +++
 
+{{< figure >}}
 {{< img src="coco-mlem.jpg" alt="blurry photo of black dog with reindeer antlers on her head, licking her own nose" >}}
+{{< /figure >}}

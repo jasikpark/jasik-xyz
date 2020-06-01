@@ -6,7 +6,12 @@ categories = ["Recipes"]
 type = "post"
 +++
 
-!["y'all got any more of them sherpherd's pies"](got-any-more-pies.jpeg)
+{{< figure >}}
+{{< img src="got-any-more-pies.jpeg" alt="y'all got any more of them sherpherd's pies" >}}
+{{% figcaption %}}
+y'all got any more of them sherpherd's pies
+{{% /figcaption %}}
+{{< /figure >}}
 
 > this is James Laffrey’s recipe that I’ve written down for deliciousness
 

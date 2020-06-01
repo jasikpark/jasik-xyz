@@ -4,32 +4,24 @@
 
 {{ define "header" }}
 <header>
-  <h1 style="font-size:initial;">
-    <a href="#footer">
-      <span>↓</span>
-    </a>
-    {{ if .Draft }}
-    <span class="draft-label">Draft</span>
-    {{ end }}
-    <a href="{{ .Permalink }}">
-      <span>{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }}</span>
-    </a>
-
-  </h1>
-  <hr />
+  <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</h1>
+  {{ if .PublishDate }}<time><a href="{{ .Permalink }}">
+      {{ .PublishDate.Format "January 2, 2006" }}</a></time>{{ end }}
 </header>
 {{ partial "css-day" }}
 {{ end }}
 
 {{ define "main" }}
 <main>
-  {{ block "header" . }}{{ end }}
-  {{ .Content }}
+  <article>
+    {{ block "header" . }}{{ end }}
+    {{ .Content }}
+  </article>
 </main>
 
 
 <footer title="date-info-and-contact-info">
-  <div class="navi-parent">
+  <div>
     {{ if .Date }}
     <div>
       This page was created
@@ -41,23 +33,22 @@
     {{ if $.GitInfo }}
     <div>
       This page was last modified
-      <time>{{ .Lastmod.Format "January 2, 2006" }}</time>.
-      You can see the revisions <a
+      <time class="inline-block">{{ .Lastmod.Format "January 2, 2006" }}</time> You can see the revisions <a
         href="https://github.com/jasikpark/jasik-xyz/commits/master/content/{{ .Path }}">here</a>
     </div>
     {{ end }}
   </div>
-  <address property="email" style="font-style:normal;" class="navi-parent">
+  <address property="email" class="not-italic">
     <div>Send me an email at <a href="mailto:calebjasik@jasik.xyz">calebjasik@jasik.xyz</a> if you want to.</div>
   </address>
 </footer>
-{{ if .Date }}
-<footer class="navi-parent">
-  <div>{{ with.PrevPage }}{{ if .Date }}<a href="{{.Permalink}}">←
+{{ if .PublishDate }}
+<section class="post-navigation">
+  <div>{{ with.PrevPage }}{{ if .PublishDate }}<a href="{{.Permalink}}">←
       {{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextPage }}{{ if .Date }}<a
+  <div>{{ with.NextPage }}{{ if .PublishDate }}<a
       href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }} →</a> {{ end }}{{ end }}</div>
-</footer>
+</section>
 {{ end }}
 
 {{ end }}

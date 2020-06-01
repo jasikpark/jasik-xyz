@@ -3,52 +3,33 @@
 {{ end }}
 
 {{ define "header" }}
-<header id="hello">
-  <h1 style="font-size:initial;">
-    <a href="#footer">
-      <span>↓</span>
-    </a>
+<header>
+  <h1>
     <a href="{{ .Permalink }}">
-      <span>{{ .Title }}</span>
+      {{ .Title }}
     </a>
   </h1>
-
-  <hr />
 </header>
 {{ partial "css-day" }}
 {{ end }}
 
 {{ define "main" }}
-<main class="par">
+<main>
   {{ block "header" . }}{{ end }}
   {{ range .RegularPages }}
-  <div class="pd" style="width:100%;justify-content:center;padding-bottom:3.6em;padding-top:40px">
+  <article class="-mx-4">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
-      <img style="width:100vw" {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
-        src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
-        {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
+      <figure>
+        <img {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
+          src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
+          {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
+        <figcaption>
+          {{ with .Params.FigCaption }}<p>{{ . }}</p>{{ else }}
+          {{ with .Params.ImgTitle }}<p>{{ . }}</p>{{ end }}{{ end }}
+        </figcaption>
+      </figure>
     </a>
-  </div>
+  </article>
   {{ end }}
 </main>
-<style>
-  body {
-    padding: 0;
-  }
-
-  nav,
-  footer {
-    padding: 0 10px;
-  }
-
-  #hello {
-    padding: 0;
-  }
-
-  @media all and (max-width: 800px) {
-    #hello {
-      padding: 0 10px;
-    }
-  }
-</style>
 {{ end }}

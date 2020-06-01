@@ -1,0 +1,212 @@
+:root {
+  --max-width: 36rem;
+  --serif: Georgia, serif;
+  --font-small: 0.8rem;
+  --font-med: 0.9rem;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: greyscale;
+  font-feature-settings: "ss02";
+}
+
+html {
+  font-size: 18px;
+}
+@media (min-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  font-family: var(--serif);
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+blockquote,
+hr,
+time,
+footer,
+.limit,
+.card,
+.gist,
+img {
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-feature-settings: "onum", "ss02";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+time {
+  font-size: var(--font-med);
+}
+
+body > header a {
+  text-decoration: none;
+}
+body > header h1 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+body > header ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+body > header li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+body > header * {
+  font-size: var(--font-med);
+  line-height: 1.4;
+}
+@media (max-width: 800px) {
+  body > header * {
+    font-size: var(--font-med);
+  }
+}
+
+pre {
+  margin: 2rem auto;
+  max-width: var(--max-width);
+  overflow: auto;
+  white-space: pre-wrap;
+  border: 2px solid black;
+  padding: 2.5px 5px;
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  pre {
+    white-space: pre;
+  }
+}
+
+pre code {
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+figure {
+  margin: 5rem auto;
+  max-width: calc(10rem + var(--max-width));
+}
+figure img {
+  width: 100%;
+  max-width: calc(10rem + var(--max-width));
+}
+figure figcaption {
+  margin-top: 0.25rem;
+  font-size: var(--font-small);
+  color: var(--mid-gray);
+}
+
+h1 {
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+article > header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+article > header h1 {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+article > header time {
+  display: flex;
+  width: 100%;
+}
+
+article > header *:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.post-navigation {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2rem auto 0;
+  padding: 1rem 0;
+}
+
+footer {
+  margin: 2rem auto;
+}
+
+footer a {
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+img:not([alt]) {
+  outline: 5px solid red;
+}
+
+.draft-label {
+  color: #ff6347;
+}
+
+/** Utility classes (from tailwindcss) **/
+
+.not-italic {
+  font-style: normal;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.-mx-4 {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
