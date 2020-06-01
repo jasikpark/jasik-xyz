@@ -17,7 +17,7 @@ My favorite song in the album, _Are you bored yet_
 {{% /figcaption %}}
 {{< /figure >}}
 
-I also discovered Su Lee through kyuuwaii’s cover of Can’t Get Over You by Joji, which was fun. She is wonderful.
+I also discovered Su Lee through kyuuwaii’s [cover](https://youtu.be/St8GNdVETLI) of [Can’t Get Over You](https://www.youtube.com/watch?v=Y8avxE0yPgE) by Joji aka Pink Guy, which was fun. She is wonderful.
 
 {{< figure >}}
 {{< youtube LOPCPUq9f_g >}}
