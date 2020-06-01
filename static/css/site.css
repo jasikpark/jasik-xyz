@@ -51,7 +51,8 @@ time,
 footer,
 .limit,
 .card,
-.gist {
+.gist,
+img {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
