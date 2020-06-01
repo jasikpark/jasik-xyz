@@ -10,5 +10,11 @@ RUBY_VERSION = "2.6.2"
 [context.branch-deploy]
 command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
+[context.v1]
+command = "hugo -b https://v1.jasik.xyz"
+
+[context.v2]
+command = "hugo -b https://v2.jasik.xyz"
+
 [context.deploy-preview]
 command = "hugo -b $DEPLOY_PRIME_URL"
