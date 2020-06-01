@@ -7,5 +7,7 @@ type = "post"
 
 {{< figure >}}
 {{< youtube SC122wb9fD8 >}}
-{{% figcaption %}}Here's a really poorly edited video of my siblings and I playing tennis badly.{{% /figcaption %}}
+{{% figcaption %}}
+Here's a really poorly edited video of my siblings and I playing tennis badly.
+{{% /figcaption %}}
 {{< /figure >}}
