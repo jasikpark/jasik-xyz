@@ -7,6 +7,12 @@ HUGO_ENV = "production"
 HUGO_VERSION = "0.64.1"
 RUBY_VERSION = "2.6.2"
 
+[context.v1]
+command = "hugo -b https://v1.jasik.xyz"
+
+[context.v2]
+command = "hugo -b https://v2.jasik.xyz"
+
 [context.branch-deploy]
 command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
