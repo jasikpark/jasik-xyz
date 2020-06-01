@@ -127,6 +127,7 @@ figure {
 }
 figure img {
   width: 100%;
+  max-width: calc(10rem + var(--max-width));
 }
 figure figcaption {
   margin-top: 0.25rem;
