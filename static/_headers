@@ -2,4 +2,4 @@
 X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-Content-Security-Policy: default-src 'self' 'unsafe-inline' gist.github.com github.githubassets.com scontent-ort2-1.cdninstagram.com www.youtube-nocookie.com; img-src data:; style-src-attr 'unsafe-inline'; style-src-elem 'unsafe-inline' jasik.xyz
+Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard
