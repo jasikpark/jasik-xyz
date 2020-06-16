@@ -37,7 +37,7 @@ This is one of the reasons why I made this blog, but I’ve been slow to post to
 
 - [Linkrot - macwright.org](https://macwright.org/2020/05/02/linkrot.html)
 
-  You can see my middling attempts at solving this problem in {{< ref "day-on-the-trails" >}}. I added the Internet Archive snapshots of the links in that post as small icons right after the canonical links.
+  You can see my middling attempts at solving this problem in [A Day on the Trails]({{< ref "day-on-the-trails" >}}). I added the Internet Archive snapshots of the links in that post as small icons right after the canonical links.
 
 - [Short-form vs long-form posts - Jonnie Hallman (@destroytoday)](https://2020.destroytoday.com/blog/short-form-vs-long-form-posts)
 - [Kimberly Hirsh - This is not a polished blog.](https://kimberlyhirsh.com/2020/05/27/this-is-not.html)
