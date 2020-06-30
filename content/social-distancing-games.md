@@ -12,6 +12,7 @@ Here's a list of games that you can play with your friends if you set up a Disco
 - [Azala](https://www.azala.info/static/index.html) -- another CaH clone
 - [Never Have I Ever](https://never-have-i-ever-online.com/multiplayer/)
 - [Uno](https://play.unofreak.com/)
+- [Pont](https://www.mattkeeter.com/projects/pont/) -- a Qwirkle clone
 - [Secret Hitler](https://secrethitler.io/) -- Similar to Mafia or Avalon
 - [Wanderers](https://wanderers.io/) -- I have no clue what this is, but it looks cool
 - [Deeeep.io](https://deeeep.io/) -- [There's always a bigger fish](https://youtu.be/IIQVAShJzLo)
