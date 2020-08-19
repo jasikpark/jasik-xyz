@@ -17,7 +17,7 @@ My favorite song in the album, _Are you bored yet_
 {{% /figcaption %}}
 {{< /figure >}}
 
-I also discovered Su Lee through kyuuwaii’s [cover](https://youtu.be/St8GNdVETLI) of [Can’t Get Over You](https://www.youtube.com/watch?v=Y8avxE0yPgE) by Joji aka Pink Guy, which was fun. She is wonderful.
+I discovered Su Lee through kyuuwaii’s [cover](https://youtu.be/St8GNdVETLI) of [Can’t Get Over You](https://www.youtube.com/watch?v=Y8avxE0yPgE) by Joji aka Pink Guy, which was fun. She is wonderful.
 
 {{< figure >}}
 {{< youtube LOPCPUq9f_g >}}
@@ -52,7 +52,7 @@ I’m hoping that in the theme of [zettelkasten](https://macwright.org/2020/02/0
 
 ## Drinks
 
-In November I [stopped drinking coffee](https://v5.chriskrycho.com/journal/decaffeinating/) and soft drinks and started taking Vitamin D supplements and using the Rise sleep app to track my sleep in a non-didactic way, and I had a good experience. [Carport Cofffee](https://caffeinatethepeople.com) is an active hindrance on this plan though. They have delicious coffee and take great consideration in their brewing and water filtration.
+In November I [stopped drinking coffee](https://v5.chriskrycho.com/journal/decaffeinating/) and soft drinks and started taking Vitamin D supplements and using the Rise sleep app to track my sleep in a non-didactic way, and I had a good experience. [Carport Coffee](https://caffeinatethepeople.com) is an active hindrance on this plan though. They have delicious coffee and take great consideration in their brewing and water filtration.
 
 {{< figure >}}
 {{< img src="moka-pot.jpeg" alt="Moka pot with it’s lid open to see the coffee coming up the upper straw" >}}
@@ -61,6 +61,6 @@ Photo by [Shotlist](https://unsplash.com/@shotlist?utm_source=unsplash&utm_mediu
 {{% /figcaption %}}
 {{< /figure >}}
 
-Recently I stole back my Moka pot and Mr. Coffee espresso machine from my friends and family and have tried my hand at perfecting an at-home cup of Carport blend coffee. I haven’t had the best of luck, since I have the cheapest hand-powered burr grinder possible — a JavaPresse. It was \$30 and definitely better than a blade grinder, but terrible in global terms of grinders. Especially compared to a set of beautiful commercial-grade electric burr grinders. I’ve kept track of my attempts in [Bear.app](https://bear.app) and you can see them at [Coffee Attempts]({{< ref "coffee-attempts" >}}).
+Recently I stole back my Moka pot and Mr. Coffee espresso machine from my friends and family and have tried my hand at perfecting an at-home cup of Carport blend coffee. I haven’t had the best of luck, since I have the cheapest hand-powered burr grinder possible — a JavaPresse. It was \$30 and better than a blade grinder, but terrible in global terms of grinders. Especially compared to a set of beautiful commercial-grade electric burr grinders. I’ve kept track of my attempts in [Bear.app](https://bear.app) and you can see them at [Coffee Attempts]({{< ref "coffee-attempts" >}}).
 
-I bought a [Fuzion Digital Kitchen Scale 3000g/ 0.1g](https://www.amazon.com/gp/product/B07L92PSMP/) at the recommendation of [James Hoffman](https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ) and it is wonderful! It is 0.01g accurate up to 500g so it is great for measuring coffee beans and baking with. I was able to make some [Japanese milk bread](https://www.carolinescooking.com/japanese-milk-bread/) at my friend’s recommendation and it was absolutely delicious.
+I bought a [Fuzion Digital Kitchen Scale 3000g/ 0.1g](https://www.amazon.com/gp/product/B07L92PSMP/) at the recommendation of [James Hoffman](https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ) and it is wonderful! It is 0.01g accurate up to 500g so it is great for measuring coffee beans and baking with. I was able to make [Japanese milk bread](https://www.carolinescooking.com/japanese-milk-bread/) at my friend’s recommendation and it was absolutely delicious.
