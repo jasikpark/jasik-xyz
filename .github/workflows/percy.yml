@@ -15,7 +15,6 @@ jobs:
       - name: Hugo
         uses: klakegg/actions-hugo@1.0.0
         command: "hugo -b 'http://localhost:5339'"
-        env: "production"
         with:
           image: latest-ext
       - name: Percy
