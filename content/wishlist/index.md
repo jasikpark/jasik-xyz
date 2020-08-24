@@ -9,6 +9,7 @@ Title = "Wishlist"
 
 This will be a running list of things I plan to buy. :P
 
+- [Rolling pin for baking :)](https://www.whetstonewoodenware.com/store/p31/french_rolling_pins.html)
 - [Lamp that can fit by my couch](https://www.target.com/p/valencia-led-floor-lamp-brass-includes-energy-efficient-light-bulb-project-62-8482/-/A-54550861#)
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
 
