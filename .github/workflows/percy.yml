@@ -16,7 +16,7 @@ jobs:
         uses: klakegg/actions-hugo@1.0.0
         with:
           image: latest-ext
-          command: "-b 'http://localhost'"
+          command: "-b 'localhost'"
           env: "production"
       - name: Percy
         uses: percy/snapshot-action@v0.1.1
