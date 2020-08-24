@@ -1,3 +1,5 @@
+name: Broken Link Check
+
 on:
   schedule:
     - cron: 0 0 1 * * # run monthly
@@ -5,7 +7,7 @@ on:
     types: [check-link]
   # push:
   # ...
-name: Broken Link Check
+
 jobs:
   check:
     name: Broken Link Check
