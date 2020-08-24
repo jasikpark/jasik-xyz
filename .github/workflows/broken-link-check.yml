@@ -13,5 +13,6 @@ jobs:
     steps:
       - name: Broken Link Check
         uses: technote-space/broken-link-checker-action@v1
-        TARGET: https://jasik.xyz
-        RECURSIVE: true
+        with:
+          TARGET: https://jasik.xyz
+          RECURSIVE: true
