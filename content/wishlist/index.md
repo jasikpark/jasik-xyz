@@ -12,7 +12,6 @@ This will be a running list of things I plan to buy. :P
 - [Rolling pin for baking :)](https://www.whetstonewoodenware.com/store/p31/french_rolling_pins.html)
 - [Lamp that can fit by my couch](https://www.target.com/p/valencia-led-floor-lamp-brass-includes-energy-efficient-light-bulb-project-62-8482/-/A-54550861#)
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
-
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
 - [iA Writer](https://ia.net/writer) -- or iA writer instead
 - [Tom Bihn's Synik 22](https://www.tombihn.com/collections/backpacks/products/synik-22) -- I like smallish backpacks and Tom Bihn makes the best backpacks.
