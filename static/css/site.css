@@ -214,3 +214,7 @@ img:not([alt]) {
 .text-base {
   font-size: 1rem;
 }
+
+.w-full {
+  width: 100%;
+}
