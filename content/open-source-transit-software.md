@@ -29,7 +29,7 @@ Here's a list of open source transit software that I have found in my search for
 - [General Transit Feed Specification](https://gtfs.org/best-practices/)
 - [TransitWiki](https://www.transitwiki.org/TransitWiki/index.php/Main_Page)
 - [Data on the Web Best Practices](https://www.w3.org/TR/dwbp/)
-- [Transit Data Blog](https://transitdata.net/)
+- [Transit Data Blog](https://web.archive.org/web/20200825011550/https://transitdata.net/)
 
 ## Blog Posts / Websites
 
