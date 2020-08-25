@@ -22,7 +22,7 @@ This will be a running list of things I plan to buy. :P
 - [Fancy Haw's watering can](https://haws.co.uk/)
 - [Knive's Out style sweater](https://www.blarney.com/irish-shop/mens-supersoft-plaited-cable-crew-neck-sweater/)
 - [41-qt size Container Store storage bins](https://www.containerstore.com/s/clear-weathertight-totes/d?productId=10026213&cid=af%3Agen&ranMID=37353&ranEAID=7m8EnekPF5E&ranSiteID=7m8EnekPF5E-r54gyqZckxZ0kDgQF6hTyQ)
-- [Sonnet eGFX Breakaway Puck Radeon RX 560 External GPU](https://www.apple.com/shop/product/HMT22ZM/A/sonnet-egfx-breakaway-puck-radeon-rx-560-external-gpu?fnode=357ba22ffd7182fd9ba50508bab9b6cbaa87dd1e3050a11be644f455748780b41bbf7b517edf7795f3abd84199c6f358217bf97ff8d2f43b35bdd2cd28147d8956e10a3c73fc3a983c7dea2fa10819e1b5167b02b156d96a338283af409424beb8a263ef14f938bd5963fae10eace8b2)
+- [Sonnet eGFX Breakaway Puck Radeon RX 560 External GPU](https://www.sonnettech.com/product/egfx-breakaway-puck560/overview.html)
 
 (Done)
 
