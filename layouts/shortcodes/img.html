@@ -28,10 +28,11 @@
 {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
-<img {{ with .Get "width" }}width='{{.}}' {{ else }}width="100%" {{ end }} {{ with .Get "sizes" }}sizes='{{.}}'
+<img {{ with .Get "width" }}width='{{.}}' {{ else }}class="w-full" {{ end }} {{ with .Get "sizes" }}sizes='{{.}}'
   {{ else }}sizes="100vw" {{ end }} srcset="
+  {{ with $src.Permalink }} {{.}} {{ $src.Width }}w{{ end }} 
   {{ if ge $src.Width "500" }}
-    {{ with $tiny.Permalink }}{{.}} 500w{{ end }}
+    {{ with $tiny.Permalink }}, {{.}} 500w{{ end }}
   {{ end }}
   {{ if ge $src.Width "800" }}
     {{ with $small.Permalink }}, {{.}} 800w{{ end }}
@@ -44,9 +45,7 @@
   {{ end }}
   {{ if ge $src.Width "2500" }}
     {{ with $giant.Permalink }}, {{.}} 2500w {{ end }}
-  {{ end}}
-  {{ with $src.Permalink }} {{.}} {{ $src.Width }}w{{ end }}" {{ if .Get (print $medium) }}
-  src="{{ $medium.Permalink }}" {{ else }} src="{{ $src.Permalink }}" {{ end }}
-  {{ if .Get "alt" }}alt='{{ .Get "alt" }}' {{ else if .Page.Params.ImgAlt }}alt='{{ .Page.Params.ImgAlt }}' {{ end }}
-  {{ if .Get "title" }}title='{{ .Get "title" }}' {{ else if .Page.Params.ImgTitle }}title='{{ .Page.Params.ImgTitle }}'
-  {{ end }} />
+  {{ end }}" {{ if .Get (print $medium) }}src=" {{ $medium.Permalink }}" {{ else }} src="{{ $src.Permalink }}"
+  {{ end }} {{ if .Get "alt" }}alt='{{ .Get "alt" }}' {{ else if .Page.Params.ImgAlt }}alt='{{ .Page.Params.ImgAlt }}'
+  {{ end }} {{ if .Get "title" }}title='{{ .Get "title" }}'
+  {{ else if .Page.Params.ImgTitle }}title='{{ .Page.Params.ImgTitle }}' {{ end }} />

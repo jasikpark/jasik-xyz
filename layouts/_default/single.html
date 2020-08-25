@@ -5,8 +5,9 @@
 {{ define "header" }}
 <header>
   <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</h1>
-  {{ if .PublishDate }}<time><a href="{{ .Permalink }}">
-      {{ .PublishDate.Format "January 2, 2006" }}</a></time>{{ end }}
+  {{ if .PublishDate }}<a href="{{ .Permalink }}"><time
+      datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{ .PublishDate.Format "January 2, 2006" }}</time></a>{{ end }}
 </header>
 {{ partial "css-day" }}
 {{ end }}
@@ -25,16 +26,19 @@
     {{ if .Date }}
     <div>
       This page was created
-      <a href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}">
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
+      <a href="https://www.daysoftheyear.com/days/{{ .Date.Format "2006/01/02/" }}"><time
+          datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .Date.Format "January 2, 2006" }}</time>
       </a>
     </div>
     {{ end }}
     {{ if $.GitInfo }}
     <div>
       This page was last modified
-      <time class="inline-block">{{ .Lastmod.Format "January 2, 2006" }}</time> You can see the revisions <a
-        href="https://github.com/jasikpark/jasik-xyz/commits/master/content/{{ .Path }}">here</a>
+      <time class="inline-block"
+        datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format "January 2, 2006" }}</time> You
+      can see
+      the revisions <a href="https://github.com/jasikpark/jasik-xyz/commits/master/content/{{ .Path }}">here</a>
     </div>
     {{ end }}
   </div>
