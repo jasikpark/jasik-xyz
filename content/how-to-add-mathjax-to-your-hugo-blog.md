@@ -7,6 +7,7 @@ type = "post"
 
 N.B. The repository seems to have moved to https://github.com/theNewDynamic/gohugo-theme-ananke/, I moved about half of the links to the new url.
 
+At first when trying to set up my blog with math support, I consulted the
 [Hugo Documentation](https://gohugo.io/content-management/formats/#enable-mathjax)
 to find out what it said about it. It just said to add the MathJax script to a
 partial template that would be included in every page that needed MathJax, such
