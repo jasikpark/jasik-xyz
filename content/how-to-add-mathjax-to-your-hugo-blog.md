@@ -5,7 +5,7 @@ title = "How to Add MathJax to Your Hugo Blog"
 type = "post"
 +++
 
-N.B. The repository seems to have moved to https://github.com/theNewDynamic/gohugo-theme-ananke/, I moved about half of the links to the new url.
+N.B. The repository seems to have moved to <https://github.com/theNewDynamic/gohugo-theme-ananke/>, I moved about half of the links to the new url.
 
 At first when trying to set up my blog with math support, I consulted the
 [Hugo Documentation](https://gohugo.io/content-management/formats/#enable-mathjax)
@@ -15,7 +15,7 @@ as the footer partial template.
 
 The problem was that I am using my theme as a git submodule, which means that I
 cannot edit anything within it without making a pull request to the remote
-repository, in this case being https://github.com/budparr/gohugo-theme-ananke.
+repository, in this case being <https://github.com/budparr/gohugo-theme-ananke>.
 So I asked [Bud Parr](https://github.com/budparr), the author of the theme, how
 to add this script to the partial template without editing the theme.
 
