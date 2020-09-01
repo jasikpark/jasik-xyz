@@ -9,7 +9,9 @@ Title = "Wishlist"
 
 This will be a running list of things I plan to buy. :P
 
+- [Airfoil for sending audio from my MacBook Pro to Chromecasts](https://rogueamoeba.com/airfoil/mac/buy.php)
 - [Rolling pin for baking :)](https://www.whetstonewoodenware.com/store/p31/french_rolling_pins.html)
+- [Bröd knife for cutting bröd](https://www.nytimes.com/wirecutter/out/link/14084/40311/4/56340?merchant=Amazon)
 - [Lamp that can fit by my couch](https://www.target.com/p/valencia-led-floor-lamp-brass-includes-energy-efficient-light-bulb-project-62-8482/-/A-54550861#)
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
