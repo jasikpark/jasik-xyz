@@ -9,7 +9,6 @@ Title = "Wishlist"
 
 This will be a running list of things I plan to buy. :P
 
-- [Airfoil for sending audio from my MacBook Pro to Chromecasts](https://rogueamoeba.com/airfoil/mac/buy.php)
 - [Rolling pin for baking :)](https://www.whetstonewoodenware.com/store/p31/french_rolling_pins.html)
 - [Bröd knife for cutting bröd](https://www.nytimes.com/wirecutter/out/link/14084/40311/4/56340?merchant=Amazon)
 - [Lamp that can fit by my couch](https://www.target.com/p/valencia-led-floor-lamp-brass-includes-energy-efficient-light-bulb-project-62-8482/-/A-54550861#)
@@ -17,9 +16,7 @@ This will be a running list of things I plan to buy. :P
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
 - [iA Writer](https://ia.net/writer) -- or iA writer instead
 - [Tom Bihn's Synik 22](https://www.tombihn.com/collections/backpacks/products/synik-22) -- I like smallish backpacks and Tom Bihn makes the best backpacks.
-- [Fork](https://fork.dev/) -- This is what I'm using to edit my site right now, it's really ergonomic!
 - [Fancy closet hangers](https://www.amazon.com/dp/B000OSJMSE/)
-
 - [Fancy GEOX shoes](https://www.geox.com/en-US/man/)
 - [Fancy Haw's watering can](https://haws.co.uk/)
 - [Knive's Out style sweater](https://www.blarney.com/irish-shop/mens-supersoft-plaited-cable-crew-neck-sweater/)
@@ -32,6 +29,8 @@ This will be a running list of things I plan to buy. :P
 - ~~[Shower caddy that can fit 4 bars of soap and 4 bottles of soap](https://www.amazon.com/InterDesign-Hanging-Shower-Shampoo-Conditioner/dp/B003OBY5NU/)~~
 - ~~[Laptop Stand](https://thewirecutter.com/reviews/best-laptop-stands/)~~
 - ~~[Magic Puzzles by Max Temkin](https://www.kickstarter.com/projects/maxtemkin/magic-puzzles/)~~
+- ~~[Airfoil for sending audio from my MacBook Pro to Chromecasts](https://rogueamoeba.com/airfoil/mac/buy.php)~~
+- ~~[Fork](https://fork.dev/) -- This is what I'm using to edit my site right now, it's really ergonomic!~~
 
 (NVM)
 
