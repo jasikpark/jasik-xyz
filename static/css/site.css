@@ -227,6 +227,24 @@ img:not([alt]) {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 640px) {
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:flex-no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+}
+
 .space-x-1 > * + * {
   margin-left: 0.25rem;
 }
@@ -237,6 +255,14 @@ img:not([alt]) {
 
 .space-x-4 > * + * {
   margin-left: 1rem;
+}
+
+.space-y-0 > * + * {
+  margin-top: 0rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
 }
 
 .grid {
