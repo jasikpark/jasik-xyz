@@ -218,3 +218,39 @@ img:not([alt]) {
 .w-full {
   width: 100%;
 }
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-x-1 > * + * {
+  margin-left: 0.25rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: col;
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
