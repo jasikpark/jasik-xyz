@@ -18,9 +18,10 @@
     {{ end }}
     <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}">
     <link rel="stylesheet" href="{{ "css/site.css" | absURL }}">
+    <script defer src="{{ "js/site.js" | absURL }}"></script>
     {{ end }}
     <!--<meta name="description" content="{{ .Description }}">-->
-    <link rel="icon" href="/icon.svg">
+    <link rel="icon" href="{{ "icon.svg" | absURL }}">
     {{ range .AlternativeOutputFormats -}}
     {{ printf `
     <link rel="%s" type="%s" href="%s" title="%s" />
@@ -28,7 +29,7 @@
     {{ end -}}
 </head>
 
-<body>
+<body onload="initEmojiClock()">
     <header>
         <nav>
             <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
