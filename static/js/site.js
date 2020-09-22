@@ -1,8 +1,8 @@
-function getEmojiClock(test) {
+function getEmojiClock() {
   const now = new Date();
   const hour = now.getHours() % 12;
   const minutes = now.getMinutes();
-  const this_many_past = Math.abs(Math.round((minutes - 30) / 60));
+  const this_many_past = Math.abs(Math.round((minutes - 30) / 30));
   console.log(
     "hour: " +
       hour +
