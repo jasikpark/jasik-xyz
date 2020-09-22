@@ -1,4 +1,4 @@
-function getEmojiClock(test) {
+function getEmojiClock() {
   const now = new Date();
   const hour = now.getHours() % 12;
   const minutes = now.getMinutes();
