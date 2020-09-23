@@ -1,16 +1,17 @@
 function getEmojiClock() {
   const now = new Date();
   const hour24 = now.getHours();
-  var hour = hour % 12;
-  if (hour24 / 12) {
-    //if it is currently 12
-    hour = 12;
-  }
   const minutes = now.getMinutes();
+  const percent_past = minutes / 60;
+  var nearest_hour = Math.round((hour24 + percent_past) % 12);
+  if (nearest_hour == 0) {
+    //if it is currently 12
+    nearest_hour = 12;
+  }
   const this_many_past = Math.abs(Math.round((minutes - 30) / 30));
   console.log(
-    "hour: " +
-      hour +
+    "nearest_hour: " +
+      nearest_hour +
       " minutes " +
       minutes +
       " this many past: " +
@@ -21,7 +22,7 @@ function getEmojiClock() {
     // then it is the top of the hour
     const start = 0x4f;
     let clock = String.fromCodePoint(
-      base_code_point + (start + hour).toString(16)
+      base_code_point + (start + nearest_hour).toString(16)
     );
     console.log(clock);
     return clock;
@@ -29,7 +30,7 @@ function getEmojiClock() {
     // or it is half past the hour
     const start = 0x5b;
     let clock = String.fromCodePoint(
-      base_code_point + (start + hour).toString(16)
+      base_code_point + (start + nearest_hour).toString(16)
     );
     console.log(clock);
     return clock;
