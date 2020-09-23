@@ -1,6 +1,11 @@
 function getEmojiClock() {
   const now = new Date();
-  const hour = now.getHours() % 12;
+  const hour24 = now.getHours();
+  var hour = hour % 12;
+  if (hour24 / 12) {
+    //if it is currently 12
+    hour = 12;
+  }
   const minutes = now.getMinutes();
   const this_many_past = Math.abs(Math.round((minutes - 30) / 30));
   console.log(
@@ -14,7 +19,7 @@ function getEmojiClock() {
   let base_code_point = "0x1F5";
   if (this_many_past == 1) {
     // then it is the top of the hour
-    const start = 0x50;
+    const start = 0x4f;
     let clock = String.fromCodePoint(
       base_code_point + (start + hour).toString(16)
     );
@@ -29,9 +34,8 @@ function getEmojiClock() {
     console.log(clock);
     return clock;
   }
-  // so basically we count 50 to 5a for the hour marks and 5b to 67 for the half marks.
-  // So not totally helpfuL?
-  // But I guess it's just figure out whether we're doing an o'clock or 30min and then add ## to it
+  // So the emoji count from 1 (o'clock / thirty) to 12 (o'clock / thirty) and
+  // so we need the start to be the zero index so when we add the hour it is correctly indexed.
 }
 
 function initEmojiClock() {
