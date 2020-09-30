@@ -11,10 +11,13 @@ This has been a staple at my house growing up for forever. I initially thought
 it was kinda strange putting honey on a grilled cheese sandwich, but it adds a
 ton of flavor. This is definitely one of my favorite sandwiches.
 
-![grilled cheese sandwich on plate with tomato and basil](cafe-muse-grilled-cheese.jpg)
-
+{{< figure >}}
+{{< img src="cafe-muse-grilled-cheese.jpg" alt="grilled cheese sandwich on plate with tomato and basil" >}}
+{{% figcaption %}}
 Recipe courtesy of _Greg Reyner_ at _Café Muse_, From the show _Oprah’s Sandwich
 Showdown_
+{{% /figcaption %}}
+{{< /figure >}}
 
 [http://www.cafemuseroyaloak.com/grilled-cheese/](http://www.cafemuseroyaloak.com/grilled-cheese/)
 
