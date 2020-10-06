@@ -13,8 +13,8 @@ jobs:
         uses: ./commit-resume
         env:
           BRANCH: resume-bot
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+          GITHUB_ACTOR: ${{ GITHUB_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_REPOSITORY: ${{ GITHUB_REPOSITORY }}
           PULL_REQUEST_BODY: Updates resume
           PULL_REQUEST_BRANCH: main
