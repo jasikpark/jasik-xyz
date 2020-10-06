@@ -1,3 +1,5 @@
+name: ZAP Scan
+
 on:
   schedule:
     # Runs every day At 01:00.
