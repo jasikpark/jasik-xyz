@@ -1,0 +1,20 @@
+name: Fetch New Resume
+on:
+  repository_dispatch:
+    types: [update_resume]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Fetch New Resume and Push Branch
+        uses: ./commit-resume
+        env:
+          BRANCH: resume-bot
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          PULL_REQUEST_BODY: Updates resume
+          PULL_REQUEST_BRANCH: main
