@@ -31,7 +31,6 @@ create_pull_request() {
 
     DATA="{\"base\":${TARGET}, \"head\":${SOURCE}, \"body\":${BODY}}"
     RESPONSE=$(curl -sSL -H "${AUTH_HEADER}" -H "${HEADER}" --user "${GITHUB_ACTOR}" -X GET --data "${DATA}" ${PULLS_URL})
-    echo "${RESPONSE}" | jq .
     PR=$(echo "${RESPONSE}" | jq --raw-output '.[] | .head.ref')
     echo "Response ref: ${PR}"
 
@@ -43,8 +42,8 @@ create_pull_request() {
     else
       # Post the pull request
       DATA="{\"title\":${TITLE}, \"body\":${BODY}, \"base\":${TARGET}, \"head\":${SOURCE}, \"draft\":${DRAFT}}"
-
-      curl -XPOST -H "${HEADER}" \
+      echo "$DATA" | jq .
+      curl -v -XPOST -H "${HEADER}" \
       -H "Authorization: token ${GITHUB_TOKEN}" \
       "${PULLS_URL}" \
       --data "${DATA}"
