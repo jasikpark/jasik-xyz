@@ -3,8 +3,9 @@ name: Hugo
 on:
   schedule:
     # runs daily at 3am
-    - cron: '0 4 * * *'
+    - cron: "0 4 * * *"
   push:
+  pull_request:
 
 jobs:
   build:
@@ -15,9 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - name: hugo
-      uses: klakegg/actions-hugo@1.0.0
-      with:
-        image: ${{ matrix.image }}
+      - name: hugo
+        uses: klakegg/actions-hugo@1.0.0
+        with:
+          image: ${{ matrix.image }}
