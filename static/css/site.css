@@ -3,6 +3,7 @@
   --serif: Georgia, serif;
   --font-small: 0.8rem;
   --font-med: 0.9rem;
+  --font-large: 1.1rem;
 }
 
 * {
@@ -77,7 +78,6 @@ body > header a {
   text-decoration: none;
 }
 body > header h1 {
-  font-size: 1rem;
   margin-bottom: 0;
 }
 body > header ul {
@@ -95,7 +95,7 @@ body > header * {
 }
 @media (max-width: 800px) {
   body > header * {
-    font-size: var(--font-med);
+    font-size: var(--font-large);
   }
 }
 
