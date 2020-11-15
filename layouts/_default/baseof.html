@@ -49,7 +49,9 @@
             </ul>
         </nav>
     </header>
+    {{ if (eq (mod (now.UTC.Format "2006" ) 4) 0)}}
     <h2 class="text-base"><a href="https://vote.gov">Register to Vote 🇺🇸</a></h2>
+    {{ end }}
     {{ partial "css-day" }}
     {{ block "main" . }}
     <main>
