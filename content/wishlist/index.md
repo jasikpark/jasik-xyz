@@ -10,6 +10,7 @@ Title = "Wishlist"
 This will be a running list of things I plan to buy. :P
 
 - [Affinity Photo for drawing!](https://affinity.serif.com/en-us/photo/)
+- [desperately want all of Adam Savage's quarantine filming kit](https://youtu.be/7tFwHXpxNLY) -- links in the description
 - Mudroom style bench with shoe storage
 - Three-bin clothes hamper
 - lighting for above kitchen sink
