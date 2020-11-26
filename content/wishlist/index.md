@@ -16,7 +16,6 @@ This will be a running list of things I plan to buy. :P
 - lighting for above kitchen sink
 - [iPhone SE 2020](https://www.apple.com/us/shop/goto/buy_iphone/iphone_se) -- My current iPhone SE 2016 has a broken screen, Touch ID, and I can barely hear calls. I've considered getting it fixed again, but I think I'll either buy a refurb 2016 SE or a new 2020 SE.
 - [Rolling pin for baking :)](https://www.whetstonewoodenware.com/store/p31/french_rolling_pins.html)
-- [Bröd knife for cutting bröd](https://www.nytimes.com/wirecutter/out/link/14084/40311/4/56340?merchant=Amazon)
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
 - [iA Writer](https://ia.net/writer) -- or iA writer instead
@@ -32,6 +31,7 @@ This will be a running list of things I plan to buy. :P
 - ~~[Magic Puzzles by Max Temkin](https://www.kickstarter.com/projects/maxtemkin/magic-puzzles/)~~
 - ~~[Airfoil for sending audio from my MacBook Pro to Chromecasts](https://rogueamoeba.com/airfoil/mac/buy.php)~~
 - ~~[Fork](https://fork.dev/) -- This is what I'm using to edit my site right now, it's really ergonomic!~~
+- ~~[Bröd knife for cutting bröd](https://www.nytimes.com/wirecutter/out/link/14084/40311/4/56340?merchant=Amazon)~~
 
 (NVM)
 
