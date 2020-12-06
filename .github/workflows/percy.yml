@@ -1,9 +1,6 @@
 name: Percy
 on:
-  push:
-    branches:
-      - "master"
-  pull_request:
+
   repository_dispatch: # run manually
     types: [percy]
 jobs:
