@@ -53,8 +53,6 @@ function generateIcon(link) {
   svg.setAttribute("viewBox", "0 0 100 100");
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
 
-  //<text y=%22.9em%22 font-size=%2290%22></text>
-  //<text text-anchor=%22end%22 y=%221.9em%22 x=%221.9em%22 font-size=%2250%22>10</text>
   const t1 = document.createElementNS("http://www.w3.org/2000/svg", "text");
   t1.setAttribute("y", ".9em");
   t1.setAttribute("font-size", "90");
