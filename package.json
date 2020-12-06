@@ -1,0 +1,13 @@
+{
+  "name": "jasik-xyz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jasikpark/jasik-xyz.git",
+  "author": "Caleb Jasik <calebjasik@jasik.xyz>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-go-template": "^0.0.10",
+    "prettier-plugin-package": "^1.3.0"
+  }
+}
