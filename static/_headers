@@ -4,3 +4,4 @@ X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
 Content-Security-Policy-Report-Only: default-src 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Cache-Control: public, max-age=3600, must-revalidate
