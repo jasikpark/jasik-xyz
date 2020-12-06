@@ -2,7 +2,7 @@
 X-Frame-Options: DENY
 X-XSS-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-Content-Security-Policy: frame-ancestors 'none' form-action 'none' object-src 'none' default-src 'self' 'unsafe-inline' gist.github.com github.githubassets.com scontent-ort2-1.cdninstagram.com www.youtube-nocookie.com fonts.googleapis.com fonts.gstatic.com jasik.xyz; img-src data: jasik.xyz; style-src-attr 'unsafe-inline'; style-src-elem 'unsafe-inline' jasik.xyz github.githubassets.com; child-src www.youtube-nocookie.com; connect-src 'self'; font-src 'self'; frame-src www.youtube-nocookie.com; script-src-elem 'self' gist.github.com jasik.xyz; strict-dynamic: 'self' gist.github.com; style-src 'self' github.githubassets.com; report-uri https://jasikxyz.report-uri.com/a/d/g; report-to default
+Content-Security-Policy: frame-ancestors 'none'; form-action 'none'; object-src 'none'; default-src 'self' gist.github.com github.githubassets.com scontent-ort2-1.cdninstagram.com www.youtube-nocookie.com fonts.googleapis.com fonts.gstatic.com jasik.xyz; img-src data: jasik.xyz; style-src-attr 'unsafe-inline'; style-src-elem 'unsafe-inline' jasik.xyz github.githubassets.com; child-src www.youtube-nocookie.com; connect-src 'self'; font-src 'self'; frame-src www.youtube-nocookie.com; script-src-elem 'self' gist.github.com jasik.xyz; script-src 'self' gist.github.com; style-src 'self' github.githubassets.com; report-uri https://jasikxyz.report-uri.com/a/d/g; report-to default
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 Cache-Control: public, max-age=3600, must-revalidate
 Pragma: no-cache
