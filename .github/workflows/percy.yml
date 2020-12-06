@@ -23,7 +23,7 @@ jobs:
       - run: hugo -b "http://localhost:5339"
 
       - name: Percy
-        uses: percy/snapshot-action@v0.1.1
+        uses: percy/snapshot-action@v0.1.2
         with:
           build-directory: "public"
           verbose: true
