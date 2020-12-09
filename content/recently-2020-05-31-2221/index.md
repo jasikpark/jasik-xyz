@@ -57,7 +57,7 @@ In November I [stopped drinking coffee](https://v5.chriskrycho.com/journal/decaf
 {{< figure >}}
 {{< img src="moka-pot.jpeg" alt="Moka pot with it’s lid open to see the coffee coming up the upper straw" >}}
 {{% figcaption %}}
-Photo by [Shotlist](https://unsplash.com/@shotlist?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/moka-pot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [Shotlist](https://web.archive.org/web/20201123201315/https://unsplash.com/@shotlist) on [Unsplash](https://unsplash.com/s/photos/moka-pot?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 {{% /figcaption %}}
 {{< /figure >}}
 
