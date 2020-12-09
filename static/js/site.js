@@ -1,30 +1,17 @@
 function getEmojiClock() {
-  const now = new Date();
-  const hour24 = now.getHours();
-  const minutes = now.getMinutes();
-  const percent_past = minutes / 60;
-  var nearest_hour = Math.round((hour24 + percent_past) % 12);
-  if (nearest_hour == 0) {
-    //if it is currently 12
-    nearest_hour = 12;
-  }
-  const this_many_past = Math.abs(Math.round((minutes - 30) / 30));
-  console.log(
-    "nearest_hour: " +
-      nearest_hour +
-      " minutes " +
-      minutes +
-      " this many past: " +
-      this_many_past
-  );
+  // updated Date -> emoji from https://css-tricks.com/how-to-create-a-favicon-that-changes-automatically/
+  const time = new Date(Date.now() + 15 * 60 * 1000);
+  const nearest_hour = time.getHours() % 12;
+  const this_many_past = time.getMinutes() < 30 ? 0 : 30;
+
   let base_code_point = "0x1F5";
-  if (this_many_past == 1) {
+  if (this_many_past == 0) {
     // then it is the top of the hour
     const start = 0x4f;
     let clock = String.fromCodePoint(
       base_code_point + (start + nearest_hour).toString(16)
     );
-    console.log(clock);
+
     return clock;
   } else {
     // or it is half past the hour
@@ -32,7 +19,7 @@ function getEmojiClock() {
     let clock = String.fromCodePoint(
       base_code_point + (start + nearest_hour).toString(16)
     );
-    console.log(clock);
+
     return clock;
   }
   // So the emoji count from 1 (o'clock / thirty) to 12 (o'clock / thirty) and
@@ -40,7 +27,7 @@ function getEmojiClock() {
 }
 
 function initEmojiClock() {
-  const link = document.querySelector('link[rel="icon"]');
+  const link = document.getElementById("emoji-clock");
   generateIcon(link);
   setTimeout(generateIcon, 900000, link);
 }
