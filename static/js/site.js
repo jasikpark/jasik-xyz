@@ -48,3 +48,5 @@ function generateIcon(link) {
 
   link.href = "data:image/svg+xml," + svg.outerHTML.replace(/"/gi, "%22");
 }
+
+window.addEventListener("DOMContentLoaded", initEmojiClock);
