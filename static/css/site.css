@@ -157,11 +157,19 @@ article > header *:nth-child(2) {
 
 .post-navigation {
   max-width: var(--max-width);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin: 2rem auto 0;
   padding: 1rem 0;
+}
+
+.post-navigation :first-child {
+  margin-right: auto;
+}
+
+.post-navigation :last-child {
+  margin-left: auto;
 }
 
 footer {
