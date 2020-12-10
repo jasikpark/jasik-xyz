@@ -1,95 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {{ with .Description }}
-  <meta name="description" content="{{ . }}" />
-  {{ else }}
-  <meta name="description" content="{{ .Site.Params.Description }}" />
-  {{ end }}
-  <link rel="webmention" href="https://webmention.io/jasik.xyz/webmention" />
-  <link rel="pingback" href="https://webmention.io/jasik.xyz/xmlrpc" />
-  {{ if not (eq (now.UTC.Format "01-02") "04-09") }}
-  {{ if .Page.Params.isMath }}
-  {{ partial "katex.html" . }}
-  {{ end }}
-  <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" />
-  <link rel="stylesheet" href="{{ "css/site.css" | absURL }}" />
-  <script async src="{{ "js/site.js" | absURL }}"></script>
-  {{ end }}
-  <!--<meta name="description" content="{{ .Description }}">-->
-  <link id="emoji-clock" rel="icon" />
-  <link rel="icon" href="{{ "icon.svg" | absURL }}" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absURL }}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | absURL }}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | absURL }}" />
-  <link rel="manifest" href="{{ "/site.webmanifest" | absURL }}" />
-  <meta name="msapplication-TileColor" content="#b91d47" />
-  <meta name="theme-color" content="#ffffff" />
-  {{ range .AlternativeOutputFormats -}}
-  {{ printf `
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {{ with .Description }}
+      <meta name="description" content="{{ . }}" />
+      {{ else }}
+      <meta name="description" content="{{ .Site.Params.Description }}" />
+    {{ end }}
+    <link rel="webmention" href="https://webmention.io/jasik.xyz/webmention" />
+    <link rel="pingback" href="https://webmention.io/jasik.xyz/xmlrpc" />
+    {{ if not (eq (now.UTC.Format "01-02") "04-09") }}
+      {{ if .Page.Params.isMath }}
+        {{ partial "katex.html" . }}
+      {{ end }}
+      <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" />
+      <link rel="stylesheet" href="{{ "css/site.css" | absURL }}" />
+      <script async src="{{ "js/site.js" | absURL }}"></script>
+    {{ end }}
+    <!--<meta name="description" content="{{ .Description }}">-->
+    <link id="emoji-clock" rel="icon" />
+    <link rel="icon" href="{{ "icon.svg" | absURL }}" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ "/apple-touch-icon.png" | absURL }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ "/favicon-32x32.png" | absURL }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ "/favicon-16x16.png" | absURL }}"
+    />
+    <link rel="manifest" href="{{ "/site.webmanifest" | absURL }}" />
+    <meta name="msapplication-TileColor" content="#b91d47" />
+    <meta name="theme-color" content="#ffffff" />
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `
       <link rel="%s" type="%s" href="%s" title="%s" />
       ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
-</head>
+    {{ end -}}
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
-      <ul>
-        <li><a href="{{ .Site.BaseURL }}/photos">Photos</a></li>
-        {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-        <li><a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a></li>
-        {{- end -}}
-        <li><a href="{{ .Site.BaseURL }}/reading">Reading</a></li>
-        <li><a href="{{ .Site.BaseURL }}/listening">Listening</a></li>
-      </ul>
-    </nav>
-  </header>
-  {{ if (eq (mod (now.UTC.Format "2006" ) 4) 0) }}
-  <h2 class="text-base">
-    <a href="https://vote.gov">Register to Vote 🇺🇸</a>
-  </h2>
-  {{ end }}
-  {{ partial "css-day" }}
-  {{ block "main" . }}
-  <main>
-    {{ block "header" . }}{{ end }}
-    <ul class="py-4">
-      {{ range .RegularPages }}
-      <li class="py-4">
-        <div>
-          {{ if .Draft }}
-          <span class="draft-label">Draft</span>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <ul>
+          <li><a href="{{ .Site.BaseURL }}/photos">Photos</a></li>
+          {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+            <li><a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a></li>
+          {{- end -}}
+          <li><a href="{{ .Site.BaseURL }}/reading">Reading</a></li>
+          <li><a href="{{ .Site.BaseURL }}/listening">Listening</a></li>
+        </ul>
+      </nav>
+    </header>
+    {{ if (eq (mod (now.UTC.Format "2006" ) 4) 0) }}
+      <h2 class="text-base">
+        <a href="https://vote.gov">Register to Vote 🇺🇸</a>
+      </h2>
+    {{ end }}
+    {{ partial "css-day" }}
+    {{ block "main" . }}
+      <main>
+        {{ block "header" . }}{{ end }}
+        <ul class="py-4">
+          {{ range .RegularPages }}
+            <li class="py-4">
+              <div>
+                {{ if .Draft }}
+                  <span class="draft-label">Draft</span>
+                {{ end }}
+                {{ if .Title }}
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+
+
+                {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
+              </div>
+              <a href="{{ .Permalink }}"
+                ><time
+                  datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}"
+                  >{{ .PublishDate.Format "2006.01.02" }}</time
+                ></a
+              >
+            </li>
           {{ end }}
-          {{ if .Title }}
-          <a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
-
-
-          {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
-        </div>
-        <a href="{{ .Permalink }}"><time
-            datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">{{ .PublishDate.Format "2006.01.02" }}</time></a>
-      </li>
-      {{ end }}
-    </ul>
-  </main>
-  {{ end }}
-  <footer>
-    <a href="#">Back to top</a>
-    <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
-    <a rel="me" href="mailto:calebjasik@jasik.xyz">Email</a>
-    <a rel="me alternate" href="{{ .Site.BaseURL }}/index.xml" type="application/rss+xml">RSS</a>
-  </footer>
-  <!-- Cloudflare Privacy-Preserving Analytics - https://blog.cloudflare.com/privacy-first-web-analytics/ -->
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "d40ac5ea98e448bdb22e34e14ea14098"}'></script>
-  <!-- End Cloudflare Web Analytics -->
-</body>
-
+        </ul>
+      </main>
+    {{ end }}
+    <footer>
+      <a href="#">Back to top</a>
+      <a rel="me" href="https://twitter.com/calebjasik">Twitter</a>
+      <a rel="me" href="mailto:calebjasik@jasik.xyz">Email</a>
+      <a
+        rel="me alternate"
+        href="{{ .Site.BaseURL }}/index.xml"
+        type="application/rss+xml"
+        >RSS</a
+      >
+    </footer>
+    <!-- Cloudflare Privacy-Preserving Analytics - https://blog.cloudflare.com/privacy-first-web-analytics/ -->
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "d40ac5ea98e448bdb22e34e14ea14098"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
+  </body>
 </html>
