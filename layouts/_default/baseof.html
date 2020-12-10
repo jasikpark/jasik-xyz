@@ -75,22 +75,24 @@
         <ul class="py-4">
           {{ range .RegularPages }}
             <li class="py-4">
-              <div>
-                {{ if .Draft }}
-                  <span class="draft-label">Draft</span>
-                {{ end }}
-                {{ if .Title }}
-                  <a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+              <article>
+                <div class="img-max-h-40 remove-figure-margin">
+                  {{ if .Draft }}
+                    <span class="draft-label">Draft</span>
+                  {{ end }}
+                  {{ if .Title }}
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
 
 
-                {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
-              </div>
-              <a href="{{ .Permalink }}"
-                ><time
-                  datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}"
-                  >{{ .PublishDate.Format "2006.01.02" }}</time
-                ></a
-              >
+                  {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
+                </div>
+                <a href="{{ .Permalink }}"
+                  ><time
+                    datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}"
+                    >{{ .PublishDate.Format "2006.01.02" }}</time
+                  ></a
+                >
+              </article>
             </li>
           {{ end }}
         </ul>

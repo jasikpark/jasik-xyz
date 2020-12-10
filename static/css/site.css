@@ -181,6 +181,15 @@ footer a {
   margin-right: 0.4rem;
 }
 
+.img-max-h-40 img,
+.img-max-h-40 svg {
+  max-height: 10rem;
+}
+
+.remove-figure-margin figure {
+  margin: 0;
+}
+
 img:not([alt]) {
   outline: 5px solid red;
 }
@@ -224,6 +233,20 @@ img:not([alt]) {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.max-h-92 {
+  max-height: 23rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:max-h-92 {
+    max-height: 23rem;
+  }
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
 .flex {
