@@ -235,13 +235,9 @@ img:not([alt]) {
   width: 50%;
 }
 
-.max-h-92 {
-  max-height: 23rem;
-}
-
 @media (min-width: 640px) {
-  .sm\:max-h-92 {
-    max-height: 23rem;
+  .sm\:max-h-108 {
+    max-height: 27rem;
   }
 }
 
@@ -289,6 +285,12 @@ img:not([alt]) {
 
 .space-y-4 > * + * {
   margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:space-y-0 > * + * {
+    margin-top: 0rem;
+  }
 }
 
 .grid {

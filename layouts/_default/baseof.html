@@ -76,7 +76,9 @@
           {{ range .RegularPages }}
             <li class="py-4">
               <article>
-                <div class="img-max-h-40 remove-figure-margin">
+                <div
+                  class="sm:max-h-108 overflow-y-auto img-max-h-40 remove-figure-margin"
+                >
                   {{ if .Draft }}
                     <span class="draft-label">Draft</span>
                   {{ end }}
