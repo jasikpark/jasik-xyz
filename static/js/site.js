@@ -41,8 +41,8 @@ function generateIcon(link) {
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
 
   const t1 = document.createElementNS("http://www.w3.org/2000/svg", "text");
-  t1.setAttribute("y", ".9em");
-  t1.setAttribute("font-size", "90");
+  t1.setAttribute("y", ".875em");
+  t1.setAttribute("font-size", "100");
   t1.textContent = emoji;
   svg.appendChild(t1);
 
