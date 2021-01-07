@@ -1,10 +1,10 @@
 {{ define "title" }}
-{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary }}{{ end }} | {{ .Site.Title }}
+{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary | truncate 70 }}{{ end }} | {{ .Site.Title }}
 {{ end }}
 
 {{ define "header" }}
 <header>
-  <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</h1>
+  <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</h1>
   {{ if .PublishDate }}<a href="{{ .Permalink }}"><time
       datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
       {{ .PublishDate.Format "January 2, 2006" }}</time></a>{{ end }}
@@ -13,7 +13,7 @@
 {{ end }}
 
 {{ define "main" }}
-<main>
+<main id="main">
   <article>
     {{ block "header" . }}{{ end }}
     {{ .Content }}
@@ -44,16 +44,16 @@
   </div>
   <address property="email" class="not-italic">
     <div>Send me an email at <a
-        href="mailto:calebjasik@jasik.xyz?subject=RE:%20{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">calebjasik@jasik.xyz</a>
+        href="mailto:calebjasik@jasik.xyz?subject=RE:%20{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}">calebjasik@jasik.xyz</a>
       if you want to.</div>
   </address>
 </footer>
 {{ if .PublishDate }}
 <section class="post-navigation">
   <div>{{ with.PrevPage }}{{ if .PublishDate }}<a href="{{.Permalink}}">←
-      {{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</a> {{ end }}{{ end }}</div>
+      {{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</a> {{ end }}{{ end }}</div>
   <div>{{ with.NextPage }}{{ if .PublishDate }}<a
-      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary }}{{ end }} →</a> {{ end }}{{ end }}</div>
+      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }} →</a> {{ end }}{{ end }}</div>
 </section>
 {{ end }}
 
