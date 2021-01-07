@@ -181,12 +181,26 @@ article > header *:nth-child(2) {
   padding: 1rem 0;
 }
 
-.post-navigation :first-child {
+.post-navigation > :first-child {
   margin-right: auto;
 }
 
-.post-navigation :last-child {
+.post-navigation > :first-child a::before {
+  content: "←";
+}
+
+.post-navigation > :last-child {
   margin-left: auto;
+  text-align: right;
+}
+
+.post-navigation > :first-child a,
+.post-navigation > :last-child a {
+  display: flex;
+}
+
+.post-navigation > :last-child a::after {
+  content: "→";
 }
 
 footer {

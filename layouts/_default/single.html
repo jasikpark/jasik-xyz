@@ -50,10 +50,10 @@
 </footer>
 {{ if .PublishDate }}
 <section class="post-navigation">
-  <div>{{ with.PrevPage }}{{ if .PublishDate }}<a href="{{.Permalink}}">←
+  <div>{{ with.PrevPage }}{{ if .PublishDate }}<a href="{{.Permalink}}">
       {{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</a> {{ end }}{{ end }}</div>
   <div>{{ with.NextPage }}{{ if .PublishDate }}<a
-      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }} →</a> {{ end }}{{ end }}</div>
+      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }} </a> {{ end }}{{ end }}</div>
 </section>
 {{ end }}
 
