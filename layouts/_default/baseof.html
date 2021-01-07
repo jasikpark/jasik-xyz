@@ -59,7 +59,7 @@
           <span id="greeting"></span>
         </h1>
         <ul>
-          <li><a href="{{ .Site.BaseURL }}/photos">Photos</a></li>
+          <li><a href="{{ "/photos/" | absURL }}">Photos</a></li>
           {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
             <li><a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a></li>
           {{- end -}}
@@ -126,5 +126,16 @@
       data-cf-beacon='{"token": "d40ac5ea98e448bdb22e34e14ea14098"}'
     ></script>
     <!-- End Cloudflare Web Analytics -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/prerender_all@1.1.0/prerender.js"
+      integrity="sha256-24v6xZyfIpefNGAWj+r65XOkqCkF9joivvLRloIyccQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.0.0/quicklink.umd.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        quicklink.listen();
+      });
+    </script>
   </body>
 </html>
