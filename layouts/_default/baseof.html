@@ -60,8 +60,10 @@
           {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
             <li><a rel="me" href="{{ .Permalink }}">{{ .Page.Title }}</a></li>
           {{- end -}}
-          <li><a href="{{ .Site.BaseURL }}/reading">Reading</a></li>
-          <li><a href="{{ .Site.BaseURL }}/listening">Listening</a></li>
+          <li><a href="https://beta.readng.co/user/calebjasik">Reading</a></li>
+          <li>
+            <a href="https://music.apple.com/profile/calebjasik">Listening</a>
+          </li>
         </ul>
       </nav>
     </header>
