@@ -30,6 +30,23 @@ body {
   padding: 0 1rem;
 }
 
+.night body {
+  background-color: #001f3f;
+  color: white;
+}
+
+.night a {
+  color: #ffdc00;
+}
+
+.night a:visited {
+  color: hsl(51.76, 100%, 40%);
+}
+
+.transitional body {
+  background-color: #f7f7f7;
+}
+
 ol,
 ul {
   list-style: none;
@@ -204,6 +221,10 @@ img:not([alt]) {
   font-style: normal;
 }
 
+.bg-white {
+  background-color: white;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -211,6 +232,10 @@ img:not([alt]) {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .py-4 {
@@ -251,6 +276,10 @@ img:not([alt]) {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 @media (min-width: 640px) {

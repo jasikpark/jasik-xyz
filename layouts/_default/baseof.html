@@ -54,7 +54,10 @@
     <a href="#main" class="sr-only focus:not-sr-only">Skip to content</a>
     <header>
       <nav>
-        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <h1 class="flex space-between flex-wrap">
+          <a href="{{ .Site.BaseURL }}" class="pr-1">{{ .Site.Title }}</a>
+          <span id="greeting"></span>
+        </h1>
         <ul>
           <li><a href="{{ .Site.BaseURL }}/photos">Photos</a></li>
           {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}

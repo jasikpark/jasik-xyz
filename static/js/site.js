@@ -49,4 +49,59 @@ function generateIcon(link) {
   link.href = "data:image/svg+xml," + svg.outerHTML.replace(/"/gi, "%22");
 }
 
-window.addEventListener("DOMContentLoaded", initEmojiClock);
+/**
+ * Get the greeting based on time
+ * @return {String} The greeting
+ */
+var getGreeting = function () {
+  if (now > 20) return "Good night! 🌙"; // If it's after 8pm
+  if (now > 17) return "Good evening! 🌅"; // If it's after 5pm
+  if (now > 11) return "Good afternoon! 🌇"; // If it's after noon
+  return "Good morning! 🌞"; // Default message
+};
+
+var greeting = document.getElementById("greeting");
+var now = new Date();
+
+/**
+ * Adjust the color theme based on time
+ */
+var adjustColorMode = function () {
+  // Remove any existing classes
+  document.documentElement.classList.remove("transitional");
+  document.documentElement.classList.remove("night");
+
+  // If it's nighttime, go dark mode
+  if (now > 20) {
+    document.documentElement.classList.add("night");
+    return;
+  }
+
+  // If it's morning or evening, go transitional
+  if (now > 17 || now < 11) {
+    document.documentElement.classList.add("transitional");
+  }
+};
+
+/**
+ * Add a greeting and adjust the color palette
+ */
+var updateUI = function () {
+  // Set the greeting
+  greeting.textContent = getGreeting();
+
+  // Update color palette
+  adjustColorMode();
+};
+
+window.addEventListener("DOMContentLoaded", function () {
+  initEmojiClock();
+  // Update the UI on page load
+  updateUI();
+
+  // Check again every 15 minutes
+  setInterval(function () {
+    now = new Date().getHours();
+    updateUI();
+  }, 1000 * 60 * 15);
+});
