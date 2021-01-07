@@ -94,14 +94,13 @@ var updateUI = function () {
   adjustColorMode();
 };
 
-window.addEventListener("DOMContentLoaded", function () {
-  initEmojiClock();
-  // Update the UI on page load
-  updateUI();
+window.addEventListener("DOMContentLoaded", initEmojiClock);
 
-  // Check again every 15 minutes
-  setInterval(function () {
-    now = new Date().getHours();
-    updateUI();
-  }, 1000 * 60 * 15);
-});
+// Update the UI on page load
+updateUI();
+
+// Check again every 15 minutes
+setInterval(function () {
+  now = new Date().getHours();
+  updateUI();
+}, 1000 * 60 * 15);
