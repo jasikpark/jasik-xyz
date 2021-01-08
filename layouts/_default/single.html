@@ -32,6 +32,15 @@
       </a>
     </div>
     {{ end }}
+    {{ if (ne .Date .PublishDate) }}
+    <div>
+      This page was published
+      <a href="https://www.daysoftheyear.com/days/{{ .PublishDate.Format "2006/01/02/" }}"><time
+          datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+          {{ .PublishDate.Format "January 2, 2006" }}</time>
+      </a>
+    </div>
+    {{ end }}
     {{ if $.GitInfo }}
     <div>
       This page was last modified
