@@ -61,7 +61,7 @@ var getGreeting = function () {
 };
 
 var greeting = document.getElementById("greeting");
-var now = new Date();
+var now = new Date().getHours();
 
 /**
  * Adjust the color theme based on time
