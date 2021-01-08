@@ -4,6 +4,77 @@ Date = "2020-05-31T23:41:59-05:00"
 Type = "post"
 +++
 
+---
+
+**TUESDAY, Oct 13, 2020**
+
+- 1:27pm
+- White Russian Coffee
+- Keurig
+- Grind no. 7
+- 18g of coffee
+- 150g of water in + ice and sugary milk in the pint glass
+
+---
+
+**SUNDAY, Oct 11, 2020**
+
+- 1:55pm
+- White Russian Coffee
+- Mokapot
+- Grind no. 7
+- 27.0g of coffee
+
+_notes:_ Wtf - grind no. 7 + 27g was wayyyyy too much coffee???
+I only used (27-8.5) 18.5g of coffee?? I guess I’ll do that next time. It turned out well - I made two iced White Russian lattes: Ice, a lil vanilla extract, simple syrup, and some milk and heavy cream whisked together by my protein shaker. It’s pretty great imo since I’m using the right amount of coffee for myself. I think if I want to use the mokapot more frequently, I need a good grinder and a smaller mokapot. Especially since I mostly enjoy iced drinks.
+
+---
+
+**SATURDAY, Jul 25, 2020**
+
+- 11:40am
+- carport
+- keurig
+- 268.6g water
+- 16.2g coffee
+- grind size no. 7
+
+---
+
+**FRIDAY, Jul 24, 2020**
+
+- 3:18pm
+- Carport
+- Keurig
+- 300g water
+- 20.7g coffee
+- Grind size no. 7
+
+---
+
+**THURSDAY, Jul 23, 2020**
+
+- 12:24pm
+- Carport
+- Keurig
+- 304g water
+- 17.3g coffee
+
+---
+
+**SATURDAY, Jul 11, 2020**
+
+- 12:55pm
+- Carport coffee
+- Universal tea strainer
+- Grind size no. 7
+- 5g of coffee
+- 302.7g of water / coffee
+
+_notes:_ I’ve tried this one time before and it was pretty ok - it tastes like Keurig coffee. The nice thing though is that the
+
+---
+
 I started keeping track of my coffee making attempts with a goal of replicating [Carport Coffee's](https://caffeinatethepeople.com) coffee. Here is my journal.
 
 **SUNDAY, May 31, 2020**

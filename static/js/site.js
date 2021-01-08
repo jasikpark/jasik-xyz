@@ -29,7 +29,8 @@ function getEmojiClock() {
 function initEmojiClock() {
   const link = document.getElementById("emoji-clock");
   generateIcon(link);
-  setTimeout(generateIcon, 900000, link);
+  // update every 15minutes
+  setTimeout(generateIcon, 1000 * 60 * 15, link);
 }
 
 function generateIcon(link) {
