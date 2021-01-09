@@ -59,11 +59,12 @@
 </footer>
 {{ if .PublishDate }}
 <section class="post-navigation">
-  <div>{{ with.PrevInSection }}{{ if .PublishDate }}<a href="{{.Permalink}}">
+{{/*We get the posts within the section and then sort by publish date in descending order.*/}}
+{{ $pages := (sort (where site.RegularPages "Section" .Section) ".PublishDate" "desc") }}
+  <div>{{ with $pages.Prev . }}{{ if .PublishDate }}<a href="{{.Permalink}}">
       {{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</a> {{ end }}{{ end }}</div>
-  <div>{{ with.NextInSection }}{{ if .PublishDate }}<a
+  <div>{{ with $pages.Next . }}{{ if .PublishDate }}<a
       href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }} </a> {{ end }}{{ end }}</div>
-</section>
 {{ end }}
-
+</section>
 {{ end }}

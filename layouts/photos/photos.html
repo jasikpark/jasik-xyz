@@ -16,7 +16,7 @@
 {{ define "main" }}
 <main id="main">
   {{ block "header" . }}{{ end }}
-  {{ range .RegularPages }}
+  {{ range sort .RegularPages ".PublishDate" "desc" }}
   <article class="-mx-4">
     <a href="{{ .Permalink }}" title="{{ .Title }}">
       <figure>

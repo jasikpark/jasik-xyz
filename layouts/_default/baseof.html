@@ -80,7 +80,7 @@
       <main id="main">
         {{ block "header" . }}{{ end }}
         <ul class="space-y-6">
-          {{ range .RegularPages }}
+          {{ range sort .RegularPages ".PublishDate" "desc" }}
             <li>
               <article>
                 <div
