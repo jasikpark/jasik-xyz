@@ -9,4 +9,4 @@ I kinda want to keep track of fonts that I think are cool, so I think I'll keep 
 
 - <https://www.typewolf.com/site-of-the-day/hetime>
 - <https://gt-walsheim.com/>
-- <https://typographica.org/typeface-reviews/algebra/> – this is the energy I want for this website I think… something like Georgia but a lil spicy. Algebra is a little more geometric, no? 
+-  <https://fontwerk.com/en/fonts/nikolai> – this is the energy I want for this website I think… something like Georgia but a lil spicy. ~~Algebra is a little more geometric, no?~~ This is the font that I saw at <https://typographica.org/typeface-reviews/algebra/> and I keep forgetting that font websites don't usually set the title of their reviews in the font they are reviewing. I'm used to years of staring at Google Docs and Google Fonts listings where the font name is set in the font, which is honestly unfair to many fonts with interesting short names.
