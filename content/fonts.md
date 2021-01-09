@@ -9,4 +9,4 @@ I kinda want to keep track of fonts that I think are cool, so I think I'll keep 
 
 - <https://www.typewolf.com/site-of-the-day/hetime>
 - <https://gt-walsheim.com/>
-- 
+- <https://typographica.org/typeface-reviews/algebra/> – this is the energy I want for this website I think… something like Georgia but a lil spicy. Algebra is a little more geometric, no? 
