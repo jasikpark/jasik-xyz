@@ -8,12 +8,8 @@ If you need to use the Cisco Anyconnect client for using your school's vpn, you 
 
 To install on macOS:
 
-1. Install openconnect
-```bash
-brew install openconnect
-```
+1. Install openconnect `brew install openconnect`
 2. Install the [macOS TUN/TAP driver](http://tuntaposx.sourceforge.net/)
-
 
 I had no problems using it, other than not being a student anymore!
 
