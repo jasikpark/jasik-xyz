@@ -114,6 +114,7 @@ body > header * {
 pre {
   margin: 2rem auto;
   max-width: var(--max-width);
+  max-height: calc(100vh - 10em);
   overflow: auto;
   white-space: pre-wrap;
   border: 2px solid black;
