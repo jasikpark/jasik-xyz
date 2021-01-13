@@ -11,17 +11,17 @@ isMath = "true"
 
 \\(E = \frac{1}{2}mv_x^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2 = constant\\)
 
-Choose \\(t’\\) such that \\(x(t') = Acos(\omega t' + \phi) = -\frac{1}{2}A\\)
+Choose \\(t'\\) such that \\(x(t') = Acos(\omega t' + \phi) = -\frac{1}{2}A\\)
 
 \\(v_x(t') = -\omega A sin(\omega t' + \phi)\) -> \(v_x = -\omega
 Asin(\frac{2\pi}{3}) = \\) oh well….
 
 ## Energy diagrams for SHM
 
-Graph these with respect to constant system energy: 
+Graph these with respect to constant system energy:
 
 \\(PE = \frac{1}{2}kA^2
-cos^2(\omega t + \phi)\\) 
+cos^2(\omega t + \phi)\\)
 
 \\(KE = \frac{1}{2}kA^2 sin^2(\omega t + \phi)\\)
 
