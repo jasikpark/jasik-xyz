@@ -51,7 +51,7 @@ force = true
 [[headers]]
 for = "/*"
 [headers.values]
-Content-Security-Policy-Report-Only = "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; plugin-types 'none'; sandbox 'none'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default"
+Content-Security-Policy-Report-Only = "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; plugin-types 'none'; sandbox 'none'; img-src 'self'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default"
 Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
 Report-To = "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://jasikxyz.report-uri.com/a/d/g'}],'include_subdomains':true}"
 Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
