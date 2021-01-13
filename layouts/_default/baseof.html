@@ -65,22 +65,22 @@
           crossorigin="anonymous"
         ></script>
 
-        {{ $katexJS := resources.Get "js/katex.js" | minify | fingerprint }}
+        {{ $katexJS := resources.Get "js/katex.js" | minify | fingerprint "sha384" }}
         <script src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
       {{ end }}
       {{ if .Site.IsServer }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint }}
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint "sha384" }}
         <link rel="stylesheet" href="{{ $syntaxCSS.Permalink }}" />
         {{ $siteCSS := resources.Get "css/site.css" | fingerprint }}
         <link rel="stylesheet" href="{{ $siteCSS.Permalink }}" />
         {{ else }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" | minify | fingerprint }}
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" | minify | fingerprint "sha384" }}
         <link
           rel="stylesheet"
           href="{{ $syntaxCSS.Permalink }}"
           integrity="{{ $syntaxCSS.Data.Integrity }}"
         />
-        {{ $siteCSS := resources.Get "css/site.css" | minify | fingerprint }}
+        {{ $siteCSS := resources.Get "css/site.css" | minify | fingerprint "sha384" }}
         <link
           rel="stylesheet"
           href="{{ $siteCSS.Permalink }}"
@@ -97,10 +97,10 @@
       />
     {{ end }}
     {{ if .Site.IsServer }}
-      {{ $siteJS := resources.Get "js/site.js" | fingerprint }}
+      {{ $siteJS := resources.Get "js/site.js" | fingerprint "sha384" }}
       <script async src="{{ $siteJS.Permalink }}" ></script>
       {{ else }}
-      {{ $siteJS := resources.Get "js/site.js" | minify | fingerprint }}
+      {{ $siteJS := resources.Get "js/site.js" | minify | fingerprint "sha384" }}
       <script async src="{{ $siteJS.Permalink }}" integrity="{{ $siteJS.Data.Integrity }}"></script>
     {{ end }}
     <!-- RobustLinks Javascript -->
