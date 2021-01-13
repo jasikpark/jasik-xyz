@@ -1,0 +1,20 @@
+/*
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+{{ if .Site.IsServer }}
+      {{- $siteJS := resources.Get "js/site.js" | fingerprint -}}
+      {{- $katexJS := resources.Get "js/katex.js" | fingerprint -}}
+      {{- $siteCSS := resources.Get "css/site.css" | fingerprint -}}
+      {{- $syntaxCSS := resources.Get "css/syntax.css" | fingerprint -}}
+Content-Security-Policy-Report-Only: default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; plugin-types 'none'; img-src 'self'; script-src strict-dynamic {{ $siteJS.Data.Integrity }} {{ $katexJS.Data.Integrity }}; style-src {{ $siteCSS.Data.Integrity }} {{ $syntaxCSS.Data.Integrity }} report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default
+{{ else }}
+      {{- $siteJS := resources.Get "js/site.js" | minify | fingerprint -}}
+      {{- $katexJS := resources.Get "js/katex.js" | minify | fingerprint -}}
+      {{- $siteCSS := resources.Get "css/site.css" | minify | fingerprint -}}
+      {{- $syntaxCSS := resources.Get "css/syntax.css" | minify | fingerprint -}}  
+Content-Security-Policy-Report-Only: default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; plugin-types 'none'; img-src 'self'; script-src strict-dynamic {{ $siteJS.Data.Integrity }} {{ $katexJS.Data.Integrity }}; style-src {{ $siteCSS.Data.Integrity }} {{ $syntaxCSS.Data.Integrity }} report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default
+{{ end -}}
+Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://jasikxyz.report-uri.com/a/d/g"}],"include_subdomains":true}

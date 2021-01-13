@@ -15,40 +15,60 @@ enableGitInfo = true
 pygmentsUseClasses = true
 
 [sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
 
 [params]
 description = "Bowl of TARDIS is the space for Caleb Jasik on the web. Mostly random blog posts, and occasional pictures"
 
 
 [author]
-  name = "Caleb Jasik"
-  homepage = "https://jasik.xyz"
-  email = "calebjasik@jasik.xyz"
+name = "Caleb Jasik"
+homepage = "https://jasik.xyz"
+email = "calebjasik@jasik.xyz"
 
 [markup.highlight]
-  style = "dracula"
+style = "dracula"
 
 [imaging]
-  quality = 75
+quality = 75
 
 [markup.goldmark.renderer]
-  unsafe = true
+unsafe = true
 
-  [privacy]
-  [privacy.instagram]
-    simple = true
-  [privacy.twitter]
-    simple = true
-  [privacy.vimeo]
-    simple = true
-  [privacy.youtube]
-    privacyEnhanced = true
+[privacy]
+[privacy.instagram]
+simple = true
+[privacy.twitter]
+simple = true
+[privacy.vimeo]
+simple = true
+[privacy.youtube]
+privacyEnhanced = true
 
 [services]
-  [services.instagram]
-    disableInlineCSS = true
-  [services.twitter]
-    disableInlineCSS = true
+[services.instagram]
+disableInlineCSS = true
+[services.twitter]
+disableInlineCSS = true
+
+[outputs]
+home = ["HTML", "RSS", "REDIR", "HEADERS"]
+
+[mediaTypes]
+[mediaTypes."text/netlify"]
+suffixes = [""]
+delimiter = ""
+
+[outputFormats]
+[outputFormats.REDIR]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
