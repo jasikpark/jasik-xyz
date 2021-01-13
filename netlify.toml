@@ -9,7 +9,8 @@ RUBY_VERSION = "2.6.2"
 NODE_VERSION = "15.3.0"
 
 [dev]
-command = "hugo server --cleanDestinationDir"
+command = "hugo server --cleanDestinationDir --disableFastRender"
+autoLaunch = false
 
 [context.branch-deploy]
 command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
@@ -22,3 +23,38 @@ command = "hugo -b https://v2.jasik.xyz"
 
 [context.deploy-preview]
 command = "hugo -b $DEPLOY_PRIME_URL"
+
+[[redirects]]
+from = "/donate/"
+to = "https://ko-fi.com/calebjasik/"
+
+[[redirects]]
+from = "/resume"
+to = "/caleb-jasik-resume.pdf"
+
+[[redirects]]
+from = "/resume.pdf"
+to = "/caleb-jasik-resume.pdf"
+
+[[redirects]]
+from = "https://jasik-xyz.netlify.com/*"
+to = "https://jasik.xyz/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://jasik-xyz.netlify.app/*"
+to = "https://jasik.xyz/:splat"
+status = 301
+force = true
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy-Report-Only = "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; plugin-types 'none'; sandbox 'none'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default"
+Referrer-Policy = "no-referrer, strict-origin-when-cross-origin"
+Report-To = "{'group':'default','max_age':31536000,'endpoints':[{'url':'https://jasikxyz.report-uri.com/a/d/g'}],'include_subdomains':true}"
+Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"

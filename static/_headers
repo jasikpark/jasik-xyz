@@ -1,8 +1,0 @@
-/*
-X-Frame-Options: DENY
-X-XSS-Protection: 1; mode=block
-X-Content-Type-Options: nosniff
-Content-Security-Policy-Report-Only: frame-ancestors 'none'; form-action 'none'; object-src 'none'; default-src 'self' gist.github.com github.githubassets.com www.youtube-nocookie.com fonts.googleapis.com fonts.gstatic.com jasik.xyz; img-src data: jasik.xyz; style-src-attr 'unsafe-inline'; style-src-elem 'unsafe-inline' jasik.xyz github.githubassets.com doi.org; child-src www.youtube-nocookie.com; connect-src 'self' https://cloudflareinsights.com; font-src 'self'; frame-src www.youtube-nocookie.com; script-src-elem 'self' gist.github.com static.cloudflareinsights.com jasik.xyz instant.page doi.org; script-src 'self' gist.github.com static.cloudflareinsights.com unpkg.com instant.page doi.org; style-src 'self' github.githubassets.com doi.org; base-uri 'none'; report-uri https://jasikxyz.report-uri.com/r/d/csp/wizard; report-to default
-Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://jasikxyz.report-uri.com/a/d/g"}],"include_subdomains":true}
-Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-Referrer-Policy: no-referrer, strict-origin-when-cross-origin
