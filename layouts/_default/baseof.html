@@ -44,18 +44,41 @@
       {{ if .Page.Params.isMath }}
         {{ partial "katex.html" . }}
       {{ end }}
-      <link rel="stylesheet" href="{{ "css/syntax.css" | absURL }}" />
-      <link rel="stylesheet" href="{{ "css/site.css" | absURL }}" />
-      <script async src="{{ "js/site.js" | absURL }}"></script>
+      {{ if .Site.IsServer }}
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint }}
+        <link rel="stylesheet" href="{{ $syntaxCSS.Permalink }}" />
+        {{ $siteCSS := resources.Get "css/site.css" | fingerprint }}
+        <link rel="stylesheet" href="{{ $siteCSS.Permalink }}" />
+        {{ else }}
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" | minify | fingerprint }}
+        <link
+          rel="stylesheet"
+          href="{{ $syntaxCSS.Permalink }}"
+          integrity="{{ $syntaxCSS.Data.Integrity }}"
+        />
+        {{ $siteCSS := resources.Get "css/site.css" | minify | fingerprint }}
+        <link
+          rel="stylesheet"
+          href="{{ $siteCSS.Permalink }}"
+          integrity="{{ $siteCSS.Data.Integrity }}"
+        />
+      {{ end }}
+      <!-- RobustLinks CSS -->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://doi.org/10.25776/z58z-r575"
+        integrity="sha384-na26Sb3uDozto2cKtZqBFA1cH3f2uPoNXxV0QperrZxDrOlglJD2dkui7H6y5kgh"
+        crossorigin="anonymous"
+      />
     {{ end }}
-    <!-- RobustLinks CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://doi.org/10.25776/z58z-r575"
-      integrity="sha384-na26Sb3uDozto2cKtZqBFA1cH3f2uPoNXxV0QperrZxDrOlglJD2dkui7H6y5kgh"
-      crossorigin="anonymous"
-    />
+    {{ if .Site.IsServer }}
+      {{ $siteJS := resources.Get "js/site.js" | fingerprint }}
+      <script async src="{{ $siteJS.Permalink }}" ></script>
+      {{ else }}
+      {{ $siteJS := resources.Get "js/site.js" | minify | fingerprint }}
+      <script async src="{{ $siteJS.Permalink }}" integrity="{{ $siteJS.Data.Integrity }}"></script>
+    {{ end }}
     <!-- RobustLinks Javascript -->
     <script
       type="text/javascript"
