@@ -5,6 +5,10 @@
   "repository": "git@github.com:jasikpark/jasik-xyz.git",
   "author": "Caleb Jasik <calebjasik@jasik.xyz>",
   "license": "MIT",
+  "scripts": {
+    "start": "hugo server --disableFastRender --cleanDestinationDir --gc",
+    "build": "hugo --cleanDestinationDir --gc"
+  },
   "devDependencies": {
     "prettier": "2.2.1",
     "prettier-plugin-go-template": "0.0.10",
