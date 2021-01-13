@@ -61,9 +61,6 @@ var getGreeting = function () {
   return "Good morning! 🌞"; // Default message
 };
 
-var greeting = document.getElementById("greeting");
-var now = new Date().getHours();
-
 /**
  * Adjust the color theme based on time
  */
@@ -97,11 +94,19 @@ var updateUI = function () {
 
 window.addEventListener("DOMContentLoaded", initEmojiClock);
 
-// Update the UI on page load
-updateUI();
+var greeting;
+var now;
 
-// Check again every 15 minutes
-setInterval(function () {
+window.addEventListener("DOMContentLoaded", function () {
+  greeting = document.getElementById("greeting");
   now = new Date().getHours();
+
+  // Update the UI on page load
   updateUI();
-}, 1000 * 60 * 15);
+
+  // Check again every 15 minutes
+  setInterval(function () {
+    now = new Date().getHours();
+    updateUI();
+  }, 1000 * 60 * 15);
+});
