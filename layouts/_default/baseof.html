@@ -65,11 +65,8 @@
           crossorigin="anonymous"
         ></script>
 
-        <script>
-          window.addEventListener("DOMContentLoaded", () =>
-            renderMathInElement(document.body)
-          );
-        </script>
+        {{ $katexJS := resources.Get "js/katex.js" | minify | fingerprint }}
+        <script src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
       {{ end }}
       {{ if .Site.IsServer }}
         {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint }}
