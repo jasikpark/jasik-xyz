@@ -61,9 +61,9 @@
 <section class="post-navigation">
 {{/*We get the posts within the section and then sort by publish date in descending order.*/}}
 {{ $pages := (sort (where site.RegularPages "Section" .Section) ".PublishDate" "desc") }}
-  <div>{{ with $pages.Prev . }}{{ if .PublishDate }}<a href="{{.Permalink}}">
-      {{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</a> {{ end }}{{ end }}</div>
-  <div>{{ with $pages.Next . }}{{ if .PublishDate }}<a
+  <div>{{ with $pages.Prev . }}{{ if .PublishDate }}<a role="prev" 
+      href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</a> {{ end }}{{ end }}</div>
+  <div>{{ with $pages.Next . }}{{ if .PublishDate }}<a role="next"
       href="{{.Permalink}}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }} </a> {{ end }}{{ end }}</div>
 {{ end }}
 </section>
