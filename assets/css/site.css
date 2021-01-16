@@ -255,6 +255,10 @@ img:not([alt]) {
   padding-bottom: 1rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .mb-0 {
   margin-bottom: 0;
 }
@@ -266,6 +270,11 @@ img:not([alt]) {
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-base {

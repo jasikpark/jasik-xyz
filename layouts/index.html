@@ -1,15 +1,16 @@
 {{ define "header" }}
-  <p class="h-card">
+  <div class="limit pt-4 h-card">
     Hi 👋 I'm
-    <a class="u-url p-name" rel="me" href="https://jasik.xyz/">Caleb Jasik</a
-    >.<br />
-    I am currently looking for clients for freelance web development!<br />
+    <a class="u-url p-name" rel="me" href="https://jasik.xyz/">Caleb Jasik</a>.
+    <p class="p-note my-0">
+      I am currently looking for clients for freelance web development!
+    </p>
     If you're looking for my contact info you can email me
     <a class="u-email" href="mailto:calebjasik@jasik.xyz">here</a>
     <br />
     My resume is at
     <a href="{{ "/resume" | absURL }}">{{ "/resume" | absURL }}</a>
-  </p>
+  </div>
   <p class="mb-0">You can find me at:</p>
   <ul class="py-1 mb-4 grid grid-auto">
     <li>
