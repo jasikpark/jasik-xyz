@@ -277,7 +277,11 @@ img:not([alt]) {
 }
 
 .text-base {
-  font-size: 1rem;
+  font-size: var(--font-med);
+}
+
+.text-small {
+  font-size: var(--font-small);
 }
 
 .w-full {
