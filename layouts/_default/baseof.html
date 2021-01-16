@@ -143,21 +143,24 @@
         <ul class="space-y-6">
           {{ range sort .RegularPages ".PublishDate" "desc" }}
             <li>
-              <article>
+              <article class="h-entry">
                 <div
-                  class="sm:max-h-108 overflow-y-auto img-max-fullish remove-figure-margin"
+                  class="sm:max-h-108 overflow-y-auto img-max-fullish remove-figure-margin e-content p-name"
                 >
                   {{ if .Draft }}
                     <span class="draft-label">Draft</span>
                   {{ end }}
                   {{ if .Title }}
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>{{ end }}
+                    <a class="u-url" href="{{ .Permalink }}"
+                      >{{ .Title }}</a
+                    >{{ end }}
 
 
                   {{ if (eq .Type "note") }}{{ .Content }}{{ end }}
                 </div>
-                <a href="{{ .Permalink }}"
+                <a class="u-url" href="{{ .Permalink }}"
                   ><time
+                    class="dt-published"
                     datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}"
                     >{{ .PublishDate.Format "2006.01.02" }}</time
                   ></a

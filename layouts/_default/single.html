@@ -4,8 +4,8 @@
 
 {{ define "header" }}
 <header>
-  <h1 {{ if .Draft }}class="draft-label" {{ end }}>{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</h1>
-  {{ if .PublishDate }}<a href="{{ .Permalink }}"><time
+  <h1 class="{{ if .Title }}p-name{{ end }}{{ if .Draft }}draft-label{{ end }}">{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</h1>
+  {{ if .PublishDate }}<a class="u-url" href="{{ .Permalink }}"><time class="dt-published"
       datetime="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
       {{ .PublishDate.Format "January 2, 2006" }}</time></a>{{ end }}
 </header>
@@ -14,7 +14,7 @@
 
 {{ define "main" }}
 <main id="main">
-  <article>
+  <article class="e-content {{ if not .Title }}p-name{{ end }}">
     {{ block "header" . }}{{ end }}
     {{ .Content }}
   </article>

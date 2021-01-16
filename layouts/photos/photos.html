@@ -17,9 +17,9 @@
 <main id="main">
   {{ block "header" . }}{{ end }}
   {{ range sort .RegularPages ".PublishDate" "desc" }}
-  <article class="-mx-4">
-    <a href="{{ .Permalink }}" title="{{ .Title }}">
-      <figure>
+  <article class="-mx-4 h-entry">
+    <a href="{{ .Permalink }}" title="{{ .Title }}" class="u-url">
+      <figure class="e-content p-name">
         <img {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
           src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
           {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
