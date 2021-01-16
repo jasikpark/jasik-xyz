@@ -14,9 +14,11 @@
 
 {{ define "main" }}
 <main id="main">
-  <article class="e-content {{ if not .Title }}p-name{{ end }}">
+  <article class="h-entry">
     {{ block "header" . }}{{ end }}
+    <div class="e-content {{ if not .Title }}p-name{{ end }}">
     {{ .Content }}
+    </div>
   </article>
 </main>
 
