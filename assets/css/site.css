@@ -218,6 +218,11 @@ footer a {
   max-height: 10rem;
 }
 
+.img-max-fullish img,
+.img-max-fullish svg {
+  max-height: calc(max(100vh - 20rem, 10rem));
+}
+
 .remove-figure-margin figure {
   margin: 0;
 }
