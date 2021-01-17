@@ -148,6 +148,15 @@ figure figcaption {
   color: var(--mid-gray);
 }
 
+blockquote {
+  border-left: 0.25rem rgba(0, 0, 0, 0.17) solid;
+  padding-left: 0.5rem;
+}
+
+.night body blockquote {
+  border-color: rgba(255, 255, 255, 0.17);
+}
+
 h1 {
   font-size: 1.7rem;
   line-height: 1.1;
