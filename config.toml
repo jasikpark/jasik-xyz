@@ -28,14 +28,16 @@ name = "Caleb Jasik"
 homepage = "https://jasik.xyz"
 email = "calebjasik@jasik.xyz"
 
+[markup]
 [markup.highlight]
 style = "dracula"
+[markup.goldmark.extensions]
+typographer = false
+[markup.goldmark.renderer]
+unsafe = true
 
 [imaging]
 quality = 75
-
-[markup.goldmark.renderer]
-unsafe = true
 
 [privacy]
 [privacy.instagram]
