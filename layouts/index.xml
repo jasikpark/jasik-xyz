@@ -20,7 +20,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
     {{ end -}}
     {{ range sort .RegularPages ".PublishDate" "desc" }}
     <item>
-      <title>{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}</title>
+      <title>{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 | safeHTML }}{{ end }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ if .GitInfo }}
