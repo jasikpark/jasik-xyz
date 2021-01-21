@@ -9,6 +9,7 @@ Title = "Wishlist"
 
 This will be a running list of things I plan to buy. :P
 
+- [External Monitor with usb power delivery](https://www.officedepot.com/a/products/2456175/Viewsonic-VX2485-MHU-238-Full-HD/?cm_mmc=Affiliates-_-CJ-_-3512519-_-11553109&cjevent=2f3156225b8111eb822200440a1c0e10&siteid=CJ_11553109_5513721_AwEAAAAAAAAAAchW)
 - [Affinity Photo for drawing!](https://affinity.serif.com/en-us/photo/)
 - [desperately want all of Adam Savage's quarantine filming kit](https://youtu.be/7tFwHXpxNLY) -- links in the description
 - Mudroom style bench with shoe storage
