@@ -55,7 +55,7 @@ function generateIcon(link) {
  * @return {String} The greeting
  */
 var getGreeting = function () {
-  if (now > 20) return "Good night! 🌙"; // If it's after 8pm
+  if (now > 20 || now < 4) return "Good night! 🌙"; // If it's after 8pm / If it's before 4am
   if (now > 17) return "Good evening! 🌅"; // If it's after 5pm
   if (now > 11) return "Good afternoon! 🌇"; // If it's after noon
   return "Good morning! 🌞"; // Default message
@@ -70,7 +70,7 @@ var adjustColorMode = function () {
   document.documentElement.classList.remove("night");
 
   // If it's nighttime, go dark mode
-  if (now > 20) {
+  if (now > 20 || now < 4) {
     document.documentElement.classList.add("night");
     return;
   }
