@@ -15,3 +15,4 @@ I kinda want to keep track of fonts that I think are cool, so I think I'll keep 
 -  <https://www.colophon-foundry.org/typefaces/columba/> - Columbia is pretty nice - there's a banner, text, and ruby variant for display, text, and small sizes.
 -  [Fraunces](https://fonts.google.com/specimen/Fraunces?preview.text_type=custom#standard-styles) is fun :D - It has a `wonk` Opentype axis.
 -  [Century Supra](https://mbtype.com/fonts/century-supra/) is a reimagination of Century Schoolbook by Mathew Butterick. I'm mildly tempted to make use of it for Bowl of TARDIS?
+-  I think that [Chronicle](https://www.typography.com/fonts/chronicle-text/overview) might be the one for me to use for my website, since it very much has a similar energy to Georgia, very much newspaper-esque, while having a little more unique character.
