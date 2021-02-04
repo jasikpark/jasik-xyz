@@ -14,3 +14,4 @@ I kinda want to keep track of fonts that I think are cool, so I think I'll keep 
 -  <https://franziskaweitgruber.com/de/veronese-revival> – oomf this is related to Nikolai font? It's amazing!
 -  <https://www.colophon-foundry.org/typefaces/columba/> - Columbia is pretty nice - there's a banner, text, and ruby variant for display, text, and small sizes.
 -  [Fraunces](https://fonts.google.com/specimen/Fraunces?preview.text_type=custom#standard-styles) is fun :D - It has a `wonk` Opentype axis.
+-  [Century Supra](https://mbtype.com/fonts/century-supra/) is a reimagination of Century Schoolbook by Mathew Butterick. I'm mildly tempted to make use of it for Bowl of TARDIS?
