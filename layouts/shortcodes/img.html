@@ -35,7 +35,7 @@
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
 <img {{ with .Get "width" }}width='{{.}}' {{ else }}width="100%" {{ end }} {{ with .Get "sizes" }}sizes='{{.}}'
-  {{ else }}sizes="(min-width: 800px) 50vw, 100vw" {{ end }} {{ with .Get "class" }}class='{{.}}' {{ end }} srcset="
+  {{ else }} {{ end }} {{ with .Get "class" }}class='{{.}}' {{ end }} srcset="
   {{ with $src.Permalink }} {{.}} {{ $src.Width }}w{{ end }} 
   {{ if ge $src.Width "500" }}
     {{ with $tiny.Permalink }}, {{.}} 500w{{ end }}
