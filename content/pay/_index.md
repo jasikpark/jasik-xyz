@@ -25,13 +25,13 @@ Or any amount at `https://jasik.xyz/pay/{$X}`
 const copy = function() {
     const amount = document.querySelector("#amount");
     const reason = document.querySelector("#reason");
-  navigator.clipboard.writeText(`${window.location.protocol}${window.location.host}/pay/${amount.value}?note=${reason.value}`);
+  navigator.clipboard.writeText(`${window.location.protocol}${window.location.host}/pay/${encodeURIComponent(amount.value)}?note=${encodeURIComponent(reason.value)}`);
 }
 const submit = function(event) {
     event.preventDefault();
     const amount = document.querySelector("#amount");
     const reason = document.querySelector("#reason");
-  window.location.assign(`${window.location.protocol}//${window.location.host}/pay/${amount.value}?note=${reason.value}`);
+  window.location.assign(`${window.location.protocol}//${window.location.host}/pay/${encodeURIComponent(amount.value)}?note=${encodeURIComponent(reason.value)}`);
 }
 document.getElementById("copy-to-clipboard").addEventListener("click", copy);
 document.getElementById("form").addEventListener("submit", submit);
