@@ -92,6 +92,10 @@ time {
   font-size: var(--font-med);
 }
 
+img {
+  object-fit: scale-down;
+}
+
 body > header a {
   text-decoration: none;
 }
