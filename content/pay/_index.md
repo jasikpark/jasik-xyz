@@ -7,9 +7,9 @@ aliases = ["/payment"]
 
 Via Venmo:
 
-- [$5]({{< danger-ref href="pay/5" >}})
-- [$10]({{< danger-ref href="pay/10" >}})
-- [$20]({{< danger-ref href="pay/20" >}})
+- [$5]({{< danger-ref href="/pay/5" >}})
+- [$10]({{< danger-ref href="/pay/10" >}})
+- [$20]({{< danger-ref href="/pay/20" >}})
 
 Or any amount at `https://jasik.xyz/pay/{$X}`
 
