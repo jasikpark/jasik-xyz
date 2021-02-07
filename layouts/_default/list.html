@@ -1,12 +1,15 @@
 {{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 
 {{ define "header" }}
-<header>
+  <header>
     <h1>
-        <a href="{{ .Permalink }}">
-            {{ .Title }}
-        </a>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
     </h1>
-</header>
-{{ partial "css-day" }}
+  </header>
+  {{ partial "css-day" }}
+  <div>
+    {{ .Content }}
+  </div>
 {{ end }}

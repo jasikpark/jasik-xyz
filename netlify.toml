@@ -47,3 +47,18 @@ from = "https://jasik-xyz.netlify.app/*"
 to = "https://jasik.xyz/:splat"
 status = 301
 force = true
+
+[[redirects]]
+from = "/payment/*"
+to = "/pay/:splat"
+status = 301
+
+[[redirects]]
+from = "/pay/*"
+query = { note = ":note" }
+to = "https://venmo.com/calebjasik?txn=pay&amount=:splat"
+
+[[redirects]]
+from = "/pay/*"
+to = "https://venmo.com/calebjasik?txn=pay&amount=:splat"
+status = 302

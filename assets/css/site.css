@@ -291,6 +291,22 @@ img:not([alt]) {
   width: 50%;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:max-h-108 {
     max-height: 27rem;
