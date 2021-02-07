@@ -54,7 +54,7 @@ function generateIcon(link) {
  * Get the greeting based on time
  * @return {String} The greeting
  */
-var getGreeting = function () {
+const getGreeting = function () {
   if (now > 20 || now < 4) return "Good night! 🌙"; // If it's after 8pm / If it's before 4am
   if (now > 17) return "Good evening! 🌅"; // If it's after 5pm
   if (now > 11) return "Good afternoon! 🌇"; // If it's after noon
@@ -64,7 +64,7 @@ var getGreeting = function () {
 /**
  * Adjust the color theme based on time
  */
-var adjustColorMode = function () {
+const adjustColorMode = function () {
   // Remove any existing classes
   document.documentElement.classList.remove("transitional");
   document.documentElement.classList.remove("night");
@@ -84,7 +84,7 @@ var adjustColorMode = function () {
 /**
  * Add a greeting and adjust the color palette
  */
-var updateUI = function () {
+const updateUI = function () {
   // Set the greeting
   greeting.textContent = getGreeting();
 
@@ -98,11 +98,11 @@ var greeting;
 var now;
 
 window.addEventListener("DOMContentLoaded", function () {
-  greeting = document.getElementById("greeting");
+  greeting = greeting || document.getElementById("greeting");
   now = new Date().getHours();
 
   // Update the UI on page load
-  updateUI();
+  window.requestAnimationFrame(updateUI());
 
   // Check again every 15 minutes
   setInterval(function () {
