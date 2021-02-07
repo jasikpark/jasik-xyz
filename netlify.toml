@@ -56,7 +56,7 @@ status = 301
 [[redirects]]
 from = "/pay/*"
 query = { note = ":note" }
-to = "https://venmo.com/calebjasik?txn=pay&amount=:splat"
+to = "https://venmo.com/calebjasik?txn=pay&amount=:splat&note=:note"
 
 [[redirects]]
 from = "/pay/*"
