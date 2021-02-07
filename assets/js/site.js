@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function () {
   now = new Date().getHours();
 
   // Update the UI on page load
-  window.requestAnimationFrame(updateUI());
+  window.requestAnimationFrame(updateUI);
 
   // Check again every 15 minutes
   setInterval(function () {
