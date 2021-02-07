@@ -177,6 +177,7 @@ article > header > * {
 
 .post-navigation {
   max-width: var(--max-width);
+  min-height: 6.5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -207,7 +208,7 @@ article > header > * {
 }
 
 footer {
-  margin: 2rem auto;
+  margin: 1rem auto 2rem;
 }
 
 footer a {
