@@ -213,6 +213,16 @@ footer a {
   margin: 0;
 }
 
+.wayback {
+  padding-inline: 0.17rem;
+  text-decoration: none;
+}
+
+.wayback > svg {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 img:not([alt]) {
   outline: 5px solid red;
 }
