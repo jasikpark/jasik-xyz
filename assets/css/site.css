@@ -264,6 +264,10 @@ img:not([alt]) {
   background-color: white;
 }
 
+.drop-shadow-white {
+  filter: drop-shadow(0 4px 4px rgba(255, 255, 255, 0.17));
+}
+
 .inline-block {
   display: inline-block;
 }
