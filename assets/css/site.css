@@ -36,13 +36,17 @@ html {
   color: hsl(51.76, 100%, 40%);
 }
 
-.transitional body {
-  background-color: #f7f7f7;
-}
-
 .night .night\:filter-yellowify {
   filter: invert(59%) sepia(100%) saturate(527%) hue-rotate(11deg)
     brightness(94%) contrast(101%);
+}
+
+.night pre {
+  border-color: #ffdc00;
+}
+
+.transitional body {
+  background-color: #f7f7f7;
 }
 
 body {
@@ -127,7 +131,7 @@ pre {
   max-height: calc(100vh - 10em);
   overflow: auto;
   white-space: pre-wrap;
-  border: 2px solid black;
+  border: 2px solid currentColor;
   padding: 2.5px 5px;
   border-radius: 6px;
 }
