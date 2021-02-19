@@ -1,13 +1,13 @@
 {
   "name": "jasik-xyz",
   "version": "1.0.0",
-  "main": "index.js",
+  "license": "MIT",
   "repository": "git@github.com:jasikpark/jasik-xyz.git",
   "author": "Caleb Jasik <calebjasik@jasik.xyz>",
-  "license": "MIT",
+  "main": "index.js",
   "scripts": {
-    "start": "hugo server --disableFastRender --cleanDestinationDir --gc",
-    "build": "hugo --cleanDestinationDir --gc"
+    "build": "hugo --cleanDestinationDir --gc",
+    "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "devDependencies": {
     "prettier": "2.2.1",
