@@ -129,6 +129,7 @@ figure {
 figure img {
   width: 100%;
   max-width: calc(10rem + var(--max-width));
+  max-height: calc(100vh - 4rem);
 }
 figure figcaption {
   margin-top: 0.25rem;
@@ -206,7 +207,7 @@ footer a {
 
 .img-max-fullish img,
 .img-max-fullish svg {
-  max-height: calc(max(100vh - 20rem, 10rem));
+  max-height: clamp(10rem, 60vh, 15rem);
 }
 
 .remove-figure-margin figure {
