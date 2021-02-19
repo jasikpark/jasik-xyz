@@ -31,7 +31,7 @@ which turns the diagram from black to white, which is close, but it's a little h
 {{< figure >}}
 {{< img src="mixed-flow-graph-before.png" alt="Screenshot of the website showing how the diagram is a warm and very washed out yellow on a similarly faded blue gray background" >}}
 {{% figcaption %}}
-Tada you can see the original solution here
+Tada you can see the original solution at [Mixed-Flow Graphs](https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/){{< raw-wayback href="https://web.archive.org/web/20210219045717/https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/" title="Mixed-Flow Graphs" >}}
 {{% /figcaption %}}
 {{< /figure >}}
 
@@ -42,7 +42,7 @@ But what if we could?
 {{< figure >}}
 {{< img src="machine_learning_2x.png" alt="Man 1 stands above pile of 'data', matrices and such. Man 2: THIS is your machine learning system? Man 1: Yup! You pour the data into this big pile of linear algebra, then colect the answers on the other side. Man 2: What if the answers are wrong? Man 1: Just stir the pile until they start looking right." title="The pile gets soaked with data and starts to get mushy over time, so it's technically recurrent." >}}
 {{% figcaption %}}
-from <https://xkcd.com/1838/>. thanks for all the laughs.
+from <https://xkcd.com/1838/>{{< raw-wayback href="https://web.archive.org/web/20201124035659/https://xkcd.com/1838/" title="xkcd 1838" >}}. thanks for all the laughs.
 {{% /figcaption %}}
 {{< /figure >}}
 
