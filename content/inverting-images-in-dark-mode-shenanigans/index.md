@@ -2,7 +2,7 @@
 Title = "Inverting images in dark mode, many shenanigans, and it's always StackOverflow"
 Type = "post"
 Date = "2021-02-18T22:46:35-06:00"
-Draft = "true"
+PublishDate = "2021-02-23T05:00:00-06:00"
 +++
 
 ## The Problem
