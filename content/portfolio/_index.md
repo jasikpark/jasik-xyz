@@ -8,7 +8,7 @@ Type = "standalone"
 > #spa #music #entertainment
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://web.archive.org/web/20210221213831/https://live-collegemusic-co-uk.netlify.app/" >}}
+{{< iframe-with-chrome href="/www/live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
 A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page.
 {{% /figcaption %}}
@@ -19,7 +19,7 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://kinlu.com" >}}
+{{< iframe-with-chrome href="/www/kinlu.com" >}}
 {{% figcaption %}}
 Helped take a website design from wireframe to production Wordpress site, communicating with designers and copy editors.
 {{% /figcaption %}}
@@ -30,7 +30,7 @@ Helped take a website design from wireframe to production Wordpress site, commun
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://getgpower.com" >}}
+{{< iframe-with-chrome href="/www/getgpower.com" >}}
 {{% figcaption %}}
 Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half.
 {{% /figcaption %}}

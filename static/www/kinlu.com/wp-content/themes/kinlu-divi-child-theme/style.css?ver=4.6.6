@@ -1,0 +1,126 @@
+/*
+ Theme Name:     Divi Child Theme - kinlu
+ Theme URI:      https://idstc.com
+ Description:    kinlu - Custom Divi Child Theme
+ Author:         IDSTC
+ Author URI:     https://idstc.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+@import url("../Divi/style.css");
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+a:hover {text-decoration: none !important;}
+.page-id-25636 .shoppingcartapp a.btn-success {color: #fffff !important; font-weight: bold;}
+/****** custom styles for primary, secondary and sticky header ******/
+#top-menu .menu-item-has-children>a:first-child:after {padding-top: 8px !important;}
+#et-secondary-nav, #et-secondary-nav li {display: block !important;}
+#et-secondary-menu {float: none !important;}
+li.login-link {text-align: right !important; float: right !important;}
+li.welcome-message {text-align: left !important;}
+.pull-left {float: left !important;}
+.pull-right {float: right !important;}
+li.my-account {padding-right: 15px;}
+#et-secondary-nav li.cart-icon {display: none !important;}
+#top-menu-nav>ul>li>a:hover {background-color: #ffffff00; border-top: solid 3px #003594; border-bottom: solid 3px #003594;}
+#top-menu-nav>ul>li>a {border-top: solid 3px #fff0; border-bottom: solid 3px #fff0;}
+#top-menu-nav>ul>li.cart-icon>a:hover {border-top: solid 3px #fff0!important; border-bottom: solid 3px #fff0!important;}
+.et_header_style_split #et-top-navigation nav>ul>li>a {padding-bottom: 11px !important; margin-bottom: 34px !important;}
+#top-menu-nav>ul>li.cart-icon>a {font-size: 19px;}
+/***** styles for language switchers *****/
+li.lang-item {float: right; padding-right: 15px;}
+.page-id-31153 #logo {content: url(/wp-content/uploads/kinlu-white-logo.svg);}
+.page-id-31153 #top-menu-nav>ul>li>a:hover {background-color: #ffffff00; border-top: solid 3px #fff; border-bottom: solid 3px #fff;}
+.page-id-31153 .et-fixed-header #logo {content: url(/wp-content/uploads/kinlu-blue-logo.svg);}
+/***** add style to UL on join-details page *****/
+ul.join-page-ul li {padding-bottom: 15px;}
+/* set clear header on homepage */
+.page-id-79 #logo {content: url(/wp-content/uploads/kinlu-white-logo.svg);}
+.page-id-79 #top-menu-nav>ul>li>a:hover {background-color: #ffffff00; border-top: solid 3px #fff; border-bottom: solid 3px #fff;}
+.page-id-79 .et-fixed-header #logo {content: url(/wp-content/uploads/kinlu-blue-logo.svg);}
+.home #main-header:not(.et-fixed-header), .home #main-header a:not(.et-fixed-header) { background-color: transparent; color: #ffffff; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;}
+.home #page-container { padding-top: 0 !important;}
+/*reduce padding on top of secondary menu bar*/
+#top-header .container {padding-top: 0em;}
+/******* style flight lead captrue form sample on /consultant-contact/ *******/
+#leadCaptureActionButtons {text-align: right;}
+#submitLeadCaptureFormBtn { background-color: #003594; color: #fff; border: solid #003594 1px; font-size: 16px; text-transform: uppercase; font-weight: 700; padding: .5% 5%; border-radius: 33px; letter-spacing: 2px;}
+#submitLeadCaptureFormBtn:hover {background-color: #fff; border-color:#003594; color: #003594; border: solid #003594 2px;}
+#idstc-lead-catputure-form .et_pb_code_inner .ng-scope .col-sm-8 {padding-right: 0px;}
+.et_pb_code_inner label {text-align: right;}
+#idstc-lead-catputure-form div.text-center {text-align: right !important;}
+/******* add custom style to buttons for Flight plugin pages *******/
+button.btn-primary, a.btn-sm.btn-primary, span.k-state-selected, .page-id-25638 button.btn-default {background-color: #003594; border-color: #003594; color: #fff; }
+button.btn-primary:hover , a.btn-sm.btn-primary:hover, .page-id-25638 button.btn-default:hover {background-color: #001659; border-color: #001659; color: #fff;}
+button.btn-success {background-color: #6cc24a; border-color: #6cc24a;}
+button.btn-success:hover {background-color: #B5E0A3; border-color: #B5E0A3; color: #6cc24a; }
+button.btn-danger {background-color: #bd1e1e; border-color: #bd1e1e;}
+button.btn-danger:hover {background-color: #a01010; border-color: #a01010;}
+button.btn-warning {background-color:#f18f01; border-color:#f18f01;}
+button.btn-warning:hover {background-color:#d85300; border-color:#d85300;}
+/*.shoppingcartapp a {color:#003594; }*/
+
+.shoppingcartapp a.btn-social-icon {color: #fff;}
+.notify-success, .notify-row.notify-wrapper-success {background-color: #6cc24a;}
+.edit-sub-payment-card .btn, .edit-sub-address-select .btn {margin-left: 5px;}
+/****** add class to coumn settings to allow for vertical alignment of content in rows ******/
+.ds-vertical-align { display: flex !important; flex-direction: column !important; justify-content: center !important; } 
+/****************************************************/
+/* general mobile*/
+@media (max-width: 980px) {  
+	#top-header .container {width: 99%;}
+	#top-header .container {padding-left: 5px; padding-right: 5px;}
+	#et-secondary-menu li a {font-size: 80%;}
+	#et-secondary-menu li.pull-right {float: none !important;}
+	#et-secondary-menu li.cutomer-login-logout, #et-secondary-menu li.my-account {display: none !important;} 
+	#mobile_menu li.pull-right {float: none !important;}
+	.et_header_style_split #main-header .mobile_nav {background-color: #003594;}  
+	#main-header .et_mobile_menu {background-color: #fff !important;}
+	.et_mobile_menu li a {color: #003594 !important;}
+	#top-header .container {padding-top: 10px; }
+    .et_secondary_nav_only_menu #top-header, #et-secondary-nav, #et-secondary-menu {display: block !important;}
+    #et-secondary-menu {float: none !important;}
+    ul#mobile_menu li.cart-icon  {display: none !important;}
+    #et-secondary-nav li.cart-icon {display: block !important;}
+    body.admin-bar.et_fixed_nav #top-header {top: 32px !important;}
+    #et-secondary-nav, #et-secondary-menu {visibility: visible !important;}
+    .et_fixed_nav.et_secondary_nav_only_menu.admin-bar #main-header, .et_non_fixed_nav.et_transparent_nav_temp #main-header  {top: 75px !important;}
+    .et_secondary_nav_only_menu #main-header, .et_fixed_nav_temp #main-header, .et_secondary_nav_only_menu #main-header {top: 31px !important;}
+    .menu-item .menu-item-type-gs_sim .menu-item-object-gs_sim .menu-item-24999 {display: none !important;}
+    ul#mobile_menu li> .menu-item-24999 {display: none !important;}
+    #mobile_menu {margin-top: -20px;}
+    .et_pb_section  .et_pb_section_0 .et_section_regular .et_pb_section_first {padding-top: 225px !important;}
+    #logo {max-height: 110px !important;}
+    .et_mobile_menu li.menu-item-127, .et_mobile_menu li.menu-item-126 {display: none!important;} 
+    .brass-tag-element {padding-top: 7px !important;}
+    .et_pb_module > ul> li{text-align: center !important; float: none !important;}
+    #mobile_menu li.welcome-message, #mobile_menu li.login-link  {display: none !important;}
+    li.login-link {text-align: right !important; float: right !important;}
+    li.welcome-message {text-align: left !important;}
+    #et-secondary-nav li {position: relative;}
+    #menu-item-25406 {float: left !important;}
+    #menu-item-24965 {float: right !important;}
+    /* ADJUST DIVI COLUMN STACKING ORDER ON MOBILE DEVICES*/
+    /*** wrap row in a flex box ***/
+    .custom_row { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; /* Safari 6.1+ */ flex-wrap: wrap; }
+    /*** custom classes that will designate the order of columns in the flex box row ***/
+    .first-on-mobile { -webkit-order: 1; order: 1; }
+    .second-on-mobile { -webkit-order: 2; order: 2; }
+    .third-on-mobile { -webkit-order: 3; order: 3; }
+    .fourth-on-mobile { -webkit-order: 4; order: 4; }
+    /*** add margin to last column ***/
+    .custom_row:last-child .et_pb_column:last-child { margin-bottom: 30px;}
+}
+/* fix email form on mobile */
+@media (max-width: 767px) {
+    .et_contact_bottom_container {float: right !important; text-align: left !important; margin-right: 98px !important; }
+    .et_pb_contact_form {margin-left: 0px !important; margin-right: 25% !important;}
+    p.et_pb_contact_field_half {margin-left: 15% !important;}
+    button.et_pb_contact_submit {margin-left: 0px !important;}   
+}
+#mobile_menu .welcome-message, #mobile_menu .cart-icon {display: none ;}
+/******* hide header and footer on print *******/
+@media print {
+    #main-header, #top-header, .et_pb_with_background, #main-footer, #et-secondary-nav, #top-header > .container, #btngotoReplicatedSite, #btnLogin { display:none !important; } 
+}
