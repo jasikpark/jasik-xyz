@@ -8,10 +8,11 @@ Type = "standalone"
 > #spa #music #entertainment
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://live-college-music-co-uk.netlify.app" >}}
-{{< /figure >}}
-
+{{< iframe-with-chrome href="https://web.archive.org/web/20210221213831/https://live-collegemusic-co-uk.netlify.app/" >}}
+{{% figcaption %}}
 A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page.
+{{% /figcaption %}}
+{{< /figure >}}
 
 ## [Kinlu](https://kinlu.com){{< raw-wayback href="https://web.archive.org/web/20201231151610/https://kinlu.com/" title="Kinlu" >}}
 
@@ -19,9 +20,10 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 
 {{< figure >}}
 {{< iframe-with-chrome href="https://kinlu.com" >}}
-{{< /figure >}}
-
+{{% figcaption %}}
 Helped take a website design from wireframe to production Wordpress site, communicating with designers and copy editors.
+{{% /figcaption %}}
+{{< /figure >}}
 
 ## [G-Power](https://getgpower.com){{< raw-wayback href="https://web.archive.org/web/20210221214033/https://getgpower.com/" title="G-Power" >}}
 
@@ -29,9 +31,10 @@ Helped take a website design from wireframe to production Wordpress site, commun
 
 {{< figure >}}
 {{< iframe-with-chrome href="https://getgpower.com" >}}
-{{< /figure >}}
-
+{{% figcaption %}}
 Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half.
+{{% /figcaption %}}
+{{< /figure >}}
 
 ## [Addison Crump - A Record of Projects, Ideas, and Experiences](https://addisoncrump.info){{< raw-wayback href="https://web.archive.org/web/20210221214244/https://addisoncrump.info/" title="Addison Crump - A Record of Projects, Ideas, and Experiences" >}}
 
