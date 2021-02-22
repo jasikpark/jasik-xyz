@@ -19,15 +19,14 @@
   </div>
   <div class="aspect-iphone sm:aspect-16-by-9" style="position: relative;">
     {{ if .Get "is-image" }}
-    <picture>
-    <source srcset="{{ .Get "src" }}" media="(min-width:640px)"/>
-    <img class="w-full h-full" style="position: absolute; top: 0; left: 0; " src="{{ .Get "src-iphone" }}" alt="{{ .Get "alt" }}">
-    
+    <picture class="w-full h-full" style="position: absolute; top: 0; left: 0; ">
+    <source class="w-full h-full" srcset="{{ .Get "src" }}" media="(min-width:640px)"/>
+    <img class="w-full h-full"  src="{{ .Get "src-iphone" }}" alt="{{ .Get "alt" }}">
     </img>
     </picture>
     {{ else }}
     <iframe
-      class="w-full h-full"
+      class="w-full h-full rounded-b-lg"
       style="position: absolute; top: 0; left: 0; border:none;"
       data-home="{{ .Get "src" }}"
       src="{{ .Get "src" }}"

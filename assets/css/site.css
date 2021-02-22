@@ -455,6 +455,11 @@ img:not([alt]) {
   border-radius: 0.5rem;
 }
 
+.rounded-b-lg {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
