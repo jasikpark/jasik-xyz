@@ -30,7 +30,7 @@ Helped take a website design from wireframe to production Wordpress site, commun
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome src="/www/getgpower.com" >}}
+{{< iframe-with-chrome src="/www/getgpower.com/" >}}
 {{% figcaption %}}
 Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half.
 {{% /figcaption %}}

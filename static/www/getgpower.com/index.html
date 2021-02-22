@@ -1,298 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="generator" content="Hugo 0.73.0" />
+    <title>G-Power - A new kind of energy provider for Texas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A new kind of energy provider for Texas"
+    />
 
-<head>
-	<meta name="generator" content="Hugo 0.73.0" />
-  <title>G-Power - A new kind of energy provider for Texas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A new kind of energy provider for Texas">
+    <link
+      rel="stylesheet"
+      href="css/styles.min.1006977cd073cb6f267fe674a8180c59ab8a7fb2bdfbcaa1a23a057b75126807.css"
+      integrity="sha256-EAaXfNBzy28mf&#43;Z0qBgMWauKf7K9&#43;8qhojoFe3USaAc="
+    />
 
-  
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js"
+      defer
+    ></script>
 
-  
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=OmKz256pqX"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=OmKz256pqX"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=OmKz256pqX"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=OmKz256pqX" />
+    <link
+      rel="mask-icon"
+      href="/safari-pinned-tab.svg?v=OmKz256pqX"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/favicon.ico?v=OmKz256pqX" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-  <link rel="stylesheet" href="/css/styles.min.1006977cd073cb6f267fe674a8180c59ab8a7fb2bdfbcaa1a23a057b75126807.css" integrity="sha256-EAaXfNBzy28mf&#43;Z0qBgMWauKf7K9&#43;8qhojoFe3USaAc=">
-
-  
-
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
-
-  
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=OmKz256pqX">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=OmKz256pqX">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=OmKz256pqX">
-  <link rel="manifest" href="/site.webmanifest?v=OmKz256pqX">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=OmKz256pqX" color="#5bbad5">
-  <link rel="shortcut icon" href="/favicon.ico?v=OmKz256pqX">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
-
-
-</head>
-
-<body>
-  <div class="min-h-screen">
-    <nav x-data="{ open: false }" class="bg-gray-800">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
+  <body>
+    <div class="min-h-screen">
+      <nav x-data="{ open: false }" class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
-                <button @click="open = !open"
-                    class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out">
-                    <svg aria-hidden="true" focusable="false" class="h-6 w-6" stroke="currentColor" fill="none"
-                        viewBox="0 0 24 24">
-                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                    <span class="visually-hidden">Toggle menu view</span>
-                </button>
+              <button
+                @click="open = !open"
+                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    :class="{'hidden': open, 'inline-flex': !open }"
+                    class="inline-flex"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                  <path
+                    :class="{'hidden': !open, 'inline-flex': open }"
+                    class="hidden"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <span class="visually-hidden">Toggle menu view</span>
+              </button>
             </div>
-            <div class="flex-1 flex items-center justify-center md:items-stretch md:justify-start">
-                <div class="flex-shrink-0">
-                    <a href="/">
-                        <img aria-hidden="true" focusable="false" class="block lg:hidden h-8 w-auto"
-                            src="/uploads/2018/01/logo-2.png" alt="" />
-                        <img aria-hidden="true" focusable="false" class="hidden lg:block h-8 w-auto"
-                            src="/uploads/2018/01/logo-2.png" alt="" />
-                        <span class="visually-hidden">Go Home</span>
-                    </a>
+            <div
+              class="flex-1 flex items-center justify-center md:items-stretch md:justify-start"
+            >
+              <div class="flex-shrink-0">
+                <a href="/">
+                  <img
+                    aria-hidden="true"
+                    focusable="false"
+                    class="block lg:hidden h-8 w-auto"
+                    src="/uploads/2018/01/logo-2.png"
+                    alt=""
+                  />
+                  <img
+                    aria-hidden="true"
+                    focusable="false"
+                    class="hidden lg:block h-8 w-auto"
+                    src="/uploads/2018/01/logo-2.png"
+                    alt=""
+                  />
+                  <span class="visually-hidden">Go Home</span>
+                </a>
+              </div>
+              <div class="hidden md:block md:ml-6">
+                <div class="flex">
+                  <a
+                    href="/"
+                    class="px-3 py-2 rounded-md text-sm font-medium leading-5  text-white bg-gray-900  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >Home</a
+                  >
+                  <a
+                    href="/services"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >Services</a
+                  >
+                  <a
+                    href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-semibold leading-5  text-white bg-accent-700 hover:text-white hover:bg-accent-600  focus:outline-none focus:text-white focus:bg-accent-700 transition duration-150 ease-in-out"
+                    >Switch</a
+                  >
+                  <a
+                    href="/contact"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >Contact</a
+                  >
+                  <a
+                    href="/about"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >About</a
+                  >
+                  <a
+                    href="https://gbpower.myaccount.energy/sigma/myeaccount/?connectName=SigmaGBP"
+                    class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+                    >Login</a
+                  >
                 </div>
-                <div class="hidden md:block md:ml-6">
-                    <div class="flex">
-                        <a href="/"
-                            class="px-3 py-2 rounded-md text-sm font-medium leading-5  text-white bg-gray-900  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
-                        <a href="/services"
-                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Services</a>
-                        <a href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
-                            class="ml-4 px-3 py-2 rounded-md text-sm font-semibold leading-5  text-white bg-accent-700 hover:text-white hover:bg-accent-600  focus:outline-none focus:text-white focus:bg-accent-700 transition duration-150 ease-in-out">Switch</a>
-                        <a href="/contact"
-                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Contact</a>
-                        <a href="/about"
-                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
-                        <a href="https://gbpower.myaccount.energy/sigma/myeaccount/?connectName=SigmaGBP"
-                            class="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Login</a>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
-                <button
-                    class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">
-                    <svg aria-hidden="true" focusable="false" class="h-6 w-6" stroke="currentColor" fill="none"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                    </svg>
-                    <span class="visually-hidden">Notifications</span>
-                </button>
+            <div
+              class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0"
+            >
+              <button
+                class="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="h-6 w-6"
+                  stroke="currentColor"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                  />
+                </svg>
+                <span class="visually-hidden">Notifications</span>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
-        <div class="px-2 pt-2 pb-3">
-            <a href="/"
-                class="block px-3 py-2 rounded-md text-base font-medium  text-white bg-gray-900  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Home</a>
-            <a href="/services"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Services</a>
-            <a href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-semibold  text-white bg-accent-700 hover:text-white hover:bg-accent-600  focus:outline-none focus:text-white focus:bg-accent-700 transition duration-150 ease-in-out">Switch</a>
-            <a href="/contact"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Contact</a>
-            <a href="/about"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">About</a>
-            <a href="https://gbpower.myaccount.energy/sigma/myeaccount/?connectName=SigmaGBP"
-                class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Login</a>
+        <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+          <div class="px-2 pt-2 pb-3">
+            <a
+              href="/"
+              class="block px-3 py-2 rounded-md text-base font-medium  text-white bg-gray-900  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >Home</a
+            >
+            <a
+              href="/services"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >Services</a
+            >
+            <a
+              href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-semibold  text-white bg-accent-700 hover:text-white hover:bg-accent-600  focus:outline-none focus:text-white focus:bg-accent-700 transition duration-150 ease-in-out"
+              >Switch</a
+            >
+            <a
+              href="/contact"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >Contact</a
+            >
+            <a
+              href="/about"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >About</a
+            >
+            <a
+              href="https://gbpower.myaccount.energy/sigma/myeaccount/?connectName=SigmaGBP"
+              class="mt-1 block px-3 py-2 rounded-md text-base font-medium  text-gray-300 hover:text-white hover:bg-gray-700  focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
+              >Login</a
+            >
+          </div>
         </div>
-    </div>
-</nav>
-    <div role="contentinfo" class="text-center lg:text-xl pb-1 bg-accent-300 sticky top-0 z-50">
-    COVID-19 Message: <a class="underline text-black hover:text-gray-700" href="/covid-19">
-        Learn more
-        <span class="visually-hidden">Read G Power's message to customers about covid-19 here</span></a>
-</div>
-    <main>
-      
-<div class="py-16 lg:py-32 px-4 bg-center bg-cover" style="background-image: url('lightbulb-jumbotron.jpg')">
-    <div class="max-w-4xl mx-auto px-4">
-        <div class="block mb-4">
-            <div class="max-w-4xl relative px-2 mb-4">
-                <h1 class="text-5xl lg:text-6xl font-bold inline leading-tight mb-4 text-white max-w-xl">
-                    A new kind of energy provider for Texas
+      </nav>
+      <div
+        role="contentinfo"
+        class="text-center lg:text-xl pb-1 bg-accent-300 sticky top-0 z-50"
+      >
+        COVID-19 Message:
+        <a class="underline text-black hover:text-gray-700" href="/covid-19">
+          Learn more
+          <span class="visually-hidden"
+            >Read G Power's message to customers about covid-19 here</span
+          ></a
+        >
+      </div>
+      <main>
+        <div
+          class="py-16 lg:py-32 px-4 bg-center bg-cover"
+          style="background-image: url('lightbulb-jumbotron.jpg')"
+        >
+          <div class="max-w-4xl mx-auto px-4">
+            <div class="block mb-4">
+              <div class="max-w-4xl relative px-2 mb-4">
+                <h1
+                  class="text-5xl lg:text-6xl font-bold inline leading-tight mb-4 text-white max-w-xl"
+                >
+                  A new kind of energy provider for Texas
                 </h1>
-            </div>
-            <div class="max-w-4xl relative px-2">
-                
-                <p class="font-bold text-3xl lg:text-4xl inline leading-tight mb-4 text-white max-w-xl">
-                    Save money while the power is on
+              </div>
+              <div class="max-w-4xl relative px-2">
+                <p
+                  class="font-bold text-3xl lg:text-4xl inline leading-tight mb-4 text-white max-w-xl"
+                >
+                  Save money while the power is on
                 </p>
-                
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="bg-gray-50">
-    <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-        <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-            Ready to dive in?
-            <br />
-            <span class="text-primary-600">Set up a face-to-face today.</span>
-        </h2>
-        <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
-            <div class="inline-flex rounded-md shadow">
-                <a href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
-                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary-600 hover:bg-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                    Get started
-                    <span class="visually-hidden">Switch today</span>
+        <div class="bg-gray-50">
+          <div
+            class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between"
+          >
+            <h2
+              class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+            >
+              Ready to dive in?
+              <br />
+              <span class="text-primary-600">Set up a face-to-face today.</span>
+            </h2>
+            <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0">
+              <div class="inline-flex rounded-md shadow">
+                <a
+                  href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary-600 hover:bg-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                >
+                  Get started
+                  <span class="visually-hidden">Switch today</span>
                 </a>
-            </div>
-            <div class="ml-3 inline-flex rounded-md shadow">
-                <a href="/about"
-                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-primary-600 bg-white hover:text-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                    Learn more
-                    <span class="visually-hidden">Learn more about G-Power</span>
+              </div>
+              <div class="ml-3 inline-flex rounded-md shadow">
+                <a
+                  href="/about"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-primary-600 bg-white hover:text-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                >
+                  Learn more
+                  <span class="visually-hidden">Learn more about G-Power</span>
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<div class="grid grid-gap-4 lg:grid-cols-3 md:grid-cols-3 grid-cols-1">
-    <div class="bg-accent-700 p-4">
-        <a aria-label="Services" href="/services">
-            <img class="h-48 w-48 mx-auto p-4" src="/uploads/2018/01/ce_icon-1.png" alt="">
-            <p class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold">Commercial Energy</p>
-        </a>
-        <p class="text-white mx-auto p-2 text-center">Industrial savings for your company.</p>
-    </div>
-    <div class="bg-primary-700 p-4">
-        <a aria-label="Switch today"
-            href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP">
-            <img class="h-48 w-48 mx-auto p-4" src="/uploads/2018/01/ps_icon-1.png" alt="">
-            <p class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold">Residential Energy</p>
-        </a>
-        <p class="text-white mx-auto p-2 text-center">Find out more about our home plans.</p>
-    </div>
-    <div class="bg-accent-700 p-4">
-        <a aria-label="Rewards" href="/rewards">
-            <img class="h-48 w-48 mx-auto p-4" src=" /uploads/2018/05/gift_icon.png" alt="">
-            <p class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold">Rewards</p>
-        </a>
-        <p class="text-white mx-auto p-2 text-center">Get rewarded for being a customer.</p>
-    </div>
-</div>
-<div class="bg-gray-50 py-8">
-    <div class="px-4 max-w-7xl mx-auto">
+        <div class="grid grid-gap-4 lg:grid-cols-3 md:grid-cols-3 grid-cols-1">
+          <div class="bg-accent-700 p-4">
+            <a aria-label="Services" href="/services">
+              <img
+                class="h-48 w-48 mx-auto p-4"
+                src="/uploads/2018/01/ce_icon-1.png"
+                alt=""
+              />
+              <p
+                class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold"
+              >
+                Commercial Energy
+              </p>
+            </a>
+            <p class="text-white mx-auto p-2 text-center">
+              Industrial savings for your company.
+            </p>
+          </div>
+          <div class="bg-primary-700 p-4">
+            <a
+              aria-label="Switch today"
+              href="https://gbpower.myaccount.energy/sigma/myeaccount/?process=enroll&connectName=SigmaGBP"
+            >
+              <img
+                class="h-48 w-48 mx-auto p-4"
+                src="/uploads/2018/01/ps_icon-1.png"
+                alt=""
+              />
+              <p
+                class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold"
+              >
+                Residential Energy
+              </p>
+            </a>
+            <p class="text-white mx-auto p-2 text-center">
+              Find out more about our home plans.
+            </p>
+          </div>
+          <div class="bg-accent-700 p-4">
+            <a aria-label="Rewards" href="/rewards">
+              <img
+                class="h-48 w-48 mx-auto p-4"
+                src=" /uploads/2018/05/gift_icon.png"
+                alt=""
+              />
+              <p
+                class="text-white mx-auto p-2 text-center uppercase font-3xl font-bold"
+              >
+                Rewards
+              </p>
+            </a>
+            <p class="text-white mx-auto p-2 text-center">
+              Get rewarded for being a customer.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gray-50 py-8">
+          <div class="px-4 max-w-7xl mx-auto">
+            <div class="md:flex md:mx-2">
+              <div class="md:w-2/5 md:px-2">
+                <h2
+                  class="mb-2 text-3xl leading-9 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+                >
+                  Why join G-Power?
+                </h2>
 
-        <div class="md:flex md:mx-2">
-            <div class="md:w-2/5 md:px-2">
-                <h2 class="mb-2 text-3xl leading-9 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                    Why join G-Power?</h2>
+                <p class="mb-2">
+                  G-Power is a Texas based Company, which offers very
+                  competitive rates for both industrial/commercial and
+                  residential products. G-Power cares for its customers and
+                  advises them as to how to efficiently use energy, to reduce
+                  their electricity expenditures. (Our team of experts will
+                  assist you).
+                </p>
 
-                <p class="mb-2">G-Power is a Texas based Company, which offers very competitive rates for both
-                    industrial/commercial
-                    and residential products. G-Power cares for its customers and advises them as to how to efficiently
-                    use energy, to reduce their electricity expenditures. (Our team of experts will assist you).</p>
-
-                <p class="mb-2"> G-Power is locally present in Texas and personally assists its customers in dealing
-                    with needs with
-                    the distribution companies, such as AEP, Sharyland, Oncor, Centerpoint and others. As opposed to
-                    most of our competitors, we also have offices in the Rio Grande Valley, which gives our customers
-                    huge advantages. You can count on local customer service (Let us do the work for you). G-Power
-                    offers unique products to its industrial/commercial and residential customers like no other Retail
-                    Energy Provider.</p>
+                <p class="mb-2">
+                  G-Power is locally present in Texas and personally assists its
+                  customers in dealing with needs with the distribution
+                  companies, such as AEP, Sharyland, Oncor, Centerpoint and
+                  others. As opposed to most of our competitors, we also have
+                  offices in the Rio Grande Valley, which gives our customers
+                  huge advantages. You can count on local customer service (Let
+                  us do the work for you). G-Power offers unique products to its
+                  industrial/commercial and residential customers like no other
+                  Retail Energy Provider.
+                </p>
                 <p class="text-center m-2">
-                    <a class="underline text-accent-700 hover:text-accent-600"
-                        href="/uploads/2018/01/Affinity-One-Sheet-download.pdf">Learn more about Affinity One</a>
+                  <a
+                    class="underline text-accent-700 hover:text-accent-600"
+                    href="/uploads/2018/01/Affinity-One-Sheet-download.pdf"
+                    >Learn more about Affinity One</a
+                  >
                 </p>
 
-                <p class="mb-2"> G-Power is a Texas Certified Minority Owned Company, which gives our customers several
-                    benefits,
-                    while consuming the same energy.</p>
+                <p class="mb-2">
+                  G-Power is a Texas Certified Minority Owned Company, which
+                  gives our customers several benefits, while consuming the same
+                  energy.
+                </p>
                 <p class="text-center m-2">
-                    <a class="underline text-accent-700 hover:text-accent-600"
-                        href="/uploads/2018/01/Minority-One-Sheet-Bilingual-download.pdf">Learn more about Minority
-                        One</a>
+                  <a
+                    class="underline text-accent-700 hover:text-accent-600"
+                    href="/uploads/2018/01/Minority-One-Sheet-Bilingual-download.pdf"
+                    >Learn more about Minority One</a
+                  >
                 </p>
 
-                <p class="mb-2"> G-Power sets the bar higher in terms of innovative energy sources.</p>
+                <p class="mb-2">
+                  G-Power sets the bar higher in terms of innovative energy
+                  sources.
+                </p>
+              </div>
+
+              <div class="md:w-3/5 md:flex-none md:px-2">
+                <img src="/uploads/2018/02/whyJoin.jpg" alt="" class="mb-4" />
+              </div>
             </div>
 
-            <div class="md:w-3/5 md:flex-none md:px-2">
-                <img src="/uploads/2018/02/whyJoin.jpg" alt="" class="mb-4">
-            </div>
-        </div>
-
-
-
-        <div class="text-center">
-            <div class="inline-flex rounded-md shadow">
-                <a href="/services"
-                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary-600 hover:bg-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
-                    Read more
+            <div class="text-center">
+              <div class="inline-flex rounded-md shadow">
+                <a
+                  href="/services"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-primary-600 hover:bg-primary-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                >
+                  Read more
                 </a>
+              </div>
             </div>
+          </div>
         </div>
-
+      </main>
     </div>
-</div>
-
-    </main>
-  </div>
-  <div class="bg-gray-300 p-16 w-full">
-    <a href="/">
-        <img aria-hidden="true" focusable="false" class="mx-auto p-4" src="/uploads/2018/01/logo-1.png" alt="">
+    <div class="bg-gray-300 p-16 w-full">
+      <a href="/">
+        <img
+          aria-hidden="true"
+          focusable="false"
+          class="mx-auto p-4"
+          src="/uploads/2018/01/logo-1.png"
+          alt=""
+        />
         <span class="visually-hidden">Home</span>
-    </a>
-    <p class="p-2 text-primary-500 text-center text-xl">PUCT Certification #10244</p>
-    <p class="p-2 text-primary-500 text-center text-xl">
-        <a class="hover:text-primary-600" href="/uploads/2018/01/G-POWER-Privacy-Policy.pdf">Privacy Policy</a> :
-        <a class="hover:text-primary-600" href="/uploads/2018/02/G-POWER-Terms-of-Use.pdf">Terms of Use</a> :
-        <a class="hover:text-primary-600" href="/Residential-Terms-of-Service.pdf">Residential Terms of
-            Service</a>
-    </p>
-    <div class="p-2 flex justify-center align-middle">
+      </a>
+      <p class="p-2 text-primary-500 text-center text-xl">
+        PUCT Certification #10244
+      </p>
+      <p class="p-2 text-primary-500 text-center text-xl">
+        <a
+          class="hover:text-primary-600"
+          href="/uploads/2018/01/G-POWER-Privacy-Policy.pdf"
+          >Privacy Policy</a
+        >
+        :
+        <a
+          class="hover:text-primary-600"
+          href="/uploads/2018/02/G-POWER-Terms-of-Use.pdf"
+          >Terms of Use</a
+        >
+        :
+        <a
+          class="hover:text-primary-600"
+          href="/Residential-Terms-of-Service.pdf"
+          >Residential Terms of Service</a
+        >
+      </p>
+      <div class="p-2 flex justify-center align-middle">
         <a rel="me" href="https://www.facebook.com/Gpowerusa">
-            <svg aria-hidden="true" focusable="false" class="mx-auto h-16 w-16 inline-block"
-                xmlns:vectornator="http://vectornator.io" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
-                fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                <g vectornator:layerName="surface1" stroke-width=".047">
-                    <path stroke="#1978f2"
-                        d="M57.824 99.227c.02-.028.051-.047.051-.079.016-11.566 0-23.132 0-34.699 3.84-.007 7.684.008 11.523-.023.118 0 .114-.594.126-.676.14-.918.25-1.836.402-2.75a478.72 478.72 0 001.7-11l-13.728-.023c-.007-3.528-.03-7.051-.023-10.578.016-7.512 9.82-6.438 14.324-6.473.012-6.137.012-6.137.028-12.278-4.395-.293-8.547-.921-13.028-.921-1.906 0-4.074.488-5.847 1.199C40.516 26.059 42.32 38.129 42.274 50l-12.626.023-.023 14.375c6.313.016 6.313.016 12.625.028l.023 34.8c-.62-.417-3.796-.734-4.773-.953-3.176-.703-6.371-2.07-9.176-3.472-.535-.27-3.449-1.547-3.574-1.926-.234 0-1.223-.574-1.3-.8-.231 0-1.079-.536-1.15-.75-.363 0-2.132-1.25-2.25-1.598-.136 0-.6-.348-.652-.5-.14 0-.933-.61-1-.801-.554 0-1.62-1.473-2.097-1.8-2.301-1.595-3.63-4.126-5.5-6-.262-.263-1.176-1.2-1.176-1.575-.27-.09-.898-1.024-.898-1.3-.418-.138-3.207-5.071-3.352-5.802-.102-.5-.688-.941-.8-1.5-.243-1.222-.99-2.828-1.552-3.949C1.156 62.766.078 55.094.324 51.148l-.074-.023-.023-2.176c.23-.078.046-1.648.046-1.75 0-1.738.336-3.531.602-5.25.828-5.379 2.73-10.281 5.074-14.972.309-.618 1.813-3.688 2.227-3.829 0-.199.422-.84.597-.898 0-.203.57-1.039.75-1.102 0-.125.032-.16.153-.199 0-.14.39-.695.55-.75 0-.344 1.18-1.793 1.5-1.898 0-.305 1.086-1.399 1.25-1.45 0-.206 3.66-3.874 3.876-3.874.074-.227 3.164-2.75 3.347-2.75.055-.165.59-.551.75-.551.04-.121.074-.153.2-.153.078-.23.855-.75 1.101-.75.074-.214.66-.597.898-.597.051-.153 3.434-2.2 3.801-2.2.172-.515 2.293-1.199 2.801-1.402 3.066-1.226 6.043-2.285 9.3-3.097C51.505-1.637 64.962.922 75.8 7.426c26.235 15.738 31.907 52.058 11.876 75.176-6.149 7.09-13.2 11.203-21.625 14.574-2.63 1.05-5.653 1.02-8.227 2.05z"
-                        fill="#1978f2" />
-                    <path stroke="#fff"
-                        d="M57.875 64.45c3.84-.008 7.684.007 11.523-.024.118 0 .114-.594.126-.676.14-.918.25-1.836.402-2.75a478.72 478.72 0 001.7-11l-13.728-.023c-.007-3.528-.03-7.051-.023-10.578.016-7.512 9.82-6.438 14.324-6.473.012-6.137.012-6.137.028-12.278-4.395-.293-8.547-.921-13.028-.921-1.906 0-4.074.488-5.847 1.199C40.516 26.059 42.32 38.129 42.274 50l-12.626.023-.023 14.375c6.313.016 6.313.016 12.625.028l.023 34.8c4.067 0 7.954.758 12.125.45 1.043-.078 2.446-.074 3.426-.45a.093.093 0 00.051-.078c.016-11.566 0-23.132 0-34.699z"
-                        fill="#fff" />
-                </g>
-            </svg>
-            <span class="visually-hidden">Facebook</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="mx-auto h-16 w-16 inline-block"
+            xmlns:vectornator="http://vectornator.io"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <g vectornator:layerName="surface1" stroke-width=".047">
+              <path
+                stroke="#1978f2"
+                d="M57.824 99.227c.02-.028.051-.047.051-.079.016-11.566 0-23.132 0-34.699 3.84-.007 7.684.008 11.523-.023.118 0 .114-.594.126-.676.14-.918.25-1.836.402-2.75a478.72 478.72 0 001.7-11l-13.728-.023c-.007-3.528-.03-7.051-.023-10.578.016-7.512 9.82-6.438 14.324-6.473.012-6.137.012-6.137.028-12.278-4.395-.293-8.547-.921-13.028-.921-1.906 0-4.074.488-5.847 1.199C40.516 26.059 42.32 38.129 42.274 50l-12.626.023-.023 14.375c6.313.016 6.313.016 12.625.028l.023 34.8c-.62-.417-3.796-.734-4.773-.953-3.176-.703-6.371-2.07-9.176-3.472-.535-.27-3.449-1.547-3.574-1.926-.234 0-1.223-.574-1.3-.8-.231 0-1.079-.536-1.15-.75-.363 0-2.132-1.25-2.25-1.598-.136 0-.6-.348-.652-.5-.14 0-.933-.61-1-.801-.554 0-1.62-1.473-2.097-1.8-2.301-1.595-3.63-4.126-5.5-6-.262-.263-1.176-1.2-1.176-1.575-.27-.09-.898-1.024-.898-1.3-.418-.138-3.207-5.071-3.352-5.802-.102-.5-.688-.941-.8-1.5-.243-1.222-.99-2.828-1.552-3.949C1.156 62.766.078 55.094.324 51.148l-.074-.023-.023-2.176c.23-.078.046-1.648.046-1.75 0-1.738.336-3.531.602-5.25.828-5.379 2.73-10.281 5.074-14.972.309-.618 1.813-3.688 2.227-3.829 0-.199.422-.84.597-.898 0-.203.57-1.039.75-1.102 0-.125.032-.16.153-.199 0-.14.39-.695.55-.75 0-.344 1.18-1.793 1.5-1.898 0-.305 1.086-1.399 1.25-1.45 0-.206 3.66-3.874 3.876-3.874.074-.227 3.164-2.75 3.347-2.75.055-.165.59-.551.75-.551.04-.121.074-.153.2-.153.078-.23.855-.75 1.101-.75.074-.214.66-.597.898-.597.051-.153 3.434-2.2 3.801-2.2.172-.515 2.293-1.199 2.801-1.402 3.066-1.226 6.043-2.285 9.3-3.097C51.505-1.637 64.962.922 75.8 7.426c26.235 15.738 31.907 52.058 11.876 75.176-6.149 7.09-13.2 11.203-21.625 14.574-2.63 1.05-5.653 1.02-8.227 2.05z"
+                fill="#1978f2"
+              />
+              <path
+                stroke="#fff"
+                d="M57.875 64.45c3.84-.008 7.684.007 11.523-.024.118 0 .114-.594.126-.676.14-.918.25-1.836.402-2.75a478.72 478.72 0 001.7-11l-13.728-.023c-.007-3.528-.03-7.051-.023-10.578.016-7.512 9.82-6.438 14.324-6.473.012-6.137.012-6.137.028-12.278-4.395-.293-8.547-.921-13.028-.921-1.906 0-4.074.488-5.847 1.199C40.516 26.059 42.32 38.129 42.274 50l-12.626.023-.023 14.375c6.313.016 6.313.016 12.625.028l.023 34.8c4.067 0 7.954.758 12.125.45 1.043-.078 2.446-.074 3.426-.45a.093.093 0 00.051-.078c.016-11.566 0-23.132 0-34.699z"
+                fill="#fff"
+              />
+            </g>
+          </svg>
+          <span class="visually-hidden">Facebook</span>
         </a>
         <a rel="me" href="https://twitter.com/GPower_Texas">
-            <svg aria-hidden="true" focusable="false" class="mx-auto h-16 w-16 inline-block"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: none;
-                        }
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="mx-auto h-16 w-16 inline-block"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 400"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                }
 
-                        .cls-2 {
-                            fill: #1da1f2;
-                        }
-                    </style>
-                </defs>
+                .cls-2 {
+                  fill: #1da1f2;
+                }
+              </style>
+            </defs>
 
-
-                <path class="cls-2"
-                    d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" />
-            </svg>
-            <span class="visually-hidden">Twitter</span>
+            <path
+              class="cls-2"
+              d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23"
+            />
+          </svg>
+          <span class="visually-hidden">Twitter</span>
         </a>
+      </div>
+      <a href="/uploads/2018/01/Minority-One-Sheet-Bilingual-download.pdf"
+        ><img
+          class="mx-auto h-16 w-16"
+          alt="Texas Certification Directory - Minority Owned Business - Certified 2018"
+          src="/uploads/2018/01/tx_cert_dir_logo.png"
+      /></a>
     </div>
-    <a href="/uploads/2018/01/Minority-One-Sheet-Bilingual-download.pdf"><img class="mx-auto h-16 w-16"
-            alt="Texas Certification Directory - Minority Owned Business - Certified 2018"
-            src="/uploads/2018/01/tx_cert_dir_logo.png"></a>
-</div>
-</body>
-
+  </body>
 </html>
