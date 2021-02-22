@@ -296,6 +296,41 @@ img:not([alt]) {
   display: inline;
 }
 
+.space-x-1 > * + * {
+  margin-left: 0.25rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.space-y-0 > * + * {
+  margin-top: 0rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:space-y-0 > * + * {
+    margin-top: 0rem;
+  }
+}
+
+.px-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -326,6 +361,16 @@ img:not([alt]) {
 
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
 }
 
 .mb-4 {
@@ -438,6 +483,16 @@ img:not([alt]) {
   align-items: center;
 }
 
+.aspect-iphone {
+  padding-bottom: 177.867%;
+}
+
+@media (min-width: 640px) {
+  .sm\:aspect-16-by-9 {
+    padding-bottom: 56.25%;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:flex-wrap {
     flex-wrap: wrap;
@@ -449,36 +504,6 @@ img:not([alt]) {
 
   .sm\:w-1\/2 {
     width: 50%;
-  }
-}
-
-.space-x-1 > * + * {
-  margin-left: 0.25rem;
-}
-
-.space-x-2 > * + * {
-  margin-left: 0.5rem;
-}
-
-.space-x-4 > * + * {
-  margin-left: 1rem;
-}
-
-.space-y-0 > * + * {
-  margin-top: 0rem;
-}
-
-.space-y-4 > * + * {
-  margin-top: 1rem;
-}
-
-.space-y-6 > * + * {
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 640px) {
-  .sm\:space-y-0 > * + * {
-    margin-top: 0rem;
   }
 }
 

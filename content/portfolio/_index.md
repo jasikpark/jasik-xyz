@@ -19,7 +19,7 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome src="kinlu.com.png" is-image=true alt="Kinlu homepage" >}}
+{{< iframe-with-chrome src="kinlu.com.png" src-iphone="kinlu.com.iphone.png" is-image=true alt="Kinlu homepage" >}}
 {{% figcaption %}}
 Helped take a website design from wireframe to production Wordpress site, communicating with designers and copy editors.
 {{% /figcaption %}}
