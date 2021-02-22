@@ -1,5 +1,6 @@
 +++
 Title = "Portfolio"
+Description = "Work History and Projects that I've worked on."
 Type = "standalone"
 +++
 
