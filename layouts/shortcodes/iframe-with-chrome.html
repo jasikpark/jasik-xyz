@@ -19,9 +19,9 @@
   </div>
   <div {{ if not (.Get "is-image") }}class="aspect-iphone sm:aspect-16-by-9" style="position: relative;" {{ end }}>
     {{ if .Get "is-image" }}
-    <picture class="w-full h-full">
-    <source class="w-full h-full" srcset="{{ .Get "src" }}" media="(min-width:640px)"/>
-    <img class="w-full h-full"  src="{{ .Get "src-iphone" }}" alt="{{ .Get "alt" }}">
+    <picture class="w-full">
+    <source class="w-full" srcset="{{ .Get "src" }}" media="(min-width:640px)"/>
+    <img class="w-full"  src="{{ .Get "src-iphone" }}" alt="{{ .Get "alt" }}">
     </img>
     </picture>
     {{ else }}
