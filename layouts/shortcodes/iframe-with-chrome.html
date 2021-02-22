@@ -7,33 +7,56 @@
     <div class="rounded-full w-3 h-3" style="background-color: #ffbe2e"></div>
     <div class="rounded-full w-3 h-3" style="background-color: #2ac840"></div>
     {{ if .Get "is-image" }}
-    <svg class="w-6 h-6 mx-3" alt="This is a screenshot, rather than iframe" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-    {{ else }}
-    <button
-      style="appearance:none; border:none; background-color: inherit; font-size: inherit;"
-      class="px-0 mx-3"
-    >
-      Home
-    </button>
+      <svg
+        class="w-6 h-6 mx-3"
+        alt="This is a screenshot, rather than iframe"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"
+        ></path>
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
+        ></path>
+      </svg>
+      {{ else }}
+      <button
+        style="appearance:none; border:none; background-color: inherit; font-size: inherit;"
+        class="px-0 mx-3"
+      >
+        Home
+      </button>
     {{ end }}
   </div>
-  <div {{ if not (.Get "is-image") }}class="aspect-iphone sm:aspect-16-by-9" style="position: relative;" {{ end }}>
-    {{ if .Get "is-image" }}
-    <picture class="w-full">
-    <source class="w-full" srcset="{{ .Get "src" }}" media="(min-width:640px)"/>
-    <img class="w-full"  src="{{ .Get "src-iphone" }}" alt="{{ .Get "alt" }}">
-    </img>
+  {{ if .Get "is-image" }}
+    <picture>
+      <source srcset="{{ .Get "src" }}" media="(min-width:640px)" />
+      <img
+        src="{{ .Get "src-iphone" }}"
+        alt="{{ .Get "alt" }}"
+        style="max-height: max-content"
+      />
     </picture>
     {{ else }}
-    <iframe
-      class="w-full h-full rounded-b-lg"
-      style="position: absolute; top: 0; left: 0; border:none;"
-      data-home="{{ .Get "src" }}"
-      src="{{ .Get "src" }}"
-      alt="{{ .Get "alt" }}"
-    ></iframe>
-    {{ end }}
-  </div>
+    <div class="aspect-iphone sm:aspect-16-by-9" style="position: relative;">
+      <iframe
+        class="w-full h-full rounded-b-lg"
+        style="position: absolute; top: 0; left: 0; border:none;"
+        data-home="{{ .Get "src" }}"
+        src="{{ .Get "src" }}"
+        alt="{{ .Get "alt" }}"
+      ></iframe>
+    </div>
+  {{ end }}
 </div>
 {{ $iframeWithChromeJS := resources.Get "/js/iframe-with-chrome.js" | minify | fingerprint }}
 <script type="module" src="{{ $iframeWithChromeJS.Permalink }}" integrity="{{ $iframeWithChromeJS.Data.Integrity }}"></script>
