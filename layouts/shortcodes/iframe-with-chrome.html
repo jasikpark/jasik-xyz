@@ -14,12 +14,18 @@
     </button>
   </div>
   <div style="position: relative; padding-top: 56.25%;">
+    {{ if .Get "is-image" }}
+    <img class="w-full h-full" style="position: absolute; top: 0; left: 0; object-fit: cover;" src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+    </img>
+    {{ else }}
     <iframe
       class="w-full h-full"
       style="position: absolute; top: 0; left: 0; object-fit: cover; border:none;"
-      data-home="{{ .Get "href" }}"
-      href="{{ .Get "href" }}"
+      data-home="{{ .Get "src" }}"
+      src="{{ .Get "src" }}"
+      alt="{{ .Get "alt" }}"
     ></iframe>
+    {{ end }}
   </div>
 </div>
 {{ $iframeWithChromeJS := resources.Get "/js/iframe-with-chrome.js" | minify | fingerprint }}

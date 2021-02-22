@@ -8,7 +8,7 @@ Type = "standalone"
 > #spa #music #entertainment
 
 {{< figure >}}
-{{< iframe-with-chrome href="/www/live-collegemusic-co-uk.netlify.app/" >}}
+{{< iframe-with-chrome src="/www/live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
 A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page.
 {{% /figcaption %}}
@@ -19,7 +19,7 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome href="/www/kinlu.com" >}}
+{{< iframe-with-chrome src="kinlu.com.png" is-image=true alt="Kinlu homepage" >}}
 {{% figcaption %}}
 Helped take a website design from wireframe to production Wordpress site, communicating with designers and copy editors.
 {{% /figcaption %}}
@@ -30,7 +30,7 @@ Helped take a website design from wireframe to production Wordpress site, commun
 > #landingpage #energy
 
 {{< figure >}}
-{{< iframe-with-chrome href="/www/getgpower.com" >}}
+{{< iframe-with-chrome src="/www/getgpower.com" >}}
 {{% figcaption %}}
 Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half.
 {{% /figcaption %}}
@@ -41,7 +41,7 @@ Totally overhauled a neglected Wordpress website into an updated and accessible 
 > #blog
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://addisoncrump.info" >}}
+{{< iframe-with-chrome src="https://addisoncrump.info" >}}
 {{% figcaption %}}
 Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.com/) to a custom design using [Zola](https://getzola.org) for the site generation.
 {{% /figcaption %}}
@@ -52,7 +52,7 @@ Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.
 > #bakingshop
 
 {{< figure >}}
-{{< iframe-with-chrome href="https://pastri.es" >}}
+{{< iframe-with-chrome src="https://pastri.es" >}}
 {{% figcaption %}}
 Designed a landing page for my brother's fledgling baking business. This ended up being more of a passion project than actually being used, but it was an enjoyable venture in learning about CSS grid and setting up data api's and such.
 {{% /figcaption %}}
