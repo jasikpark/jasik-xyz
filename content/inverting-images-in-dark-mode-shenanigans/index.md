@@ -93,6 +93,10 @@ The algorithm stops when the it has completed the predefined number of iteration
 
 > N.B. <time class="inline" datetime="2021-02-20T14:34:34-06:00">2021.02.20</time> I think I'll update this post in the future with a better understanding of the solution, and hopefully my own iteration of perfecting the design?
 
+<time datetime="2021-02-21T19:44:57-06:00">2021.02.21</time>
+
+Apparently I'm dumb and you can just do this using [`<picture>` and media queries](https://webkit.org/blog/8840/dark-mode-support-in-webkit/#:~:text=Images%20and%20Dark%20Mode), since `<picture>` lets you embed media queries in it, so you just generate two different images that are served...
+
 ### References:
 
 - 4 CSS Filters For Adjusting Color : <https://vanseodesign.com/css/4-css-filters-for-adjusting-color/>
