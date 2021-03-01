@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <meta name="monetization" content="$ilp.uphold.com/qALqwzm7GbYW" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {{ with .Description }}
       <meta name="description" content="{{ . }}" />
@@ -11,6 +10,7 @@
       <meta name="description" content="{{ .Site.Params.Description }}" />
     {{ end }}
     {{ if not .Site.IsServer }}
+      <meta name="monetization" content="$ilp.uphold.com/qALqwzm7GbYW" />
       <link
         rel="webmention"
         href="https://webmention.io/jasik.xyz/webmention"
