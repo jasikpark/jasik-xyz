@@ -9,7 +9,7 @@ Type = "standalone"
 > #spa #music #entertainment
 
 {{< figure >}}
-{{< iframe-with-chrome src="/www/live-collegemusic-co-uk.netlify.app/" >}}
+{{< iframe-with-chrome src="https://live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
 A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page.
 {{% /figcaption %}}
