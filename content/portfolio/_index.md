@@ -48,7 +48,7 @@ Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.
 {{% /figcaption %}}
 {{< /figure >}}
 
-## [Pastries By Grey](https://pastri.es){{< raw-wayback href="https://web.archive.org/web/20210221214616/https://pastri.es/" title="Pastries By Grey" >}}
+## [Pastries By Grey](https://pastriesbygrey.netlify.app){{< raw-wayback href="https://web.archive.org/web/20210221214616/https://pastri.es/" title="Pastries By Grey" >}}
 
 > #bakingshop
 
