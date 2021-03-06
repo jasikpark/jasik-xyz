@@ -54,24 +54,8 @@
           crossorigin="anonymous"
         />
 
-        <!-- The loading of KaTeX is deferred to speed up page rendering -->
-        <script
-          defer
-          src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-          integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
-          crossorigin="anonymous"
-        ></script>
-
-        <!-- To automatically render math in text elements, include the auto-render extension: -->
-        <script
-          defer
-          src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-          integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
-          crossorigin="anonymous"
-        ></script>
-
-        {{ $katexJS := resources.Get "js/katex.js" | minify | fingerprint "sha384" }}
-        <script src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
+        {{ $katexJS := resources.Get "js/katex.js" | js.Build | minify | fingerprint "sha384" }}
+        <script defer src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
       {{ end }}
       {{ if .Site.IsServer }}
         {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint "sha384" }}
@@ -108,13 +92,6 @@
       {{ $siteJS := resources.Get "js/site.js" | minify | fingerprint "sha384" }}
       <script defer src="{{ $siteJS.Permalink }}" integrity="{{ $siteJS.Data.Integrity }}"></script>
     {{ end }}
-    <!-- RobustLinks Javascript -->
-    <!-- <script
-      type="text/javascript"
-      src="https://doi.org/10.25776/h1fa-7a28"
-      integrity="sha384-p08+Bt319WsO9RW734HL1SreGbSb/Rl5N3Ocm/q0JCEaqtChHLTZ7KTpcuQcSLiB"
-      crossorigin="anonymous"
-    ></script> -->
   </head>
 
   <body>
@@ -188,18 +165,5 @@
         >RSS</a
       >
     </footer>
-    <!-- Cloudflare Privacy-Preserving Analytics - https://blog.cloudflare.com/privacy-first-web-analytics/ -->
-    <!-- Cloudflare Web Analytics -->
-    <!--<script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js"
-      data-cf-beacon='{"token": "d40ac5ea98e448bdb22e34e14ea14098"}'
-    ></script>-->
-    <!-- End Cloudflare Web Analytics -->
-    <!--<script
-      src="https://instant.page/5.1.0"
-      type="module"
-      integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"
-    ></script>-->
   </body>
 </html>

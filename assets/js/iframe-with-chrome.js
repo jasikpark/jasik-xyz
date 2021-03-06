@@ -3,13 +3,17 @@
  * @param {Event} e
  */
 const goHome = (e) => {
-  const iframeWithChrome = e.currentTarget;
-  if (iframeWithChrome === null) {
+  const iframeWithChrome = /** @type {Element} */ e.currentTarget;
+  if (iframeWithChrome === null || !(iframeWithChrome instanceof Element)) {
     console.log("there is no iframe??");
     return false;
   }
   const iframe = iframeWithChrome.querySelector("iframe");
-  iframe.src = iframe.dataset.home;
+  if (iframe === null) {
+    console.log("there is no iframe?");
+    return false;
+  }
+  iframe.src = iframe.dataset.home || "";
 };
 
 document.addEventListener("DOMContentLoaded", () => {
