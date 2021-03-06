@@ -7,19 +7,17 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono);
 
 @font-face {
-    font-family: 'Latin Modern Roman';
-    src: url('lmroman10-regular.otf');
-    src: url('lmroman10-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "Latin Modern Roman";
+  src: url("lmroman10-regular.otf");
+  src: url("lmroman10-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bitter';
-    src: url('Bitter-Regular.tff') format('tff');
+  font-family: "Bitter";
+  src: url("Bitter-Regular.tff") format("tff");
 }
-
 
 /* Global Reset */
 * {
@@ -27,25 +25,44 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html,
+body {
+  height: 100%;
+}
 
 body {
-  background-color: #FFF;
-  font: 13.34px 'Latin Modern Roman',Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  font: 13.34px "Latin Modern Roman", Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
   padding: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+h1 {
+  margin-bottom: 1em;
+}
+p {
+  margin: 1em 0;
+}
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a {
+  color: #00a;
+}
+a:hover {
+  color: #000;
+}
+a:visited {
+  color: #a0a;
+}
 
 /*****************************************************************************/
 /*
@@ -128,12 +145,12 @@ ul.posts span {
 }
 
 .site .footer .contact a {
-  color: #8085C1;
+  color: #8085c1;
 }
 
 .site .footer .rss {
   margin-top: 1.1em;
-  margin-right: -.2em;
+  margin-right: -0.2em;
   float: right;
 }
 
@@ -151,16 +168,17 @@ ul.posts span {
 .post pre {
   border-radius: 10px;
   border: 1px solid #ddd;
-  padding: 0 .4em;
+  padding: 0 0.4em;
 }
 
-.post ul, .post ol {
+.post ul,
+.post ol {
   margin-left: 1.35em;
 }
 
 .post code {
   border: 1px solid #ddd;
-  padding: 0 .2em;
+  padding: 0 0.2em;
 }
 
 .post pre code {
@@ -171,7 +189,7 @@ ul.posts span {
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
-  color: #FFF;
+  color: #fff;
 }
 
 .post pre.terminal code {
@@ -184,6 +202,6 @@ ul.posts span {
 /*
 /*****************************************************************************/
 code {
-    font-family: "droid sans mono", monospace;
-    font-size: 12px;
+  font-family: "droid sans mono", monospace;
+  font-size: 12px;
 }

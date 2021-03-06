@@ -6,10 +6,12 @@
   "author": "Caleb Jasik <calebjasik@jasik.xyz>",
   "main": "index.js",
   "scripts": {
-    "build": "hugo --cleanDestinationDir --gc",
-    "start": "hugo server --disableFastRender --cleanDestinationDir --gc",
     "archive": "wget --unlink --continue --page-requisites --timestamping --directory-prefix='static/www/'",
-    "lint:prettier": "prettier .  --check"
+    "build": "hugo --cleanDestinationDir --gc",
+    "fix:prettier": "yarn lint:prettier --write",
+    "lint:prettier": "prettier .  --check",
+    "lint:typecheck": "tsc -p jsconfig.json",
+    "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "devDependencies": {
     "prettier": "2.2.1",

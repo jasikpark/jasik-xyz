@@ -1,6 +1,5 @@
 name: Percy
 on:
-
   repository_dispatch: # run manually
     types: [percy]
 jobs:

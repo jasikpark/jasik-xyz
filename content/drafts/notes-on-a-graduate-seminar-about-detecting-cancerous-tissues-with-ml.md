@@ -8,7 +8,7 @@ Title = "Notes on a Graduate Seminar about Detecting Cancerous Tissues with ML"
 Draft = "true"
 +++
 
-*Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)*
+_Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
 The presentation was given by Nikos Papanikolopoulos, a McKnight Presidential Endowed Professor at the University of Minnesota. He's also worked with Mitsubishi in their MERL lab, and with the Roswell Cancer Institute.
 

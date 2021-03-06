@@ -1,1 +1,13 @@
-[{"resourceSizes":[{"resourceType":"document","budget":12},{"resourceType":"script","budget":79},{"resourceType":"image","budget":302},{"resourceType":"stylesheet","budget":15},{"resourceType":"media","budget":46},{"resourceType":"font","budget":24},{"resourceType":"total","budget":478}]}]
+[
+  {
+    "resourceSizes": [
+      { "resourceType": "document", "budget": 12 },
+      { "resourceType": "script", "budget": 79 },
+      { "resourceType": "image", "budget": 302 },
+      { "resourceType": "stylesheet", "budget": 15 },
+      { "resourceType": "media", "budget": 46 },
+      { "resourceType": "font", "budget": 24 },
+      { "resourceType": "total", "budget": 478 }
+    ]
+  }
+]
