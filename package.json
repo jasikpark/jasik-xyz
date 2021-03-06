@@ -14,8 +14,8 @@
     "lint": "run-p lint:*",
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:prettier": "prettier .  --check",
-    "lint:typecheck": "tsc -p jsconfig.json",
     "lint:spellcheck": "cspell \"**/*\" \".github/**/*\"",
+    "lint:typecheck": "tsc -p jsconfig.json",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
