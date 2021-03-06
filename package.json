@@ -8,7 +8,11 @@
   "scripts": {
     "archive": "wget --unlink --continue --page-requisites --timestamping --directory-prefix='static/www/'",
     "build": "hugo --cleanDestinationDir --gc",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "yarn lint:eslint --fix",
     "fix:prettier": "yarn lint:prettier --write",
+    "lint": "run-p lint:*",
+    "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:prettier": "prettier .  --check",
     "lint:typecheck": "tsc -p jsconfig.json",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
@@ -18,6 +22,11 @@
   },
   "devDependencies": {
     "@types/katex": "0.11.0",
+    "cross-env": "7.0.3",
+    "eslint": "7.21.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-formatter-friendly": "7.0.0",
+    "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "prettier-plugin-go-template": "0.0.10",
     "prettier-plugin-package": "1.3.0",
