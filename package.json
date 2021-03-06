@@ -8,7 +8,8 @@
   "scripts": {
     "build": "hugo --cleanDestinationDir --gc",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc",
-    "archive": "wget --unlink --continue --page-requisites --timestamping --directory-prefix='static/www/'"
+    "archive": "wget --unlink --continue --page-requisites --timestamping --directory-prefix='static/www/'",
+    "lint:prettier": "prettier .  --check"
   },
   "devDependencies": {
     "prettier": "2.2.1",
