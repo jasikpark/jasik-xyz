@@ -4,9 +4,6 @@ command = "hugo"
 
 [build.environment]
 HUGO_ENV = "production"
-HUGO_VERSION = "latest"
-RUBY_VERSION = "latest"
-NODE_VERSION = "latest"
 
 [dev]
 command = "hugo server --cleanDestinationDir --disableFastRender"
