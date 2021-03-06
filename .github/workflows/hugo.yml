@@ -16,7 +16,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
 
       - name: hugo
         uses: klakegg/actions-hugo@1.0.0
