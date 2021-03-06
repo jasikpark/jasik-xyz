@@ -15,6 +15,7 @@
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:prettier": "prettier .  --check",
     "lint:typecheck": "tsc -p jsconfig.json",
+    "lint:spellcheck": "cspell \"**/*\" \".github/**/*\"",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@types/katex": "0.11.0",
     "cross-env": "7.0.3",
+    "cspell": "5.3.7",
     "eslint": "7.21.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-formatter-friendly": "7.0.0",

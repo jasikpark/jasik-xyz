@@ -1,0 +1,25 @@
+{
+    "version": "0.1",
+    "ignorePaths": [
+        "cspell.json",
+        "**/node_modules/**",
+        "**/yarn.lock",
+        "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
+        "*.{log,svg,snap,png,jpg,pdf,otf,ttf}",
+        "resources/**",
+        "public/**",
+        "static/www/**",
+        "static/old-index-html/**",
+        "keybase.txt"
+    ],
+    "words": [
+        "autorender",
+        "celinekurpershoek",
+        "deps",
+        "jakepartusch",
+        "klakegg",
+        "timestamping",
+        "treosh",
+        "zaproxy"
+    ]
+}
