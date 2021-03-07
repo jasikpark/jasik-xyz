@@ -1,5 +1,5 @@
 {{ define "title" }}
-{{ with .Page.Title }}{{ . }}{{ else }}{{ .Page.Summary | truncate 70 }}{{ end }} | {{ .Site.Title }}
+{{ with .Page.Title }}{{ . | truncate 53 }}{{ else }}{{ .Page.Summary | truncate 53 }}{{ end }} | {{ .Site.Title }}
 {{ end }}
 
 {{ define "header" }}
