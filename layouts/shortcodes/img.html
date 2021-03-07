@@ -51,7 +51,7 @@
   {{ end }}
   {{ if ge $src.Width "2500" }}
     {{ with $giant.Permalink }}, {{.}} 2500w {{ end }}
-  {{ end }}" {{ if .Get (print $medium) }}src=" {{ $medium.Permalink }}" {{ else }} src="{{ $src.Permalink }}"
+  {{ end }}" {{ if .Get (print $medium) }}src="{{ $medium.Permalink }}" {{ else }} src="{{ $src.Permalink }}"
   {{ end }} {{ if .Get "alt" }}alt="{{ .Get "alt" }}" {{ else if .Page.Params.ImgAlt }}alt="{{ .Page.Params.ImgAlt }}"
   {{ end }} {{ if .Get "title" }}title="{{ .Get "title" }}"
   {{ else if .Page.Params.ImgTitle }}title="{{ .Page.Params.ImgTitle }}" {{ end }} />

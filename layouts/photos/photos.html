@@ -21,7 +21,7 @@
     <a href="{{ .Permalink }}" title="{{ .Title }}" class="u-url">
       <figure class="e-content p-name">
         <img {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
-          src='{{ .Permalink }}' {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
+          src="{{ .Permalink }}" {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
           {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
         <figcaption>
           {{ with .Params.FigCaption }}<p>{{ . }}</p>{{ else }}
