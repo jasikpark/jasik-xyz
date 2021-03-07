@@ -76,14 +76,6 @@
           integrity="{{ $siteCSS.Data.Integrity }}"
         />
       {{ end }}
-      <!-- RobustLinks CSS -->
-      <!-- <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://doi.org/10.25776/z58z-r575"
-        integrity="sha384-na26Sb3uDozto2cKtZqBFA1cH3f2uPoNXxV0QperrZxDrOlglJD2dkui7H6y5kgh"
-        crossorigin="anonymous"
-      /> -->
     {{ end }}
     {{ if .Site.IsServer }}
       {{ $siteJS := resources.Get "js/site.js" | fingerprint "sha384" }}
