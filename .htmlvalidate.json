@@ -11,6 +11,9 @@
         ],
         "no-trailing-whitespace": [
             "off"
+        ],
+        "no-inline-style": [
+            "warn"
         ]
     }
 }

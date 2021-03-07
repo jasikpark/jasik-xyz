@@ -16,6 +16,7 @@
     "lint:prettier": "prettier .  --check",
     "lint:spellcheck": "cspell \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
+    "lint:html-validate": "yarn build && html-validate public/",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
