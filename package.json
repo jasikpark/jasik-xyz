@@ -13,10 +13,10 @@
     "fix:prettier": "yarn lint:prettier --write",
     "lint": "run-p lint:*",
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
+    "lint:html-validate": "yarn build && html-validate public/",
     "lint:prettier": "prettier .  --check",
     "lint:spellcheck": "cspell \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
-    "lint:html-validate": "yarn build && html-validate public/",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "prettier": "2.2.1",
     "prettier-plugin-go-template": "0.0.10",
     "prettier-plugin-package": "1.3.0",
+    "prettier-plugin-x": "0.0.6",
     "typescript": "4.2.3"
   }
 }

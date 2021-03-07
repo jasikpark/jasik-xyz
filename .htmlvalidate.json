@@ -1,22 +1,14 @@
 {
-    "extends": [
-        "html-validate:recommended"
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "void-style": [
+      "error",
+      {
+        "style": "selfclosing"
+      }
     ],
-    "rules": {
-        "void-style": [
-            "error",
-            {
-                "style": "selfclosing"
-            }
-        ],
-        "no-trailing-whitespace": [
-            "off"
-        ],
-        "no-inline-style": [
-            "warn"
-        ],
-        "svg-focusable": [
-            "off"
-        ]
-    }
+    "no-trailing-whitespace": ["off"],
+    "no-inline-style": ["warn"],
+    "svg-focusable": ["off"]
+  }
 }
