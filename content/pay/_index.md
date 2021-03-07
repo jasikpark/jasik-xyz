@@ -2,7 +2,6 @@
 Title = "Pay Caleb Jasik"
 Type = "standalone"
 Slug = "/pay"
-Aliases = ["/payment"]
 +++
 
 Via Venmo:
