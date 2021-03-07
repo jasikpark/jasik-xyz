@@ -1,10 +1,23 @@
 {
   "overrides": [
     {
-      "files": ["*.html"],
+      "files": [
+        "*.html"
+      ],
       "options": {
         "parser": "go-template"
       }
+    },
+    {
+      "files": [
+        "static/old-index-html/**/*.html",
+        "static/www/**/*.html",
+        "static/admin/**/*.html"
+      ],
+      "options": {
+        "parser": "html"
+      }
     }
-  ]
+  ],
+  "htmlVoidTags": true
 }
