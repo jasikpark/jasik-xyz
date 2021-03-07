@@ -180,6 +180,10 @@ figure figcaption {
   color: var(--mid-gray);
 }
 
+iframe {
+  border: 0;
+}
+
 blockquote {
   border-left: 0.25rem rgba(0, 0, 0, 0.17) solid;
   padding-left: 0.5rem;
@@ -498,13 +502,50 @@ img:not([alt]) {
   align-items: center;
 }
 
-.aspect-iphone {
-  padding-bottom: 177.867%;
+.aspect-w-375,
+.aspect-w-16,
+.sm\:aspect-w-16,
+.aspect-w-4 {
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+}
+.aspect-w-375 > *,
+.aspect-w-16 > *,
+.sm\:aspect-w-16 > *,
+.aspect-w-4 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-w-4 {
+  --tw-aspect-w: 4;
+}
+.aspect-w-16 {
+  --tw-aspect-w: 16;
+}
+.aspect-w-375 {
+  --tw-aspect-w: 375;
+}
+.aspect-h-6 {
+  --tw-aspect-h: 6;
+}
+.aspect-h-9 {
+  --tw-aspect-h: 9;
+}
+.aspect-h-667 {
+  --tw-aspect-h: 667;
 }
 
 @media (min-width: 640px) {
-  .sm\:aspect-16-by-9 {
-    padding-bottom: 56.25%;
+  .sm\:aspect-w-16 {
+    --tw-aspect-w: 16;
+  }
+  .sm\:aspect-h-9 {
+    --tw-aspect-h: 9;
   }
 }
 
@@ -545,6 +586,10 @@ img:not([alt]) {
   grid-gap: 1rem;
   /* This is the standardized property now, but has slightly less support */
   /* gap: 1rem */
+}
+
+.border-none {
+  border: none;
 }
 
 .sr-only {

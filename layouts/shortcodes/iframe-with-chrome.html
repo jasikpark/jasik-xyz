@@ -47,10 +47,9 @@
       />
     </picture>
     {{ else }}
-    <div class="aspect-iphone sm:aspect-16-by-9" style="position: relative;">
+    <div class="aspect-w-375 aspect-h-667 sm:aspect-w-16 sm:aspect-h-9">
       <iframe
-        class="w-full h-full rounded-b-lg"
-        style="position: absolute; top: 0; left: 0; border:none;"
+        class="w-full h-full rounded-b-lg border-none"
         data-home="{{ .Get "src" }}"
         src="{{ .Get "src" }}"
         alt="{{ .Get "alt" }}"

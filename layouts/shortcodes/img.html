@@ -4,7 +4,7 @@
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
 {{ if (in $src.MediaType.Suffixes "svg") }}
-<img width="{{ .Get "width" }}" height="{{ .Get "height" }}" src="{{ $src.Permalink}}" {{ if .Get "alt" }}alt"{{ .Get "alt" }}" {{ else if .Page.Params.ImgAlt }}alt="{{ .Page.Params.ImgAlt }}"
+<img width="{{ .Get "width" }}" height="{{ .Get "height" }}" src="{{ $src.Permalink}}" {{ if .Get "alt" }}alt="{{ .Get "alt" }}" {{ else if .Page.Params.ImgAlt }}alt="{{ .Page.Params.ImgAlt }}"
   {{ end }} {{ if .Get "title" }}title="{{ .Get "title" }}"
   {{ else if .Page.Params.ImgTitle }}title="{{ .Page.Params.ImgTitle }}" {{ end }}/>
 {{ else }}

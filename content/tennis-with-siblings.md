@@ -6,7 +6,7 @@ type = "post"
 +++
 
 {{< figure >}}
-{{< youtube SC122wb9fD8 >}}
+{{< youtube SC122wb9fD8 "aspect-w-16 aspect-h-9" >}}
 {{% figcaption %}}
 Here's a really poorly edited video of my siblings and I playing tennis badly.
 {{% /figcaption %}}

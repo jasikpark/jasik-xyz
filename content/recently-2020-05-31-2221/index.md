@@ -11,7 +11,7 @@ Inspired by Tom MacWright’s [_Recently_](https://macwright.org/2020/03/01/rece
 I got my vinyl copy of _Nothing Happens_ by Wallows on Thursday and I’m delighted :)
 
 {{< figure >}}
-{{< youtube wIgmyE5Juzw >}}
+{{< youtube wIgmyE5Juzw "aspect-w-16 aspect-h-9" >}}
 {{% figcaption %}}
 My favorite song in the album, _Are you bored yet_
 {{% /figcaption %}}
@@ -20,7 +20,7 @@ My favorite song in the album, _Are you bored yet_
 I discovered Su Lee through kyuuwaii’s [cover](https://youtu.be/St8GNdVETLI) of [Can’t Get Over You](https://www.youtube.com/watch?v=Y8avxE0yPgE) by Joji aka Pink Guy, which was fun. She is wonderful.
 
 {{< figure >}}
-{{< youtube LOPCPUq9f_g >}}
+{{< youtube LOPCPUq9f_g "aspect-w-16 aspect-h-9" >}}
 {{< /figure >}}
 
 ## Reading
