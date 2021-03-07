@@ -4,9 +4,13 @@
     ],
     "rules": {
         "void-style": [
+            "error",
             {
                 "style": "selfclosing"
             }
+        ],
+        "no-trailing-whitespace": [
+            "off"
         ]
     }
 }
