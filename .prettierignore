@@ -2,3 +2,4 @@ static/www/
 resources/
 public/
 node_modules/
+cspell.json

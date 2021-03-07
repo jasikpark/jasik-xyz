@@ -22,13 +22,6 @@ command = "hugo -b https://v2.jasik.xyz"
 [context.deploy-preview]
 command = "hugo -b $DEPLOY_PRIME_URL"
 
-[[plugins]]
-package = "netlify-plugin-html-validate"
-
-[plugins.inputs]
-ext = "html"
-config = ".htmlvalidate.json"
-
 [[redirects]]
 from = "/donate/"
 to = "https://ko-fi.com/calebjasik/"

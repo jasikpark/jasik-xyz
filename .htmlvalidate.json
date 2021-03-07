@@ -3,8 +3,10 @@
         "html-validate:recommended"
     ],
     "rules": {
-        "void-style": {
-            "style": "selfclosing"
-        }
+        "void-style": [
+            {
+                "style": "selfclosing"
+            }
+        ]
     }
 }
