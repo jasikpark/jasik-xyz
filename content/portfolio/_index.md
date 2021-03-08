@@ -4,6 +4,8 @@ Description = "Work History and Projects that I've worked on."
 Type = "standalone"
 +++
 
+> You can find my work history at [/resume]({{< danger-ref href="/resume" >}})
+
 ## [College Music Live](https://live-collegemusic-co-uk.netlify.app){{< raw-wayback href="https://web.archive.org/web/20210221213831/https://live-collegemusic-co-uk.netlify.app/" title="College Music Live" >}}
 
 > #spa #music #entertainment
