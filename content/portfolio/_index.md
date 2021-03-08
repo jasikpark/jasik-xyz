@@ -11,7 +11,7 @@ Type = "standalone"
 {{< figure >}}
 {{< iframe-with-chrome src="https://live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
-A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page.
+A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page. Created a custom API for the site hooking up [Spotify](https://spotify.com) and [Odesli](https://odesli.co) into a streamlined song search -> song links api perfect for the usecase we needed.
 {{% /figcaption %}}
 {{< /figure >}}
 
@@ -28,23 +28,23 @@ Helped take a website design from wireframe to production Wordpress site, commun
 
 ## [G-Power](https://getgpower.com){{< raw-wayback href="https://web.archive.org/web/20210221214033/https://getgpower.com/" title="G-Power" >}}
 
-> #landingpage #energy
+> #landingpage #energy #redesign
 
 {{< figure >}}
 {{< iframe-with-chrome src="/www/getgpower.com/" >}}
 {{% figcaption %}}
-Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half.
+Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half. Using Tailwindcss and Netlify as my main weapons, in addition to writing semantic HTML that's accessible v.s. the setup previously on the website.
 {{% /figcaption %}}
 {{< /figure >}}
 
 ## [Addison Crump - A Record of Projects, Ideas, and Experiences](https://addisoncrump.info){{< raw-wayback href="https://web.archive.org/web/20210221214244/https://addisoncrump.info/" title="Addison Crump - A Record of Projects, Ideas, and Experiences" >}}
 
-> #blog
+> #blog #redesign
 
 {{< figure >}}
 {{< iframe-with-chrome src="https://addisoncrump.info" >}}
 {{% figcaption %}}
-Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.com/) to a custom design using [Zola](https://getzola.org) for the site generation.
+Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.com/) to a custom design using [Zola](https://getzola.org) for the site generation. Provided a custom theme, font choices and full transfer of all of his original writing.
 {{% /figcaption %}}
 {{< /figure >}}
 
