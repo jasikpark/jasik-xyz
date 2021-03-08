@@ -2,13 +2,14 @@
   "extends": ["html-validate:recommended"],
   "rules": {
     "void-style": [
-      "error",
+      "warn",
       {
         "style": "selfclosing"
       }
     ],
     "no-trailing-whitespace": ["off"],
     "no-inline-style": ["warn"],
-    "svg-focusable": ["off"]
+    "svg-focusable": ["off"],
+    "script-type": ["warn"]
   }
 }

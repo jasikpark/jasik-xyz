@@ -23,4 +23,4 @@ Benjamin Mee, We Bought a Zoo
 #20secondsofcourage</p>
 		<a href="https://www.instagram.com/calebjasik" class="card-link">View More on Instagram</a>
 	</div>
-</div
+</div>

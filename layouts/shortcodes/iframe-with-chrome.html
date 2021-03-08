@@ -29,7 +29,7 @@
         ></path>
       </svg>
       {{ else }}
-      <button
+      <button type="button"
         style="appearance:none; border:none; background-color: inherit; font-size: inherit; cursor:pointer;"
         class="px-0 mx-3"
       >
@@ -53,6 +53,7 @@
         data-home="{{ .Get "src" }}"
         src="{{ .Get "src" }}"
         alt="{{ .Get "alt" }}"
+        title="{{ .Get "alt" }}"
       ></iframe>
     </div>
   {{ end }}
