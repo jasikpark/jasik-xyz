@@ -12,6 +12,7 @@
         "static/old-index-html/**",
         "keybase.txt"
     ],
+    "ignoreWords": ["tinyw","smallw","mediumw","largew","giantw"],
     "words": [
         "autorender",
         "celinekurpershoek",
@@ -22,6 +23,34 @@
         "selfclosing",
         "timestamping",
         "treosh",
-        "zaproxy"
+        "zaproxy",
+        "typecheck",
+        "youtube",
+        "jasik",
+        "TARDIS",
+        "peaceiris",
+        "stylesheet",
+        "browserconfig",
+        "msapplication",
+        "mstile",
+        "automerge",
+        "jasikpark",
+        "katex",
+        "Wayback",
+        "printf",
+        "shortcode",
+        "iphone",
+        "exif",
+        "gohugo",
+        "calebjasik",
+        "keybase",
+        "venmo",
+        "nocookie",
+        "nosniff",
+        "SAMEORIGIN",
+        "preload",
+        "Galvez",
+        "webmention",
+        "pingback"
     ]
 }
