@@ -20,7 +20,7 @@
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
-    "katex": "0.12.0"
+    "katex": "0.13.0"
   },
   "devDependencies": {
     "@types/katex": "0.11.0",
