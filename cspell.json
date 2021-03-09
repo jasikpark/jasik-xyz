@@ -1,5 +1,16 @@
 {
     "version": "0.1",
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+    "dictionaryDefinitions": [
+        {
+            "name": "workspace",
+            "path": "./cspell-dict.txt",
+            "description": "Custom Workspace Dictionary"
+        }
+    ],
+    "dictionaries": [
+        "workspace"
+    ],
     "ignorePaths": [
         "cspell.json",
         "**/node_modules/**",
@@ -10,14 +21,18 @@
         "public/**",
         "static/www/**",
         "static/old-index-html/**",
-        "keybase.txt"
+        "keybase.txt",
+        "config.toml",
+        "Dockerfile"
     ],
     "ignoreWords": [
         "tinyw",
         "smallw",
         "mediumw",
         "largew",
-        "giantw"
+        "giantw",
+        "zaproxy",
+        "secondsofcourage"
     ],
     "words": [
         "automerge",
@@ -66,6 +81,22 @@
         "webmention",
         "wireframe",
         "youtube",
-        "zaproxy"
+        "Feedbin",
+        "Reyner",
+        "silouette",
+        "Bastrop",
+        "mlem",
+        "duckduckgo",
+        "pinboard",
+        "versionurl",
+        "versiondate",
+        "gwern",
+        "zenburn",
+        "prosebot",
+        "tamu",
+        "Soundiiz",
+        "Rdio",
+        "yellowify",
+        "   "
     ]
 }
