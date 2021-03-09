@@ -16,6 +16,5 @@
         "parser": "html"
       }
     }
-  ],
-  "htmlVoidTags": true
+  ]
 }

@@ -3,3 +3,8 @@ resources/
 public/
 node_modules/
 cspell.json
+# For the sake of prettier-plugin-go-template being dumb:
+layouts/shortcodes/img.html
+layouts/photos/photos.html
+layouts/_default/single.html
+layouts/shortcodes/iframe-with-chrome.html
