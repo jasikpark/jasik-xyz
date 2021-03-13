@@ -589,7 +589,7 @@ img:not([alt]) {
 }
 
 .border-none {
-  border: none;
+  border: 1px solid transparent;
 }
 
 .sr-only {
