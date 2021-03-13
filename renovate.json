@@ -4,6 +4,8 @@
     ":automergeBranch",
     ":automergeRequireAllStatusChecks",
     ":automergeLinters",
-    ":automergeTypes"
+    ":automergeTypes",
+    ":enableVulnerabilityAlerts",
+    ":maintainLockFilesMonthly"
   ]
 }
