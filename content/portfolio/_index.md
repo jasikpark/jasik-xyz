@@ -13,7 +13,7 @@ Type = "standalone"
 {{< figure >}}
 {{< iframe-with-chrome src="https://live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
-A single page app for a lo-fi radio business, giving their listeners a more enjoyable venue to access their stream. Created a custom API for the site hooking up [Spotify](https://spotify.com) and [Odesli](https://odesli.co) into a streamlined song search -> song links api perfect for the usecase we needed.
+A single-page app for a lo-fi radio business, giving their listeners a more enjoyable venue to access their stream. Created a custom API for the site hooking up [Spotify](https://spotify.com) and [Odesli](https://odesli.co) into a streamlined song search -> song links API perfect for the use-case we needed.
 {{% /figcaption %}}
 {{< /figure >}}
 
