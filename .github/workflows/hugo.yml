@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v2.1.5
 
       - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: hugo
         uses: klakegg/actions-hugo@1.0.0
