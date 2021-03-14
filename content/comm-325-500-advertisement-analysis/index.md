@@ -10,7 +10,7 @@ This is an analysis of the Google commercial [_Android: And Skip_][1] for COMM
 applying the persuasion analysis techniques we have learned in class to a
 real-world persuasive message.
 
-[![Thumbnail for Android: And Skip][image-1]][3]
+[{{< img src="android-and-skip-thumbnail.jpg" alt="Thumbnail for Android: And Skip" >}}][3]
 
 The commercial [_Android: And Skip_][4] is a two-sided argument that uses a
 variety of methods to make weak arguments for skipping the commercial, and then
@@ -154,4 +154,3 @@ Reminder: This assignment is due at 11:10 a.m. on 11/15 on e-Campus. Have fun wi
 [1]: https://youtu.be/rDPopoBL698
 [3]: https://youtu.be/rDPopoBL698
 [4]: https://youtu.be/rDPopoBL698
-[image-1]: android-and-skip-thumbnail.jpg
