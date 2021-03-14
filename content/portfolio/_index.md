@@ -13,7 +13,7 @@ Type = "standalone"
 {{< figure >}}
 {{< iframe-with-chrome src="https://live-collegemusic-co-uk.netlify.app/" >}}
 {{% figcaption %}}
-A single page app for a lo-fi radio business, allowing their listeners to use a more enjoyable venue to access their stream than the regular youtube live page. Created a custom API for the site hooking up [Spotify](https://spotify.com) and [Odesli](https://odesli.co) into a streamlined song search -> song links api perfect for the usecase we needed.
+A single page app for a lo-fi radio business, giving their listeners a more enjoyable venue to access their stream. Created a custom API for the site hooking up [Spotify](https://spotify.com) and [Odesli](https://odesli.co) into a streamlined song search -> song links api perfect for the usecase we needed.
 {{% /figcaption %}}
 {{< /figure >}}
 
@@ -24,7 +24,7 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 {{< figure >}}
 {{< iframe-with-chrome src="kinlu.com.png" src-iphone="kinlu.com.iphone.png" is-image=true alt="Kinlu homepage" >}}
 {{% figcaption %}}
-Helped take a website design from wireframe to production Wordpress site, communicating with designers and copy editors.
+Worked with a team of designers and copy editors to take a website design from wireframe to production Wordpress site. I added copy text and implemented page designs from the client's designers.
 {{% /figcaption %}}
 {{< /figure >}}
 
@@ -35,7 +35,7 @@ Helped take a website design from wireframe to production Wordpress site, commun
 {{< figure >}}
 {{< iframe-with-chrome src="/www/getgpower.com/" >}}
 {{% figcaption %}}
-Totally overhauled a neglected Wordpress website into an updated and accessible design that loads in half the time and cut costs to host in half. Using Tailwindcss and Netlify as my main weapons, in addition to writing semantic HTML that's accessible v.s. the setup previously on the website.
+Overhauled a neglected WordPress website into an updated accessible design that loads in half the time and cuts hosting costs in half. Took the core of the WordPress website design and reimplemented it in the new medium of a [statically generated website](https://jamstack.org/what-is-jamstack/) via [Hugo](https://gohugo.io). [Tailwindcss](https://tailwindcss.com/) and [Netlify](https://netlify.com) were my main weapons, in addition to writing [semantic HTML](https://en.wikipedia.org/wiki/Semantic_HTML).
 {{% /figcaption %}}
 {{< /figure >}}
 
@@ -46,17 +46,17 @@ Totally overhauled a neglected Wordpress website into an updated and accessible 
 {{< figure >}}
 {{< iframe-with-chrome src="https://addisoncrump.info" >}}
 {{% figcaption %}}
-Redesigned my friends blog, helping him move from [Gitbook](https://www.gitbook.com/) to a custom design using [Zola](https://getzola.org) for the site generation. Provided a custom theme, font choices and full transfer of all of his original writing.
+Redesigned my friend's blog, helping him move from [Gitbook](https://www.gitbook.com/) to a custom design using [Zola](https://getzola.org) for the site generation. Provided a custom theme, font choices, and full transfer of all of his original writing.
 {{% /figcaption %}}
 {{< /figure >}}
 
 ## [Pastries By Grey](https://pastriesbygrey.netlify.app){{< raw-wayback href="https://web.archive.org/web/20210221214616/https://pastri.es/" title="Pastries By Grey" >}}
 
-> #bakingshop
+> #bakingshop #landingpage
 
 {{< figure >}}
 {{< iframe-with-chrome src="https://pastriesbygrey.jasik.xyz/" >}}
 {{% figcaption %}}
-Designed a landing page for my brother's fledgling baking business. This ended up being more of a passion project than actually being used, but it was an enjoyable venture in learning about CSS grid and setting up data api's and such.
+Designed a landing page for my brother's fledgling baking business. This ended up being more of a passion project than actually being used, but it was an enjoyable venture in learning about CSS grid and setting up data APIs and such. I also managed to design this website without javascript, even the menu menu simply uses HTML anchors, `scroll-margin-top`, and CSS media queries to dynamically show/hide the menu on mobile.
 {{% /figcaption %}}
 {{< /figure >}}
