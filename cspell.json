@@ -17,7 +17,7 @@
         "./yarn/",
         "**/yarn.lock",
         "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
-        "*.{log,svg,snap,png,jpg,pdf,otf,ttf}",
+        "*.{log,svg,snap,png,jpg,pdf,otf,ttf,JPG,PNG,SVG}",
         "resources/**",
         "public/**",
         "static/www/**",
