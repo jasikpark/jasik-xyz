@@ -4,3 +4,4 @@ public/
 static/www/
 resources/
 .yarn/
+.pnp.*

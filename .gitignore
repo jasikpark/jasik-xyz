@@ -12,11 +12,11 @@ node_modules
 .netlify
 */.ztr-directory
 .ztr-directory
-# yarn berry
+# yarn berry (not zero-install)
 .yarn/*
-!.yarn/cache
 !.yarn/patches
-!.yarn/plugins
 !.yarn/releases
+!.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
+.pnp.*
