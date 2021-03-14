@@ -19,7 +19,7 @@ A single page app for a lo-fi radio business, allowing their listeners to use a 
 
 ## [Kinlu](https://kinlu.com){{< raw-wayback href="https://web.archive.org/web/20201231151610/https://kinlu.com/" title="Kinlu" >}}
 
-> #landingpage #energy
+> #landingpage #energy #launch
 
 {{< figure >}}
 {{< iframe-with-chrome src="kinlu.com.png" src-iphone="kinlu.com.iphone.png" is-image=true alt="Kinlu homepage" >}}
