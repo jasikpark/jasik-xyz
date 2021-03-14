@@ -14,7 +14,7 @@ type = "post"
 	<div class="card-header">
     <a href="https://www.instagram.com/calebjasik" class="card-link">calebjasik</a>
   </div>
-	<a href="https://instagram.com/p/BmvyRlcgX9U/" rel="noopener noreferrer" target="_blank"><img class="card-img-top img-fluid" src="flower-on-black.png" width="640"  height="638" alt="Instagram Image"></a>
+	<a href="https://instagram.com/p/BmvyRlcgX9U/" rel="noopener noreferrer" target="_blank"><img class="card-img-top img-fluid" src="flower-on-black.png" width="640"  height="638" alt="Instagram Image"/></a>
 	<div class="card-body">
 		<p class="card-text"><a href="https://www.instagram.com/calebjasik" class="card-link">calebjasik</a> You know, sometimes all you need is twenty seconds of insane courage. Just literally twenty seconds of just embarrassing bravery. And I promise you, something great will come of it.
 Benjamin Mee, We Bought a Zoo
