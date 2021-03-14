@@ -10,7 +10,7 @@ Draft = "true"
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_
 
-I'out whether the world could exist apart from him, or even if I wanted it to exist without him. I've been thinking about how I've been relying on myself and how that's not been working, and how I need to focus on people.
+I've been thinking about whether the world could exist apart from him, or even if I wanted it to exist without him. I've been thinking about how I've been relying on myself and how that's not been working, and how I need to focus on people.
 
 > View money as a commodity to grow your people.
 
@@ -18,7 +18,7 @@ I spend so much time in my head and just beating myself up and looking at the wo
 
 > Love the Lord your God with all your heart, your mind, your soul, and your body, and the second commandment is this: Love your neighbor as yourself.
 
-I know that verse. I have it memorized. (Maybe not. I'll have to look up the acutal words later.) But I'm so good at forgetting that verse and explaining it away and claiming that my hurting is what's important right now, when it's not.
+I know that verse. I have it memorized. (Maybe not. I'll have to look up the actual words later.) But I'm so good at forgetting that verse and explaining it away and claiming that my hurting is what's important right now, when it's not.
 
 JohnMark gave a really good axiom at small group on Thursday. He talked about the guy who wrote THE book on daily devotionals. And people ask that guy why he thinks God chose him to write the second best-selling book ever, after the Bible.
 

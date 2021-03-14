@@ -28,7 +28,7 @@ F(4) = F(3) + F(2)
 F(n) = F(n-1) + F(n-2), for n > 1
 ```
 
-```psuedocode
+```pseudocode
 Algorithm Fib(n)
 	Input: n //rank of fib. number
 	Output: actual fib. number

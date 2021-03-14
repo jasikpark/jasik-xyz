@@ -19,7 +19,7 @@ I kinda want to keep track of fonts that I think are cool, so I think I'll keep 
 
 Font books I might read **someday**: <https://medium.design/whitespace-8b92273ab49e>
 
-- [Magyar Nemzet](https://bboxtype.com/typefaces/FFF_Magyar_Nemzet/#!layout=specimen) is an interesting super compressed display font that is inpired as a newspaper display font.
+- [Magyar Nemzet](https://bboxtype.com/typefaces/FFF_Magyar_Nemzet/#!layout=specimen) is an interesting super compressed display font that is inspired as a newspaper display font.
 - [Nepsza Badsag](https://bboxtype.com/typefaces/FFF_NEPSZA_BADSAG/#!layout=specimen) is also quite interesting as a serif display font from the same site ([Fonts for Freedom](https://fonts-for-freedom.com/en/)).
 - [Guendem](https://bboxtype.com/typefaces/FFF_Guendem/#!layout=specimen) is another FFF display font that really vibes with
 - [Source Serif](https://adobe-fonts.github.io/source-serif/) seems like a great option for an alternative to Georgia for me that's free and opensource

@@ -7,9 +7,9 @@ type = "post"
 +++
 
 {{< figure >}}
-{{< img src="got-any-more-pies.jpeg" alt="y'all got any more of them sherpherd's pies" >}}
+{{< img src="got-any-more-pies.jpeg" alt="y'all got any more of them shepherd's pies" >}}
 {{% figcaption %}}
-y'all got any more of them sherpherd's pies
+y'all got any more of them shepherd's pies
 {{% /figcaption %}}
 {{< /figure >}}
 

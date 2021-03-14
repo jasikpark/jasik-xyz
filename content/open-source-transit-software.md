@@ -10,7 +10,7 @@ Title = "Open Source Transit Software"
 Here's a list of open source transit software that I have found in my search for information on building a GTFS feed for the TAMU Spirit Bus system. (or the Brazos Transit District bus system.)
 
 - [GitHub - waagsociety/citysdk-ld: CitySDK Linked Data API](https://github.com/waagsociety/citysdk-ld)
-- [GitHub - OpenTransport/gtfs-csv2rdf: Mapping script which transforms GTFS CSV into GTFS RDF (turtle, jsonld or ntriples)](https://github.com/OpenTransport/gtfs-csv2rdf)
+- [GitHub - OpenTransport/gtfs-csv2rdf: Mapping script which transforms GTFS CSV into GTFS RDF (turtle, JSON-LD or ntriples)](https://github.com/OpenTransport/gtfs-csv2rdf)
 - [Open311](http://www.open311.org/)
 - [Data.gov](https://www.data.gov/)
 - use rust to translate the Texas A&M data into GTFS??

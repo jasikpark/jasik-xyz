@@ -44,7 +44,7 @@ It does a great job, and does a great, simple job of making the diagram fit into
 But what if we could?
 
 {{< figure >}}
-{{< img src="machine_learning_2x.png" alt="Man 1 stands above pile of 'data', matrices and such. Man 2: THIS is your machine learning system? Man 1: Yup! You pour the data into this big pile of linear algebra, then colect the answers on the other side. Man 2: What if the answers are wrong? Man 1: Just stir the pile until they start looking right." title="The pile gets soaked with data and starts to get mushy over time, so it's technically recurrent." >}}
+{{< img src="machine_learning_2x.png" alt="Man 1 stands above pile of 'data', matrices and such. Man 2: THIS is your machine learning system? Man 1: Yup! You pour the data into this big pile of linear algebra, then collect the answers on the other side. Man 2: What if the answers are wrong? Man 1: Just stir the pile until they start looking right." title="The pile gets soaked with data and starts to get mushy over time, so it's technically recurrent." >}}
 {{< figcaption >}}
 
 <p>from <a href="https://xkcd.com/1838/">https://xkcd.com/1838/</a>{{< raw-wayback href="https://web.archive.org/web/20201124035659/https://xkcd.com/1838/" title="xkcd 1838" >}}. thanks for all the laughs.</p>
@@ -55,7 +55,7 @@ But what if we could?
 
 What I found on StackOverflow was a ludicrous idea: implement the browser CSS filter functions as Javascript functions and then setup a small loss function and gradient descent to search the space of what filters will get you the closest color to your input color when applied to a black image with a transparent background.
 
-CSS `filter` is based on a bunch of primitives, like `sepia()` and `invert()` and `hue-rotate`, but on the backend they essentially implemement an `<feColorMatrix>` or other SVG filter types.
+CSS `filter` is based on a bunch of primitives, like `sepia()` and `invert()` and `hue-rotate`, but on the backend they essentially implement an `<feColorMatrix>` or other SVG filter types.
 
 So in the [solution](https://stackoverflow.com/a/43960991/7644640){{< raw-wayback href="https://web.archive.org/web/20210220200039/https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991" title="Accepted StackOverflow Solution" >}} via a [codepen reimplementation](https://codepen.io/sosuke/pen/Pjoqqp){{< raw-wayback href="https://web.archive.org/web/20210220200230/https://codepen.io/sosuke/pen/Pjoqqp" title="Codepen Reimplementation of the solution" >}}, they implemented `sepia()`, `saturate()`, `hue-rotate()`, `brightness()`, and `contrast()` as Javascript functions that implement the matrix transform as a series of multiplications.
 

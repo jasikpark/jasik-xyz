@@ -21,12 +21,12 @@ Type = "post"
 
 - 1:55pm
 - White Russian Coffee
-- Mokapot
+- Moka pot
 - Grind no. 7
 - 27.0g of coffee
 
 _notes:_ Wtf - grind no. 7 + 27g was wayyyyy too much coffee???
-I only used (27-8.5) 18.5g of coffee?? I guess I’ll do that next time. It turned out well - I made two iced White Russian lattes: Ice, a lil vanilla extract, simple syrup, and some milk and heavy cream whisked together by my protein shaker. It’s pretty great imo since I’m using the right amount of coffee for myself. I think if I want to use the mokapot more frequently, I need a good grinder and a smaller mokapot. Especially since I mostly enjoy iced drinks.
+I only used (27-8.5) 18.5g of coffee?? I guess I’ll do that next time. It turned out well - I made two iced White Russian lattes: Ice, a lil vanilla extract, simple syrup, and some milk and heavy cream whisked together by my protein shaker. It’s pretty great imo since I’m using the right amount of coffee for myself. I think if I want to use the Moka pot more frequently, I need a good grinder and a smaller Moka pot. Especially since I mostly enjoy iced drinks.
 
 ---
 
@@ -193,4 +193,4 @@ _notes:_
 - 6:08pm
 - Ok, maybe I’ll try another still kinda coarse grind after this.
 
-_notes:_ that brew was pretty good, but I think I want it to be stronger, so a finer grind next time, the beans are very caffeinated, which is nice. Apparently I’m supposed to fill the mokapot to the top with grounds, so I think I want to buy myself a smaller one so I can make more espresso-like coffees.
+_notes:_ that brew was pretty good, but I think I want it to be stronger, so a finer grind next time, the beans are very caffeinated, which is nice. Apparently I’m supposed to fill the Moka pot to the top with grounds, so I think I want to buy myself a smaller one so I can make more espresso-like coffees.

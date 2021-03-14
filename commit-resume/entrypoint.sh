@@ -43,7 +43,7 @@ create_pull_request() {
       # Post the pull request
       DATA="{\"title\":${TITLE}, \"body\":${BODY}, \"base\":${TARGET}, \"head\":${SOURCE}, \"draft\":${DRAFT}}"
       echo "$DATA" | jq .
-      curl -v -XPOST -H "${HEADER}" \
+      curl -v -X POST -H "${HEADER}" \
       -H "Authorization: token ${GITHUB_TOKEN}" \
       "${PULLS_URL}" \
       --data "${DATA}"
