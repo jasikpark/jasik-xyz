@@ -15,7 +15,7 @@
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:html-validate": "yarn build && html-validate public/",
     "lint:prettier": "prettier .  --check",
-    "lint:spellcheck": "cspell \"**/*\" \".github/**/*\"",
+    "lint:spellcheck": "cspell --unique --no-progress \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
