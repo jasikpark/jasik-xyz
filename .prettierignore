@@ -2,6 +2,7 @@ static/www/
 resources/
 public/
 node_modules/
+.yarn/
 cspell.json
 # For the sake of prettier-plugin-go-template being dumb:
 layouts/shortcodes/img.html

@@ -14,6 +14,7 @@
     "ignorePaths": [
         "cspell.json",
         "**/node_modules/**",
+        "./yarn/",
         "**/yarn.lock",
         "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
         "*.{log,svg,snap,png,jpg,pdf,otf,ttf}",
