@@ -8,7 +8,7 @@
     ":enableVulnerabilityAlerts",
     ":maintainLockFilesMonthly"
   ],
-  "package-rules": [
+  "packageRules": [
     {
       "matchPackageNames": ["html-validate", "cspell"],
       "automerge": true
