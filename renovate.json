@@ -7,5 +7,9 @@
     ":automergeTypes",
     ":enableVulnerabilityAlerts",
     ":maintainLockFilesMonthly"
+  ],
+  "package-rules": [
+    "matchPackageNames": ["html-validate","cspell"],
+    "automerge": true,
   ]
 }
