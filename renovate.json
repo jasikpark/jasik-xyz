@@ -9,7 +9,9 @@
     ":maintainLockFilesMonthly"
   ],
   "package-rules": [
-    "matchPackageNames": ["html-validate","cspell"],
-    "automerge": true,
+    {
+      "matchPackageNames": ["html-validate","cspell"],
+      "automerge": true,
+    }
   ]
 }
