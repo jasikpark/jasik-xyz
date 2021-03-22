@@ -565,7 +565,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^7.0.0":
+"ajv@npm:^7.0.0, ajv@npm:^7.0.2":
   version: 7.2.1
   resolution: "ajv@npm:7.2.1"
   dependencies:
@@ -574,18 +574,6 @@ __metadata:
     require-from-string: ^2.0.2
     uri-js: ^4.2.2
   checksum: 34044f60ca45ef8ec850f5d09e4db340bb870639efc1694d54bec7ff4b06b12b077872949223f703d1507bbf3d553b59752f4c327ffcd25726ee27919d586037
-  languageName: node
-  linkType: hard
-
-"ajv@npm:^7.0.2":
-  version: 7.1.1
-  resolution: "ajv@npm:7.1.1"
-  dependencies:
-    fast-deep-equal: ^3.1.1
-    json-schema-traverse: ^1.0.0
-    require-from-string: ^2.0.2
-    uri-js: ^4.2.2
-  checksum: fe4e138529363bf1c8c429e1f3e88480918b538fe4a44660b989cea863714715af75e874aad129ccd5cbcf6647fa457e20b735bb3279a3bca08f11193bae5d19
   languageName: node
   linkType: hard
 
