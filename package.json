@@ -14,7 +14,7 @@
     "lint": "run-p 'lint:*'",
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:html-validate": "yarn build && html-validate public/",
-    "lint:linkcheck": "blc https://jasik.xyz -ro --exclude codepen.io --exclude github.com --exclude twitter.com --exclude '/www/' --exclude 'https://secrethitler.io' --exclude 'https://www.reddit.com/r/IoGames/'",
+    "lint:linkcheck": "blc https://jasik.xyz -ro --exclude codepen.io --exclude github.com --exclude twitter.com --exclude '/www/' --exclude 'https://secrethitler.io' --exclude 'https://www.reddit.com/r/IoGames/' --exclude https://www.kickstarter.com/projects/magicpuzzlecompany/magic-puzzles",
     "lint:prettier": "prettier .  --check",
     "lint:spellcheck": "cspell lint --unique --no-progress \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
