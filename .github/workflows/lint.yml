@@ -39,7 +39,7 @@ jobs:
       - name: Lint Prettier
         run: yarn lint:prettier
 
-      - name: Lint HTML-Validate
+      - name: Validate HTML
         run: yarn lint:html-validate
 
       - name: Spellcheck
