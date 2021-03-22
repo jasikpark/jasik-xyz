@@ -450,6 +450,42 @@ img:not([alt]) {
   height: 1.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.bg-mac-grey {
+  background-color: #e5e5e5;
+}
+
+.bg-mac-red {
+  background-color: #ff5357;
+}
+
+.bg-mac-yellow {
+  background-color: #ffbe2e;
+}
+
+.bg-mac-green {
+  background-color: #2ac840;
+}
+
+.reset-button {
+  appearance: none;
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.max-h-content {
+  max-height: max-content;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
+}
+
 @media (min-width: 640px) {
   .sm\:max-h-108 {
     max-height: 27rem;
@@ -589,7 +625,7 @@ img:not([alt]) {
 }
 
 .border-none {
-  border: 1px solid transparent;
+  border: none;
 }
 
 .sr-only {

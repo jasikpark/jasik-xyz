@@ -1,11 +1,10 @@
 <div class="rounded-lg overflow-hidden shadow-lg text-black iframe-with-chrome">
   <div
-    class="w-full space-x-2 flex px-3 justify-start items-center"
-    style="background-color: #e5e5e5; height: 2rem;"
+    class="w-full space-x-2 flex px-3 justify-start items-center h-8 bg-mac-grey"
   >
-    <div class="rounded-full w-3 h-3" style="background-color: #ff5e57"></div>
-    <div class="rounded-full w-3 h-3" style="background-color: #ffbe2e"></div>
-    <div class="rounded-full w-3 h-3" style="background-color: #2ac840"></div>
+    <div class="rounded-full w-3 h-3 bg-mac-red"></div>
+    <div class="rounded-full w-3 h-3 bg-mac-yellow"></div>
+    <div class="rounded-full w-3 h-3 bg-mac-green"></div>
     {{ if .Get "is-image" }}
       <svg
         class="w-6 h-6 mx-3"
@@ -29,12 +28,7 @@
         ></path>
       </svg>
       {{ else }}
-      <button type="button"
-        style="appearance:none; border:none; background-color: inherit; font-size: inherit; cursor:pointer;"
-        class="px-0 mx-3"
-      >
-        Home
-      </button>
+      <button type="button" class="px-0 mx-3 reset-button">Home</button>
     {{ end }}
   </div>
   {{ if .Get "is-image" }}
@@ -43,7 +37,7 @@
       <img
         src="{{ .Get "src-iphone" }}"
         alt="{{ .Get "alt" }}"
-        style="max-height: max-content"
+        class="max-h-content"
       />
     </picture>
     {{ else }}

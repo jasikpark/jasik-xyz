@@ -10,7 +10,7 @@ type = "post"
 
 > N.B. The problem with copy-pasting the stuff is that the link for the image expired, so I've just downloaded the image, and plan to never include Instagram on my website in the future.
 
-<div class="__h_instagram s_instagram_simple card" style="max-width: 640px">
+<div class="__h_instagram s_instagram_simple card max-w-screen-sm">
 	<div class="card-header">
     <a href="https://www.instagram.com/calebjasik" class="card-link">calebjasik</a>
   </div>
