@@ -20,6 +20,7 @@ Zachry
 skribbl
 Xyzzy
 Azala
+linkcheck
 Qwirkle
 Deeeeep
 Shamee
