@@ -48,5 +48,5 @@ jobs:
       #- name: Lint Changelog
       #  run: yarn lint:changelog
 
-      - name: Check Lock File and Cache Changes
-        run: yarn && echo "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed during lint."
+      #- name: Check Lock File
+      #  run: yarn && echo "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed during lint."
