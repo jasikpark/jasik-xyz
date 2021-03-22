@@ -21,4 +21,4 @@ jobs:
         run: yarn install --immutable
 
       - name: Check Links
-        run: yarn lint:linkcheck | grep 'BROKEN'
+        run: yarn lint:linkcheck
