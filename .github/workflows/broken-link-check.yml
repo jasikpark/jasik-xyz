@@ -7,19 +7,18 @@ on:
     types: [check-link]
 
 jobs:
-  broken_link_checker_job:
+  linkcheck:
+    name: Link Check
     runs-on: ubuntu-latest
-    name: Check for broken links
     steps:
-      - name: Check for broken links
-        id: link-report
-        uses: celinekurpershoek/github-actions-link-checker@v1.0.1
-        with:
-          # Required:
-          url: "https://jasik.xyz"
-          # optional:
-          honorRobotExclusions: false
-          ignorePatterns: "github,google,twitter"
-          recursiveLinks: true # Check all urls on all reachable pages (could take a while)
-      - name: Get the result
-        run: echo "${{steps.link-report.outputs.result}}"
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.1.5
+
+      - name: Install Dependencies
+        run: yarn install --immutable
+
+      - name: Check Links
+        run: yarn lint:linkcheck | grep 'BROKEN'
