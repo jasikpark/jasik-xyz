@@ -14,12 +14,14 @@
     "lint": "run-p 'lint:*'",
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:html-validate": "yarn build && html-validate public/",
+    "lint:linkcheck": "blc https://jasik.xyz -ro --exclude '{*codepen.io*,*github.com*,*twitter.com*,/www/**}'",
     "lint:prettier": "prettier .  --check",
     "lint:spellcheck": "cspell lint --unique --no-progress \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
     "start": "hugo server --disableFastRender --cleanDestinationDir --gc"
   },
   "dependencies": {
+    "broken-link-checker": "0.7.8",
     "katex": "0.13.0"
   },
   "devDependencies": {
