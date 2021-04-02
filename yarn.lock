@@ -121,10 +121,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cspell/cspell-types@npm:^5.3.8":
-  version: 5.3.8
-  resolution: "@cspell/cspell-types@npm:5.3.8"
-  checksum: 9110e8554b25f0d2c562ce08eec6a74f9250aa28f664cab58d6cecb23db729988688a4f897ecec57d7b96fd367e19b36b7dbdde17904ed323efb954f9a406054
+"@cspell/cspell-types@npm:^5.3.10":
+  version: 5.3.10
+  resolution: "@cspell/cspell-types@npm:5.3.10"
+  checksum: 40944b4b3431e5c1ea83a45d7b468093c2edad90325a7f48e90a773f78631840767cdfd27ae9fef86c28620cfaee54077c76f0e7c8ba4fc957fa9f787d5e763b
   languageName: node
   linkType: hard
 
@@ -1141,7 +1141,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^7.1.0":
+"commander@npm:^7.2.0":
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
   checksum: bdc0eca5e25cd24af8440163d3c9a996785bbac4b49a590365699cdc1ed08cefbac8f268153208ab2bc5dc3cb1d3fb573fd1590c681e36e371342186bd331a4c
@@ -1264,73 +1264,73 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cspell-glob@npm:^5.3.8":
-  version: 5.3.8
-  resolution: "cspell-glob@npm:5.3.8"
+"cspell-glob@npm:^5.3.10":
+  version: 5.3.10
+  resolution: "cspell-glob@npm:5.3.10"
   dependencies:
     micromatch: ^4.0.2
-  checksum: eea77824d587bc2fd2e2474fb133dd0da8b91f43f5577c741c6b54fbb8c6d2150000da97d7f131cafca98e22c5290879c77c598504460684e84dfefe66782a47
+  checksum: 092adf96d1f0be3ba4d6131efd3fe3b436755b4008ceaf25e3cba160bed9e8e4fd99da0237501cf717d4c3c1d31077f02294eb4a8b3d7eda23a49edc7c824e9c
   languageName: node
   linkType: hard
 
-"cspell-io@npm:^5.3.8":
-  version: 5.3.8
-  resolution: "cspell-io@npm:5.3.8"
+"cspell-io@npm:^5.3.10":
+  version: 5.3.10
+  resolution: "cspell-io@npm:5.3.10"
   dependencies:
     iconv-lite: ^0.6.2
     iterable-to-stream: ^1.0.1
-  checksum: d2f950a6e311219f5baca86bd8d7a15772e89b7df8f45d9ab698e78adbdf4d04b0d4b9a8a1c96b1297955489a4cfba01a684d74aab125f4a05a97df067ffd5af
+  checksum: defce430bfa5fdd8efe151af5fb0e6813d30dee325e97ff65641db045ec6f1ba17c1d2d79d52286fddbe56e1219597ca59cc79620ac26a3744571d8ee4bf2180
   languageName: node
   linkType: hard
 
-"cspell-lib@npm:^5.3.9":
-  version: 5.3.9
-  resolution: "cspell-lib@npm:5.3.9"
+"cspell-lib@npm:^5.3.10":
+  version: 5.3.10
+  resolution: "cspell-lib@npm:5.3.10"
   dependencies:
     "@cspell/cspell-bundled-dicts": ^5.3.8
-    "@cspell/cspell-types": ^5.3.8
+    "@cspell/cspell-types": ^5.3.10
     comment-json: ^4.1.0
     configstore: ^5.0.1
     cosmiconfig: ^7.0.0
-    cspell-glob: ^5.3.8
-    cspell-io: ^5.3.8
-    cspell-trie-lib: ^5.3.8
+    cspell-glob: ^5.3.10
+    cspell-io: ^5.3.10
+    cspell-trie-lib: ^5.3.10
     fs-extra: ^9.1.0
     gensequence: ^3.1.1
     resolve-from: ^5.0.0
     resolve-global: ^1.0.0
     vscode-uri: ^3.0.2
-  checksum: 095b4c64f352820668347a0facf87f46f78f25e062d896e25533f08ada5e18323220c3aadcb493777007f77a38704a83e95e6a73859a85bd41cc0655fa19818b
+  checksum: 4a36b9d561aad49323887e801453a87b5553dd09d26d911f991fab410ce1ace85be1b4cc24fc7e43a91bb7dba92b947af1c08b8a411ce4836a9e9eb83b00b0d3
   languageName: node
   linkType: hard
 
-"cspell-trie-lib@npm:^5.3.8":
-  version: 5.3.8
-  resolution: "cspell-trie-lib@npm:5.3.8"
+"cspell-trie-lib@npm:^5.3.10":
+  version: 5.3.10
+  resolution: "cspell-trie-lib@npm:5.3.10"
   dependencies:
     fs-extra: ^9.1.0
     gensequence: ^3.1.1
-  checksum: 1bb32938d6d9ffdf616d714bd2cef1d8c5971de961e00295e513978e4ffae8aba5022005f4ee8479d60a566b117fd3b5c46f279b4d8930b64982e34123491ebc
+  checksum: 34eaeb200307b86a77d5c2866a12c41241e7f2295941d94ad46fced571430aeddbb75f0bffba9f86fc1fe2057303472d6babfa5d306cb3a8005bcd516ba0ebc0
   languageName: node
   linkType: hard
 
-"cspell@npm:5.3.9":
-  version: 5.3.9
-  resolution: "cspell@npm:5.3.9"
+"cspell@npm:5.3.10":
+  version: 5.3.10
+  resolution: "cspell@npm:5.3.10"
   dependencies:
-    "@cspell/cspell-types": ^5.3.8
+    "@cspell/cspell-types": ^5.3.10
     chalk: ^4.1.0
-    commander: ^7.1.0
+    commander: ^7.2.0
     comment-json: ^4.1.0
-    cspell-glob: ^5.3.8
-    cspell-lib: ^5.3.9
+    cspell-glob: ^5.3.10
+    cspell-lib: ^5.3.10
     fs-extra: ^9.1.0
     get-stdin: ^8.0.0
     glob: ^7.1.6
     strip-ansi: ^6.0.0
   bin:
     cspell: bin.js
-  checksum: 5ab51e06528ff6f6107b0b290745859f18acc50d6523190782976a9a9e69d66baac848d9263e22087cffb4cd26f8ba4ca0f9c0545e290923eb4b97245e58b482
+  checksum: deefb52e1f5508f86b701a817bb8e1fc1527b3fde35e086971c1c64a5258c4db21918fca75e902f7eba6c01f22418336a4079242af0d72cec84b0578b15071ab
   languageName: node
   linkType: hard
 
@@ -2708,7 +2708,7 @@ __metadata:
     "@types/katex": 0.11.0
     broken-link-checker: 0.7.8
     cross-env: 7.0.3
-    cspell: 5.3.9
+    cspell: 5.3.10
     eslint: 7.23.0
     eslint-config-prettier: 8.1.0
     eslint-formatter-friendly: 7.0.0
