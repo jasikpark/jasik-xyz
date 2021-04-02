@@ -1,3 +1,9 @@
+/resume
+Content-Type: "application/pdf"
+/resume.pdf
+Content-Type: "application/pdf"
+
+
 /*
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
