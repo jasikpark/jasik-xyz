@@ -121,10 +121,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cspell/cspell-types@npm:^5.3.10":
-  version: 5.3.10
-  resolution: "@cspell/cspell-types@npm:5.3.10"
-  checksum: 40944b4b3431e5c1ea83a45d7b468093c2edad90325a7f48e90a773f78631840767cdfd27ae9fef86c28620cfaee54077c76f0e7c8ba4fc957fa9f787d5e763b
+"@cspell/cspell-types@npm:^5.3.11":
+  version: 5.3.11
+  resolution: "@cspell/cspell-types@npm:5.3.11"
+  checksum: 1cedaba90fa81b3eb75787044b84ab75312e98a39d9ce1fa2b58d7ee69ceb4f2ff018bf6232d84b9a3b65d5d9f0ae64beb8e9e9de79468b3d46ef533b4918033
   languageName: node
   linkType: hard
 
@@ -1264,73 +1264,73 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cspell-glob@npm:^5.3.10":
-  version: 5.3.10
-  resolution: "cspell-glob@npm:5.3.10"
+"cspell-glob@npm:^5.3.11":
+  version: 5.3.11
+  resolution: "cspell-glob@npm:5.3.11"
   dependencies:
     micromatch: ^4.0.2
-  checksum: 092adf96d1f0be3ba4d6131efd3fe3b436755b4008ceaf25e3cba160bed9e8e4fd99da0237501cf717d4c3c1d31077f02294eb4a8b3d7eda23a49edc7c824e9c
+  checksum: 43a20a4d0634a5379eb5542741fb60789a026a7e3dc8b353819f44ed1ff709b3c30e14282984965dc5d98ad4737213206bfb215dbc0cedae4d40422e2a4360ec
   languageName: node
   linkType: hard
 
-"cspell-io@npm:^5.3.10":
-  version: 5.3.10
-  resolution: "cspell-io@npm:5.3.10"
+"cspell-io@npm:^5.3.11":
+  version: 5.3.11
+  resolution: "cspell-io@npm:5.3.11"
   dependencies:
     iconv-lite: ^0.6.2
     iterable-to-stream: ^1.0.1
-  checksum: defce430bfa5fdd8efe151af5fb0e6813d30dee325e97ff65641db045ec6f1ba17c1d2d79d52286fddbe56e1219597ca59cc79620ac26a3744571d8ee4bf2180
+  checksum: 3ed994577c670da8ee2eb6868f2412ec744379d787679443c026c578924f3c570b22cffdb5a19f8cc49b75c24dc90996b95470e0b081872f62aee31033e5e77c
   languageName: node
   linkType: hard
 
-"cspell-lib@npm:^5.3.10":
-  version: 5.3.10
-  resolution: "cspell-lib@npm:5.3.10"
+"cspell-lib@npm:^5.3.11":
+  version: 5.3.11
+  resolution: "cspell-lib@npm:5.3.11"
   dependencies:
     "@cspell/cspell-bundled-dicts": ^5.3.8
-    "@cspell/cspell-types": ^5.3.10
+    "@cspell/cspell-types": ^5.3.11
     comment-json: ^4.1.0
     configstore: ^5.0.1
     cosmiconfig: ^7.0.0
-    cspell-glob: ^5.3.10
-    cspell-io: ^5.3.10
-    cspell-trie-lib: ^5.3.10
+    cspell-glob: ^5.3.11
+    cspell-io: ^5.3.11
+    cspell-trie-lib: ^5.3.11
     fs-extra: ^9.1.0
     gensequence: ^3.1.1
     resolve-from: ^5.0.0
     resolve-global: ^1.0.0
     vscode-uri: ^3.0.2
-  checksum: 4a36b9d561aad49323887e801453a87b5553dd09d26d911f991fab410ce1ace85be1b4cc24fc7e43a91bb7dba92b947af1c08b8a411ce4836a9e9eb83b00b0d3
+  checksum: 2c2e553cb6ebf6e6f5eccff792f12febccf5b6f5074c2793b095f3cc9d25e4402547d7eb99864f5bc9ec1148cfafa5973f46ab359b452f8137b6ba646364b05d
   languageName: node
   linkType: hard
 
-"cspell-trie-lib@npm:^5.3.10":
-  version: 5.3.10
-  resolution: "cspell-trie-lib@npm:5.3.10"
+"cspell-trie-lib@npm:^5.3.11":
+  version: 5.3.11
+  resolution: "cspell-trie-lib@npm:5.3.11"
   dependencies:
     fs-extra: ^9.1.0
     gensequence: ^3.1.1
-  checksum: 34eaeb200307b86a77d5c2866a12c41241e7f2295941d94ad46fced571430aeddbb75f0bffba9f86fc1fe2057303472d6babfa5d306cb3a8005bcd516ba0ebc0
+  checksum: 241cb1aac5080517f361474b12b0d813331f224644f7157628d71239597fa228e8e00045966850cebc2f79077d59b2bf9389c490adeffb5e28f9bd02c3e1ac04
   languageName: node
   linkType: hard
 
-"cspell@npm:5.3.10":
-  version: 5.3.10
-  resolution: "cspell@npm:5.3.10"
+"cspell@npm:5.3.11":
+  version: 5.3.11
+  resolution: "cspell@npm:5.3.11"
   dependencies:
-    "@cspell/cspell-types": ^5.3.10
+    "@cspell/cspell-types": ^5.3.11
     chalk: ^4.1.0
     commander: ^7.2.0
     comment-json: ^4.1.0
-    cspell-glob: ^5.3.10
-    cspell-lib: ^5.3.10
+    cspell-glob: ^5.3.11
+    cspell-lib: ^5.3.11
     fs-extra: ^9.1.0
     get-stdin: ^8.0.0
     glob: ^7.1.6
     strip-ansi: ^6.0.0
   bin:
     cspell: bin.js
-  checksum: deefb52e1f5508f86b701a817bb8e1fc1527b3fde35e086971c1c64a5258c4db21918fca75e902f7eba6c01f22418336a4079242af0d72cec84b0578b15071ab
+  checksum: 94dbabaaf9fa0a7b9d6328796e1ddd3dff6fdd7ffd59be33a9e83ebdf956187e257e7a71008df6166024fb97ff8ad5a2b22b3591f6b853e33da2bda9357ac86e
   languageName: node
   linkType: hard
 
@@ -2708,7 +2708,7 @@ __metadata:
     "@types/katex": 0.11.0
     broken-link-checker: 0.7.8
     cross-env: 7.0.3
-    cspell: 5.3.10
+    cspell: 5.3.11
     eslint: 7.23.0
     eslint-config-prettier: 8.1.0
     eslint-formatter-friendly: 7.0.0
