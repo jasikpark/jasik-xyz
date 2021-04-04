@@ -2266,9 +2266,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:4.8.0":
-  version: 4.8.0
-  resolution: "html-validate@npm:4.8.0"
+"html-validate@npm:4.9.0":
+  version: 4.9.0
+  resolution: "html-validate@npm:4.9.0"
   dependencies:
     "@babel/code-frame": ^7.10.0
     "@html-validate/stylish": ^1.0.0
@@ -2285,7 +2285,7 @@ __metadata:
     prompts: ^2.0.0
   bin:
     html-validate: bin/html-validate.js
-  checksum: 8144a6cead2a4d76a4a7124dca525fb2edb738fe58af610f5e0918d6442f824e8fc121220ed38784c53635b1f278ba6e90b33ff1cb697acd9e73ee70301485a4
+  checksum: 2c01743ce457dd15976ff29e22aef1f4658638cbc042c67ba72d01faa62a5a76c5c9429bc4a0167e813c93e7510ffbc70bc21e95815a8c0e7c74bd0196d0a6bf
   languageName: node
   linkType: hard
 
@@ -2712,7 +2712,7 @@ __metadata:
     eslint: 7.23.0
     eslint-config-prettier: 8.1.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 4.8.0
+    html-validate: 4.9.0
     katex: 0.13.0
     npm-run-all: 4.1.5
     prettier: 2.2.1
