@@ -2713,7 +2713,7 @@ __metadata:
     eslint-config-prettier: 8.1.0
     eslint-formatter-friendly: 7.0.0
     html-validate: 4.9.0
-    katex: 0.13.0
+    katex: 0.13.2
     npm-run-all: 4.1.5
     prettier: 2.2.1
     prettier-plugin-go-template: 0.0.10
@@ -2874,14 +2874,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"katex@npm:0.13.0":
-  version: 0.13.0
-  resolution: "katex@npm:0.13.0"
+"katex@npm:0.13.2":
+  version: 0.13.2
+  resolution: "katex@npm:0.13.2"
   dependencies:
     commander: ^6.0.0
   bin:
     katex: cli.js
-  checksum: 7395ab64d8ba608ef2b52f69414d950c45e9b47631628bdd075c2e2aacb940cf2c151f61467bb0b17c03bb99cc65983af590629915a70502c2f13f23abcf13e2
+  checksum: 1c8894177fb8715041639fbfe30d2d08367e62b7fc72ed48c3d81ba49cf4952924e0807244d0ac97f017987cc4a0aef84f77e5d9d874a77b28c925390185e963
   languageName: node
   linkType: hard
 
