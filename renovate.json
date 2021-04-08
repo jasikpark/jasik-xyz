@@ -10,7 +10,7 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["html-validate", "cspell"],
+      "matchPackageNames": ["html-validate", "cspell", "typescript"],
       "automerge": true
     }
   ]
