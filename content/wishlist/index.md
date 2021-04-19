@@ -20,7 +20,7 @@ This will be a running list of things I plan to buy. :P
 - [Standing dock for my iPhone](https://www.amazon.com/dp/B01LD85OH6)
 - [Byword](https://www.bywordapp.com/) -- For writing this blog :)
 - [iA Writer](https://ia.net/writer) -- or iA writer instead
-- [The Cradley Deluxe Green - One & a Half Gallon](https://haws.co.uk/collections/outdoor-watering-cans/products/the-cradley-deluxe-green-one-and-a-half-gallon) -- upgrade watering can lol
+- [Haws Watering Can: The Warley Fall Green One Gallon](https://haws.co.uk/collections/outdoor-watering-cans/products/the-warley-fall-green-one-gallon) -- upgrade watering can lol
 - [Knive's Out style sweater](https://www.blarney.com/irish-shop/mens-supersoft-plaited-cable-crew-neck-sweater/)
 - [41-qt size Container Store storage bins](https://www.containerstore.com/s/clear-weathertight-totes/d?productId=10026213&cid=af%3Agen&ranMID=37353&ranEAID=7m8EnekPF5E&ranSiteID=7m8EnekPF5E-r54gyqZckxZ0kDgQF6hTyQ)
 
