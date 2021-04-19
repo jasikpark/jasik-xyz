@@ -49,8 +49,7 @@
       <time class="inline-block"
         datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format "January 2, 2006" }}</time> You
       can see
-      the revisions <a href="https://github.com/jasikpark/jasik-xyz/commits/main/content/{{ .Path }}">here</a>, or 
-      <a href="https://github.com/jasikpark/jasik-xyz/edit/main/content/{{ .Path }}">edit this page</a>.
+      the revisions <a href="https://github.com/jasikpark/jasik-xyz/commits/main/content/{{ .Path }}">here</a>
     </div>
     {{ end }}
   </div>
@@ -59,6 +58,11 @@
         href="mailto:calebjasik@jasik.xyz?subject=RE:%20{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 }}{{ end }}">calebjasik@jasik.xyz</a>
       if you want to.</div>
   </address>
+  {{ if $.GitInfo }}
+  <div>
+    <a href="https://github.com/jasikpark/jasik-xyz/edit/main/content/{{ .Path }}">Edit on Github</a>
+  </div>
+  {{ end }}
 </footer>
 {{ if .PublishDate }}
 <section class="post-navigation">
