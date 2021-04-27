@@ -17,7 +17,8 @@
       />
       <link rel="pingback" href="https://webmention.io/jasik.xyz/xmlrpc" />
     {{ end }}
-    <link id="emoji-clock" rel="icon" href="{{ "icon.svg" | absURL }}" />
+    {{/* BEGIN Favicons */}}
+    <link id="emoji-clock" rel="icon" href="{{ "/icon.svg" | absURL }}" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -38,7 +39,24 @@
     <link rel="manifest" href="{{ "/site.webmanifest" | absURL }}" />
     <meta name="msapplication-TileColor" content="#b91d47" />
     <meta name="theme-color" content="#ffffff" />
+    {{/*  END Favicons */}}
+    {{/* BEGIN Open Graph */}}
 
+    <meta property="og:image:width" content="279" />
+    <meta property="og:image:height" content="279" />
+    <meta property="og:title" content="{{ .Title }}" />
+    {{ with .Description }}
+      <meta property="og:description" content="{{ . }}" />
+      {{ else }}
+      <meta
+        property="og:description"
+        content="{{ .Site.Params.Description }}"
+      />
+    {{ end }}
+    <meta property="og:url" content="{{ .Site.BaseURL }}" />
+    <meta property="og:image" content="{{ "/og-image.jpg" | absURL }}" />
+
+    {{/* END Open Graph */}}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `
       <link rel="%s" type="%s" href="%s" title="%s" />
