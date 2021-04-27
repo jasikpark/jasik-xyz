@@ -161,3 +161,4 @@ Synik
 antiope
 repos
 californong
+Favicons
