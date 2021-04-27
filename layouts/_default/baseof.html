@@ -41,7 +41,6 @@
     <meta name="theme-color" content="#ffffff" />
     {{/*  END Favicons */}}
     {{/* BEGIN Open Graph */}}
-
     <meta property="og:image:width" content="279" />
     <meta property="og:image:height" content="279" />
     <meta property="og:title" content="{{ .Title }}" />
@@ -54,9 +53,23 @@
       />
     {{ end }}
     <meta property="og:url" content="{{ .Site.BaseURL }}" />
-    <meta property="og:image" content="{{ "/og-image.jpg" | absURL }}" />
-
+    <meta property="og:image" content="{{ "/og-image.png" | absURL }}" />
     {{/* END Open Graph */}}
+    {{/* BEGIN Twitter Meta Tags */}}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="{{ .Site.BaseURL }}" />
+    <meta property="twitter:url" content="{{ .Permalink }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    {{ with .Description }}
+      <meta name="twitter:description" content="{{ . }}" />
+      {{ else }}
+      <meta
+        name="twitter:description"
+        content="{{ .Site.Params.Description }}"
+      />
+    {{ end }}
+    <meta name="twitter:image" content="https://jasik.xyz/og-image.png" />
+    {{/* End Twitter Meta Tags */}}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `
       <link rel="%s" type="%s" href="%s" title="%s" />
