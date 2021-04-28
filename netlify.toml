@@ -11,7 +11,7 @@ command = "hugo server --cleanDestinationDir --disableFastRender"
 autoLaunch = false
 
 [context.branch-deploy]
-command = "hugo -D --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
+command = "hugo --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
 [context.v1]
 command = "hugo -b https://v1.jasik.xyz"
