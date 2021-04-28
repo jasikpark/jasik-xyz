@@ -31,7 +31,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
       <description>{{ .Summary | html }}</description>
       <content:encoded>
         {{- .Content | html }}
-        &lt;div&gt;Send me an email at &lt;a href="mailto:calebjasik@jasik.xyz?subject=RE:%20{{ with .Title -}}{{- . -}}{{ else }}{{- .Summary | truncate 70 -}}{{ end }}"&gt;calebjasik@jasik.xyz&lt;/a&gt; if you want to.&lt;/div&gt;
+        &lt;div&gt;Email me at &lt;a href="mailto:calebjasik@jasik.xyz?subject=RE:%20{{ with .Title -}}{{- . -}}{{ else }}{{- .Summary | truncate 70 -}}{{ end }}"&gt;calebjasik@jasik.xyz&lt;/a&gt; or tweet at me at &lt;a href="https://twitter.com/calebjasik"&gt;@calebjasik&lt;a&gt;&lt;/div&gt;
       </content:encoded>
     </item>
     {{ end }}
