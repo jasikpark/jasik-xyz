@@ -58,7 +58,7 @@ disableInlineCSS = true
 disableInlineCSS = true
 
 [outputs]
-home = ["HTML", "RSS", "REDIR", "HEADERS"]
+home = ["HTML", "RSS", "HEADERS"]
 
 [mediaTypes]
 [mediaTypes."text/netlify"]
@@ -66,11 +66,6 @@ suffixes = [""]
 delimiter = ""
 
 [outputFormats]
-[outputFormats.REDIR]
-mediatype = "text/netlify"
-baseName = "_redirects"
-isPlainText = true
-notAlternative = true
 [outputFormats.HEADERS]
 mediatype = "text/netlify"
 baseName = "_headers"
