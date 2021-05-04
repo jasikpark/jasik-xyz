@@ -1,5 +1,5 @@
 name: Lighthouse CI for Netlify sites
-on: 
+on:
   repository_dispatch: # run manually
     types: [lighthouse]
 jobs:
