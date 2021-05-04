@@ -29,21 +29,6 @@ function getEmojiClock() {
   // so we need the start to be the zero index so when we add the hour it is correctly indexed.
 }
 
-function initEmojiClock() {
-  const link = document.getElementById("emoji-clock");
-  if (link === null) {
-    console.log("emoji-clock link doesn't exist...");
-    return;
-  }
-  if (!(link instanceof HTMLLinkElement)) {
-    console.log("emoji-clock isn't a link element...");
-    return;
-  }
-  generateIcon(link);
-  // update every 15minutes
-  setTimeout(generateIcon, 1000 * 60 * 15, link);
-}
-
 /**
  * Sets the icon link to the emoji clock
  * @param {HTMLLinkElement} link
@@ -64,6 +49,21 @@ function generateIcon(link) {
   svg.appendChild(t1);
 
   link.href = "data:image/svg+xml," + svg.outerHTML.replace(/"/gi, "%22");
+}
+
+function initEmojiClock() {
+  const link = document.getElementById("emoji-clock");
+  if (link === null) {
+    console.log("emoji-clock link doesn't exist...");
+    return;
+  }
+  if (!(link instanceof HTMLLinkElement)) {
+    console.log("emoji-clock isn't a link element...");
+    return;
+  }
+  generateIcon(link);
+  // update every 15minutes
+  setTimeout(generateIcon, 1000 * 60 * 15, link);
 }
 
 /**
@@ -100,21 +100,6 @@ const adjustColorMode = function (now) {
 };
 
 /**
- * Add a greeting and adjust the color palette
- * @param {HTMLElement} greeting
- * @param {number} now - Hour of day
- */
-const updateUI = function (greeting, now) {
-  // Set the greeting
-  greeting.textContent = getGreeting(now);
-
-  // Update color palette
-  adjustColorMode(now);
-};
-
-window.addEventListener("DOMContentLoaded", initEmojiClock);
-
-/**
  * @returns {HTMLElement}
  */
 const getGreetingElement = () => {
@@ -126,16 +111,37 @@ const getGreetingElement = () => {
   return greeting;
 };
 
-window.addEventListener("DOMContentLoaded", function () {
+function initGreeting() {
   const greeting = getGreetingElement();
   let now = new Date().getHours();
 
-  // Update the UI on page load
-  window.requestAnimationFrame(() => updateUI(greeting, now));
+  // Update Greeting on page load
+  window.requestAnimationFrame(() => {
+    greeting.textContent = getGreeting(now);
+  });
 
   // Check again every 15 minutes
   setInterval(function () {
     let now = new Date().getHours();
-    updateUI(greeting, now);
+    window.requestAnimationFrame(() => {
+      greeting.textContent = getGreeting(now);
+    });
   }, 1000 * 60 * 15);
-});
+}
+
+function initTheme() {
+  let now = new Date().getHours();
+
+  // Update the Theme before page load
+  window.requestAnimationFrame(() => adjustColorMode(now));
+
+  // Check again every 15 minutes
+  setInterval(function () {
+    let now = new Date().getHours();
+    window.requestAnimationFrame(() => adjustColorMode(now));
+  }, 1000 * 60 * 15);
+}
+
+window.addEventListener("DOMContentLoaded", initEmojiClock);
+window.addEventListener("DOMContentLoaded", initGreeting);
+initTheme();

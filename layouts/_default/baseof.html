@@ -69,12 +69,15 @@
       />
     {{ end }}
     <meta name="twitter:image" content="https://jasik.xyz/og-image.png" />
-    {{/* End Twitter Meta Tags */}}
+    {{/* END Twitter Meta Tags */}}
+    {{/* BEGIN RSS */}}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `
       <link rel="%s" type="%s" href="%s" title="%s" />
       ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
+    {{/* END RSS */}}
+    {{/* BEGIN CSS */}}
     {{ if not (eq (now.UTC.Format "01-02") "04-09") }}
       {{ if .Page.Params.isMath }}
         <link
@@ -83,37 +86,38 @@
           integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq"
           crossorigin="anonymous"
         />
-
-        {{ $katexJS := resources.Get "js/katex.js" | js.Build | minify | fingerprint "sha384" }}
-        <script defer src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
       {{ end }}
       {{ if .Site.IsServer }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" | fingerprint "sha384" }}
-        <link rel="stylesheet" href="{{ $syntaxCSS.Permalink }}" />
-        {{ $siteCSS := resources.Get "css/site.css" | fingerprint }}
-        <link rel="stylesheet" href="{{ $siteCSS.Permalink }}" />
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" }}
+        {{ $siteCSS := resources.Get "css/site.css" }}
+        {{ $bundleCSS := slice $syntaxCSS $siteCSS | resources.Concat "css/bundle.css" }}
+        <link rel="stylesheet" href="{{ $bundleCSS.Permalink }}" />
         {{ else }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" | minify | fingerprint "sha384" }}
+        {{ $syntaxCSS := resources.Get  "css/syntax.css" }}
+        {{ $siteCSS := resources.Get "css/site.css" }}
+        {{ $bundleCSS := slice $syntaxCSS $siteCSS | resources.Concat "css/bundle.css" | minify | fingerprint "sha384" }}
         <link
           rel="stylesheet"
-          href="{{ $syntaxCSS.Permalink }}"
-          integrity="{{ $syntaxCSS.Data.Integrity }}"
-        />
-        {{ $siteCSS := resources.Get "css/site.css" | minify | fingerprint "sha384" }}
-        <link
-          rel="stylesheet"
-          href="{{ $siteCSS.Permalink }}"
-          integrity="{{ $siteCSS.Data.Integrity }}"
+          href="{{ $bundleCSS.Permalink }}"
+          integrity="{{ $bundleCSS.Data.Integrity }}"
         />
       {{ end }}
     {{ end }}
-    {{ if .Site.IsServer }}
-      {{ $siteJS := resources.Get "js/site.js" | fingerprint "sha384" }}
-      <script defer src="{{ $siteJS.Permalink }}" ></script>
-      {{ else }}
-      {{ $siteJS := resources.Get "js/site.js" | minify | fingerprint "sha384" }}
-      <script defer src="{{ $siteJS.Permalink }}" integrity="{{ $siteJS.Data.Integrity }}"></script>
+    {{/* END CSS */}}
+    {{/* BEGIN JS */}}
+    {{ if .Page.Params.isMath }}
+      {{ $katexJS := resources.Get "js/katex.js" | js.Build | minify | fingerprint "sha384" }}
+      <script defer src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
     {{ end }}
+    {{/* We load the theme blocking so that there is no flash of wrong theme */}}
+    {{ if .Site.IsServer }}
+      {{ $themeJS := resources.Get "js/theme.js" }}
+      <script src="{{ $themeJS.Permalink }}"></script>
+      {{ else }}
+      {{ $themeJS := resources.Get "js/theme.js" | minify | fingerprint "sha384" }}
+      <script src="{{ $themeJS.Permalink }}" integrity="{{ $themeJS.Data.Integrity }}"></script>
+    {{ end }}
+    {{/* END JS */}}
   </head>
 
   <body>
