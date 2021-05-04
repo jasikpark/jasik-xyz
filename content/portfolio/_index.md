@@ -1,5 +1,5 @@
 +++
-Title = "Portfolio"
+Title = "Caleb Jasik /portfolio"
 Description = "Work History and Projects that I've worked on."
 Type = "standalone"
 +++
@@ -24,7 +24,7 @@ A single-page app for a lo-fi radio business, giving their listeners a more enjo
 {{< figure >}}
 {{< iframe-with-chrome src="kinlu.com.png" src-iphone="kinlu.com.iphone.png" is-image=true alt="Kinlu homepage" >}}
 {{% figcaption %}}
-Worked with a team of designers and copy editors to take a website design from wireframe to production Wordpress site. I added copy text and implemented page designs from the client's designers.
+Worked with a team of designers and copy editors to take a website design from wireframe to production WordPress site. I added copy text and implemented page designs from the client's designers.
 {{% /figcaption %}}
 {{< /figure >}}
 
