@@ -87,13 +87,13 @@ const adjustColorMode = function (now) {
   document.documentElement.classList.remove("transitional");
   document.documentElement.classList.remove("night");
 
-  // If it's nighttime, go dark mode
+  // If it's nighttime, go dark mode (8pm to 4am)
   if (now > 20 || now < 4) {
     document.documentElement.classList.add("night");
     return;
   }
 
-  // If it's morning or evening, go transitional
+  // If it's morning or evening, go transitional (4am to 11am and 5pm to 8pm)
   if (now > 17 || now < 11) {
     document.documentElement.classList.add("transitional");
   }
