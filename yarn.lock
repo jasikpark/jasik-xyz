@@ -2274,26 +2274,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:4.10.1":
-  version: 4.10.1
-  resolution: "html-validate@npm:4.10.1"
+"html-validate@npm:4.11.0":
+  version: 4.11.0
+  resolution: "html-validate@npm:4.11.0"
   dependencies:
     "@babel/code-frame": ^7.10.0
     "@html-validate/stylish": ^1.0.0
     "@sidvind/better-ajv-errors": ^0.8.0
     acorn-walk: ^8.0.0
     ajv: ^7.0.0
-    chalk: ^4.0.0
     deepmerge: ^4.2.0
     espree: ^7.3.0
     glob: ^7.1.0
     ignore: ^5.0.0
     json-merge-patch: ^1.0.0
+    kleur: ^4.1.0
     minimist: ^1.2.0
     prompts: ^2.0.0
   bin:
     html-validate: bin/html-validate.js
-  checksum: 354f79257b1270c1d88762a0e127bea0b8445cb93c8e849fd89a650c9cbfbbb3c83d42432d350de594cb56309e59e0efdd1e84a76b87634cd727855dea52eaeb
+  checksum: 8aeb5d0a0eb25985ccf3e4a304e6964293402bb5c1dd36980b08f38c59549e603963d63f86ab055a2652d7c7382e2bc6863ebee6590cbfc5fc5e5c73ceec16b4
   languageName: node
   linkType: hard
 
@@ -2720,7 +2720,7 @@ __metadata:
     eslint: 7.26.0
     eslint-config-prettier: 8.3.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 4.10.1
+    html-validate: 4.11.0
     katex: 0.13.5
     npm-run-all: 4.1.5
     prettier: 2.2.1
@@ -2900,7 +2900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kleur@npm:^4.0.0":
+"kleur@npm:^4.0.0, kleur@npm:^4.1.0":
   version: 4.1.4
   resolution: "kleur@npm:4.1.4"
   checksum: 18e52c52a0138448dea0137d09ace853e096f1bbc32b99d8781254258b892214718f5f7c2bc25f25d5fb84b4086bca465a4c0b7562e27ae3a25116f77ea6436f
