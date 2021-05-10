@@ -7,8 +7,10 @@ HUGO_ENV = "production"
 HUGO_VERSION = "0.81.0"
 
 [dev]
-command = "hugo server --cleanDestinationDir --disableFastRender"
-autoLaunch = false
+command = "hugo server --baseUrl='http://localhost:8888' --appendPort=false --cleanDestinationDir --disableFastRender"
+framework = "#custom"
+port = 8888
+targetPort = 1313
 
 [context.branch-deploy]
 command = "hugo --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
