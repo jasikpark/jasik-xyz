@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "broken-link-checker": "0.7.8",
-    "katex": "0.13.9"
+    "katex": "0.13.10"
   },
   "devDependencies": {
     "@types/katex": "0.11.0",
