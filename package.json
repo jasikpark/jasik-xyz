@@ -11,7 +11,7 @@
     "fix": "run-s fix:eslint fix:prettier",
     "fix:eslint": "yarn lint:eslint --fix",
     "fix:prettier": "yarn lint:prettier --write",
-    "lint": "run-p 'lint:*'",
+    "lint": "run-p --aggregate-output lint:eslint lint:html-validate lint:prettier lint:spellcheck lint:typecheck",
     "lint:eslint": "cross-env EFF_NO_LINK_RULES=true eslint . --format friendly",
     "lint:html-validate": "yarn build && html-validate public/",
     "lint:linkcheck": "blc https://jasik.xyz -ro --exclude codepen.io --exclude github.com --exclude twitter.com --exclude '/www/' --exclude 'https://secrethitler.io' --exclude 'https://www.reddit.com/r/IoGames/' --exclude 'https://www.kickstarter.com/projects/magicpuzzlecompany/magic-puzzles' --exclude 'https://ko-fi.com/calebjasik'",
