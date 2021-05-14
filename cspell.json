@@ -16,6 +16,7 @@
         "**/node_modules/**",
         "./yarn/",
         "**/yarn.lock",
+        "package.json",
         "{coverage,dist,.cache,.git,.vscode,.DS_Store,tests}/**/*",
         "*.{log,svg,snap,png,jpg,pdf,otf,ttf,JPG,PNG,SVG}",
         "resources/**",
