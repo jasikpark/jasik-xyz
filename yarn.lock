@@ -495,9 +495,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 15.0.1
-  resolution: "@types/node@npm:15.0.1"
-  checksum: 4e4fb69394efb224272ad7c6b6dc16a381b97e46a8f3c21d33fec51ef13a4d635f571b446d127eae333ea6a763f304b787f4b3f73e24e1f3b05a21b481900dfb
+  version: 15.3.0
+  resolution: "@types/node@npm:15.3.0"
+  checksum: 44039665ab71a6ec12e6637a9db4ec3123fdfaf52952ca8028a6f1b37c41c2d380e88d28a41e02693bf9d4815307e0ad938815bf8ffedc5f4d045855fa28db06
   languageName: node
   linkType: hard
 
@@ -2329,9 +2329,9 @@ __metadata:
   linkType: hard
 
 "humanize-duration@npm:^3.9.1":
-  version: 3.25.2
-  resolution: "humanize-duration@npm:3.25.2"
-  checksum: 2921afdc131b515dd989f4040141254f08e5325ecaba5885de646bb20daeb4263e823f6225f079ba57a1c4ed1410119fe3e0cc85b10d3be4c781d5f1d8eff1f8
+  version: 3.26.0
+  resolution: "humanize-duration@npm:3.26.0"
+  checksum: 65a89498f80e186f90e4107215b95461956310b3952aa4a3775733a7de0a0fe6fd2e18e656c99d79b42ad1bee5ef11ce4eb1c432a39bd0aecc5184b8979d42d0
   languageName: node
   linkType: hard
 
@@ -2611,7 +2611,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-string@npm:^1.0.4, is-string@npm:^1.0.5":
+"is-string@npm:^1.0.4":
+  version: 1.0.6
+  resolution: "is-string@npm:1.0.6"
+  checksum: 5eb4860eafb9bfd4d9adf56bd530ca0e0cabade776df1e9394e5ca9376bdd6fa0a99879c2b0c3a517076fa31ac739821c2956be6d30ee1458f50ca24a4962478
+  languageName: node
+  linkType: hard
+
+"is-string@npm:^1.0.5":
   version: 1.0.5
   resolution: "is-string@npm:1.0.5"
   checksum: c64c791eb75935db9055291bc598edc22f03d3879b8a050b2955ba8087642d006338a1dedf7ac414c95f985c77c2d6fce655498d33c0df248fa92228a9945720
