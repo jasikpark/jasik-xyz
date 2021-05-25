@@ -12,7 +12,16 @@ Something that has been troubling me for a while is attempting to take a PNG wit
 
 I found this while doing my regular scour of the internet when I'm confused about something like the CSS [`filter`](https://css-tricks.com/almanac/properties/f/filter/) property, and it's beautiful ✨.
 
-I needed to color the headphone boi in [2021-02-18-164700]({{< relref "2021-02-18-164700" >}}), and I had messed around with `filter: invert()` and such while trying to help [Addison Crump](https://addisoncrump.info) with [his Latex graph diagram displaying on dark mode](https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/){{< raw-wayback href="https://web.archive.org/web/20210219045717/https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/" title="Mixed Flow Graph" >}}. We had tried various options, such as a simple
+I needed to color the [headphone boi]({{< relref "2021-02-18-164700" >}}), and I had messed around with `filter: invert()` and such while trying to help [Addison Crump](https://addisoncrump.info) with [his LaTeX graph diagram displaying on dark mode](https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/){{< raw-wayback href="https://web.archive.org/web/20210219045717/https://addisoncrump.info/academia/tamu/schadenfreude/theory/mixed-flow-graph/" title="Mixed Flow Graph" >}}.
+
+{{< figure >}}
+{{< img src="headphone-boi.png" alt="a headphone boi" class="filter-image" width="800" height="600" >}}
+{{< figcaption >}}
+headphone boi
+{{< /figcaption >}}
+{{< /figure >}}
+
+We had tried various options, such as a simple
 
 ```css
 .diagram {

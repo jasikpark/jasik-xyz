@@ -4,7 +4,7 @@ Date = "2021-02-18T16:47:00-06:00"
 +++
 
 {{< figure >}}
-{{< img src="headphone-boi.png" alt="a headphone boi" class="night:filter-yellowify" width="800" height="600" >}}
+{{< img src="headphone-boi.png" alt="a headphone boi" class="filter-image" width="800" height="600" >}}
 {{< figcaption >}}
 headphone boi
 {{< /figcaption >}}
