@@ -27,7 +27,7 @@
           d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"
         ></path>
       </svg>
-      {{ else }}
+    {{ else }}
       <button type="button" class="px-0 mx-3 reset-button">Home</button>
     {{ end }}
   </div>
@@ -40,7 +40,7 @@
         class="max-h-content"
       />
     </picture>
-    {{ else }}
+  {{ else }}
     <div class="aspect-w-375 aspect-h-667 sm:aspect-w-16 sm:aspect-h-9">
       <iframe
         class="w-full h-full rounded-b-lg border-none"
@@ -53,4 +53,8 @@
   {{ end }}
 </div>
 {{ $iframeWithChromeJS := resources.Get "/js/iframe-with-chrome.js" | minify | fingerprint }}
-<script type="module" src="{{ $iframeWithChromeJS.Permalink }}" integrity="{{ $iframeWithChromeJS.Data.Integrity }}"></script>
+<script
+  type="module"
+  src="{{ $iframeWithChromeJS.Permalink }}"
+  integrity="{{ $iframeWithChromeJS.Data.Integrity }}"
+></script>

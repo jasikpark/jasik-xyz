@@ -1,35 +1,38 @@
-{{ define "title" }}
-{{ .Title }} | {{ .Site.Title }}
-{{ end }}
-
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "header" }}
-<header>
-  <h1>
-    <a href="{{ .Permalink }}">
-      {{ .Title }}
-    </a>
-  </h1>
-</header>
-{{ partial "css-day" }}
+  <header>
+    <h1>
+      <a href="{{ .Permalink }}"> {{ .Title }} </a>
+    </h1>
+  </header>
+  {{ partial "css-day" }}
 {{ end }}
-
 {{ define "main" }}
-<main id="main">
-  {{ block "header" . }}{{ end }}
-  {{ range sort .RegularPages ".PublishDate" "desc" }}
-  <article class="-mx-4 h-entry">
-    <a href="{{ .Permalink }}" title="{{ .Title }}" class="u-url">
-      <figure class="e-content p-name">
-        <img {{ with .Resources }} {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
-          src="{{ .Permalink }}" {{ end }} {{ end }} {{ with .Params.ImgAlt }}alt="{{ . }}" {{ end }}
-          {{ with .Params.ImgTitle }}title="{{ . }}" {{ end }} />
-        <figcaption>
-          {{ with .Params.FigCaption }}<p>{{ . }}</p>{{ else }}
-          {{ with .Params.ImgTitle }}<p>{{ . }}</p>{{ end }}{{ end }}
-        </figcaption>
-      </figure>
-    </a>
-  </article>
-  {{ end }}
-</main>
+  <main id="main">
+    {{ block "header" . }}{{ end }}
+    {{ range sort .RegularPages ".PublishDate" "desc" }}
+      <article class="-mx-4 h-entry">
+        <a href="{{ .Permalink }}" title="{{ .Title }}" class="u-url">
+          <figure class="e-content p-name">
+            <img
+              {{ with .Resources }}
+                {{ with .GetMatch "{*.*,*.jpg,*.png,*.jpeg,*.JPG,*.PNG,*.JPEG}" }}
+                  src="{{ .Permalink }}"
+                {{ end }}
+              {{ end }}
+              {{ with .Params.ImgAlt }}alt="{{ . }}"{{ end }}
+              {{ with .Params.ImgTitle }}title="{{ . }}"{{ end }}
+            />
+            <figcaption>
+              {{ with .Params.FigCaption }}
+                <p>{{ . }}</p>
+              {{ else }}
+                {{ with .Params.ImgTitle }}<p>{{ . }}</p>{{ end }}
+              {{ end }}
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+    {{ end }}
+  </main>
 {{ end }}
