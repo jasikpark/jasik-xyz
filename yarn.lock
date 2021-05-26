@@ -622,15 +622,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"angular-html-parser@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "angular-html-parser@npm:1.8.0"
-  dependencies:
-    tslib: ^1.9.3
-  checksum: 3f47a630500f76dcc36aded0d672da3de1de29e262c7bea06041d86653d00e36c1c1f133211095030e730ed9c4f0fe3415db2f2152e7135be963fd39908d69d6
-  languageName: node
-  linkType: hard
-
 "ansi-colors@npm:^4.1.1":
   version: 4.1.1
   resolution: "ansi-colors@npm:4.1.1"
@@ -2758,7 +2749,7 @@ __metadata:
     katex: 0.13.11
     npm-run-all: 4.1.5
     prettier: 2.3.0
-    prettier-plugin-go-template: 0.0.11-beta.6
+    prettier-plugin-go-template: 0.0.11-beta.7
     prettier-plugin-package: 1.3.0
     prettier-plugin-x: 0.0.6
     typescript: 4.3.2
@@ -3604,14 +3595,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-go-template@npm:0.0.11-beta.6":
-  version: 0.0.11-beta.6
-  resolution: "prettier-plugin-go-template@npm:0.0.11-beta.6"
+"prettier-plugin-go-template@npm:0.0.11-beta.7":
+  version: 0.0.11-beta.7
+  resolution: "prettier-plugin-go-template@npm:0.0.11-beta.7"
   dependencies:
-    angular-html-parser: ^1.8.0
+    ulid: ^2.3.0
   peerDependencies:
     prettier: ^2.0.0
-  checksum: 11df2a16817884e1062057f024bd4233cb17d135ea13ab088f963d5115820d817b36b155fa6b45a70f5453007cfb177bf4cb8bec294811552c3b92a3c55ddc80
+  checksum: ef52a67c8ad72ae5f76c2f561fe46bf755adac57ffc11a40c29253bc3526617276391ed6e97b9d9515655429b6f5cea07358512a80c5e8c70211c80b8454616f
   languageName: node
   linkType: hard
 
@@ -4711,6 +4702,15 @@ typescript@4.3.2:
   bin:
     uglifyjs: bin/uglifyjs
   checksum: 716b6c98b41dc3465fffdc4704dd5b50bb3f4e082f79aec83e0bf60cf95cf82fe74c435456e5c761590286b16edced7be707eded8850d94a3b292760a90eb51d
+  languageName: node
+  linkType: hard
+
+"ulid@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "ulid@npm:2.3.0"
+  bin:
+    ulid: ./bin/cli.js
+  checksum: d6dbf253fdc189f60fe2829d934ee5447b3dab62d05449a2e0fe89670d77087dd6eba4f844a69f9ffdb01384ec6fd97bdd9be638fc67d593569a45e8969f1e69
   languageName: node
   linkType: hard
 
