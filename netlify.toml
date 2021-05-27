@@ -29,6 +29,14 @@ from = "/donate/"
 to = "https://ko-fi.com/calebjasik/"
 
 [[redirects]]
+from = "/reading"
+to = "https://beta.readng.co/user/calebjasik"
+
+[[redirects]]
+from = "/listening"
+to = "https://www.last.fm/user/calebjasik"
+
+[[redirects]]
 from = "/resume"
 to = "/caleb-jasik-resume.pdf"
 
