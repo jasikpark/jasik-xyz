@@ -1,48 +1,26 @@
 {{ define "header" }}
-  <div class="limit pt-4 h-card">
-    Hi 👋 I'm
-    <a class="u-url p-name" rel="me" href="https://jasik.xyz/">Caleb Jasik</a>.
-    <p class="p-note my-0">
+  <section class="subheading limit h-card py-8">
+    <!-- <img
+      src="/caleb-jasik-profile.jpg"
+      alt="profile of Caleb Jasik"
+      title="✌️"
+    />
+    -->
+    <div
+      style="background-image:url('/caleb-jasik-profile.jpg');background-size:cover;background-position:center bottom;background-repeat: no-repeat;"
+    ></div>
+    <p>
+      Hi 👋 I'm
+      <a class="u-url p-name" rel="me" href="https://jasik.xyz/">Caleb Jasik</a
+      >.
+    </p>
+    <p>
+      If you're looking for my contact info you can email me
+      <a class="u-email" href="mailto:calebjasik@jasik.xyz">here</a>
+    </p>
+    <p class="p-note">
       I am currently looking for clients for freelance web development!
     </p>
-    If you're looking for my contact info you can email me
-    <a class="u-email" href="mailto:calebjasik@jasik.xyz">here</a>
-    <br />
-    <ul class="my-4 grid grid-auto">
-      <li>
-        <a href="{{ "/resume" | absURL }}">/resume</a>
-      </li>
-      <li>
-        <a href="{{ "/portfolio" | absURL }}">/portfolio</a>
-      </li>
-    </ul>
-  </div>
-  <p class="mb-0">You can find me at:</p>
-  <ul class="py-1 mb-4 grid grid-auto">
-    <li>
-      <a href="https://keybase.io/jasikpark" rel="me">keybase/jasikpark</a>
-    </li>
-    <li>
-      <a href="https://twitter.com/calebjasik" rel="me">twitter/calebjasik</a>
-    </li>
-    <li>
-      <a href="https://mastodon.social/@calebjasik" rel="me"
-        >mastodon/calebjasik</a
-      >
-    </li>
-    <li>
-      <a href="https://github.com/jasikpark" rel="me">github/jasikpark</a>
-    </li>
-    <li>
-      <a href="https://ko-fi.com/calebjasik" rel="me payment"
-        >ko-fi/calebjasik</a
-      >
-    </li>
-    <li>
-      <a href="https://venmo.com/calebjasik" rel="me payment"
-        >venmo/calebjasik</a
-      >
-    </li>
-  </ul>
+  </section>
   {{ partial "css-day" }}
 {{ end }}
