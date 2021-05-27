@@ -108,6 +108,34 @@ img {
   font-feature-settings: "onum", "ss02";
 }
 
+.articles li:nth-child(2n) {
+  transform: translateX(0.12rem);
+}
+
+.articles li:nth-child(2n + 1) {
+  transform: translateX(-0.05rem);
+}
+
+.articles li:nth-child(3n + 1) {
+  transform: translateX(-0.11rem);
+}
+
+.articles li:nth-child(5n + 1) {
+  transform: translateX(0.14rem);
+}
+
+.articles li:nth-child(7n + 1) {
+  transform: translateX(0.11rem);
+}
+
+.articles li:nth-child(11n + 1) {
+  transform: translateX(-0.05rem);
+}
+
+.articles li:nth-child(13n + 1) {
+  transform: translateX(0.04rem);
+}
+
 h1,
 h2,
 h3,
@@ -392,6 +420,15 @@ img:not([alt]) {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .mb-0 {
