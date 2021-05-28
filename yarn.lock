@@ -465,18 +465,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sidvind/better-ajv-errors@npm:^0.8.0":
-  version: 0.8.0
-  resolution: "@sidvind/better-ajv-errors@npm:0.8.0"
+"@sidvind/better-ajv-errors@npm:^0.9.0":
+  version: 0.9.0
+  resolution: "@sidvind/better-ajv-errors@npm:0.9.0"
   dependencies:
     "@babel/code-frame": ^7.0.0
     chalk: ^4.0.0
     json-to-ast: ^2.0.3
-    jsonpointer: ^4.0.1
+    jsonpointer: ^4.1.0
     leven: ^3.1.0
   peerDependencies:
-    ajv: 4.11.8 - 7
-  checksum: 6f43887ca166c4345b62a51c9d196b2d4bc85ef09420f187e2b2517e3405b306aeea723f93b1c286784fd6acf13c668d50e58f7d7938119765125604e50fd863
+    ajv: 4.11.8 - 8
+  checksum: 93e374867643d49c4d790c2e66a041c9c9bf541f69d1d4ae8b54521e2c3b4a34183171340f040ddd2ef26395f160b7864a04086b585b1548c388c6dec98ecde2
   languageName: node
   linkType: hard
 
@@ -2448,13 +2448,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:4.12.0":
-  version: 4.12.0
-  resolution: "html-validate@npm:4.12.0"
+"html-validate@npm:4.13.1":
+  version: 4.13.1
+  resolution: "html-validate@npm:4.13.1"
   dependencies:
     "@babel/code-frame": ^7.10.0
     "@html-validate/stylish": ^1.0.0
-    "@sidvind/better-ajv-errors": ^0.8.0
+    "@sidvind/better-ajv-errors": ^0.9.0
     acorn-walk: ^8.0.0
     ajv: ^7.0.0
     deepmerge: ^4.2.0
@@ -2465,9 +2465,14 @@ __metadata:
     kleur: ^4.1.0
     minimist: ^1.2.0
     prompts: ^2.0.0
+  peerDependencies:
+    jest: ^24 || ^25 || ^26 || ^27
+  peerDependenciesMeta:
+    jest:
+      optional: true
   bin:
     html-validate: bin/html-validate.js
-  checksum: 6e050ab19c30b3be209b6c1e002a450dad7f133302df72fd68162ebbc88db7c60983d6a787c8afa72c2ae00124f75699e7bade0d4aee6a44511c3d505996467c
+  checksum: ee2102995827ce53954668ef73ccf00c5f9998017d0d17ab931b834280961f66ee3216b75a74fd829e5c44840b159495627f2bda286ff79e8834ffa30f292431
   languageName: node
   linkType: hard
 
@@ -2943,7 +2948,7 @@ __metadata:
     eslint: 7.27.0
     eslint-config-prettier: 8.3.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 4.12.0
+    html-validate: 4.13.1
     husky: 6.0.0
     katex: 0.13.11
     npm-run-all: 4.1.5
@@ -3088,7 +3093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonpointer@npm:^4.0.1":
+"jsonpointer@npm:^4.1.0":
   version: 4.1.0
   resolution: "jsonpointer@npm:4.1.0"
   checksum: ffc3e8937380989934676b339718d3213ecf5f6b7ce637b1ce5669a22f45dc61a86463e28abbe8c743d62f87ae790253c50cce0f586cb8e7623a21a7f811a444
