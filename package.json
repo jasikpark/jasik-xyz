@@ -18,7 +18,8 @@
     "lint:prettier": "prettier .  --check",
     "lint:spellcheck": "cspell lint --unique --no-progress \"**/*\" \".github/**/*\"",
     "lint:typecheck": "tsc -p jsconfig.json",
-    "server": "hugo server --disableFastRender --cleanDestinationDir --gc",
+    "server": "hugo server --disableFastRender --gc",
+    "server:gitpod": "yarn server -b https://1313-yellow-marlin-lf8pzd2v.ws-us08.gitpod.io/ --appendPort=false",
     "start": "run-p server tlapse",
     "tlapse": "tlapse localhost:1313"
   },
