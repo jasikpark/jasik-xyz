@@ -43,6 +43,7 @@ html {
   --link-visited: hsl(277, 87.1%, 30.4%);
   --pre-border: hsl(240, 100%, 46.7%);
   --svg-filter: " ";
+  --quote-border: 0, 0%, 0%;
 }
 
 .night {
@@ -54,6 +55,7 @@ html {
   --pre-border: hsl(var(--link-base), 50%);
   --svg-filter: invert(59%) sepia(100%) saturate(527%) hue-rotate(11deg)
     brightness(94%) contrast(101%);
+  --quote-border: 0, 0%, 100%;
 }
 
 .transitional {
@@ -64,6 +66,7 @@ html {
   --link-visited: hsl(var(--link-base), 40%);
   --pre-border: hsl(var(--link-base), 50%);
   --svg-filter: " ";
+  --quote-border: 272, 80%, 30%;
 }
 
 body {
@@ -234,12 +237,8 @@ iframe {
 }
 
 blockquote {
-  border-left: 0.25rem rgba(0, 0, 0, 0.17) solid;
+  border-left: 0.25rem hsla(var(--quote-border), 0.17) solid;
   padding-left: 0.5rem;
-}
-
-.night body blockquote {
-  border-color: rgba(255, 255, 255, 0.17);
 }
 
 h1 {
