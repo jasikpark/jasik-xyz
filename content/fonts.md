@@ -24,3 +24,7 @@ Font books I might read **someday**: <https://medium.design/whitespace-8b92273ab
 - [Nepsza Badsag](https://bboxtype.com/typefaces/FFF_NEPSZA_BADSAG/#!layout=specimen) is also quite interesting as a serif display font from the same site ([Fonts for Freedom](https://fonts-for-freedom.com/en/)).
 - [Guendem](https://bboxtype.com/typefaces/FFF_Guendem/#!layout=specimen) is another FFF display font that really vibes with
 - [Source Serif](https://adobe-fonts.github.io/source-serif/) seems like a great option for an alternative to Georgia for me that's free and opensource
+
+## Font Choice for <https://jasik.xyz>
+
+I really like the combo of [Addington](https://connary.com/addington.html) and [Input Serif](https://input.djr.com/) -- you can check the demo out at <https://addington--jasik-xyz.netlify.app>, though you won't see much since It's loading the local fonts I have on my laptop. If you download the [demo of Addington](https://connary.com/_assets/fontdemos/Demo-Addington%20CF.zip) and the [private (free) version of Input Serif](https://input.djr.com/download/), you're golden.
