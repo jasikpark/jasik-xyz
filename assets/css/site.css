@@ -43,6 +43,7 @@
 :root {
   --max-width: 36rem;
   --serif: "Addington", Georgia, serif;
+  --code: "Input Serif", mono;
   --font-small: 0.8rem;
   --font-med: 0.9rem;
   --font-large: 1.1rem;
@@ -252,6 +253,11 @@ pre {
   pre {
     white-space: pre;
   }
+}
+
+code {
+  font-family: var(--code);
+  font-size: var(--font-small);
 }
 
 pre code {
