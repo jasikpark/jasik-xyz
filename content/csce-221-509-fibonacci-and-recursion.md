@@ -103,7 +103,7 @@ This is called dynamic programming, when we save data that is frequently used.
 
 How can we do better?
 
-## Closed form of F(n)
+## Closed form of \\(F(n)\\)
 
 \\\(F(n) = \frac{(golden\ ratio)^n - (golden\ ratio\ conjugate)^n}{\sqrt{5}}\\\)
 
