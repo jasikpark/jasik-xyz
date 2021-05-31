@@ -40,10 +40,17 @@
   src: local("FONTSPRING DEMO - Addington CF Demi Bold Italic");
 }
 
+@font-face {
+  font-family: Cartograph;
+  font-style: regular;
+  font-weight: 400;
+  src: local("FONTSPRING DEMO - Cartograph CF");
+}
+
 :root {
   --max-width: 36rem;
   --serif: "Addington", Georgia, serif;
-  --code: "Input Serif", mono;
+  --code: "Cartograph", "Input Serif", mono;
   --font-small: 0.8rem;
   --font-med: 0.9rem;
   --font-large: 1.1rem;
