@@ -163,3 +163,5 @@ repos
 californong
 Favicons
 tabindex
+Marcotte
+Aquent
