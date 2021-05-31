@@ -106,19 +106,19 @@
     {{/* END CSS */}}
     {{/* BEGIN JS */}}
     {{ if .Page.Params.isMath }}
-      {{ $katexJS := resources.Get "js/katex.js" | js.Build | minify | fingerprint "sha384" }}
+      {{ $katexJS := resources.Get "js/katex.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}
       <script defer src="{{ $katexJS.Permalink }}" integrity="{{ $katexJS.Data.Integrity }}"></script>
     {{ end }}
     {{/* We load the theme blocking so that there is no flash of wrong theme */}}
     {{ if .Site.IsServer }}
-      {{ $themeJS := resources.Get "js/theme.js" }}
+      {{ $themeJS := resources.Get "js/theme.js" | js.Build  (dict "sourcemap" "inline" ) }}
       <script src="{{ $themeJS.Permalink }}"></script>
-      {{ $siteJS := resources.Get "js/site.js" | js.Build }}
+      {{ $siteJS := resources.Get "js/site.js" | js.Build  (dict "sourcemap" "inline" ) }}
       <script defer src="{{ $siteJS.Permalink }}"></script>
       {{ else }}
-      {{ $themeJS := resources.Get "js/theme.js" | minify | fingerprint "sha384" }}
+      {{ $themeJS := resources.Get "js/theme.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}
       <script src="{{ $themeJS.Permalink }}" integrity="{{ $themeJS.Data.Integrity }}"></script>
-      {{ $siteJS := resources.Get "js/site.js" | js.Build | minify | fingerprint "sha384" }}
+      {{ $siteJS := resources.Get "js/site.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}
       <script defer src="{{ $siteJS.Permalink }}" integrity="{{ $siteJS.Data.Integrity }}"></script>
     {{ end }}
     {{/* END JS */}}
