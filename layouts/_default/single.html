@@ -16,7 +16,7 @@
 <main id="main">
   <article class="h-entry">
     {{ block "header" . }}{{ end }}
-    <div class="e-content {{ if not .Title }}p-name{{ end }}">
+    <div class="articles e-content {{ if not .Title }}p-name{{ end }}">
     {{ .Content }}
     </div>
   </article>
