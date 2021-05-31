@@ -1,6 +1,48 @@
+@font-face {
+  font-family: Addington;
+  font-style: normal;
+  font-weight: 300;
+  src: local("FONTSPRING DEMO - Addington CF Light Regular");
+}
+
+@font-face {
+  font-family: Addington;
+  font-style: italic;
+  font-weight: 300;
+  src: local("FONTSPRING DEMO - Addington CF Light Italic");
+}
+
+@font-face {
+  font-family: Addington;
+  font-style: normal;
+  font-weight: 400;
+  src: local("FONTSPRING DEMO - Addington CF Regular");
+}
+
+@font-face {
+  font-family: Addington;
+  font-style: italic;
+  font-weight: 400;
+  src: local("FONTSPRING DEMO - Addington CF Italic");
+}
+
+@font-face {
+  font-family: Addington;
+  font-style: normal;
+  font-weight: 600;
+  src: local("FONTSPRING DEMO - Addington CF Demi Bold Regular");
+}
+
+@font-face {
+  font-family: Addington;
+  font-style: italic;
+  font-weight: 600;
+  src: local("FONTSPRING DEMO - Addington CF Demi Bold Italic");
+}
+
 :root {
   --max-width: 36rem;
-  --serif: Georgia, serif;
+  --serif: "Addington", Georgia, serif;
   --font-small: 0.8rem;
   --font-med: 0.9rem;
   --font-large: 1.1rem;
@@ -20,7 +62,8 @@ html {
 
 @media (min-width: 800px) {
   html {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 300;
   }
 }
 
