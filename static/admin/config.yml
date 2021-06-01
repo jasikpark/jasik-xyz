@@ -2,5 +2,41 @@ backend:
   name: git-gateway
   branch: main # branch to update; optional defaults to main
 publish_mode: editorial_workflow
-media_folder: "static/uploads"
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+collections:
+  - name: posts
+    label: Posts
+    label_singular: "Post"
+    folder: content/
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: "Title", name: "Title", widget: "string", required: false }
+      - { label: "Date", name: "Date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "PublishDate",
+          widget: "datetime",
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Type", name: "Type", widget: "string", default: "post" }
+      - { label: "Draft", name: "Draft", widget: "boolean", default: true }
+      - { label: "isMath", name: "isMath", widget: "boolean", default: false }
+      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - { label: "Slug", name: "Slug", widget: "string", required: false }
+      - { label: "Tags", name: "Tags", widget: "list", required: false }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          required: false,
+        }
+      - { label: "Body", name: "Body", widget: "markdown" }
