@@ -4,6 +4,7 @@ backend:
   name: git-gateway
   branch: main # branch to update; optional defaults to main
 publish_mode: editorial_workflow
+format: toml-frontmatter
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 collections:
@@ -12,8 +13,12 @@ collections:
     label_singular: "Post"
     folder: content/
     path: "{{slug}}/index"
+    preview_path: "/{{slug}}"
     media_folder: ""
     public_folder: ""
+    filter: { field: "Type", value: "post" }
+    nested:
+      depth: 100 # max depth to show in the collection tree
     fields:
       - { label: "Title", name: "Title", widget: "string", required: false }
       - { label: "Date", name: "Date", widget: "datetime" }
@@ -29,7 +34,13 @@ collections:
           widget: "string",
           required: false,
         }
-      - { label: "Type", name: "Type", widget: "string", default: "post" }
+      - {
+          label: "Type",
+          name: "Type",
+          widget: "select",
+          default: "post",
+          options: ["post", "note", "photo"],
+        }
       - { label: "Draft", name: "Draft", widget: "boolean", default: true }
       - { label: "isMath", name: "isMath", widget: "boolean", default: false }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
@@ -48,4 +59,88 @@ collections:
           label_singular: "Category",
           required: false,
         }
-      - { label: "Body", name: "Body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: notes
+    label: Notes
+    label_singular: "Note"
+    identifier_field: "Date"
+    folder: content/
+    path: "{{ slug }}/index"
+    preview_path: "/{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    filter: { field: "Type", value: "note" }
+    fields:
+      - { label: Title, name: "Title", widget: "string", required: false }
+      - {
+          label: Type,
+          name: "Type",
+          widget: "select",
+          default: note,
+          options: ["post", "note", "photo"],
+        }
+      - { label: "Draft", name: "Draft", widget: "boolean", default: true }
+      - { label: Date, name: "Date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "PublishDate",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - {
+          label: "Tags",
+          name: "Tags",
+          widget: "list",
+          label_singular: "Tag",
+          required: false,
+        }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          label_singular: "Category",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: photos
+    label: Photos
+    label_singular: "Photo"
+    folder: content/photos/
+    path: "{{ slug }}/index"
+    preview_path: "/photos/{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    fields:
+      - { label: Title, name: "Title", widget: "string" }
+      - {
+          label: Type,
+          name: "Type",
+          widget: "select",
+          default: "photo",
+          options: ["post", "note", "photo"],
+        }
+      - { label: "Draft", name: "Draft", widget: "boolean", default: true }
+      - { label: Date, name: "Date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "PublishDate",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - {
+          label: "Tags",
+          name: "Tags",
+          widget: "list",
+          label_singular: "Tag",
+          required: false,
+        }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          label_singular: "Category",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
