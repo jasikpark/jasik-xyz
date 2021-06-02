@@ -1,7 +1,8 @@
 +++
+Slug = "/pay"
 Title = "Pay Caleb Jasik"
 Type = "standalone"
-Slug = "/pay"
+
 +++
 
 Via Venmo:

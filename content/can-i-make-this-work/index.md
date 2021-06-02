@@ -4,6 +4,7 @@ draft = false
 tags = ["written_with_atom"]
 title = "Can I Make This Work?"
 type = "post"
+
 +++
 
 {{< figure >}}

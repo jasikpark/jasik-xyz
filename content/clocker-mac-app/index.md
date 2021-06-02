@@ -1,10 +1,11 @@
 +++
-Title = "I want normal and military time gosh darn it"
+Categories = []
+Date = "2019-04-02T19:19:52-05:00"
 Description = ""
 Tags = []
-Categories = []
+Title = "I want normal and military time gosh darn it"
 Type = "post"
-Date = "2019-04-02T19:19:52-05:00"
+
 +++
 
 I realized that I find military time useful but it's too disorienting for me to

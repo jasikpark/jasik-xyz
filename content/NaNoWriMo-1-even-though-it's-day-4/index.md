@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2016-11-04"
 Description = ""
 Tags = []
-Categories = []
-Type = "post"
-Date = "2016-11-04"
 Title = "NaNoWriMo 1. (even though it's day 4)"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

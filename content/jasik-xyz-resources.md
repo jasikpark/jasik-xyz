@@ -1,10 +1,11 @@
 +++
+Categories = ["Resources"]
+Date = "2019-04-23T19:07:05-05:00"
 Description = ""
 Tags = ["hugo", "resources"]
-Categories = ["Resources"]
-Type = "post"
-Date = "2019-04-23T19:07:05-05:00"
 Title = "Resources used creating jasik.xyz"
+Type = "post"
+
 +++
 
 This page will track info that I've picked up over time about [Hugo](https://gohugo.io)

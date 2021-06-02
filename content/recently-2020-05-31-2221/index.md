@@ -1,7 +1,8 @@
 +++
-Title = "Recently"
 Date = "2020-05-31T22:18:43-05:00"
+Title = "Recently"
 Type = "post"
+
 +++
 
 Inspired by Tom MacWright’s [_Recently_](https://macwright.org/2020/03/01/recently.html) posts, here’s what’s been going on with me!

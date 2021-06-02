@@ -1,6 +1,7 @@
 +++
-Type = "note"
 Date = "2021-02-18T16:47:00-06:00"
+Type = "note"
+
 +++
 
 {{< figure >}}

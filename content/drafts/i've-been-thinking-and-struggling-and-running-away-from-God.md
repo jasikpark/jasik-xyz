@@ -1,11 +1,12 @@
 +++
-Description = ""
-Tags = []
 Categories = []
-Type = "post"
 Date = "2017-11-04"
-Title = "I've been thinking and struggling and running away from God"
+Description = ""
 Draft = "true"
+Tags = []
+Title = "I've been thinking and struggling and running away from God"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

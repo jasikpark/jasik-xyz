@@ -1,6 +1,7 @@
 +++
 Type = "note"
 date = "2020-09-22T01:14:22-05:00"
+
 +++
 
 I finally got my drawing tablet working again, and I've been enjoying this past week of terrible sketches :p.

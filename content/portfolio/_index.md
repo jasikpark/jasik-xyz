@@ -1,7 +1,8 @@
 +++
-Title = "Caleb Jasik /portfolio"
 Description = "Work History and Projects that I've worked on."
+Title = "Caleb Jasik /portfolio"
 Type = "standalone"
+
 +++
 
 > You can find my work history at [/resume]({{< danger-ref href="/resume" >}})

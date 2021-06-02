@@ -1,10 +1,11 @@
 +++
-Description = ""
-Tags = ["transit","transportation"]
 Categories = ["Resources"]
-Type = "post"
 Date = "2019-04-23T17:49:37-05:00"
+Description = ""
+Tags = ["transit", "transportation"]
 Title = "Open Source Transit Software"
+Type = "post"
+
 +++
 
 Here's a list of open source transit software that I have found in my search for information on building a GTFS feed for the TAMU Spirit Bus system. (or the Brazos Transit District bus system.)

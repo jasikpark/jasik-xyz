@@ -1,8 +1,9 @@
 +++
-Title = "Social Distancing Games"
+Categories = ["Resources"]
 Date = "2020-03-18"
 Description = "Here's a list of games that you can play with your friends if you set up a Discord server or even just a group voice call!"
-Categories = ["Resources"]
+Title = "Social Distancing Games"
+
 +++
 
 Here's a list of games that you can play with your friends if you set up a Discord server or even just a group voice call!

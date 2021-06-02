@@ -3,6 +3,7 @@ date = "2018-09-03T11:27:43-05:00"
 tags = ["math", "javascript", "github"]
 title = "How to Add MathJax to Your Hugo Blog"
 type = "post"
+
 +++
 
 N.B. The repository seems to have moved to <https://github.com/theNewDynamic/gohugo-theme-ananke/>, I moved about half of the links to the new url.

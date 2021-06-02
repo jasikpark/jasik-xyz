@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2019-06-28T11:49:41-05:00"
 Description = ""
 Tags = ["tech"]
-Categories = []
-Type = "post"
-Date = "2019-06-28T11:49:41-05:00"
 Title = "Setting Up Percy CI"
+Type = "post"
+
 +++
 
 I finally fixed my [Percy CI](https://percy.io) configuration so that it has the pull request and branch contexts so that it can choose the correct base build to compare screenshots from.

@@ -1,6 +1,7 @@
 +++
-Type = "note"
 Date = "2021-01-15T23:22:27-06:00"
+Type = "note"
+
 +++
 
 <https://components.ai/> is pretty cool!

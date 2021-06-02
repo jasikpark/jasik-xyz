@@ -1,10 +1,11 @@
 +++
+categories = ["Recipes"]
 date = "2018-11-11T19:47:37-06:00"
 draft = false
-title = "Cafe Muse | Grilled Cheese Sandwich"
-categories = ["Recipes"]
 tags = ["recipes"]
+title = "Cafe Muse | Grilled Cheese Sandwich"
 type = "post"
+
 +++
 
 This has been a staple at my house growing up for forever. I initially thought

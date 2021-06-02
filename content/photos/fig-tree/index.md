@@ -1,11 +1,12 @@
 +++
-Description = ""
-Tags = []
 Categories = []
-Type = "photo"
 Date = "2019-10-02T21:12:32-05:00"
-Title = "Fig Tree!"
+Description = ""
 ImgAlt = "pic of fig tree at parent's house"
+Tags = []
+Title = "Fig Tree!"
+Type = "photo"
+
 +++
 
 {{< figure >}}

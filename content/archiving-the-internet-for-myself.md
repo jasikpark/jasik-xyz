@@ -1,7 +1,8 @@
 +++
 Date = "2021-01-11T15:58:31-06:00"
-Type = "post"
 Title = "Archiving the Internet for myself"
+Type = "post"
+
 +++
 
 I would really like to get setup with an archiving setup - I frequently want to find something that I've read previously and duckduckgo/google is only so good - I save useful bookmarks in a very generous way to firefox bookmarks and pinboard w/ archive utility, and I occasionally use the <a href="https://bear.app/faq/Extensions/Browser%20extensions/"

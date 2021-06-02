@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2016-07-28"
 Description = ""
 Tags = ["Neural Networks", "Deep Learning", "Deep Neural Networks"]
-Categories = []
-Type = "post"
-Date = "2016-07-28"
 Title = "MetaNeural Network"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

@@ -1,11 +1,12 @@
 +++
-Description = ""
-Tags = []
 Categories = []
-Type = "post"
 Date = "2018-04-21"
-Title = "Notes on a Graduate Seminar about Detecting Cancerous Tissues with ML"
+Description = ""
 Draft = "true"
+Tags = []
+Title = "Notes on a Graduate Seminar about Detecting Cancerous Tissues with ML"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

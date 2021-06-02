@@ -1,10 +1,11 @@
 +++
-Title = "Adding Grammar and Spelling to Pull Request Checks"
+Categories = []
+Date = "2019-04-15T00:32:24-05:00"
 Description = ""
 Tags = ["git", "travis ci", "github"]
-Categories = []
+Title = "Adding Grammar and Spelling to Pull Request Checks"
 Type = "post"
-Date = "2019-04-15T00:32:24-05:00"
+
 +++
 
 I've been trying to figure out what sort of tests are appropriate for this blog.

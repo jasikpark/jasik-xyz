@@ -1,11 +1,12 @@
 +++
-Description = ""
-Tags = []
 Categories = []
-Type = "post"
 Date = "2018-04-11"
-Title = "My Velvet Rage"
+Description = ""
 Draft = "true"
+Tags = []
+Title = "My Velvet Rage"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

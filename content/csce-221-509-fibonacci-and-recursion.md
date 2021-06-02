@@ -1,9 +1,10 @@
 +++
 date = "2018-11-11T19:36:54-06:00"
 draft = false
+isMath = "true"
 title = "CSCE 221.509 | Fibonacci and Recursion"
 type = "post"
-isMath = "true"
+
 +++
 
 Natural numbers apparently don’t necessarily involve the number zero

@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2016-09-01"
 Description = ""
 Tags = ["Writing"]
-Categories = []
-Type = "post"
-Date = "2016-09-01"
 Title = "Today."
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

@@ -1,11 +1,12 @@
 +++
-Description = ""
-Tags = []
 Categories = []
-Type = "post"
 Date = "2019-12-31T20:30:40-06:00"
+Description = ""
 PublishDate = "2020-01-15T20:13:21-06:00"
+Tags = []
 Title = "Discovering exiftool"
+Type = "post"
+
 +++
 
 So something that I discovered a little bit ago was that I didn't think about removing EXIF data from images, and so I manually used the `view info` dialogue in Windows to remove the private data from the photos.

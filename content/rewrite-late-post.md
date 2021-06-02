@@ -1,7 +1,8 @@
 +++
+Date = "2021-01-07T22:45:14-06:00"
 Title = "2020.05.31.215621 Rewrite 001 (lol I started this then never posted it)"
 Type = "post"
-Date = "2021-01-07T22:45:14-06:00"
+
 +++
 
 > N.B. I totally forgot to finish this post, so I'll just leave it at this.

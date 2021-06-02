@@ -3,6 +3,7 @@ date = "2018-11-13T14:59:33-06:00"
 draft = false
 title = "COMM 325.500 | Advertisement Analysis"
 type = "post"
+
 +++
 
 This is an analysis of the Google commercial [_Android: And Skip_][1] for COMM

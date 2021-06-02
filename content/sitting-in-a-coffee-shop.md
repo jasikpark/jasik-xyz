@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2017-11-02"
 Description = ""
 Tags = []
-Categories = []
-Type = "post"
-Date = "2017-11-02"
 Title = "sitting in a coffee shop, trying to decide: to be or not to be?"
+Type = "post"
+
 +++
 
 _Taken from [medium.com/@jasikpark](https://medium.com/@jasikpark)_

@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2020-02-15T14:18:17-06:00"
 Description = ""
 Tags = []
-Categories = []
-Type = "post"
-Date = "2020-02-15T14:18:17-06:00"
 Title = "Entertainment Ledge: First Drafts"
+Type = "post"
+
 +++
 
 So I've been considering designing a simple ledge for the living room of my roommate and I - we need a place for a water dispenser and it would be nice to have a ledge right for the blu-ray player.

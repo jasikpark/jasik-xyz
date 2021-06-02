@@ -1,7 +1,8 @@
 +++
-Title = "Recently"
 Date = "2020-08-19T02:35:04-05:00"
+Title = "Recently"
 Type = "post"
+
 +++
 
 I have been having an _ok_ time.

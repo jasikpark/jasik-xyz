@@ -1,10 +1,11 @@
 +++
 date = "2018-09-03 03:16:48 +0000"
 draft = false
+isMath = "true"
 tags = ["tamu", "phys221", "classes"]
 title = "PHYS 221.501 | More on Simple Harmonic Motion"
 type = "post"
-isMath = "true"
+
 +++
 
 ## Total mechanical energy is conserved in SHM

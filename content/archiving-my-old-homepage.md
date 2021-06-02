@@ -1,10 +1,11 @@
 +++
+Categories = []
+Date = "2019-04-08T13:02:57-05:00"
 Description = ""
 Tags = ["hugo"]
-Categories = []
-Type = "post"
-Date = "2019-04-08T13:02:57-05:00"
 Title = "Archiving my old index.html page"
+Type = "post"
+
 +++
 
 It took a little bit of effort to achieve because I was unsure how to move it

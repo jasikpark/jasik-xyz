@@ -1,9 +1,10 @@
 +++
+categories = ["Recipes"]
 date = "2019-03-20T16:22:25-05:00"
 draft = false
 title = "Mini Shepherd's Pie"
-categories = ["Recipes"]
 type = "post"
+
 +++
 
 {{< figure >}}

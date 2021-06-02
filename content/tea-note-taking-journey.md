@@ -1,7 +1,8 @@
 +++
+Date = "2021-01-07T18:40:27-06:00"
 Title = "Tea Note-taking Journey 😊"
 Type = "post"
-Date = "2021-01-07T18:40:27-06:00"
+
 +++
 
 ---

@@ -1,9 +1,10 @@
 +++
-Title = "Inverting images in dark mode, many shenanigans, and it's always StackOverflow"
-Description = "Trying to manipulate the color of a PNG using CSS filters and Machine Learning :D"
-Type = "post"
 Date = "2021-02-18T22:46:35-06:00"
+Description = "Trying to manipulate the color of a PNG using CSS filters and Machine Learning :D"
 PublishDate = "2021-02-23T05:00:00-06:00"
+Title = "Inverting images in dark mode, many shenanigans, and it's always StackOverflow"
+Type = "post"
+
 +++
 
 ## The Problem

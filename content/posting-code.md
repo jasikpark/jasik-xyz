@@ -5,6 +5,7 @@ draft = false
 tags = ["cpp"]
 title = "Posting Code"
 type = "post"
+
 +++
 
 Here's a little "Hello World" code snippet to show how C++ highlighting works on
