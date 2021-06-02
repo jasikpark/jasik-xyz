@@ -1,5 +1,5 @@
 +++
-date = "2018-09-03T07:51:02-05:00"
+Date = "2018-09-03T07:51:02-05:00"
 draft = false
 tags = ["twitter", "tamu"]
 title = "A Tweet"

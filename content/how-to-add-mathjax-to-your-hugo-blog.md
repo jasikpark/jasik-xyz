@@ -1,5 +1,5 @@
 +++
-date = "2018-09-03T11:27:43-05:00"
+Date = "2018-09-03T11:27:43-05:00"
 tags = ["math", "javascript", "github"]
 title = "How to Add MathJax to Your Hugo Blog"
 type = "post"

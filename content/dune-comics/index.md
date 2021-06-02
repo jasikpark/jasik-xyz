@@ -1,5 +1,5 @@
 +++
-date = "2018-11-11T19:57:36-06:00"
+Date = "2018-11-11T19:57:36-06:00"
 draft = false
 title = "Dune Comics"
 type = "post"

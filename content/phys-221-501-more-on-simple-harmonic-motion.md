@@ -1,5 +1,5 @@
 +++
-date = "2018-09-03 03:16:48 +0000"
+Date = "2018-09-03 03:16:48 +0000"
 draft = false
 isMath = "true"
 tags = ["tamu", "phys221", "classes"]
