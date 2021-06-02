@@ -1,3 +1,5 @@
+site_url: "https://jasik.xyz"
+logo_url: "https://jasik.xyz/icon.svg"
 backend:
   name: git-gateway
   branch: main # branch to update; optional defaults to main
@@ -32,11 +34,18 @@ collections:
       - { label: "isMath", name: "isMath", widget: "boolean", default: false }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
       - { label: "Slug", name: "Slug", widget: "string", required: false }
-      - { label: "Tags", name: "Tags", widget: "list", required: false }
+      - {
+          label: "Tags",
+          name: "Tags",
+          widget: "list",
+          label_singular: "Tag",
+          required: false,
+        }
       - {
           label: "Categories",
           name: "categories",
           widget: "list",
+          label_singular: "Category",
           required: false,
         }
       - { label: "Body", name: "Body", widget: "markdown" }
