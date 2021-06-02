@@ -10,6 +10,7 @@
       "files": [
         "static/old-index-html/**/*.html",
         "static/www/**/*.html",
+        "static/admin/index.html",
         "static/admin/**/*.html"
       ],
       "options": {

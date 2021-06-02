@@ -5,8 +5,8 @@ backend:
   branch: main # branch to update; optional defaults to main
 publish_mode: editorial_workflow
 format: toml-frontmatter
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 collections:
   - name: posts
     label: Posts
@@ -144,3 +144,14 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "standalone pages"
+    label: Standalone Pages
+    files:
+      - label: "Pay"
+        name: "pay"
+        file: "content/pay/_index.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Slug", name: "Slug", widget: "string" }
+          - { label: "Type", name: "Type", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
