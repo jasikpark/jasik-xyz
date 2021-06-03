@@ -154,4 +154,24 @@ collections:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Slug", name: "Slug", widget: "string" }
           - { label: "Type", name: "Type", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Portfolio"
+        name: "portfolio"
+        file: "content/portfolio/_index.md"
+        fields:
+          - { label: "Title", name: "Title", widget: "string" }
+          - { label: "Slug", name: "Slug", widget: "string" }
+          - { label: "Type", name: "Type", widget: "string" }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              required: false,
+            }
           - { label: "Body", name: "body", widget: "markdown" }
