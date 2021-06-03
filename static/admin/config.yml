@@ -1,5 +1,5 @@
 site_url: "https://jasik.xyz"
-logo_url: "https://jasik.xyz/icon.svg"
+logo_url: "https://jasik.xyz/logo.svg"
 backend:
   name: git-gateway
   branch: main # branch to update; optional defaults to main
