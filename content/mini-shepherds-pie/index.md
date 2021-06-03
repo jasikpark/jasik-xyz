@@ -1,9 +1,9 @@
 +++
-categories = ["Recipes"]
+Categories = ["Recipes"]
 Date = "2019-03-20T16:22:25-05:00"
-draft = false
-title = "Mini Shepherd's Pie"
-type = "post"
+Draft = false
+Title = "Mini Shepherd's Pie"
+Type = "post"
 
 +++
 

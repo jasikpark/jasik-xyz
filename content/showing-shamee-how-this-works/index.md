@@ -1,9 +1,9 @@
 +++
 Date = "2018-09-03T09:59:39-05:00"
-draft = false
-tags = ["tamu", "learning"]
-title = "Showing Shamee How This Works"
-type = "post"
+Draft = false
+Tags = ["tamu", "learning"]
+Title = "Showing Shamee How This Works"
+Type = "post"
 
 +++
 

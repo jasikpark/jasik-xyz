@@ -1,7 +1,7 @@
 +++
 Date = "2018-09-02 00:03:22 +0000"
-title = "My First Post"
-type = "post"
+Title = "My First Post"
+Type = "post"
 
 +++
 

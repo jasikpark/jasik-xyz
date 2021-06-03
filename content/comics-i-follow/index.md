@@ -1,8 +1,8 @@
 +++
 Date = "2018-11-11T20:21:49-06:00"
-draft = false
-title = "Comics I Follow"
-type = "post"
+Draft = false
+Title = "Comics I Follow"
+Type = "post"
 
 +++
 

@@ -1,8 +1,8 @@
 +++
 Date = "2018-11-13T14:59:33-06:00"
-draft = false
-title = "COMM 325.500 | Advertisement Analysis"
-type = "post"
+Draft = false
+Title = "COMM 325.500 | Advertisement Analysis"
+Type = "post"
 
 +++
 

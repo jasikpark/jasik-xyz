@@ -1,9 +1,9 @@
 +++
 Date = "2018-09-02T22:55:31-05:00"
-draft = false
-tags = ["written_with_atom"]
-title = "Can I Make This Work?"
-type = "post"
+Draft = false
+Tags = ["written_with_atom"]
+Title = "Can I Make This Work?"
+Type = "post"
 
 +++
 

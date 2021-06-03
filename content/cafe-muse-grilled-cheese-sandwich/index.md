@@ -1,10 +1,10 @@
 +++
-categories = ["Recipes"]
+Categories = ["Recipes"]
 Date = "2018-11-11T19:47:37-06:00"
-draft = false
-tags = ["recipes"]
-title = "Cafe Muse | Grilled Cheese Sandwich"
-type = "post"
+Draft = false
+Tags = ["recipes"]
+Title = "Cafe Muse | Grilled Cheese Sandwich"
+Type = "post"
 
 +++
 

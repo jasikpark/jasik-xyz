@@ -1,10 +1,10 @@
 +++
-author = "Caleb Jasik"
+Author = "Caleb Jasik"
 Date = "2018-09-03T08:27:44-05:00"
-draft = false
-tags = ["cpp"]
-title = "Posting Code"
-type = "post"
+Draft = false
+Tags = ["cpp"]
+Title = "Posting Code"
+Type = "post"
 
 +++
 
