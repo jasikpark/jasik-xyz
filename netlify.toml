@@ -5,7 +5,7 @@ command = "hugo"
 [build.environment]
 HUGO_ENV = "production"
 HUGO_VERSION = "0.83.1"
-YARN_VERSION = "3.0.0"
+YARN_VERSION = "3.0.0-rc2"
 
 [dev]
 command = "hugo server --baseUrl='http://localhost:8888' --appendPort=false --cleanDestinationDir --disableFastRender"
