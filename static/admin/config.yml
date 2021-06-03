@@ -19,6 +19,7 @@ collections:
     filter: { field: "Type", value: "post" }
     nested:
       depth: 100 # max depth to show in the collection tree
+    create: true
     fields:
       - { label: "Title", name: "Title", widget: "string", required: false }
       - { label: "Date", name: "Date", widget: "datetime" }
@@ -70,6 +71,7 @@ collections:
     media_folder: ""
     public_folder: ""
     filter: { field: "Type", value: "note" }
+    create: true
     fields:
       - { label: Title, name: "Title", widget: "string", required: false }
       - {
@@ -111,6 +113,7 @@ collections:
     preview_path: "/photos/{{slug}}"
     media_folder: ""
     public_folder: ""
+    create: true
     fields:
       - { label: Title, name: "Title", widget: "string" }
       - {
