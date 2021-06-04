@@ -54,7 +54,7 @@ collections:
           required: false,
           default: false,
         }
-      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - { label: "Img Alt", name: "ImgAlt", widget: "string", required: false }
       - { label: "Slug", name: "Slug", widget: "string", required: false }
       - {
           label: "Tags",
