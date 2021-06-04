@@ -28,6 +28,7 @@ collections:
           name: "PublishDate",
           widget: "datetime",
           required: false,
+          default: "",
         }
       - {
           label: "Description",
@@ -101,6 +102,7 @@ collections:
           name: "PublishDate",
           widget: "datetime",
           required: false,
+          default: "",
         }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
       - {
@@ -144,6 +146,7 @@ collections:
           name: "PublishDate",
           widget: "datetime",
           required: false,
+          default: "",
         }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
       - {
