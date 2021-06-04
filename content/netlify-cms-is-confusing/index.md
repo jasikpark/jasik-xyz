@@ -12,4 +12,9 @@ Setting up [Netlify CMS](https://netlifycms.org) has been interesting since the 
 
 Also apparently it needs `identifier_field: "Title"` since my frontmatter variables are all capitalized, and Netlify CMS looks for `title` by default.
 
+{{< figure >}}
 {{< img src="netlify-cms.png" alt="Netlify CMS Splash" title="Netlify CMS" class="rounded-lg" >}}
+{{% figcaption %}}
+Netlify CMS
+{{% /figcaption %}}
+{{< /figure >}}
