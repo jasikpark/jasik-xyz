@@ -20,6 +20,10 @@ collections:
     nested:
       depth: 100 # max depth to show in the collection tree
     create: true
+    view_filters:
+      - label: Drafts
+        field: Draft
+        pattern: true
     fields:
       - { label: "Title", name: "Title", widget: "string", required: false }
       - { label: "Date", name: "Date", widget: "datetime" }
@@ -79,6 +83,10 @@ collections:
     format: toml-frontmatter
     filter: { field: "Type", value: "note" }
     create: true
+    view_filters:
+      - label: Drafts
+        field: Draft
+        pattern: true
     fields:
       - { label: Title, name: "Title", widget: "string", required: false }
       - {
@@ -88,9 +96,15 @@ collections:
           default: note,
           options: ["post", "note", "photo"],
         }
-      - { label: "Draft", name: "Draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "Draft",
+          widget: "boolean",
+          required: false,
+          default: true,
+        }
       - { label: Date, name: "Date", widget: "datetime" }
-      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - { label: "Img Alt", name: "ImgAlt", widget: "string", required: false }
       - {
           label: "Tags",
           name: "Tags",
@@ -116,6 +130,10 @@ collections:
     public_folder: ""
     create: true
     format: toml-frontmatter
+    view_filters:
+      - label: Drafts
+        field: Draft
+        pattern: true
     fields:
       - { label: Title, name: "Title", widget: "string" }
       - {
@@ -125,9 +143,15 @@ collections:
           default: "photo",
           options: ["post", "note", "photo"],
         }
-      - { label: "Draft", name: "Draft", widget: "boolean", default: true }
+      - {
+          label: "Draft",
+          name: "Draft",
+          widget: "boolean",
+          required: false,
+          default: true,
+        }
       - { label: Date, name: "Date", widget: "datetime" }
-      - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
+      - { label: "Img Alt", name: "ImgAlt", widget: "string", required: false }
       - {
           label: "Tags",
           name: "Tags",
