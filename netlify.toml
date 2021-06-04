@@ -6,6 +6,7 @@ command = "hugo"
 HUGO_ENV = "production"
 HUGO_VERSION = "0.83.1"
 YARN_VERSION = "1.22.10"
+NODE_ENV = "production" # Only install dependencies, no devDependencies
 
 [dev]
 command = "hugo server --baseUrl='http://localhost:8888' --appendPort=false --cleanDestinationDir --disableFastRender"
