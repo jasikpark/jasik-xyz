@@ -22,7 +22,7 @@ command = "hugo -b https://v1.jasik.xyz"
 command = "hugo -b https://v2.jasik.xyz"
 
 [context.deploy-preview]
-command = "hugo -b $DEPLOY_PRIME_URL"
+command = "hugo --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
 
 [[redirects]]
 from = "/donate/"
