@@ -1,9 +1,9 @@
----
-Title: 2020.05.31.215621 Rewrite 001 (lol I started this then never posted it)
-Date: 2021-01-07T22:45:14-06:00
-PublishDate: 2021-06-04T01:13:39.819Z
-Type: post
----
++++
+Date = "2021-01-07T22:45:14-06:00"
+Title = "2020.05.31.215621 Rewrite 001 (lol I started this then never posted it)"
+Type = "post"
+
++++
 
 > N.B. I totally forgot to finish this post, so I'll just leave it at this.
 

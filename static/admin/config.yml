@@ -4,7 +4,6 @@ backend:
   name: git-gateway
   branch: main # branch to update; optional defaults to main
 publish_mode: editorial_workflow
-format: toml-frontmatter
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
@@ -16,6 +15,7 @@ collections:
     preview_path: "/{{slug}}"
     media_folder: ""
     public_folder: ""
+    format: toml-frontmatter
     filter: { field: "Type", value: "post" }
     nested:
       depth: 100 # max depth to show in the collection tree
@@ -82,6 +82,7 @@ collections:
     preview_path: "/{{slug}}"
     media_folder: ""
     public_folder: ""
+    format: toml-frontmatter
     filter: { field: "Type", value: "note" }
     create: true
     fields:
@@ -126,6 +127,7 @@ collections:
     media_folder: ""
     public_folder: ""
     create: true
+    format: toml-frontmatter
     fields:
       - { label: Title, name: "Title", widget: "string" }
       - {
@@ -165,6 +167,7 @@ collections:
       - label: "Pay"
         name: "pay"
         file: "content/pay/_index.md"
+        format: toml-frontmatter
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Slug", name: "Slug", widget: "string" }
@@ -179,6 +182,7 @@ collections:
       - label: "Portfolio"
         name: "portfolio"
         file: "content/portfolio/_index.md"
+        format: toml-frontmatter
         fields:
           - { label: "Title", name: "Title", widget: "string" }
           - { label: "Slug", name: "Slug", widget: "string" }
