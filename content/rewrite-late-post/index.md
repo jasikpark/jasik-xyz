@@ -1,11 +1,9 @@
 +++
+Title = "Rewrite 001"
 Date = "2021-01-07T22:45:14-06:00"
-Title = "2020.05.31.215621 Rewrite 001 (lol I started this then never posted it)"
 Type = "post"
-
 +++
-
-> N.B. I totally forgot to finish this post, so I'll just leave it at this.
+> N.B. I totally forgot to finish this post, so I'll just leave it at this. I originally started this on 2020.05.31.215621
 
 I’ve been cooped up at home for the past week — I had a covid-19 scare but it seems I just had a regular viral infection 😅. I had aspirations and plans going into quarantine in March, but I’ve not experienced this as much. I finally got the rewrite of my website up today though — I was inspired by [Frank Chimero’s](https://frankchimero.com) series about his [experience](https://frankchimero.com/blog/2019/redesign/) rewriting his website. I took his concept of starting with:
 
