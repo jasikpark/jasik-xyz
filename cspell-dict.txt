@@ -166,3 +166,5 @@ tabindex
 Marcotte
 Aquent
 datetime
+Shortcodes
+shortcode
