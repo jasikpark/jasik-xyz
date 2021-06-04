@@ -24,13 +24,6 @@ collections:
       - { label: "Title", name: "Title", widget: "string", required: false }
       - { label: "Date", name: "Date", widget: "datetime" }
       - {
-          label: "Publish Date",
-          name: "PublishDate",
-          widget: "datetime",
-          required: false,
-          default: "",
-        }
-      - {
           label: "Description",
           name: "Description",
           widget: "string",
@@ -97,13 +90,6 @@ collections:
         }
       - { label: "Draft", name: "Draft", widget: "boolean", default: true }
       - { label: Date, name: "Date", widget: "datetime" }
-      - {
-          label: "Publish Date",
-          name: "PublishDate",
-          widget: "datetime",
-          required: false,
-          default: "",
-        }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
       - {
           label: "Tags",
@@ -141,13 +127,6 @@ collections:
         }
       - { label: "Draft", name: "Draft", widget: "boolean", default: true }
       - { label: Date, name: "Date", widget: "datetime" }
-      - {
-          label: "Publish Date",
-          name: "PublishDate",
-          widget: "datetime",
-          required: false,
-          default: "",
-        }
       - { label: "Img Alt", name: "ImgAlt", widget: "text", required: false }
       - {
           label: "Tags",
