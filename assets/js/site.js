@@ -1,5 +1,5 @@
 import "./make-scrollable-code-focusable.js";
-import netlifyIdentity from 'netlify-identity-widget';
+import netlifyIdentity from "netlify-identity-widget";
 
 window.netlifyIdentity = netlifyIdentity;
 // You must run this once before trying to interact with the widget
