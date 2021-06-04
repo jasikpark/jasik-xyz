@@ -2,7 +2,7 @@
 Title = "Netlify CMS is confusing"
 Date = 2021-06-04T18:45:28.174Z
 Type = "post"
-Draft = true
+Draft = false
 isMath = false
 +++
 
