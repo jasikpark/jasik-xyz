@@ -1,177 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-  </head>
+import CMS from "netlify-cms-app";
+import netlifyIdentity from "netlify-identity-widget";
 
-  <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@%5E2.0.0/dist/netlify-cms.js"></script>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      CMS.registerEditorComponent({
-        id: "youtube",
-        label: "Youtube",
-        fields: [
-          {
-            name: "id",
-            label: "Youtube Video ID",
-            widget: "string",
-          },
-        ],
-        pattern: /{{< youtube ([a-zA-Z0-9]+) >}}/,
-        fromBlock: function (match) {
-          return {
-            id: match[1],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< youtube ${obj.id} >}}`;
-        },
-        toPreview: function (obj) {
-          return `<img src="http://img.youtube.com/vi/${obj.id}/maxresdefault.jpg" alt="Youtube Video"/>`;
-        },
-      });
-      CMS.registerEditorComponent({
-        id: "gist",
-        label: "Gist",
-        fields: [
-          {
-            name: "username",
-            label: "Github Username",
-            widget: "string",
-          },
-          {
-            name: "gid",
-            label: "Gist ID",
-            widget: "string",
-          },
-        ],
-        pattern: /{{< gist ([a-zA-Z0-9]+) ([a-zA-Z0-9]+) >}}/,
-        fromBlock: function (match) {
-          return {
-            username: match[1],
-            gid: match[2],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< gist ${obj.username} ${obj.gid} >}}`;
-        },
-        toPreview: function (obj) {
-          return `{{< gist ${obj.username} ${obj.gid} >}}`;
-        },
-      });
-      CMS.registerEditorComponent({
-        id: "twitter",
-        label: "Twitter",
-        fields: [
-          {
-            name: "tid",
-            label: "Tweet id",
-            widget: "string",
-          },
-        ],
-        pattern: /{{< twitter ([a-zA-Z0-9]+) >}}/,
-        fromBlock: function (match) {
-          return {
-            tid: match[1],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< twitter ${obj.tid} >}}`;
-        },
-        toPreview: function (obj) {
-          return `{{< twitter ${obj.tid} >}}`;
-        },
-      });
-      CMS.registerEditorComponent({
-        id: "vimeo",
-        label: "Vimeo",
-        fields: [
-          {
-            name: "shortcode",
-            label: "Vimeo shortcode",
-            widget: "string",
-          },
-        ],
-        pattern: /{{< vimeo ([a-zA-Z0-9]+) >}}/,
-        fromBlock: function (match) {
-          return {
-            shortcode: match[1],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< vimeo ${obj.shortcode} >}}`;
-        },
-        toPreview: function (obj) {
-          return `{{< vimeo ${obj.shortcode} >}}`;
-        },
-      });
-      CMS.registerEditorComponent({
-        id: "optimized-img",
-        label: "Optimized Image",
-        fields: [
-          {
-            name: "src",
-            label: "Image Source",
-            widget: "image",
-          },
-          {
-            name: "alt",
-            label: "Image Alt",
-            widget: "string",
-          },
-          {
-            name: "title",
-            label: "Image Title",
-            widget: "string",
-          },
-          {
-            name: "extras",
-            label: "Extra Attributes",
-            widget: "string",
-          },
-        ],
-        pattern:
-          /{{< img src="([a-zA-Z0-9-_ ]+)" alt="([\S ]+)" title="([\S ]+)"([\S ]*) >}}/,
-        fromBlock: function (match) {
-          return {
-            src: match[1],
-            alt: match[2],
-            title: match[3],
-            extras: match[4],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< img src="${obj.src}" alt="${obj.alt}" title="${obj.title}" ${obj.extras} >}}`;
-        },
-        toPreview: function (obj) {
-          return `<img src="${obj.src}" alt="${obj.alt}" title="${obj.title}" ${obj.extras} />`;
-        },
-      });
-      CMS.registerEditorComponent({
-        id: "wayback",
-        label: "Wayback Link",
-        fields: [
-          {
-            name: "href",
-            label: "Link Href",
-            widget: "string",
-          },
-        ],
-        pattern: /{{<[ ]*wayback href="([\S]+)"[ ]*>}}/,
-        fromBlock: function (match) {
-          return {
-            href: match[1],
-          };
-        },
-        toBlock: function (obj) {
-          return `{{< wayback href="${obj.href}" >}}`;
-        },
-        toPreview: function (obj) {
-          return `
+window.netlifyIdentity = netlifyIdentity;
+// You must run this once before trying to interact with the widget
+netlifyIdentity.init();
+
+// Initialize the CMS object
+CMS.init();
+
+CMS.registerEditorComponent({
+  id: "youtube",
+  label: "Youtube",
+  fields: [
+    {
+      name: "id",
+      label: "Youtube Video ID",
+      widget: "string",
+    },
+  ],
+  pattern: /{{< youtube ([a-zA-Z0-9]+) >}}/,
+  fromBlock: function (match) {
+    return {
+      id: match[1],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< youtube ${obj.id} >}}`;
+  },
+  toPreview: function (obj) {
+    return `<img src="http://img.youtube.com/vi/${obj.id}/maxresdefault.jpg" alt="Youtube Video"/>`;
+  },
+});
+CMS.registerEditorComponent({
+  id: "gist",
+  label: "Gist",
+  fields: [
+    {
+      name: "username",
+      label: "Github Username",
+      widget: "string",
+    },
+    {
+      name: "gid",
+      label: "Gist ID",
+      widget: "string",
+    },
+  ],
+  pattern: /{{< gist ([a-zA-Z0-9]+) ([a-zA-Z0-9]+) >}}/,
+  fromBlock: function (match) {
+    return {
+      username: match[1],
+      gid: match[2],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< gist ${obj.username} ${obj.gid} >}}`;
+  },
+  toPreview: function (obj) {
+    return `{{< gist ${obj.username} ${obj.gid} >}}`;
+  },
+});
+CMS.registerEditorComponent({
+  id: "twitter",
+  label: "Twitter",
+  fields: [
+    {
+      name: "tid",
+      label: "Tweet id",
+      widget: "string",
+    },
+  ],
+  pattern: /{{< twitter ([a-zA-Z0-9]+) >}}/,
+  fromBlock: function (match) {
+    return {
+      tid: match[1],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< twitter ${obj.tid} >}}`;
+  },
+  toPreview: function (obj) {
+    return `{{< twitter ${obj.tid} >}}`;
+  },
+});
+CMS.registerEditorComponent({
+  id: "vimeo",
+  label: "Vimeo",
+  fields: [
+    {
+      name: "shortcode",
+      label: "Vimeo shortcode",
+      widget: "string",
+    },
+  ],
+  pattern: /{{< vimeo ([a-zA-Z0-9]+) >}}/,
+  fromBlock: function (match) {
+    return {
+      shortcode: match[1],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< vimeo ${obj.shortcode} >}}`;
+  },
+  toPreview: function (obj) {
+    return `{{< vimeo ${obj.shortcode} >}}`;
+  },
+});
+CMS.registerEditorComponent({
+  id: "optimized-img",
+  label: "Optimized Image",
+  fields: [
+    {
+      name: "src",
+      label: "Image Source",
+      widget: "image",
+    },
+    {
+      name: "alt",
+      label: "Image Alt",
+      widget: "string",
+    },
+    {
+      name: "title",
+      label: "Image Title",
+      widget: "string",
+    },
+    {
+      name: "extras",
+      label: "Extra Attributes",
+      widget: "string",
+    },
+  ],
+  pattern:
+    /{{< img src="([a-zA-Z0-9-_ ]+)" alt="([\S ]+)" title="([\S ]+)"([\S ]*) >}}/,
+  fromBlock: function (match) {
+    return {
+      src: match[1],
+      alt: match[2],
+      title: match[3],
+      extras: match[4],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< img src="${obj.src}" alt="${obj.alt}" title="${obj.title}" ${obj.extras} >}}`;
+  },
+  toPreview: function (obj) {
+    return `<img src="${obj.src}" alt="${obj.alt}" title="${obj.title}" ${obj.extras} />`;
+  },
+});
+CMS.registerEditorComponent({
+  id: "wayback",
+  label: "Wayback Link",
+  fields: [
+    {
+      name: "href",
+      label: "Link Href",
+      widget: "string",
+    },
+  ],
+  pattern: /{{< [ ]*wayback href="([\S]+)"[ ]* >}}/,
+  fromBlock: function (match) {
+    return {
+      href: match[1],
+    };
+  },
+  toBlock: function (obj) {
+    return `{{< wayback href="${obj.href}" >}}`;
+  },
+  toPreview: function (obj) {
+    return `
 <a
   class="wayback"
   title="Wayback Machine Link"
@@ -199,8 +196,5 @@
   </svg>
   <span class="sr-only">Wayback Machine Link</span>
 </a>`;
-        },
-      });
-    </script>
-  </body>
-</html>
+  },
+});
