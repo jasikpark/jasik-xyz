@@ -18,8 +18,10 @@
     {{ end }}
   />
 {{ else }}
-  {{- $tinyw := default "500x" -}} {{- $smallw := default "800x" -}}
-  {{- $mediumw := default "1200x" -}} {{- $largew := default "1500x" -}}
+  {{- $tinyw := default "500x" -}}
+  {{- $smallw := default "800x" -}}
+  {{- $mediumw := default "1200x" -}}
+  {{- $largew := default "1500x" -}}
   {{- $giantw := default "2500x" -}}
   {{/* resize the src image to the given sizes */}}
   {{- .Scratch.Set "tiny" ($src.Resize $tinyw) -}}
@@ -28,9 +30,11 @@
   {{- .Scratch.Set "large" ($src.Resize $largew) -}}
   {{- .Scratch.Set "giant" ($src.Resize $giantw) -}}
   {{/* add the processed images to the scratch */}}
-  {{- $tiny := .Scratch.Get "tiny" -}} {{- $small := .Scratch.Get "small" -}}
+  {{- $tiny := .Scratch.Get "tiny" -}}
+  {{- $small := .Scratch.Get "small" -}}
   {{- $medium := .Scratch.Get "medium" -}}
-  {{- $large := .Scratch.Get "large" -}} {{- $giant := .Scratch.Get "giant" -}}
+  {{- $large := .Scratch.Get "large" -}}
+  {{- $giant := .Scratch.Get "giant" -}}
   {{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
   {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
