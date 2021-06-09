@@ -34,6 +34,12 @@ html {
   scroll-margin: 2ex;
 }
 
+:focus {
+  outline: max(1px, 0.1em) solid currentColor;
+  outline-offset: 0.25em;
+  border-radius: 0.25em;
+}
+
 /* BEGIN THEME VARIABLES */
 :root {
   --background: hsl(0, 0%, 97%);
@@ -98,7 +104,6 @@ ol,
 ul,
 blockquote,
 hr,
-time,
 footer,
 .limit,
 .card,
