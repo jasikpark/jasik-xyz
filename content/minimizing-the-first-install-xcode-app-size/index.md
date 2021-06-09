@@ -4,6 +4,7 @@ Date = 2021-06-09T00:34:05.479Z
 Type = "post"
 Draft = false
 isMath = false
+Tags = []
 +++
 I'm glad that I found [Saving up to 8.5GB of Space After Every Apple Xcode Update](https://macperformanceguide.com/blog/2016/20161031_1600-XCode-saving-space.html) to help me deal with the fact that my vanilla XCode.app install was 17GB!
 
