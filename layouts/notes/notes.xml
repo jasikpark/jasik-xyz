@@ -19,7 +19,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
     {{- with .OutputFormats.Get "RSS" }}
         {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML -}}
     {{ end -}}
-    {{ range sort .RegularPages ".PublishDate" "desc" }}
+    {{ range sort (where .Site.Pages ".Type" "note") ".PublishDate" "desc"  }}
     <item>
       <title>{{ with .Title }}{{ . }}{{ else }}{{ .Summary | truncate 70 | safeHTML }}{{ end }}</title>
       <link>{{ .Permalink }}</link>

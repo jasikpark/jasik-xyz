@@ -2,7 +2,21 @@
 Content-Type: "application/pdf"
 /resume.pdf
 Content-Type: "application/pdf"
+/caleb-jasik-resume.pdf
+Content-Type: "application/pdf"
 
+/index.xml
+Content-Type: application/xml; charset=utf-8  # not application/rss+xml
+x-content-type-options: nosniff
+/posts/index.xml
+Content-Type: application/xml; charset=utf-8  # not application/rss+xml
+x-content-type-options: nosniff
+/notes/index.xml
+Content-Type: application/xml; charset=utf-8  # not application/rss+xml
+x-content-type-options: nosniff
+/photos/index.xml
+Content-Type: application/xml; charset=utf-8  # not application/rss+xml
+x-content-type-options: nosniff
 
 /*
 X-Frame-Options: SAMEORIGIN
