@@ -4032,7 +4032,7 @@ __metadata:
     html-validate: 4.13.1
     husky: 6.0.0
     katex: 0.13.11
-    netlify-cms-app: 2.15.18
+    netlify-cms-app: 2.15.19
     netlify-identity-widget: 1.9.1
     npm-run-all: 4.1.5
     prettier: 2.3.1
@@ -4782,9 +4782,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-cms-app@npm:2.15.18":
-  version: 2.15.18
-  resolution: "netlify-cms-app@npm:2.15.18"
+"netlify-cms-app@npm:2.15.19":
+  version: 2.15.19
+  resolution: "netlify-cms-app@npm:2.15.19"
   dependencies:
     "@emotion/core": ^10.0.35
     "@emotion/styled": ^10.0.27
@@ -4799,7 +4799,7 @@ __metadata:
     netlify-cms-backend-gitlab: ^2.11.4
     netlify-cms-backend-proxy: ^1.2.3
     netlify-cms-backend-test: ^2.11.3
-    netlify-cms-core: ^2.40.11
+    netlify-cms-core: ^2.40.12
     netlify-cms-editor-component-image: ^2.7.0
     netlify-cms-lib-auth: ^2.4.2
     netlify-cms-lib-util: ^2.13.3
@@ -4828,7 +4828,7 @@ __metadata:
   peerDependencies:
     react: ^16.8.4 || ^17.0.0
     react-dom: ^16.8.4 || ^17.0.0
-  checksum: 2ae14be9e2044ebf6abd5c67959a231424f2dfe2f6b016e022194c560ee9401ebcbad1b70174d135797871a9b70018a453aff8715af3bde1639db9528de3f9ef
+  checksum: 099178ac14e98a714321599fd2a09af70c75d62f43478b3df9f8caaed7d1db7c2fa283f66e1aa275f00c72d48c99ae8ccc8355732e20834be2afa94281d363db
   languageName: node
   linkType: hard
 
@@ -4974,9 +4974,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"netlify-cms-core@npm:^2.40.11":
-  version: 2.40.11
-  resolution: "netlify-cms-core@npm:2.40.11"
+"netlify-cms-core@npm:^2.40.12":
+  version: 2.40.12
+  resolution: "netlify-cms-core@npm:2.40.12"
   dependencies:
     "@iarna/toml": 2.2.5
     ajv: 8.1.0
@@ -5039,7 +5039,7 @@ __metadata:
     react: ^16.8.4 || ^17.0.0
     react-dom: ^16.8.4 || ^17.0.0
     react-immutable-proptypes: ^2.1.0
-  checksum: 6f74ae7f52fc3c8f8972edd74d7cf137f065532157e357186c56ba0f4f241f128fde5618a796167e80ba7b2c6a1001f6e42b7dbfd3536890c8da2f5e7c7fa162
+  checksum: fe318e91e0d264dec18dbd23780a53215d2e1e79aa941987f99aafb7d8df9064b913bc0a008107a01fdcc677f32a83aa3ce8427df44d601f0017a81c19933b9b
   languageName: node
   linkType: hard
 
