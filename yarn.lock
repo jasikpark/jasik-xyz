@@ -3419,9 +3419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:4.13.1":
-  version: 4.13.1
-  resolution: "html-validate@npm:4.13.1"
+"html-validate@npm:4.14.0":
+  version: 4.14.0
+  resolution: "html-validate@npm:4.14.0"
   dependencies:
     "@babel/code-frame": ^7.10.0
     "@html-validate/stylish": ^1.0.0
@@ -3443,7 +3443,7 @@ __metadata:
       optional: true
   bin:
     html-validate: bin/html-validate.js
-  checksum: ee2102995827ce53954668ef73ccf00c5f9998017d0d17ab931b834280961f66ee3216b75a74fd829e5c44840b159495627f2bda286ff79e8834ffa30f292431
+  checksum: cd7e4893f417579c90096170d86138763154bdf5fd9ef16dd8274f0f414137f6e3e0072222029096e489156b8cd583c407ecce34033aaf716846fa04ca3b0676
   languageName: node
   linkType: hard
 
@@ -4029,7 +4029,7 @@ __metadata:
     eslint: 7.28.0
     eslint-config-prettier: 8.3.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 4.13.1
+    html-validate: 4.14.0
     husky: 6.0.0
     katex: 0.13.11
     netlify-cms-app: 2.15.18
