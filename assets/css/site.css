@@ -35,9 +35,10 @@ html {
 }
 
 :focus {
+  border-radius: 0.25em;
+
   outline: max(1px, 0.1em) solid currentColor;
   outline-offset: 0.25em;
-  border-radius: 0.25em;
 }
 
 /* BEGIN THEME VARIABLES */
@@ -76,21 +77,24 @@ html {
 }
 
 body {
-  background-color: var(--background);
+  margin: 0;
+  padding: 0 1rem;
+
   color: var(--text);
   font-family: var(--serif);
   line-height: 1.5;
+
+  background-color: var(--background);
   text-rendering: optimizeLegibility;
-  margin: 0;
-  padding: 0 1rem;
 }
 /* END THEME VARIABLES */
 
 ol,
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 h1,
@@ -109,10 +113,11 @@ footer,
 .card,
 .gist,
 img {
-  max-width: var(--max-width);
-  margin-left: auto;
-  margin-right: auto;
   display: block;
+
+  max-width: var(--max-width);
+  margin-right: auto;
+  margin-left: auto;
   font-feature-settings: "onum", "ss02";
 }
 
@@ -180,12 +185,14 @@ body > header h1 {
   margin-bottom: 0;
 }
 body > header ul {
-  list-style: none;
-  padding: 0;
   margin-top: 0;
+  padding: 0;
+
+  list-style: none;
 }
 body > header li {
   display: inline-block;
+
   margin-top: 0.5em;
   margin-right: 0.5em;
 }
@@ -200,14 +207,17 @@ body > header * {
 }
 
 pre {
-  margin: 2rem auto;
   max-width: var(--max-width);
   max-height: calc(100vh - 10em);
-  overflow: auto;
-  white-space: pre-wrap;
-  border: 2px solid var(--pre-border, currentColor);
+  margin: 2rem auto;
   padding: 2.5px 5px;
+
+  white-space: pre-wrap;
+
+  border: 2px solid var(--pre-border, currentColor);
   border-radius: 6px;
+
+  overflow: auto;
 }
 
 @media (max-width: 800px) {
@@ -217,14 +227,15 @@ pre {
 }
 
 pre code {
+  display: block;
+
   width: 100%;
   padding: 10px;
-  display: block;
 }
 
 figure {
-  margin: 5rem auto;
   max-width: calc(10rem + var(--max-width));
+  margin: 5rem auto;
 }
 figure img {
   width: 100%;
@@ -233,8 +244,9 @@ figure img {
 }
 figure figcaption {
   margin-top: 0.25rem;
-  font-size: var(--font-small);
+
   color: var(--mid-gray);
+  font-size: var(--font-small);
 }
 
 iframe {
@@ -242,8 +254,9 @@ iframe {
 }
 
 blockquote {
-  border-left: 0.25rem hsla(var(--quote-border), 0.17) solid;
   padding-left: 0.5rem;
+
+  border-left: 0.25rem hsla(var(--quote-border), 0.17) solid;
 }
 
 h1 {
@@ -260,11 +273,12 @@ article > header > * {
 }
 
 .post-navigation {
-  max-width: var(--max-width);
-  min-height: 6.5em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+
+  max-width: var(--max-width);
+  min-height: 6.5em;
   margin: 2rem auto 0;
   padding: 1rem 0;
 }
@@ -279,6 +293,7 @@ article > header > * {
 
 .post-navigation > :last-child {
   margin-left: auto;
+
   text-align: right;
 }
 
@@ -297,6 +312,7 @@ footer {
 
 footer a {
   display: inline-block;
+
   margin-right: 0.4rem;
 }
 
@@ -316,12 +332,13 @@ footer a {
 
 .wayback {
   padding-inline: 0.17rem;
+
   text-decoration: none;
 }
 
 .wayback > svg {
-  stroke: currentColor;
   fill: currentColor;
+  stroke: currentColor;
 }
 
 img:not([alt]) {
@@ -394,8 +411,8 @@ img:not([alt]) {
 }
 
 .px-0 {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .py-1 {
@@ -408,13 +425,13 @@ img:not([alt]) {
 }
 
 .px-2 {
-  padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .px-3 {
-  padding-left: 0.75rem;
   padding-right: 0.75rem;
+  padding-left: 0.75rem;
 }
 
 .py-4 {
@@ -440,13 +457,13 @@ img:not([alt]) {
 }
 
 .mx-2 {
-  margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .mx-3 {
-  margin-left: 0.75rem;
   margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .mb-4 {
@@ -454,8 +471,8 @@ img:not([alt]) {
 }
 
 .-mx-4 {
-  margin-left: -1rem;
   margin-right: -1rem;
+  margin-left: -1rem;
 }
 
 .my-0 {
@@ -533,11 +550,15 @@ img:not([alt]) {
 }
 
 .reset-button {
-  appearance: none;
-  border: none;
-  background-color: inherit;
   font-size: inherit;
+
+  border: none;
+
+  background-color: inherit;
+
   cursor: pointer;
+
+  appearance: none;
 }
 
 .max-h-content {
@@ -559,8 +580,8 @@ img:not([alt]) {
 }
 
 .overflow-hidden {
-  overflow-y: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .rounded-lg {
@@ -568,8 +589,8 @@ img:not([alt]) {
 }
 
 .rounded-b-lg {
-  border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .rounded-full {
@@ -605,6 +626,7 @@ img:not([alt]) {
 .sm\:aspect-w-16,
 .aspect-w-4 {
   position: relative;
+
   padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
 }
 .aspect-w-375 > *,
@@ -612,12 +634,13 @@ img:not([alt]) {
 .sm\:aspect-w-16 > *,
 .aspect-w-4 > * {
   position: absolute;
-  height: 100%;
-  width: 100%;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
 }
 .aspect-w-4 {
   --tw-aspect-w: 4;
@@ -692,23 +715,32 @@ img:not([alt]) {
 
 .sr-only {
   position: absolute;
+
   width: 1px;
   height: 1px;
-  padding: 0;
   margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  padding: 0;
+
   white-space: nowrap;
+
   border-width: 0;
+
+  overflow: hidden;
+
+  clip: rect(0, 0, 0, 0);
 }
 
 .focus\:not-sr-only:focus {
   position: absolute;
+
   width: auto;
   height: auto;
-  padding: 0;
   margin: 0;
-  overflow: visible;
-  clip: auto;
+  padding: 0;
+
   white-space: normal;
+
+  overflow: visible;
+
+  clip: auto;
 }

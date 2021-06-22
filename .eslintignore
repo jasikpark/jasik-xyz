@@ -5,3 +5,4 @@ static/www/
 resources/
 .yarn/
 .pnp.*
+.stylelintrc.js

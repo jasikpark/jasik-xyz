@@ -1,7 +1,9 @@
 .chroma code {
-  border-radius: 6px;
-  background-color: #002b36;
   color: #93a1a1;
+
+  border-radius: 6px;
+
+  background-color: #002b36;
 }
 .chroma .c {
   color: #759299;
@@ -212,8 +214,9 @@
 
 @media (prefers-color-scheme: light) {
   .chroma code {
-    background-color: #fdf6e3;
     color: #586e75;
+
+    background-color: #fdf6e3;
   }
   .chroma .c {
     color: #627272;

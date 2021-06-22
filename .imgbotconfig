@@ -2,5 +2,5 @@
   "ignoredFiles": [
     "resources/*" // ignore by folderpath
   ],
-   "minKBReduced": 500
+  "minKBReduced": 500
 }

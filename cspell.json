@@ -25,7 +25,8 @@
         "static/old-index-html/**",
         "keybase.txt",
         "config.toml",
-        "Dockerfile"
+        "Dockerfile",
+        ".stylelintrc.js"
     ],
     "ignoreWords": [
         "tinyw",
