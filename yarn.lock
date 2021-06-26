@@ -4683,7 +4683,7 @@ __metadata:
     netlify-identity-widget: 1.9.1
     npm-run-all: 4.1.5
     prettier: 2.3.1
-    prettier-plugin-go-template: 0.0.11-beta.13
+    prettier-plugin-go-template: 0.0.11
     prettier-plugin-package: 1.3.0
     prettier-plugin-x: 0.0.8
     react: 17.0.2
@@ -6937,14 +6937,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-go-template@npm:0.0.11-beta.13":
-  version: 0.0.11-beta.13
-  resolution: "prettier-plugin-go-template@npm:0.0.11-beta.13"
+"prettier-plugin-go-template@npm:0.0.11":
+  version: 0.0.11
+  resolution: "prettier-plugin-go-template@npm:0.0.11"
   dependencies:
     ulid: ^2.3.0
   peerDependencies:
     prettier: ^2.0.0
-  checksum: 3d7813911cab053ef8b43661a921fe9070c8c5dcc3618e2c7a7ac5891d7272b2f8cedd20760df2b2a55d83c1b1a466aee66b011f278f9a64c1af42ead1afb75b
+  checksum: 0c78d4f096d86d52fa40c11c81c4ab4b9d39732eb990fb5cb88bd2a43aefadf131d73d39f408446a805348117b5c69b441093e491ac175def86f83e38c7742ea
   languageName: node
   linkType: hard
 
