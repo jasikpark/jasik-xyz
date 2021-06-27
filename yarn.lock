@@ -919,13 +919,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-validate/stylish@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "@html-validate/stylish@npm:1.0.1"
+"@html-validate/stylish@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@html-validate/stylish@npm:2.0.0"
   dependencies:
     kleur: ^4.0.0
     text-table: ^0.2.0
-  checksum: 8b829b3aa629eacce15019362961bf62a7285ead7a6d6266747cde5123c5435af3f0760f445120c7a6f2c6f8282817b919629327372f5d91b03b940b4e25a499
+  checksum: 489305617cc972d590208fe0e3657a3045e85ff2332425be9a164284785af5853217b3788664455c877a55af560c9ab9a076976663f99136394eac53af66d6cf
   languageName: node
   linkType: hard
 
@@ -4089,12 +4089,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:5.0.0":
-  version: 5.0.0
-  resolution: "html-validate@npm:5.0.0"
+"html-validate@npm:5.0.1":
+  version: 5.0.1
+  resolution: "html-validate@npm:5.0.1"
   dependencies:
     "@babel/code-frame": ^7.10.0
-    "@html-validate/stylish": ^1.0.0
+    "@html-validate/stylish": ^2.0.0
     "@sidvind/better-ajv-errors": ^0.9.0
     acorn-walk: ^8.0.0
     ajv: ^8.0.0
@@ -4114,7 +4114,7 @@ __metadata:
       optional: true
   bin:
     html-validate: bin/html-validate.js
-  checksum: 303ef96d790556fc91ee9db36e2eb5d615a1e252f75a03c775f6f8a91bed8dfcf72479fa613bdaec594e6e86d1faba7adb3d5079605bb3a3c59638a6dfd05fe3
+  checksum: ab60306728f53d733dd305956c43782fcb739c9cb544d1bf9a4a9dabaa80eeb9c0321d23f029fac834d323358b913cf204b8eabd7ad43560003ed2fc1f33e8bb
   languageName: node
   linkType: hard
 
@@ -4742,7 +4742,7 @@ __metadata:
     eslint: 7.29.0
     eslint-config-prettier: 8.3.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 5.0.0
+    html-validate: 5.0.1
     husky: 6.0.0
     katex: 0.13.11
     netlify-cms-app: 2.15.20
