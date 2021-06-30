@@ -8,7 +8,6 @@
 
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
-    {{ $adminJS := resources.Get "js/admin/index.js" | js.Build }}
-    <script src="{{ $adminJS.Permalink }}"></script>
+    {{ $adminJS := resources.Get "js/admin/index.js" | js.Build }}    <script src="{{ $adminJS.Permalink }}"></script>
   </body>
 </html>

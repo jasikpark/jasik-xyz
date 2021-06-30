@@ -52,8 +52,7 @@
     </div>
   {{ end }}
 </div>
-{{ $iframeWithChromeJS := resources.Get "/js/iframe-with-chrome.js" | minify | fingerprint }}
-<script
+{{ $iframeWithChromeJS := resources.Get "/js/iframe-with-chrome.js" | minify | fingerprint }}<script
   type="module"
   src="{{ $iframeWithChromeJS.Permalink }}"
   integrity="{{ $iframeWithChromeJS.Data.Integrity }}"

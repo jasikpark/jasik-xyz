@@ -73,8 +73,9 @@
     {{/* BEGIN RSS */}}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `
-      <link rel="%s" type="%s" href="%s" title="%s" />
-      ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+        <link rel="%s" type="%s" href="%s" title="%s" />
+        ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML
+      }}
     {{ end -}}
     {{/* END RSS */}}
     {{/* BEGIN CSS */}}
@@ -106,8 +107,7 @@
     {{/* END CSS */}}
     {{/* BEGIN JS */}}
     {{ if .Page.Params.isMath }}
-      {{ $katexJS := resources.Get "js/katex.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}
-      <script
+      {{ $katexJS := resources.Get "js/katex.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}      <script
         defer
         src="{{ $katexJS.Permalink }}"
         integrity="{{ $katexJS.Data.Integrity }}"
