@@ -21,9 +21,9 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v2.2.0
-          with:
-            node-version: '14'
-            cache: 'yarn'
+        with:
+          node-version: "14"
+          cache: "yarn"
 
       - name: Install Dependencies
         run: yarn install --immutable

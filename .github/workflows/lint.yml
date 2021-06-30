@@ -17,9 +17,9 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v2.2.0
-          with:
-            node-version: '14'
-            cache: 'yarn'
+        with:
+          node-version: "14"
+          cache: "yarn"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -47,6 +47,9 @@ jobs:
 
       - name: Spellcheck
         run: yarn lint:spellcheck
+
+      - name: Stylelint
+        run: yarn lint:stylelint
 
       #- name: Lint Changelog
       #  run: yarn lint:changelog
