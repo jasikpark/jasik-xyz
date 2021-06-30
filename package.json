@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "katex": "0.13.11",
+    "lazyframe": "2.2.4",
     "netlify-cms-app": "2.15.20",
     "netlify-identity-widget": "1.9.1",
     "react": "17.0.2",

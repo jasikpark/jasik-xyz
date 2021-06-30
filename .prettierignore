@@ -7,4 +7,5 @@ node_modules/
 cspell.json
 # For the sake of prettier-plugin-go-template being dumb:
 layouts/_default/single.html
+layouts/shortcodes/youtube.html
 jsconfig.json

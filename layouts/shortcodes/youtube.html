@@ -1,0 +1,52 @@
+{{- $pc := .Page.Site.Config.Privacy.YouTube -}}
+{{- if not $pc.Disable -}}
+  {{- $ytHost := cond $pc.PrivacyEnhanced  "www.youtube-nocookie.com" "www.youtube.com" -}}
+  {{- $id := .Get "id" | default (.Get 0) -}}
+  {{- $class := .Get "class" | default (.Get 1) -}}
+  {{- $lazy := .Get "lazy" | default "true" -}}
+  {{- $title := .Get "title" | default "YouTube Video" -}}
+  {{- if eq $lazy "true" }}
+    <div
+      class="lazyframe {{ with $class }}{{ . }}{{ end }}"
+      data-vendor="youtube_nocookie"
+      data-title=""
+      data-thumbnail=""
+      data-src="https://{{ $ytHost }}/embed/{{ $id }}"
+      {{ with .Get "ratio" }}
+        data-ratio="{{ . }}"
+      {{ else }}
+        data-ratio="16:9"
+      {{ end }}
+      data-initinview="false"
+      {{ with .Get "autoplay" }}
+        {{ if eq . "true" }}data-autoplay="true"{{ else }}data-autoplay="false"{{ end }}
+      {{ else }}
+        data-autoplay="false"
+      {{ end }}
+    ><a style="width:100%; height: 100%" href="https://youtube.com/{{ $id }}">{{ with $title }}{{ . }}{{ else }}https://{{ $ytHost }}/{{ $id }}{{ end }}</a>
+    </div>
+    {{ $lazyframeJS := resources.Get "js/lazyframe.js" | js.Build | minify }}
+    <script type="module" src="{{ $lazyframeJS.Permalink }}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lazyframe/dist/lazyframe.css">
+  {{ else }}
+    <div
+      {{ with $class }}
+        class="{{ . }}"
+      {{ else }}
+        style="position: relative; padding-bottom: 56.25%; height: 0; overflow:
+        hidden;"
+      {{ end }}
+    >
+      <iframe
+        src="https://{{ $ytHost }}/embed/{{ $id }}{{ with .Get "autoplay" }}
+          {{ if eq . "true" }}?autoplay=1{{ end }}
+        {{ end }}"
+        {{ if not $class }}
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+          border:0;"
+        {{ end }}allowfullscreen
+        title="{{ $title }}"
+      ></iframe>
+    </div>
+  {{ end -}}
+{{ end -}}

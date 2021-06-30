@@ -4745,6 +4745,7 @@ __metadata:
     html-validate: 5.0.2
     husky: 6.0.0
     katex: 0.13.11
+    lazyframe: 2.2.4
     netlify-cms-app: 2.15.20
     netlify-identity-widget: 1.9.1
     npm-run-all: 4.1.5
@@ -5001,6 +5002,13 @@ __metadata:
   version: 0.21.0
   resolution: "known-css-properties@npm:0.21.0"
   checksum: 28a47943cdeb04bf1690d013e732743b855bb21ae4290afeb34fb0b251c2f75b901bb9f2c92a919fa6cdbe8186827528b47569f660143b4932b42423bf90a628
+  languageName: node
+  linkType: hard
+
+"lazyframe@npm:2.2.4":
+  version: 2.2.4
+  resolution: "lazyframe@npm:2.2.4"
+  checksum: b801e1c8590969c6c3a6932bf855d58c62a22dfd36df50a099c9aa4c73c9ae3acca8b2df1e955f9aac15793fe88352276c94ed49bcad7b58fea9708ce4e22f65
   languageName: node
   linkType: hard
 
