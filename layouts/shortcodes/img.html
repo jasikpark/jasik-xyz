@@ -1,18 +1,11 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{- $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) -}}
-{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+{{/* If the image is an SVG, we don't process it, just set it up w/ all the proper attributes. */}}
 {{ if (in $src.MediaType.Suffixes "svg") }}
+  {{/* Currently Hugo doesn't have imgConfig support for SVGs, see https://github.com/gohugoio/hugo/issues/3700 */}}
   <img
-    {{ with .Get "width" }}
-      width="{{ . }}"
-    {{ else }}
-      width="{{ $src.Width }}"
-    {{ end }}
-    {{ with .Get "height" }}
-      height="{{ . }}"
-    {{ else }}
-      height="{{ $src.Height }}"
-    {{ end }}
+    {{ with .Get "width" }}width="{{ . }}"{{ end }}
+    {{ with .Get "height" }}height="{{ . }}"{{ end }}
     {{ with .Get "class" }}class="{{ . }}"{{ end }}
     src="{{ $src.Permalink }}"
     {{ if .Get "alt" }}
@@ -27,6 +20,7 @@
     {{ end }}
   />
 {{ else }}
+  {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
   {{- $tinyw := default "500x" -}}
   {{- $smallw := default "800x" -}}
   {{- $mediumw := default "1200x" -}}
