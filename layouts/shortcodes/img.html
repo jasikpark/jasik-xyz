@@ -3,8 +3,17 @@
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 {{ if (in $src.MediaType.Suffixes "svg") }}
   <img
-    width="{{ .Get "width" }}"
-    height="{{ .Get "height" }}"
+    {{ with .Get "width" }}
+      width="{{ . }}"
+    {{ else }}
+      width="{{ $src.Width }}"
+    {{ end }}
+    {{ with .Get "height" }}
+      height="{{ . }}"
+    {{ else }}
+      height="{{ $src.Height }}"
+    {{ end }}
+    {{ with .Get "class" }}class="{{ . }}"{{ end }}
     src="{{ $src.Permalink }}"
     {{ if .Get "alt" }}
       alt="{{ .Get "alt" }}"
@@ -39,13 +48,17 @@
   {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
 
   <img
-    width="{{ .Get "width" }}"
-    height="{{ .Get "height" }}"
-    {{ with .Get "sizes" }}
-      sizes="{{ . }}"
+    {{ with .Get "width" }}
+      width="{{ . }}"
     {{ else }}
-
+      width="{{ $src.Width }}"
     {{ end }}
+    {{ with .Get "height" }}
+      height="{{ . }}"
+    {{ else }}
+      height="{{ $src.Height }}"
+    {{ end }}
+    {{ with .Get "sizes" }}sizes="{{ . }}"{{ end }}
     {{ with .Get "class" }}class="{{ . }}"{{ end }}
     srcset="
   {{ with $src.Permalink }}{{ . }} {{ $src.Width }}w{{ end }} 
