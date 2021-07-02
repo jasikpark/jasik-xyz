@@ -39,7 +39,7 @@
     "broken-link-checker": "0.7.8",
     "cross-env": "7.0.3",
     "cspell": "5.6.6",
-    "eslint": "7.29.0",
+    "eslint": "7.30.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-formatter-friendly": "7.0.0",
     "html-validate": "5.0.2",
