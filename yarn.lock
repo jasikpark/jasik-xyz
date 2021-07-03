@@ -4776,7 +4776,7 @@ __metadata:
     react-dom: 17.0.2
     stylelint: 13.13.1
     stylelint-order: 4.1.0
-    stylelint-semantic-groups: 1.0.0
+    stylelint-semantic-groups: 1.1.0
     tlapse: 1.1.0
     typescript: 4.3.5
   languageName: unknown
@@ -8941,12 +8941,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-semantic-groups@npm:1.0.0":
-  version: 1.0.0
-  resolution: "stylelint-semantic-groups@npm:1.0.0"
+"stylelint-semantic-groups@npm:1.1.0":
+  version: 1.1.0
+  resolution: "stylelint-semantic-groups@npm:1.1.0"
   dependencies:
     tslib: ^2.0.0
-  checksum: fa25f7604aac25c60188f576863c868000574f0b239c0567c830c9b3b51d38185940c92d4f83e340e3ca408816694e2ee86803b331770b53b889ebf4d6bbecc4
+  checksum: c671d563ba40b8a9bd13df633751180c059cec09c2b17586ba4a85caf5c36718ecf784c19d34675bcd04894ebb44202ab3b4ad3b11113df28a78a5306b0cda92
   languageName: node
   linkType: hard
 
