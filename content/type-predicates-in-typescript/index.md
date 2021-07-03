@@ -39,7 +39,7 @@ if(isASTNode(node)) {
 
 This is great! Even better, typescript 4.4 will have improved support for type predicates: <https://devblogs.microsoft.com/typescript/announcing-typescript-4-4-beta/#cfa-aliased-conditions>. One of the big advantages will be that Typescript will search constants that are tested in `if` statements for type guards, so if you instead had run,
 
-```
+```ts
 const isNodeASTNode = isASTNode(node);
 if(isASTNode(node)) { ...
 ```
