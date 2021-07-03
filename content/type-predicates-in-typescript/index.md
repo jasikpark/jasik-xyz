@@ -46,4 +46,6 @@ if(isASTNode(node)) { ...
 
 then instead of erroring like previous versions, since the compiler threw away the type guard information when it was put in a variable, it will look for that information now. 
 
-Something else that's interesting is the [postfix operator `!`](https://www.logicbig.com/tutorials/misc/typescript/non-null-assertion-operator.html) that lets you assert a variable as non-null to the typescript compiler, I'm sure that comes in handy when the compiler is being a lil dumb.
+Something else that's interesting is the [postfix operator `!`](https://www.logicbig.com/tutorials/misc/typescript/non-null-assertion-operator.html) that lets you assert a variable as non-null to the typescript compiler, I'm sure that comes in handy when the compiler is being a lil dumb!
+
+Maybe there'll be more posts about Typescript. Who knows!
