@@ -12,7 +12,7 @@ NODE_ENV = "production" # Only install dependencies, no devDependencies
 package = "netlify-plugin-cache"
   [plugins.inputs]
   # Optional (but highly recommended). Defaults to [".cache"].
-  paths = ["resources", "$TMPDIR/hugo"] 
+  paths = ["resources", "$TMPDIR/hugo_cache/"] 
 
 [[plugins]]
 package = "netlify-plugin-cache-yarn2"
