@@ -82,7 +82,7 @@ body {
 
   color: var(--text);
   font-family: var(--serif);
-  line-height: 1.5;
+  line-height: 1.67;
 
   background-color: var(--background);
   text-rendering: optimizeLegibility;
@@ -234,11 +234,17 @@ pre {
   }
 }
 
+code {
+  font-size: var(--font-med, 0.9rem);
+}
+
 pre code {
   display: block;
 
   width: 100%;
   padding: 10px;
+
+  font-size: var(--font-small, 0.8rem);
 
   overflow: auto;
 }
