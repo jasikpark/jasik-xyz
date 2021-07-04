@@ -12,7 +12,7 @@ enableRobotsTXT = true
 
 enableGitInfo = true
 
-pygmentsUseClasses = true
+pygmentsUseClasses = false
 
 [sitemap]
 changefreq = "monthly"
@@ -32,7 +32,7 @@ email = "calebjasik@jasik.xyz"
 
 [markup]
 [markup.highlight]
-style = "dracula"
+style = "bw"
 [markup.goldmark.extensions]
 typographer = false
 [markup.goldmark.renderer]

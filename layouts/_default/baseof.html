@@ -73,8 +73,9 @@
     {{/* BEGIN RSS */}}
     {{ range .AlternativeOutputFormats -}}
       {{ printf `
-      <link rel="%s" type="%s" href="%s" title="%s" />
-      ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+        <link rel="%s" type="%s" href="%s" title="%s" />
+        ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML
+      }}
     {{ end -}}
     {{/* END RSS */}}
     {{/* BEGIN CSS */}}
@@ -88,26 +89,21 @@
         />
       {{ end }}
       {{ if .Site.IsServer }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" }}
         {{ $siteCSS := resources.Get "css/site.css" }}
-        {{ $bundleCSS := slice $syntaxCSS $siteCSS | resources.Concat "css/bundle.css" }}
-        <link rel="stylesheet" href="{{ $bundleCSS.Permalink }}" />
+        <link rel="stylesheet" href="{{ $siteCSS.Permalink }}" />
       {{ else }}
-        {{ $syntaxCSS := resources.Get  "css/syntax.css" }}
-        {{ $siteCSS := resources.Get "css/site.css" }}
-        {{ $bundleCSS := slice $syntaxCSS $siteCSS | resources.Concat "css/bundle.css" | minify | fingerprint "sha384" }}
+        {{ $siteCSS := resources.Get "css/site.css" | minify | fingerprint "sha384" }}
         <link
           rel="stylesheet"
-          href="{{ $bundleCSS.Permalink }}"
-          integrity="{{ $bundleCSS.Data.Integrity }}"
+          href="{{ $siteCSS.Permalink }}"
+          integrity="{{ $siteCSS.Data.Integrity }}"
         />
       {{ end }}
     {{ end }}
     {{/* END CSS */}}
     {{/* BEGIN JS */}}
     {{ if .Page.Params.isMath }}
-      {{ $katexJS := resources.Get "js/katex.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}
-      <script
+      {{ $katexJS := resources.Get "js/katex.js" | js.Build  (dict "sourcemap" "inline" ) | minify | fingerprint "sha384" }}      <script
         defer
         src="{{ $katexJS.Permalink }}"
         integrity="{{ $katexJS.Data.Integrity }}"
