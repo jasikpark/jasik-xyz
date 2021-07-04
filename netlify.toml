@@ -1,12 +1,24 @@
 [build]
 publish = "public/"
-command = "hugo"
+command = "hugo --gc" 
 
 [build.environment]
 HUGO_ENV = "production"
 HUGO_VERSION = "0.83.1"
-YARN_VERSION = "1.22.10"
+YARN_VERSION = "1.22.10" # Currently Netlify doesn't have support for using Yarn 2 w/o first using Yarn 1 to install Yarn 2 :/
 NODE_ENV = "production" # Only install dependencies, no devDependencies
+
+[[plugins]]
+package = "netlify-plugin-cache"
+  [plugins.inputs]
+  # Optional (but highly recommended). Defaults to [".cache"].
+  paths = ["resources", "$TMPDIR/hugo"] 
+
+[[plugins]]
+package = "netlify-plugin-cache-yarn2"
+
+[[plugins]]
+package = "netlify-plugin-debug-cache"
 
 [dev]
 command = "hugo server --baseUrl='http://localhost:8888' --appendPort=false --cleanDestinationDir --disableFastRender"
@@ -15,7 +27,7 @@ port = 8888
 targetPort = 1313
 
 [context.branch-deploy]
-command = "hugo --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL"
+command = "hugo --buildFuture --buildDrafts -b $DEPLOY_PRIME_URL --gc"
 
 [context.v1]
 command = "hugo -b https://v1.jasik.xyz"
