@@ -119,6 +119,18 @@ img {
   margin-right: auto;
   margin-left: auto;
   font-feature-settings: "onum", "ss02";
+
+  /* These are technically the same, but use both */
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .articles li:nth-child(2n) {
