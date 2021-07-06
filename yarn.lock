@@ -1195,10 +1195,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/katex@npm:0.11.0":
-  version: 0.11.0
-  resolution: "@types/katex@npm:0.11.0"
-  checksum: 50b16bf308f28ee3c03b54efe1aff7a7dd1e05ef9f150d6f1af6108def354ded8ad67be7d886b9abc991457f401395658dd7474625521e30967642e0b60e395d
+"@types/katex@npm:0.11.1":
+  version: 0.11.1
+  resolution: "@types/katex@npm:0.11.1"
+  checksum: 1e51988b4b386a1b6fa8e22826ab4705bf3e6c9fb03461f2c91d28cb31095232bdeff491069ac9bc74bc4c26110be6a11a41e12ca77a2e4169f3afd8cd349355
   languageName: node
   linkType: hard
 
@@ -5482,7 +5482,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jasik-xyz@workspace:."
   dependencies:
-    "@types/katex": 0.11.0
+    "@types/katex": 0.11.1
     "@types/netlify-identity-widget": 1.9.1
     broken-link-checker: 0.7.8
     cross-env: 7.0.3
