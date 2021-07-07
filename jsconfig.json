@@ -5,5 +5,5 @@
     "moduleResolution": "node",
     "strict": true
   },
-  "exclude": ["public"]
+  "exclude": ["public", "node_modules"]
 }

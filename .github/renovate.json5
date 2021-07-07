@@ -1,0 +1,21 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
+    "config:base",
+    ":automergeBranch",
+    ":automergeRequireAllStatusChecks",
+    ":automergeLinters",
+    ":automergeTypes",
+    ":enableVulnerabilityAlerts",
+    ":maintainLockFilesMonthly",
+    ":pinSkipCi",
+  ],
+  assignees: ["jasikpark"],
+  packageRules: [
+    {
+      matchPackageNames: ["html-validate", "cspell", "typescript, husky"],
+      automerge: true,
+    },
+  ],
+  commitBody: "[skip netlify]",
+}
