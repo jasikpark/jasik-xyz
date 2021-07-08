@@ -1234,10 +1234,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/netlify-identity-widget@npm:1.9.1":
-  version: 1.9.1
-  resolution: "@types/netlify-identity-widget@npm:1.9.1"
-  checksum: cb0bfb190de1feeb82af9acff545f3326061be3034c973b3926a0b2d662df806642584f5215e65ada5d1c01ae731163700f2d0646c7b8c425834995974dd9803
+"@types/netlify-identity-widget@npm:1.9.2":
+  version: 1.9.2
+  resolution: "@types/netlify-identity-widget@npm:1.9.2"
+  checksum: 2db6f14f836cf79c6883739cfac19bbec31c8b1286f13418ed6e29e636447a8876da64a18f56071b79c461c24689aae5a0a460745e9ab5f07f5ac3cfbb7b6cc5
   languageName: node
   linkType: hard
 
@@ -5506,7 +5506,7 @@ __metadata:
   resolution: "jasik-xyz@workspace:."
   dependencies:
     "@types/katex": 0.11.1
-    "@types/netlify-identity-widget": 1.9.1
+    "@types/netlify-identity-widget": 1.9.2
     broken-link-checker: 0.7.8
     cross-env: 7.0.3
     cspell: 5.6.6
