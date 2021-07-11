@@ -4717,9 +4717,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-validate@npm:5.0.2":
-  version: 5.0.2
-  resolution: "html-validate@npm:5.0.2"
+"html-validate@npm:5.1.0":
+  version: 5.1.0
+  resolution: "html-validate@npm:5.1.0"
   dependencies:
     "@babel/code-frame": ^7.10.0
     "@html-validate/stylish": ^2.0.0
@@ -4737,12 +4737,15 @@ __metadata:
     semver: ^7.0.0
   peerDependencies:
     jest: ^24 || ^25 || ^26 || ^27
+    jest-diff: ^24 || ^25 || ^26 || ^27
   peerDependenciesMeta:
     jest:
       optional: true
+    jest-diff:
+      optional: true
   bin:
     html-validate: bin/html-validate.js
-  checksum: 517aae35f4a87aae15441ebe98d19f08f95d322a80e1e57e54702cf09b42d89fedf608935395cea2432bd0f4020d1cbfbdbafa5bbcb791b950709e8aa032eec3
+  checksum: 4f13c0ac84ecb64339bce74b50c94c1b0ac96817b0d1d1bc54ceea5f3e284a6fe6f5537811d4beafdc3785c983ce06b5322b85ff77535aee60dc188f24ad5188
   languageName: node
   linkType: hard
 
@@ -5513,7 +5516,7 @@ __metadata:
     eslint: 7.30.0
     eslint-config-prettier: 8.3.0
     eslint-formatter-friendly: 7.0.0
-    html-validate: 5.0.2
+    html-validate: 5.1.0
     husky: 7.0.1
     katex: 0.13.11
     lazyframe: 2.2.4
